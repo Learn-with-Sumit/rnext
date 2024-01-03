@@ -1,11 +1,25 @@
-import Test from "./components/Test";
+const style1 = {
+    backgroundColor: "red",
+};
+export default function App() {
+    const style2 = {
+        backgroundColor: "green",
+    };
 
-function App() {
+    const color = "green";
+    let style = "";
+
+    if (color === "green") {
+        style = style1;
+    } else {
+        style = style2;
+    }
+
     return (
-        <div>
-            <Test />
-        </div>
+        <ul style={style}>
+            <li>Improve the videophone</li>
+            <li>Prepare aeronautics lectures</li>
+            <li>Work on the alcohol-fuelled engine</li>
+        </ul>
     );
 }
-
-export default App;

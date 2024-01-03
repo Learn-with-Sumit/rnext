@@ -1,13 +1,10 @@
-import Avatar from "./components/Avatar";
-import Profile from "./components/Profile";
+import PackingList from "./components/PackingList";
 
 export default function App() {
     return (
         <div>
             <div>
-                <Profile>
-                    <Avatar age={39} />
-                </Profile>
+                <PackingList />
             </div>
         </div>
     );

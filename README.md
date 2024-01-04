@@ -40,7 +40,7 @@ Please follow the below instructions to run this branch in your machine:
    ```sh
    cd rnext
    ```
-4. Checkout/switch to branch 1.2
+4. Checkout/switch to branch 1.1
    ```sh
    git checkout 1.1
    ```

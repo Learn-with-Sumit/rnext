@@ -5,7 +5,7 @@
 <br />
  <p align="center">
     <img src="https://avatars.githubusercontent.com/u/73503432?v=4" alt="Logo" width="80" height="80" />
-    <h3 align="center "><a href="https://learnwithsumit.com/rnext/courses/rnext/reactive-accelerator-course-intro" target="_blank" >REACTIVE ACCELERATOR - MODULE 1 - LESSON 1</a></h3>
+    <h3 align="center "><a href="https://learnwithsumit.com/rnext/courses/rnext/introduction-to-react" target="_blank" >REACTIVE ACCELERATOR - MODULE 1 - LESSON 1</a></h3>
 </p>
 
 <!-- TABLE OF CONTENTS -->

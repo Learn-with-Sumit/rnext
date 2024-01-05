@@ -1,25 +1,34 @@
-export function Profile() {
-    // named export
-    return (
-        <img src="https://i.imgur.com/MK3eW3As.jpg" alt="Katherine Johnson" />
-    );
-}
-
-export function Card() {
-    // named export
-    return (
-        <img src="https://i.imgur.com/MK3eW3As.jpg" alt="Katherine Johnson" />
-    );
-}
+import { useState } from "react";
+import { sculptureList } from "../data.js";
 
 export default function Gallery() {
-    // default export
+    const [index, setIndex] = useState(0);
+    const [showMore, setShowMore] = useState(false);
+
+    function handleNextClick() {
+        setIndex(index + 1);
+    }
+
+    function handleMoreClick() {
+        setShowMore(!showMore);
+    }
+
+    let sculpture = sculptureList[index];
     return (
-        <section>
-            <h1>Amazing scientists</h1>
-            <Profile />
-            <Profile />
-            <Profile />
-        </section>
+        <>
+            <button onClick={handleNextClick}>Next</button>
+            <h2>
+                <i>{sculpture.name} </i>
+                by {sculpture.artist}
+            </h2>
+            <h3>
+                ({index + 1} of {sculptureList.length})
+            </h3>
+            <button onClick={handleMoreClick}>
+                {showMore ? "Hide" : "Show"} details
+            </button>
+            {showMore && <p>{sculpture.description}</p>}
+            <img src={sculpture.url} alt={sculpture.alt} />
+        </>
     );
 }

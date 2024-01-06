@@ -1,74 +1,73 @@
-import { useImmer } from "use-immer";
+import { useState } from "react";
 
-export default function Form() {
-    const [person, updatePerson] = useImmer({
-        name: "Niki de Saint Phalle",
-        artwork: {
-            title: "Blue Nana",
-            city: "Hamburg",
-            image: "https://i.imgur.com/Sd1AgUOm.jpg",
-        },
-    });
+const initialList = [
+    { id: 0, title: "Big Bellies", seen: false },
+    { id: 1, title: "Lunar Landscape", seen: false },
+    { id: 2, title: "Terracotta Army", seen: true },
+];
 
-    function handleNameChange(e) {
-        updatePerson((draft) => {
-            draft.name = e.target.value;
+export default function BucketList() {
+    const [myList, setMyList] = useState(initialList);
+    const [yourList, setYourList] = useState(initialList);
+
+    function handleToggleMyList(artworkId, nextSeen) {
+        const myNextList = myList.map((artwork) => {
+            if (artwork.id === artworkId) {
+                // Create a *new* object with changes
+                return { ...artwork, seen: nextSeen };
+            } else {
+                // No changes
+                return artwork;
+            }
         });
+        const artwork = myNextList.find((a) => a.id === artworkId);
+        artwork.seen = nextSeen;
+        setMyList(myNextList);
     }
 
-    function handleTitleChange(e) {
-        updatePerson((draft) => {
-            draft.artwork.title = e.target.value;
+    function handleToggleYourList(artworkId, nextSeen) {
+        const yourNextList = yourList.map((artwork) => {
+            if (artwork.id === artworkId) {
+                // Create a *new* object with changes
+                return { ...artwork, seen: nextSeen };
+            } else {
+                // No changes
+                return artwork;
+            }
         });
-    }
-
-    function handleCityChange(e) {
-        updatePerson((draft) => {
-            draft.artwork.city = e.target.value;
-        });
-    }
-
-    function handleImageChange(e) {
-        updatePerson((draft) => {
-            draft.artwork.image = e.target.value;
-        });
+        const artwork = yourNextList.find((a) => a.id === artworkId);
+        artwork.seen = nextSeen;
+        setYourList(yourNextList);
     }
 
     return (
         <>
-            <label>
-                Name:
-                <input value={person.name} onChange={handleNameChange} />
-            </label>
-            <label>
-                Title:
-                <input
-                    value={person.artwork.title}
-                    onChange={handleTitleChange}
-                />
-            </label>
-            <label>
-                City:
-                <input
-                    value={person.artwork.city}
-                    onChange={handleCityChange}
-                />
-            </label>
-            <label>
-                Image:
-                <input
-                    value={person.artwork.image}
-                    onChange={handleImageChange}
-                />
-            </label>
-            <p>
-                <i>{person.artwork.title}</i>
-                {" by "}
-                {person.name}
-                <br />
-                (located in {person.artwork.city})
-            </p>
-            <img src={person.artwork.image} alt={person.artwork.title} />
+            <h1>Art Bucket List</h1>
+            <h2>My list of art to see:</h2>
+            <ItemList artworks={myList} onToggle={handleToggleMyList} />
+            <h2>Your list of art to see:</h2>
+            <ItemList artworks={yourList} onToggle={handleToggleYourList} />
         </>
+    );
+}
+
+function ItemList({ artworks, onToggle }) {
+    return (
+        <ul>
+            {artworks.map((artwork) => (
+                <li key={artwork.id}>
+                    <label>
+                        <input
+                            type="checkbox"
+                            checked={artwork.seen}
+                            onChange={(e) => {
+                                onToggle(artwork.id, e.target.checked);
+                            }}
+                        />
+                        {artwork.title}
+                    </label>
+                </li>
+            ))}
+        </ul>
     );
 }

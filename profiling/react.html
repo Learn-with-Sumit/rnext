@@ -1,0 +1,38 @@
+<!--
+ * Title: React Container HTML file
+ * Description: The HTML container page that holds our React Components
+ * Author: Sumit Saha ( Learn with Sumit )
+ * Date: 02/03/2021
+ *
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Hello React</title>
+    </head>
+    <body>
+        <div id="root"></div>
+
+        <!-- Load React. -->
+        <script
+            src="https://unpkg.com/react@17/umd/react.development.js"
+            crossorigin
+        ></script>
+
+        <script
+            src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
+            crossorigin
+        ></script>
+
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+        <script type="text/babel">
+            ReactDOM.render(
+                <h1>Hello, react!</h1>,
+                document.getElementById("root")
+            );
+        </script>
+    </body>
+</html>

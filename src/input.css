@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+   .animate-updown {
+    animation-name: animate-updownAnim;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction : alternate-reverse;
+   }
+
+   @keyframes animate-updownAnim {
+    from{
+        transform: translateY(-20px);
+    }
+    to{
+        transform: translateY(20px); 
+    }
+   }
+  }

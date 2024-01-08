@@ -5,7 +5,7 @@
 <br />
  <p align="center">
     <img src="https://avatars.githubusercontent.com/u/73503432?v=4" alt="Logo" width="80" height="80" />
-    <h3 align="center "><a href="https://learnwithsumit.com/rnext/courses/rnext/project-tutorial-tic-tac-toe-game" target="_blank" >REACTIVE ACCELERATOR - MODULE 1 - LESSON 14</a></h3>
+    <h3 align="center "><a href="https://learnwithsumit.com/rnext/courses/rnext/project-tutorial-tic-tac-toe-game" target="_blank" >REACTIVE ACCELERATOR - MODULE 1 - LESSON 13</a></h3>
 </p>
 
 <!-- TABLE OF CONTENTS -->
@@ -40,9 +40,9 @@ Please follow the below instructions to run this branch in your machine:
    ```sh
    cd rnext
    ```
-4. Checkout/switch to branch 1.14
+4. Checkout/switch to branch 1.13
    ```sh
-   git checkout 1.14
+   git checkout 1.13
    ```
 5. Just run this command to install node dependencies
    ```sh

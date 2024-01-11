@@ -1,10 +1,15 @@
+import Logo from "./assets/logo.svg";
+import Ring from "./assets/ring.svg";
+import Moon from "./assets/icons/moon.svg";
+import ShoppingCart from "./assets/shopping-cart.svg";
+
 function Header() {
     return (
         <header>
             <nav class="container flex items-center justify-between space-x-10 py-6">
                 <a href="index.html">
                     <img
-                        src="./assets/logo.svg"
+                        src={Logo}
                         width="139"
                         height="26"
                         alt=""
@@ -18,7 +23,7 @@ function Header() {
                             href="#"
                         >
                             <img
-                                src="./assets/ring.svg"
+                                src={Ring}
                                 width="24"
                                 height="24"
                                 alt=""
@@ -31,7 +36,7 @@ function Header() {
                             href="#"
                         >
                             <img
-                                src="./assets/icons/sun.svg"
+                                src={Moon}
                                 width="24"
                                 height="24"
                                 alt=""
@@ -44,7 +49,7 @@ function Header() {
                             href="#"
                         >
                             <img
-                                src="./assets/shopping-cart.svg"
+                                src={ShoppingCart}
                                 width="24"
                                 height="24"
                                 alt=""

@@ -1,7 +1,9 @@
+import Header from "./Header";
+
 function App() {
     return (
         <>
-            <h1 className="text-3xl text-center p-4">CineRental</h1>
+            <Header />
         </>
     );
 }

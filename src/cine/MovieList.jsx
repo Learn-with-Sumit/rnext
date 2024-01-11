@@ -1,10 +1,9 @@
-import Tag from "../assets/tag.svg";
-import Rating from "./Rating";
 import { getAllMovies } from "../data/movies";
+import Rating from "./Rating";
 
 import { getImgUrl } from "../utils/cine-utility";
 
-export default function Content() {
+export default function MovieList() {
     const movies = getAllMovies();
 
     return (
@@ -13,10 +12,13 @@ export default function Content() {
                 {movies.map((movie) => (
                     <figure
                         key={movie.id}
-                        className="p-4 border border-black/10 shadow-sm dark:border-white/10 rounded-xl">
+                        className="p-4 border border-black/10 shadow-sm dark:border-white/10 rounded-xl"
+                    >
                         <img
                             className="w-full object-cover"
-                            src= {getImgUrl(`../assets/movie-covers/${movie.cover}`)}
+                            src={getImgUrl(
+                                `../assets/movie-covers/${movie.cover}`
+                            )}
                             alt={movie.title}
                         />
                         <figcaption className="pt-4">

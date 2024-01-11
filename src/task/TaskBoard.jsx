@@ -19,7 +19,7 @@ export default function TaskBoard() {
     const [tasks, setTasks] = useState([defaultTask]);
     const [showAddModal, setShowAddModal] = useState(false);
     const [taskToUpdate, setTaskToUpdate] = useState(null);
-    
+
 
     function handleAddEditTask(newTask, isAdd) {
         if (isAdd) {
@@ -35,7 +35,7 @@ export default function TaskBoard() {
             );
         }
 
-        setShowAddModal(false);
+       handleCloseClick();
     }
 
     function handleEditTask(task) {

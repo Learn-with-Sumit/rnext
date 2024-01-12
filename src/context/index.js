@@ -1,3 +1,9 @@
 import { createContext } from 'react';
 
-export const MovieContext = createContext("");
+const MovieContext = createContext("");
+const ThemeContext = createContext("");
+
+export {
+    MovieContext,
+    ThemeContext
+}

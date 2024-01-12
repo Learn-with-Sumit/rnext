@@ -1,9 +1,14 @@
+import { useState } from "react";
 import Page from "./Page";
+import { MovieContext } from "./context";
 
 function App() {
+    const [cartData, setCartData] = useState([]);
     return (
         <>
-            <Page />
+            <MovieContext.Provider value={{ cartData, setCartData }}>
+                <Page />
+            </MovieContext.Provider>
         </>
     );
 }

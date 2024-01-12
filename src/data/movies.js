@@ -7,6 +7,15 @@ const data = [
         "genre": "Action/Adventure/Sci-fi",
         "rating": 5,
         "price": 100
+    },
+    {
+        "id": crypto.randomUUID(),
+        "cover": "avatar.png",
+        "title": "Avatar",
+        "description": "A paraplegic marine dispatched to the moon Pandora on a unique mission becomes torn between following his orders and protecting the world he feels is his home.",
+        "genre": "Action/Adventure/Sci-fi",
+        "rating": 4,
+        "price": 200
     }
 ]
 

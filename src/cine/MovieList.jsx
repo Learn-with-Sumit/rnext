@@ -1,14 +1,18 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 
 import { getAllMovies } from "../data/movies";
 import MovieDetailsModal from "./MovieDetailsModal";
 import Rating from "./Rating";
+
+import { MovieContext } from "../context";
 
 import { getImgUrl } from "../utils/cine-utility";
 
 export default function MovieList() {
     const [showModal, setShowModal] = useState(false);
     const [selectedMovie, setSelectedMovie] = useState(null);
+
+    const { cartData, setCartData } = useContext(MovieContext);
 
     const movies = getAllMovies();
 
@@ -19,7 +23,18 @@ export default function MovieList() {
 
     function hadleAddToCart(event, movie) {
         event.stopPropagation();
-        console.log("Add to Cart", movie);
+
+        const found = cartData.find((item) => {
+            return item.id === movie.id;
+        });
+
+        if (!found) {
+            setCartData([...cartData, movie]);
+        } else {
+            console.error(
+                `The movie ${movie.title} has been added to the cart already`
+            );
+        }
     }
 
     function handleModalClose() {
@@ -29,10 +44,13 @@ export default function MovieList() {
 
     return (
         <div className="content">
-            {showModal && <MovieDetailsModal
-                movie={selectedMovie}
-                onClose={handleModalClose}
-                onCartAdd={hadleAddToCart} />}
+            {showModal && (
+                <MovieDetailsModal
+                    movie={selectedMovie}
+                    onClose={handleModalClose}
+                    onCartAdd={hadleAddToCart}
+                />
+            )}
             <div className="grid sm:grid-cols-2 xl:grid-cols-3 gap-7">
                 {movies.map((movie) => (
                     <figure

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            body {
+                font-family: sans-serif;
+                margin: 20px;
+                padding: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>City quiz</h2>
+        <p>What city is located on two continents?</p>
+        <form id="form">
+            <textarea id="textarea"></textarea>
+            <br />
+            <button id="button" disabled>Submit</button>
+            <p id="loading" style="display: none">Loading...</p>
+            <p id="error" style="display: none; color: red"></p>
+        </form>
+        <h1 id="success" style="display: none">That's right!</h1>
+
+        <script src="./index.js"></script>
+    </body>
+</html>

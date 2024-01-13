@@ -7,9 +7,7 @@ export default function MovieDetailsModal({movie, onClose, onCartAdd}) {
                 <div className="bg-white shadow-md dark:bg-[#12141D] rounded-2xl sm:grid sm:grid-cols-[2fr_1fr] overflow-hidden">
                     <img
                         className="sm:order-2 w-full object-cover h-full max-sm:max-h-[300px]"
-                        src={getImgUrl(
-                            `../assets/movie-covers/${movie.cover}`
-                        )}
+                        src={getImgUrl(`${movie.cover}`)}
                         alt=""
                     />
                     <div className="p-5 lg:p-11">

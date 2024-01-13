@@ -40,7 +40,7 @@ export default function CartDetails({ onClose }) {
                                         <img
                                             className="rounded overflow-hidden"
                                             src={getImgUrl(
-                                                `../assets/movie-covers/${item.cover}`
+                                                `${item.cover}`
                                             )}
                                             alt={item.title}
                                             width={"50px"}

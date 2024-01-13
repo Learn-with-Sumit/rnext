@@ -65,9 +65,7 @@ export default function MovieList() {
                         <a href="#" onClick={() => hadleMovieSelection(movie)}>
                             <img
                                 className="w-full object-cover"
-                                src={getImgUrl(
-                                    `../assets/movie-covers/${movie.cover}`
-                                )}
+                                src={getImgUrl(`${movie.cover}`)}
                                 alt={movie.title}
                             />
                             <figcaption className="pt-4">

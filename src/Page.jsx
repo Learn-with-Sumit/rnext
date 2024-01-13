@@ -8,7 +8,6 @@ import { ThemeContext } from "./context";
 
 export default function Page() {
     const {darkMode} = useContext(ThemeContext);
-    console.log(darkMode);
     return (
         <div className={`h-full w-full ${darkMode ? "dark" : ""}`}>
             <Header />

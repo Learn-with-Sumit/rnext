@@ -1,7 +1,7 @@
-import TravelPlan from "./components/TravelPlan";
+import Accordion from "./components/Accordion";
 
 function App() {
-    return <TravelPlan />;
+    return <Accordion />;
 }
 
 export default App;

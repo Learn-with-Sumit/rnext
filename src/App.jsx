@@ -1,23 +1,58 @@
 import { useState } from "react";
-import Chat from "./components/Chat";
-import ContactList from "./components/ContactList";
+import AddTask from "./components/AddTask";
+import TaskList from "./components/TaskList";
+import { initialTasks } from "./data/tasks";
 
 export default function App() {
-    const [to, setTo] = useState(contacts[0]);
+    const [tasks, setTasks] = useState(initialTasks);
+
+    const getNextId = (data) => {
+        const maxId = data.reduce((prev, current) =>
+            prev && prev.id > current.id ? prev.id : current.id
+        );
+
+        return maxId + 1;
+    };
+
+    // handlers
+    const handleAddTask = (text) => {
+        setTasks([
+            ...tasks,
+            {
+                id: getNextId(tasks),
+                text: text,
+                done: false,
+            },
+        ]);
+    };
+
+    const handleChangeTask = (task) => {
+        const nextTasks = tasks.map((t) => {
+            if (t.id === task.id) {
+                return task;
+            } else {
+                return t;
+            }
+        });
+
+        setTasks(nextTasks);
+    };
+
+    const handleDeleteTask = (taskId) => {
+        setTasks(tasks.filter((t) => t.id !== taskId));
+    };
+
     return (
-        <div>
-            <ContactList
-                contacts={contacts}
-                selectedContact={to}
-                onSelect={(contact) => setTo(contact)}
+        <>
+            <h1>Prague itinerary</h1>
+
+            <AddTask onAdd={handleAddTask} />
+
+            <TaskList
+                tasks={tasks}
+                onChangeTask={handleChangeTask}
+                onDeleteTask={handleDeleteTask}
             />
-            <Chat key={to.id} contact={to} />
-        </div>
+        </>
     );
 }
-
-const contacts = [
-    { id: 0, name: "Taylor", email: "taylor@mail.com" },
-    { id: 1, name: "Alice", email: "alice@mail.com" },
-    { id: 2, name: "Bob", email: "bob@mail.com" },
-];

@@ -46,26 +46,22 @@ ul {
     padding-inline-start: 20px;
 }
 
-label {
-    display: block;
-    clear: both;
-}
-
-.counter {
-    width: 100px;
-    text-align: center;
-    border: 1px solid gray;
-    border-radius: 4px;
-    padding: 20px;
-    margin: 0 20px 20px 0;
+.chat,
+.contact-list {
     float: left;
+    margin-bottom: 20px;
 }
-
-.fancy {
-    border: 5px solid gold;
-    color: #ff6767;
+ul,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
-
-.hover {
-    background: #ffffd8;
+li button {
+    width: 100px;
+    padding: 10px;
+    margin-right: 10px;
+}
+textarea {
+    height: 150px;
 }

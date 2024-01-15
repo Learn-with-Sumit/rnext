@@ -49,7 +49,7 @@ export default function Header() {
                             href="#"
                             onClick={() => setDarkMode(darkMode => ! darkMode) }
                         >
-                            <img src={darkMode ? Sun : Moon} width="24" height="24" alt="moon" />
+                            <img src={darkMode ? Sun : Moon} width="24" height="24" alt="theme-icon" />
                         </a>
                     </li>
                     <li>

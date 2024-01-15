@@ -1,7 +1,5 @@
-import Accordion from "./components/Accordion";
+import MyComponent from "./components/MyComponent";
 
-function App() {
-    return <Accordion />;
+export default function App() {
+    return <MyComponent />;
 }
-
-export default App;

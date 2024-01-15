@@ -46,11 +46,26 @@ ul {
     padding-inline-start: 20px;
 }
 
-h3,
-p {
-    margin: 5px 0px;
+label {
+    display: block;
+    clear: both;
 }
-.panel {
-    padding: 10px;
-    border: 1px solid #aaa;
+
+.counter {
+    width: 100px;
+    text-align: center;
+    border: 1px solid gray;
+    border-radius: 4px;
+    padding: 20px;
+    margin: 0 20px 20px 0;
+    float: left;
+}
+
+.fancy {
+    border: 5px solid gold;
+    color: #ff6767;
+}
+
+.hover {
+    background: #ffffd8;
 }

@@ -1,0 +1,12 @@
+.parent {
+    color: red;
+    background-color: antiquewhite;
+}
+
+.childone {
+    color: green;
+}
+
+.childtwo {
+    color: blue;
+}

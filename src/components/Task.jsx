@@ -1,7 +1,9 @@
 import { useState } from "react";
+import { useTasksDispatch } from "../contexts/TasksContext";
 
-export default function Task({ task, onDeleteTask, onChangeTask }) {
+export default function Task({ task }) {
     const [isEditing, setIsEditing] = useState(false);
+    const dispatch = useTasksDispatch();
 
     let taskContent;
 
@@ -11,9 +13,12 @@ export default function Task({ task, onDeleteTask, onChangeTask }) {
                 <input
                     value={task.text}
                     onChange={(e) => {
-                        onChangeTask({
-                            ...task,
-                            text: e.target.value,
+                        dispatch({
+                            type: "changed",
+                            task: {
+                                ...task,
+                                text: e.target.value,
+                            },
                         });
                     }}
                 />
@@ -36,16 +41,28 @@ export default function Task({ task, onDeleteTask, onChangeTask }) {
                     type="checkbox"
                     checked={task.done}
                     onChange={(e) => {
-                        onChangeTask({
-                            ...task,
-                            done: e.target.checked,
+                        dispatch({
+                            type: "changed",
+                            task: {
+                                ...task,
+                                done: e.target.checked,
+                            },
                         });
                     }}
                 />
 
                 {taskContent}
 
-                <button onClick={() => onDeleteTask(task.id)}>Delete</button>
+                <button
+                    onClick={() => {
+                        dispatch({
+                            type: "deleted",
+                            id: task.id,
+                        });
+                    }}
+                >
+                    Delete
+                </button>
             </label>
         </li>
     );

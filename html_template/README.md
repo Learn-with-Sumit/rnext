@@ -40,9 +40,9 @@ Please follow the below instructions to run this branch in your machine:
    ```sh
    cd rnext
    ```
-4. Checkout/switch to branch 2.8
+4. Checkout/switch to branch 2.10
    ```sh
-   git checkout 2.8
+   git checkout 2.10
    ```
 5. Change the directory to html_template
    ```sh

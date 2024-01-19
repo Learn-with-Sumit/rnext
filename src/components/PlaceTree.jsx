@@ -9,11 +9,11 @@ export default function PlaceTree({ id, placesById, parentId, onComplete }) {
             <button onClick={() => onComplete(parentId, id)}>Complete</button>
             {childIds.length > 0 && (
                 <ol>
-                    {childIds.map((id) => (
+                    {childIds.map((childId) => (
                         <PlaceTree
-                            key={id}
-                            id={id}
-                            parentId={parentId}
+                            key={childId}
+                            id={childId}
+                            parentId={id}
                             placesById={placesById}
                             onComplete={onComplete}
                         />

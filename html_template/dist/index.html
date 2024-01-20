@@ -1,0 +1,236 @@
+<!doctype html>
+<!-- Toggle dark class to switch between dark and light mode	 -->
+<html class="dark">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Cine Rental | Learn with Sumit</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+	<link rel="stylesheet" href="./styles/output.css">
+
+</head>
+
+<body class="dark:bg-body bg-white font-[Sora] dark:text-white text-dark">
+	<!-- Begin header -->
+	<header>
+		<nav class="container flex items-center justify-between space-x-10 py-6">
+			<a href="index.html">
+				<img src="./assets/logo.svg" width="139" height="26" alt="" />
+			</a>
+
+			<ul class="flex items-center space-x-5">
+				<li>
+					<a class="bg-primary/20 dark:bg-primary/[7%] rounded-lg backdrop-blur-[2px] p-1 inline-block" href="#">
+						<img src="./assets/ring.svg" width="24" height="24" alt="" />
+					</a>
+				</li>
+				<li>
+					<a class="bg-primary/20 dark:bg-primary/[7%] rounded-lg backdrop-blur-[2px] p-1 inline-block" href="#">
+						<img src="./assets/icons/sun.svg" width="24" height="24" alt="" />
+					</a>
+				</li>
+				<li>
+					<a class="bg-primary/20 dark:bg-primary/[7%] rounded-lg backdrop-blur-[2px] p-1 inline-block" href="#">
+						<img src="./assets/shopping-cart.svg" width="24" height="24" alt="" />
+					</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<!-- End Header -->
+
+	<!-- Begin Main -->
+	<main>
+		<div class="container grid lg:grid-cols-[218px_1fr] gap-[3.5rem]">
+			<!-- Sidebar -->
+			<aside>
+				<ul class="space-y-2">
+					<li>
+						<a class="flex items-center space-x-2 px-5 py-3.5 rounded-lg bg-primary text-black" href="#">
+							<img src="./assets/icons/trending.svg" width="24" height="24" alt="" />
+							<span>Trending</span>
+						</a>
+					</li>
+					<li>
+						<a class="flex items-center space-x-2 px-5 py-3.5 rounded-lg" href="#">
+							<img src="./assets/icons/newRelease.svg" width="24" height="24" alt="" />
+							<span>New Releases</span>
+						</a>
+					</li>
+					<li>
+						<a class="flex items-center space-x-2 px-5 py-3.5 rounded-lg" href="#">
+							<img src="./assets/icons/commingSoon.svg" width="24" height="24" alt="" />
+							<span>Coming Soon</span>
+						</a>
+					</li>
+					<li>
+						<a class="flex items-center space-x-2 px-5 py-3.5 rounded-lg" href="#">
+							<img src="./assets/icons/favourite.svg" width="24" height="24" alt="" />
+							<span>Favourites</span>
+						</a>
+					</li>
+					<li>
+						<a class="flex items-center space-x-2 px-5 py-3.5 rounded-lg" href="#">
+							<img src="./assets/icons/watchLater.svg" width="24" height="24" alt="" />
+							<span>Watch Later</span>
+						</a>
+					</li>
+				</ul>
+			</aside>
+
+			<!-- Content -->
+			<div class="content">
+				<div class="grid sm:grid-cols-2 xl:grid-cols-3 gap-7">
+
+					<!-- Begin Card -->
+					<figure class="p-4 border border-black/10 shadow-sm dark:border-white/10 rounded-xl">
+						<img class="w-full object-cover" src="./assets/movie-1.png" alt="" />
+						<figcaption class="pt-4">
+							<h3 class="text-xl mb-1">Iron Man</h3>
+							<p class="text-[#575A6E] text-sm mb-2">Action/Adventure/Sci-fi</p>
+							<div class="flex items-center space-x-1 mb-5">
+								<img src="./assets/star.svg" width="14" height="14" alt="" />
+								<img src="./assets/star.svg" width="14" height="14" alt="" />
+								<img src="./assets/star.svg" width="14" height="14" alt="" />
+								<img src="./assets/star.svg" width="14" height="14" alt="" />
+								<img src="./assets/star.svg" width="14" height="14" alt="" />
+							</div>
+							<a class="bg-primary rounded-lg py-2 px-5 flex items-center justify-center gap-2 text-[#171923] font-semibold text-sm"
+								href="#">
+								<img src="./assets/tag.svg" alt="" />
+								<span>$100 | Add to Cart</span>
+							</a>
+						</figcaption>
+					</figure>
+					<!-- End Card -->
+
+					<!-- Begin Card -->
+					<figure class="p-4 border border-black/10 shadow-sm dark:border-white/10 rounded-xl">
+						<img class="w-full object-cover" src="./assets/movie-1.png" alt="" />
+						<figcaption class="pt-4">
+							<h3 class="text-xl mb-1">Iron Man</h3>
+							<p class="text-[#575A6E] text-sm mb-2">Action/Adventure/Sci-fi</p>
+							<div class="flex items-center space-x-1 mb-5">
+								<img src="./assets/star.svg" width="14" height="14" alt="" />
+								<img src="./assets/star.svg" width="14" height="14" alt="" />
+								<img src="./assets/star.svg" width="14" height="14" alt="" />
+								<img src="./assets/star.svg" width="14" height="14" alt="" />
+								<img src="./assets/star.svg" width="14" height="14" alt="" />
+							</div>
+							<a class="bg-primary rounded-lg py-2 px-5 flex items-center justify-center gap-2 text-[#171923] font-semibold text-sm"
+								href="#">
+								<img src="./assets/tag.svg" alt="" />
+								<span>$100 | Add to Cart</span>
+							</a>
+						</figcaption>
+					</figure>
+					<!-- End Card -->
+
+					<!-- Begin Card -->
+					<figure class="p-4 border border-black/10 shadow-sm dark:border-white/10 rounded-xl">
+						<img class="w-full object-cover" src="./assets/movie-1.png" alt="" />
+						<figcaption class="pt-4">
+							<h3 class="text-xl mb-1">Iron Man</h3>
+							<p class="text-[#575A6E] text-sm mb-2">Action/Adventure/Sci-fi</p>
+							<div class="flex items-center space-x-1 mb-5">
+								<img src="./assets/star.svg" width="14" height="14" alt="" />
+								<img src="./assets/star.svg" width="14" height="14" alt="" />
+								<img src="./assets/star.svg" width="14" height="14" alt="" />
+								<img src="./assets/star.svg" width="14" height="14" alt="" />
+								<img src="./assets/star.svg" width="14" height="14" alt="" />
+							</div>
+							<a class="bg-primary rounded-lg py-2 px-5 flex items-center justify-center gap-2 text-[#171923] font-semibold text-sm"
+								href="#">
+								<img src="./assets/tag.svg" alt="" />
+								<span>$100 | Add to Cart</span>
+							</a>
+						</figcaption>
+					</figure>
+					<!-- End Card -->
+
+					<!-- Begin Card -->
+					<figure class="p-4 border border-black/10 shadow-sm dark:border-white/10 rounded-xl">
+						<img class="w-full object-cover" src="./assets/movie-1.png" alt="" />
+						<figcaption class="pt-4">
+							<h3 class="text-xl mb-1">Iron Man</h3>
+							<p class="text-[#575A6E] text-sm mb-2">Action/Adventure/Sci-fi</p>
+							<div class="flex items-center space-x-1 mb-5">
+								<img src="./assets/star.svg" width="14" height="14" alt="" />
+								<img src="./assets/star.svg" width="14" height="14" alt="" />
+								<img src="./assets/star.svg" width="14" height="14" alt="" />
+								<img src="./assets/star.svg" width="14" height="14" alt="" />
+								<img src="./assets/star.svg" width="14" height="14" alt="" />
+							</div>
+							<a class="bg-primary rounded-lg py-2 px-5 flex items-center justify-center gap-2 text-[#171923] font-semibold text-sm"
+								href="#">
+								<img src="./assets/tag.svg" alt="" />
+								<span>$100 | Add to Cart</span>
+							</a>
+						</figcaption>
+					</figure>
+					<!-- End Card -->
+
+					<!-- Begin Card -->
+					<figure class="p-4 border border-black/10 shadow-sm dark:border-white/10 rounded-xl">
+						<img class="w-full object-cover" src="./assets/movie-1.png" alt="" />
+						<figcaption class="pt-4">
+							<h3 class="text-xl mb-1">Iron Man</h3>
+							<p class="text-[#575A6E] text-sm mb-2">Action/Adventure/Sci-fi</p>
+							<div class="flex items-center space-x-1 mb-5">
+								<img src="./assets/star.svg" width="14" height="14" alt="" />
+								<img src="./assets/star.svg" width="14" height="14" alt="" />
+								<img src="./assets/star.svg" width="14" height="14" alt="" />
+								<img src="./assets/star.svg" width="14" height="14" alt="" />
+								<img src="./assets/star.svg" width="14" height="14" alt="" />
+							</div>
+							<a class="bg-primary rounded-lg py-2 px-5 flex items-center justify-center gap-2 text-[#171923] font-semibold text-sm"
+								href="#">
+								<img src="./assets/tag.svg" alt="" />
+								<span>$100 | Add to Cart</span>
+							</a>
+						</figcaption>
+					</figure>
+					<!-- End Card -->
+
+					<!-- Begin Card -->
+					<figure class="p-4 border border-black/10 shadow-sm dark:border-white/10 rounded-xl">
+						<img class="w-full object-cover" src="./assets/movie-1.png" alt="" />
+						<figcaption class="pt-4">
+							<h3 class="text-xl mb-1">Iron Man</h3>
+							<p class="text-[#575A6E] text-sm mb-2">Action/Adventure/Sci-fi</p>
+							<div class="flex items-center space-x-1 mb-5">
+								<img src="./assets/star.svg" width="14" height="14" alt="" />
+								<img src="./assets/star.svg" width="14" height="14" alt="" />
+								<img src="./assets/star.svg" width="14" height="14" alt="" />
+								<img src="./assets/star.svg" width="14" height="14" alt="" />
+								<img src="./assets/star.svg" width="14" height="14" alt="" />
+							</div>
+							<a class="bg-primary rounded-lg py-2 px-5 flex items-center justify-center gap-2 text-[#171923] font-semibold text-sm"
+								href="#">
+								<img src="./assets/tag.svg" alt="" />
+								<span>$100 | Add to Cart</span>
+							</a>
+						</figcaption>
+					</figure>
+					<!-- End Card -->
+				</div>
+			</div>
+		</div>
+	</main>
+	<!-- End Main -->
+
+	<!-- Footer -->
+	<footer class="py-6 md:py-8 mt-8">
+		<div class="container mx-auto">
+			<p class="text-center text-sm text-black/30 dark:text-[#EEEEEE]/60">
+				Copyright ©2023 | All rights reserved by Learn with Sumit
+			</p>
+		</div>
+	</footer>
+</body>
+
+</html>

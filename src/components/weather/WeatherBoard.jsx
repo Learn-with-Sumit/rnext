@@ -21,8 +21,8 @@ function WeatherBoard() {
                         ) : (
                             <>
                                 <AddToFavourite
-                                    lat={weatherData.latitude}
-                                    lon={weatherData.longitude}
+                                    latitude={weatherData.latitude}
+                                    longitude={weatherData.longitude}
                                     location={weatherData.location}
                                 />
 

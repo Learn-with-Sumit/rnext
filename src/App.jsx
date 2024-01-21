@@ -1,19 +1,9 @@
-import { useState } from "react";
-import "./App.css";
-import CatFriends from "./components/CatFriends";
+import Form from "./components/Form";
 
-function App() {
-    const [show, setShow] = useState(true);
-
+export default function App() {
     return (
         <div>
-            {show && <CatFriends />}
-            <br />
-            <button onClick={() => setShow((s) => !s)}>
-                {show ? "Hide" : "Show"}
-            </button>
+            <Form />
         </div>
     );
 }
-
-export default App;

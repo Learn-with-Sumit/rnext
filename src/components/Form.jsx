@@ -1,16 +1,19 @@
 import { useRef } from "react";
+import MyInput from "./MyInput";
 
 export default function Form() {
     const inputRef = useRef(null);
 
-    const handleFocusInput = () => {
+    function handleClick() {
         inputRef.current.focus();
-    };
+    }
 
     return (
         <>
-            <input ref={inputRef} />
-            <button onClick={handleFocusInput}>Focus the input</button>
+            <MyInput type="text" placeholder="Enter name" ref={inputRef} />
+            <br />
+            <br />
+            <button onClick={handleClick}>Focus the input</button>
         </>
     );
 }

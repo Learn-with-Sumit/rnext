@@ -1,42 +1,71 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+* {
+    box-sizing: border-box;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+body {
+    font-family: sans-serif;
+    margin: 20px;
+    padding: 0;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1 {
+    margin-top: 0;
+    font-size: 22px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+h2 {
+    margin-top: 0;
+    font-size: 20px;
 }
 
-.card {
-  padding: 2em;
+h3 {
+    margin-top: 0;
+    font-size: 18px;
 }
 
-.read-the-docs {
-  color: #888;
+h4 {
+    margin-top: 0;
+    font-size: 16px;
+}
+
+h5 {
+    margin-top: 0;
+    font-size: 14px;
+}
+
+h6 {
+    margin-top: 0;
+    font-size: 12px;
+}
+
+code {
+    font-size: 1.2em;
+}
+
+ul {
+    padding-inline-start: 20px;
+}
+
+div {
+    width: 100%;
+    overflow: hidden;
+}
+
+nav {
+    text-align: center;
+}
+
+button {
+    margin: 0.25rem;
+}
+
+ul,
+li {
+    list-style: none;
+    white-space: nowrap;
+}
+
+li {
+    display: inline;
+    padding: 0.5rem;
 }

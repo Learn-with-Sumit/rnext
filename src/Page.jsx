@@ -1,33 +1,50 @@
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 import { WeatherContext } from "./context";
 
 import Header from "./components/header/Header";
 import WeatherBoard from "./components/weather/WeatherBoard";
 
+import ClearSkyImage from "./assets/backgrounds/clear-sky.jpg";
+import FewCloudsImage from "./assets/backgrounds/few-clouds.jpg";
+import RainyDayImage from "./assets/backgrounds/rainy-day.jpg";
+import ScatterdCloudsImage from "./assets/backgrounds/scattered-clouds.jpg";
+import SnowImage from "./assets/backgrounds/sunny.jpg";
+import ThunderStormImage from "./assets/backgrounds/thunderstorm.jpg";
+import WinterImage from "./assets/backgrounds/winter.jpg";
+
 export default function Page() {
     const { weatherData, error, loading } = useContext(WeatherContext);
+    const [climateImage, setClimateImage] = useState("");
+
     function getBackgroundImage(climate) {
         switch (climate) {
             case "Rain":
-                return "rainy-day.jpg";
+                return RainyDayImage;
             case "Clouds":
-                return "scattered-clouds.jpg";
+                return ScatterdCloudsImage;
             case "Clear":
-                return "clear-sky.jpg";
+                return ClearSkyImage;
             case "Snow":
-                return "snow.jpg";
+                return SnowImage;
             case "Thunder":
-                return "thunderstorm.jpg";
+                return ThunderStormImage;
             case "Fog":
-                return "winter.jpg";
+                return WinterImage;
             case "Haze":
-                return "few-clouds.jpg";
+                return FewCloudsImage;
             case "Mist":
-                return "winter.jpg";
+                return WinterImage;
             default:
-                return "clear-sky.jpg";
+                return ClearSkyImage;
         }
     }
+
+    useEffect(() => {
+        const bgImage = getBackgroundImage(weatherData.climate);
+        console.log(bgImage);
+        setClimateImage(bgImage);
+    }, [weatherData.climate]);
+
     return (
         <>
             {loading.state ? (
@@ -36,9 +53,8 @@ export default function Page() {
                 </div>
             ) : (
                 <div
-                    className={`bg-[url('./assets/backgrounds/${getBackgroundImage(
-                        weatherData.climate
-                    )}')] bg-no-repeat bg-cover h-screen grid place-items-center`}
+                    style={{ backgroundImage: `url('${climateImage}')` }}
+                    className={`bg-no-repeat bg-cover h-screen grid place-items-center`}
                 >
                     <Header />
                     <main>

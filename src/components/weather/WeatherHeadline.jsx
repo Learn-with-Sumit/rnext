@@ -1,9 +1,9 @@
 import CloudIcon from "../../assets/cloud.svg";
 import HazeIcon from "../../assets/haze.svg";
+import SnowIcon from "../../assets/icons/snow.svg";
+import SunnyIcon from "../../assets/icons/sunny.svg";
 import RainIcon from "../../assets/rainy.svg";
 import ThunderIcon from "../../assets/thunder.svg";
-import SnowIcon from "../../assets/icons/snow.svg";
-import SunnyIcon from "../../assets/icons/sunny.svg"
 
 import PinIcon from "../../assets/pin.svg";
 
@@ -27,7 +27,11 @@ export default function WeatherHeadline({
                 return SnowIcon;
             case "Thunder":
                 return ThunderIcon;
+            case "Fog":
+                return HazeIcon;
             case "Haze":
+                return HazeIcon;
+            case "Mist":
                 return HazeIcon;
             default:
                 return SunnyIcon;
@@ -49,7 +53,7 @@ export default function WeatherHeadline({
                 </div>
             </div>
             <p className="text-sm lg:text-lg">
-                {getFormattedDate(time, "time", false)} - {" "}
+                {getFormattedDate(time, "time", false)} -{" "}
                 {getFormattedDate(time, "date", false)}
             </p>
         </div>

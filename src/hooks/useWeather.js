@@ -1,5 +1,7 @@
-import { useEffect, useState } from "react";
-import { getFakeAPIData } from "../data/fake-api-data";
+import { useContext, useEffect, useState } from "react";
+
+import { LocationContext } from "../context";
+
 const useWeather = (lat, long) => {
     const [weatherData, setWeatherData] = useState({
         location: "",
@@ -20,6 +22,8 @@ const useWeather = (lat, long) => {
     });
     const [error, setError] = useState(null);
 
+    const { selectedLocation } = useContext(LocationContext);
+
     const fetchWeatherData = async (latitude, longitude) => {
         try {
             setLoading({
@@ -27,7 +31,7 @@ const useWeather = (lat, long) => {
                 state: true,
                 message: "Fetching Weather Data....",
             });
-            /*const response = await fetch(
+            const response = await fetch(
                 `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=metric&appid=${
                     import.meta.env.VITE_WEATHER_API_KEY
                 }`
@@ -36,8 +40,8 @@ const useWeather = (lat, long) => {
                 const errorMessage = `An error occurred while fetching weather data: ${response.status}`;
                 throw new Error(errorMessage);
             }
-            const data = await response.json();*/
-            const data = getFakeAPIData();
+            const data = await response.json();
+            // const data = getFakeAPIData();
             const updatedWeatherData = {
                 ...weatherData,
                 location: data?.name,
@@ -62,18 +66,27 @@ const useWeather = (lat, long) => {
     };
 
     useEffect(() => {
+        console.log(selectedLocation);
+
         setLoading({
             ...loading,
             state: true,
             message: "Finding Location....",
         });
-        navigator.geolocation.getCurrentPosition(function (position) {
+        if (selectedLocation.latitude && selectedLocation.longitude) {
             fetchWeatherData(
-                position.coords.latitude,
-                position.coords.longitude
+                selectedLocation.latitude,
+                selectedLocation.longitude
             );
-        });
-    }, []);
+        } else {
+            navigator.geolocation.getCurrentPosition(function (position) {
+                fetchWeatherData(
+                    position.coords.latitude,
+                    position.coords.longitude
+                );
+            });
+        }
+    }, [selectedLocation.latitude, selectedLocation.longitude]);
 
     return {
         weatherData,

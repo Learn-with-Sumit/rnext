@@ -1,4 +1,4 @@
-import { createContext, useState } from "react";
+import { createContext } from "react";
 import { FavouriteContext } from "../context";
 import { useLocalStorage } from "../hooks";
 

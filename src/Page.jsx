@@ -6,6 +6,7 @@ import WeatherBoard from "./components/weather/WeatherBoard";
 
 import ClearSkyImage from "./assets/backgrounds/clear-sky.jpg";
 import FewCloudsImage from "./assets/backgrounds/few-clouds.jpg";
+import MistImage from "./assets/backgrounds/mist.jpeg";
 import RainyDayImage from "./assets/backgrounds/rainy-day.jpg";
 import ScatterdCloudsImage from "./assets/backgrounds/scattered-clouds.jpg";
 import SnowImage from "./assets/backgrounds/sunny.jpg";
@@ -33,7 +34,7 @@ export default function Page() {
             case "Haze":
                 return FewCloudsImage;
             case "Mist":
-                return WinterImage;
+                return MistImage;
             default:
                 return ClearSkyImage;
         }
@@ -48,8 +49,10 @@ export default function Page() {
     return (
         <>
             {loading.state ? (
-                <div>
-                    <p>{loading.message}</p>
+                <div className="flex bg-gray-200 rounded-md w-96 p-8 mt-14 mx-auto">
+                    <p className="text-center text-3xl text-black">
+                        {loading.message}
+                    </p>
                 </div>
             ) : (
                 <div

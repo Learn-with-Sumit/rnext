@@ -1,27 +1,30 @@
-import { createContext } from "react";
 import { FavouriteContext } from "../context";
 import { useLocalStorage } from "../hooks";
 
 const FavouriteProvider = ({ children }) => {
-    const [favourites, setfavourites] = useLocalStorage("favourites", []);
+    const [favourites, setFavourites] = useLocalStorage("favourites", []);
 
     const addToFavourites = (latitude, longitude, location) => {
-        setfavourites([
+        setFavourites([
             ...favourites,
-            { latitude: latitude, longitude: longitude, location: location },
+            {
+                latitude: latitude,
+                longitude: longitude,
+                location: location,
+            },
         ]);
     };
 
     const removeFromFavourites = (location) => {
-        const restfavourites = favourites.filter(
+        const restFavourites = favourites.filter(
             (fav) => fav.location !== location
         );
-        setfavourites(restfavourites);
+        setFavourites(restFavourites);
     };
-
     return (
         <FavouriteContext.Provider
-            value={{ addToFavourites, removeFromFavourites, favourites }}>
+            value={{ addToFavourites, removeFromFavourites, favourites }}
+        >
             {children}
         </FavouriteContext.Provider>
     );

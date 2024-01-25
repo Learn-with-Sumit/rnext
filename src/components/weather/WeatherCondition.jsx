@@ -7,7 +7,7 @@ import TempMaxIcon from "../../assets/icons/temp-max.svg";
 import TempMinIcon from "../../assets/icons/temp-min.svg";
 import WindIcon from "../../assets/icons/wind.svg";
 
-export default function WeatherCondition() {
+function WeatherCondition() {
     const { weatherData } = useContext(WeatherContext);
     const {
         maxTemperature,
@@ -17,7 +17,6 @@ export default function WeatherCondition() {
         wind,
         climate,
     } = weatherData;
-
     return (
         <div>
             <p className="text-sm lg:text-lg font-bold uppercase mb-8">
@@ -27,14 +26,14 @@ export default function WeatherCondition() {
                 <li className="text-sm lg:text-lg flex items-center justify-between space-x-4">
                     <span>Temp max</span>
                     <div className="inline-flex space-x-4">
-                        <p>{maxTemperature}°</p>
+                        <p>{Math.round(maxTemperature)}°</p>
                         <img src={TempMaxIcon} alt="temp-max" />
                     </div>
                 </li>
                 <li className="text-sm lg:text-lg flex items-center justify-between space-x-4">
                     <span>Temp min</span>
                     <div className="inline-flex space-x-4">
-                        <p>{minTemperature}°</p>
+                        <p>{Math.round(minTemperature)}°</p>
                         <img src={TempMinIcon} alt="temp-min" />
                     </div>
                 </li>
@@ -63,3 +62,5 @@ export default function WeatherCondition() {
         </div>
     );
 }
+
+export default WeatherCondition;

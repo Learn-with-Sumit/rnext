@@ -1,8 +1,7 @@
 import { useContext, useEffect, useState } from "react";
-
 import { LocationContext } from "../context";
 
-const useWeather = (lat, long) => {
+const useWeather = () => {
     const [weatherData, setWeatherData] = useState({
         location: "",
         climate: "",
@@ -16,11 +15,11 @@ const useWeather = (lat, long) => {
         longitude: "",
         latitude: "",
     });
-
     const [loading, setLoading] = useState({
         state: false,
         message: "",
     });
+
     const [error, setError] = useState(null);
 
     const { selectedLocation } = useContext(LocationContext);
@@ -30,20 +29,23 @@ const useWeather = (lat, long) => {
             setLoading({
                 ...loading,
                 state: true,
-                message: "Fetching Weather Data....",
+                message: "Fetching weather data...",
             });
+
             const response = await fetch(
-                `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=metric&appid=${
+                `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${
                     import.meta.env.VITE_WEATHER_API_KEY
-                }`
+                }&units=metric`
             );
+
             if (!response.ok) {
-                const errorMessage = `An error occurred while fetching weather data: ${response.status}`;
+                const errorMessage = `Fetching weather data failed: ${response.status}`;
                 throw new Error(errorMessage);
             }
+
             const data = await response.json();
-            // const data = getFakeAPIData();
-            const updatedWeatherData = {
+
+            const updateWeatherData = {
                 ...weatherData,
                 location: data?.name,
                 climate: data?.weather[0]?.main,
@@ -57,23 +59,25 @@ const useWeather = (lat, long) => {
                 longitude: longitude,
                 latitude: latitude,
             };
-            setWeatherData(updatedWeatherData);
+            setWeatherData(updateWeatherData);
         } catch (err) {
-            console.error(err);
             setError(err);
         } finally {
-            setLoading({ ...loading, state: false, message: "" });
+            setLoading({
+                ...loading,
+                state: false,
+                message: "",
+            });
         }
     };
 
     useEffect(() => {
-        console.log(selectedLocation);
-
         setLoading({
             ...loading,
             state: true,
-            message: "Finding Location....",
+            message: "Finding location...",
         });
+
         if (selectedLocation.latitude && selectedLocation.longitude) {
             fetchWeatherData(
                 selectedLocation.latitude,

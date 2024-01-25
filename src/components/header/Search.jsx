@@ -1,26 +1,21 @@
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import SearchIcon from "../../assets/search.svg";
 import { LocationContext } from "../../context";
 import { getLocationByName } from "../../data/location-data";
 import { useDebounce } from "../../hooks";
 
-export default function Search() {
+function Search() {
     const { setSelectedLocation } = useContext(LocationContext);
-    const [searchTerm, setSearchTerm] = useState("");
 
     const doSearch = useDebounce((term) => {
-        // Perform search operation with the debounced term
-        console.log("Searching for:", term);
         const fetchedLocation = getLocationByName(term);
-        setSelectedLocation(fetchedLocation);
+        setSelectedLocation({ ...fetchedLocation });
     }, 500);
 
-    const handleChange = (e) => {
-        const { value } = e.target;
-        setSearchTerm(value);
-
+    function handleChange(e) {
+        const value = e.target.value;
         doSearch(value);
-    };
+    }
 
     return (
         <form action="#">
@@ -39,3 +34,5 @@ export default function Search() {
         </form>
     );
 }
+
+export default Search;

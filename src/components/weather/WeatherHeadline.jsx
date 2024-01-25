@@ -1,5 +1,4 @@
 import { useContext } from "react";
-import { WeatherContext } from "../../context";
 
 import CloudIcon from "../../assets/cloud.svg";
 import HazeIcon from "../../assets/haze.svg";
@@ -10,10 +9,12 @@ import ThunderIcon from "../../assets/thunder.svg";
 
 import PinIcon from "../../assets/pin.svg";
 
+import { WeatherContext } from "../../context";
 import { getFormattedDate } from "../../utils/date-util";
 
-export default function WeatherHeadline() {
+function WeatherHeadline() {
     const { weatherData } = useContext(WeatherContext);
+
     const { climate, location, temperature, time } = weatherData;
 
     function getWeatherIcon(climate) {
@@ -34,6 +35,7 @@ export default function WeatherHeadline() {
                 return HazeIcon;
             case "Mist":
                 return HazeIcon;
+
             default:
                 return SunnyIcon;
         }
@@ -42,7 +44,7 @@ export default function WeatherHeadline() {
     return (
         <div>
             <div className="max-md:flex items-center justify-between md:-mt-10">
-                <img src={getWeatherIcon(climate)} alt="cloud" />
+                <img src={getWeatherIcon(climate)} alt="climate" />
                 <div className="max-md:flex items-center max-md:space-x-4">
                     <h1 className="text-[60px] lg:text-[80px] xl:text-[100px] leading-none md:mb-4">
                         {Math.round(temperature)}°
@@ -60,3 +62,5 @@ export default function WeatherHeadline() {
         </div>
     );
 }
+
+export default WeatherHeadline;

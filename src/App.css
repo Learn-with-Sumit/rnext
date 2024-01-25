@@ -69,3 +69,37 @@ li {
     display: inline;
     padding: 0.5rem;
 }
+
+.product {
+    padding: 10px;
+    border: 1px solid lightslategray;
+    border-radius: 5px;
+    background-color: antiquewhite;
+}
+
+.notification {
+    margin-top: 20px;
+    background-color: aquamarine;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.result {
+    margin-top: 20px;
+    background-color: gainsboro;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    gap: 10px;
+}
+.round {
+    background-color: aqua;
+    border-radius: 25px;
+    padding: 5px 8px;
+}
+
+.gold {
+    background-color: gold;
+    border-radius: 25px;
+    padding: 5px 8px;
+}

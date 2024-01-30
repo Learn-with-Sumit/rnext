@@ -10,5 +10,5 @@ export default function createConnection(serverUrl, roomId) {
 }
 
 export function logVisit(roomId) {
-    console.log(`User joined room ${roomId}`);
+    console.log(`User visited room ${roomId}`);
 }

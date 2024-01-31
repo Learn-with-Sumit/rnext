@@ -1,26 +1,24 @@
-import { useEffect } from "react";
-import createConnection, { logVisit } from "../utils/connection";
+import { useContext, useEffect, useRef } from "react";
+import { SettingsContext } from "../contexts/settings";
+import createConnection from "../utils/connection";
 
 // const serverUrl = "https://localhost:1234";
 
-export default function ChatRoom({ roomId, serverUrl }) {
-    // console.log("rendering...");
+export default function ChatRoom({ roomId, selectedServerUrl }) {
+    const settings = useContext(SettingsContext);
+    const serverUrl = selectedServerUrl ?? settings.defaultServerUrl; // derived reactive value
+    const ref = useRef(null);
+
     useEffect(() => {
-        // synchoronize with external chat server
+        ref.current.style.color = "red";
+
         const connection = createConnection(serverUrl, roomId);
         connection.connect();
-        // console.log(`Synchronozing with ${roomId}`);
 
-        // cleanup
         return () => {
-            // console.log(`Stop Synchronozing with ${roomId}`);
             connection.disconnect();
         };
     }, [roomId, serverUrl]);
 
-    useEffect(() => {
-        logVisit(roomId);
-    }, [roomId]);
-
-    return <h1>Welcome to the {roomId} room!</h1>;
+    return <h1 ref={ref}>Welcome to the {roomId} room!</h1>;
 }

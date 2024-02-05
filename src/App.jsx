@@ -1,9 +1,9 @@
-import Pointer from "./components/Pointer";
+import Timer from "./components/Timer";
 
 export default function App() {
     return (
         <div>
-            <Pointer />
+            <Timer />
         </div>
     );
 }

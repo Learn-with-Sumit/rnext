@@ -1,0 +1,714 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Google Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&family=Playfair+Display:wght@400;500;700&display=swap"
+            rel="stylesheet"
+        />
+        <title>News Feeder | Learn with Sumit</title>
+        <link rel="stylesheet" href="./styles/output.css" />
+
+        <style>
+            @font-face {
+                font-family: "Fira Sans";
+                src: url("fonts/fira/eot/FiraSans-Italic.eot");
+                src:
+                    url("fonts/fira/eot/FiraSans-Italic.eot")
+                        format("embedded-opentype"),
+                    url("fonts/fira/woff2/FiraSans-Italic.woff2")
+                        format("woff2"),
+                    url("fonts/fira/woff/FiraSans-Italic.woff") format("woff"),
+                    url("fonts/fira/woff2/FiraSans-Italic.ttf")
+                        format("truetype");
+                font-weight: normal;
+                font-style: italic;
+            }
+
+            /* TT Commons */
+            @font-face {
+                font-family: "TT Commons";
+                src: url("/assets/fonts/tt-commons/TTCommonsRegular.otf");
+                font-weight: 400;
+                font-style: normal;
+            }
+
+            @font-face {
+                font-family: "TT Commons";
+                src: url("/assets/fonts/tt-commons/TTCommonsSemiBold.otf");
+                font-weight: 600;
+                font-style: normal;
+            }
+            /* Publico Headline Web */
+            @font-face {
+                font-family: "Publico Headline Web";
+                src: url("/assets/fonts/publico-headline-web/Publico-Headline-Web-Bold.ttf");
+                font-weight: 700;
+                font-style: normal;
+            }
+
+            body {
+                font-family:
+                    TT Commons,
+                    "sans-serif";
+            }
+
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                font-family:
+                    Publico Headline Web,
+                    "serif";
+                line-height: 110%;
+            }
+            a {
+                transition: color 0.3s;
+            }
+            a:hover {
+                color: #00d991;
+            }
+            .container {
+                padding: 0 1rem;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!-- Navbar Starts -->
+        <nav class="border-b border-black py-6 md:py-8">
+            <div
+                class="container mx-auto flex flex-wrap items-center justify-between gap-6"
+            >
+                <!-- date -->
+                <div class="flex items-center space-x-4">
+                    <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                            d="M8 0.5C12.1421 0.499999 15.5 3.85786 15.5 8C15.5 12.1421 12.1421 15.5 8 15.5C3.85786 15.5 0.5 12.1421 0.5 8C0.499999 3.85786 3.85786 0.5 8 0.5Z"
+                            stroke="#00D991"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        />
+                        <path
+                            d="M8 15.4286L8 0.571507"
+                            stroke="#00D991"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        />
+                        <path
+                            d="M10.4995 14.9999C10.4995 14.9999 12.5715 12.6429 12.5715 8.00008C12.5715 3.35722 10.4995 0.999939 10.4995 0.999939"
+                            stroke="#00D991"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        />
+                        <path
+                            d="M5.50049 1.00006C5.50049 1.00006 3.4285 3.35706 3.4285 7.99992C3.4285 12.6428 5.50049 15.0001 5.50049 15.0001"
+                            stroke="#00D991"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        />
+                        <path
+                            d="M15.4282 8L0.499512 8"
+                            stroke="#00D991"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        />
+                        <path
+                            d="M1.5 5C1.5 5 3.5 5 8 5C12.5 5 14.5 5 14.5 5"
+                            stroke="#00D991"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        />
+                        <path
+                            d="M1.5 11C1.5 11 3.5 11 8 11C12.5 11 14.5 11 14.5 11"
+                            stroke="#00D991"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        />
+                    </svg>
+                    <span>Thursday, February 25, 2021</span>
+                </div>
+                <!-- Logo -->
+                <a href="/">
+                    <img
+                        class="max-w-[100px] md:max-w-[165px]"
+                        src="./assets/logo.png"
+                        alt="Lws"
+                    />
+                </a>
+                <!-- Logo Ends -->
+                <!-- -->
+                <div class="flex items-center space-x-3 lg:space-x-8">
+                    <img src="./assets/icons/search.svg" />
+                </div>
+            </div>
+            <!-- categories -->
+            <div class="container mx-auto mt-6">
+                <ul
+                    class="flex flex-wrap items-center justify-center gap-5 text-xs font-semibold lg:text-base"
+                >
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">EU Finance</a></li>
+                    <li><a href="#">Capital Market</a></li>
+                    <li><a href="#">World Economy</a></li>
+                    <li><a href="#">Opinion</a></li>
+                    <li><a href="#">Finance</a></li>
+                    <li><a href="#">Companies</a></li>
+                    <li><a href="#">Environment</a></li>
+                    <li><a href="#">Sport Economy</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Podcasts</a></li>
+                    <li><a href="#">Video</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Navbar Ends -->
+        <!-- main -->
+        <main class="my-10 lg:my-14">
+            <div class="container mx-auto grid grid-cols-12 gap-8">
+                <!-- left -->
+                <div
+                    class="col-span-12 grid grid-cols-12 gap-6 self-start xl:col-span-8"
+                >
+                    <!-- news item -->
+                    <div class="col-span-12 grid grid-cols-12 gap-4">
+                        <!-- info -->
+                        <div class="col-span-12 lg:col-span-4">
+                            <a href="#"
+                                ><h3
+                                    class="mb-2.5 text-2xl font-bold lg:text-[28px]"
+                                >
+                                    Cities have stopped being the engines of
+                                    growth and opportunity they once were
+                                </h3></a
+                            >
+                            <p class="text-base text-[#5C5955]">
+                                The pandemic is dealing prodigious blows to
+                                cities across the country. But the world can’t
+                                hope to thrive again if its cities don’t—they’re
+                                the places that have historically supplied the
+                                keys for unlocking human potential. Though beset
+                                by racism and other injustices, cities not only
+                                provided shared, robust public infrastructure
+                                like schools, libraries and transit systems,
+                                they stirred together vast numbers of people
+                                from different cultures and classes.
+                            </p>
+                            <p class="mt-5 text-base text-[#5C5955]">
+                                1 hour ago
+                            </p>
+                        </div>
+                        <!-- thumb -->
+                        <div class="col-span-12 lg:col-span-8">
+                            <img
+                                class="w-full"
+                                src="./assets/thumb_lg.png"
+                                alt="thumb"
+                            />
+                            <p class="mt-5 text-base text-[#5C5955]">
+                                Illustration: Karolis Strautniekas
+                            </p>
+                        </div>
+                    </div>
+                    <!-- news item ends -->
+                    <!-- news item -->
+                    <div
+                        class="col-span-12 grid grid-cols-12 gap-4 lg:col-span-8"
+                    >
+                        <!-- info -->
+                        <div class="col-span-12 md:col-span-6">
+                            <a href=""
+                                ><h3
+                                    class="mb-2.5 text-xl font-bold lg:text-2xl"
+                                >
+                                    Gold hits eight-month low as higher bond
+                                    yields dent its appeal
+                                </h3></a
+                            >
+                            <p class="text-base text-[#292219]">
+                                Exchange traded funds tracking the metal sustain
+                                biggest outflows in a year
+                            </p>
+                            <p class="mt-5 text-base text-[#5C5955]">
+                                1 hour ago
+                            </p>
+                        </div>
+                        <!-- thumb -->
+                        <div class="col-span-12 md:col-span-6">
+                            <img
+                                class="w-full"
+                                src="./assets/thumb.png"
+                                alt="thumb"
+                            />
+                        </div>
+                    </div>
+                    <!-- news item ends -->
+                    <!-- news item -->
+                    <div class="col-span-12 md:col-span-6 lg:col-span-4">
+                        <!-- info -->
+                        <div class="col-span-12 md:col-span-4">
+                            <a href="#"
+                                ><h3
+                                    class="mb-2.5 text-xl font-bold lg:text-2xl"
+                                >
+                                    Spac led by tech founders targets Europe’s
+                                    unicorns for US listings
+                                </h3></a
+                            >
+                            <p class="text-base text-[#292219]">
+                                Tailwind International looks to bypass EU and UK
+                                markets to build a European tech franchise
+                            </p>
+                            <p class="mt-5 text-base text-[#94908C]">
+                                Yesterday
+                            </p>
+                        </div>
+                    </div>
+                    <!-- news item ends -->
+                    <!-- news item -->
+                    <div class="col-span-12 md:col-span-6 lg:col-span-4">
+                        <!-- info -->
+                        <div class="col-span-12 md:col-span-4">
+                            <a href="#"
+                                ><h3
+                                    class="mb-2.5 text-xl font-bold lg:text-2xl"
+                                >
+                                    End of ‘liquidity premium’ to unleash
+                                    shareholder activism
+                                </h3></a
+                            >
+                            <p class="text-base text-[#292219]">
+                                Companies will face questioning from investors
+                                on how to allow allocate excess funds
+                            </p>
+                            <p class="mt-5 text-base text-[#94908C]">
+                                25 Feb 2021
+                            </p>
+                        </div>
+                    </div>
+                    <!-- news item ends -->
+                    <!-- news item -->
+                    <div class="col-span-12 md:col-span-6 lg:col-span-4">
+                        <!-- info -->
+                        <div class="col-span-12 md:col-span-4">
+                            <a href="#"
+                                ><h3
+                                    class="mb-2.5 text-xl font-bold lg:text-2xl"
+                                >
+                                    Why it is usually a mistake for investors to
+                                    take profits
+                                </h3></a
+                            >
+                            <p class="text-base text-[#292219]">
+                                Why it is usually a mistake for investors to
+                                take profitsA tiny number of superstar companies
+                                account for returns from equity markets
+                            </p>
+                            <p class="mt-5 text-base text-[#94908C]">
+                                25 Feb 2021
+                            </p>
+                        </div>
+                    </div>
+                    <!-- news item ends -->
+                    <!-- news item -->
+                    <div class="col-span-12 md:col-span-6 lg:col-span-4">
+                        <!-- info -->
+                        <div class="col-span-12 md:col-span-4">
+                            <a href="#"
+                                ><h3
+                                    class="mb-2.5 text-xl font-bold lg:text-2xl"
+                                >
+                                    Financials may be a silver lining in bond
+                                    market rout
+                                </h3></a
+                            >
+                            <p class="text-base text-[#292219]">
+                                Rising longer-term rates should boost
+                                profitability after many difficult years for
+                                sector
+                            </p>
+                            <p class="mt-5 text-base text-[#94908C]">
+                                25 Feb 2021
+                            </p>
+                        </div>
+                    </div>
+                    <!-- news item ends -->
+                    <!-- news item -->
+                    <div class="col-span-12 md:col-span-6 lg:col-span-4">
+                        <!-- info -->
+                        <div class="col-span-12 md:col-span-4">
+                            <a href="#"
+                                ><h3
+                                    class="mb-2.5 text-xl font-bold lg:text-2xl"
+                                >
+                                    Bitcoin cannot replace the banks
+                                </h3></a
+                            >
+                            <p class="text-base text-[#292219]">
+                                Cryptocurrency hopes are based on a
+                                misunderstanding of how money is created
+                            </p>
+                            <p class="mt-5 text-base text-[#94908C]">
+                                25 Feb 2021
+                            </p>
+                        </div>
+                    </div>
+                    <!-- news item ends -->
+                    <!-- news item -->
+                    <div class="col-span-12 md:col-span-6 lg:col-span-4">
+                        <!-- info -->
+                        <div class="col-span-12 md:col-span-4">
+                            <a href="#"
+                                ><h3
+                                    class="mb-2.5 text-xl font-bold lg:text-2xl"
+                                >
+                                    Bond turmoil heralds end of the standard
+                                    portfolio
+                                </h3></a
+                            >
+                            <p class="text-base text-[#292219]">
+                                If fixed-income no longer offers stability, look
+                                elsewhere for protection from equity volatility
+                            </p>
+                            <p class="mt-5 text-base text-[#94908C]">
+                                25 Feb 2021
+                            </p>
+                        </div>
+                    </div>
+                    <!-- news item ends -->
+                    <!-- news item -->
+                    <div class="col-span-12 md:col-span-6 lg:col-span-4">
+                        <!-- info -->
+                        <div class="col-span-12 md:col-span-4">
+                            <a href="#"
+                                ><h3
+                                    class="mb-2.5 text-xl font-bold lg:text-2xl"
+                                >
+                                    Wall Street stocks waver as ‘bubble’ fears
+                                    mount
+                                </h3></a
+                            >
+                            <p class="text-base text-[#292219]">
+                                US and Asian bourses retreat after China
+                                regulator warns of inflated valuations
+                            </p>
+                            <p class="mt-5 text-base text-[#94908C]">
+                                25 Feb 2021
+                            </p>
+                        </div>
+                    </div>
+                    <!-- news item ends -->
+                </div>
+                <!-- right -->
+                <div class="col-span-12 self-start xl:col-span-4">
+                    <div class="space-y-6 divide-y-2 divide-[#D5D1C9]">
+                        <!-- news item -->
+                        <div class="col-span-12 mb-6 md:col-span-8">
+                            <img
+                                class="w-full"
+                                src="./assets/thumb.png"
+                                alt="thumb"
+                            />
+                            <!-- info -->
+                            <div class="col-span-12 mt-6 md:col-span-4">
+                                <a href="#"
+                                    ><h3
+                                        class="mb-2.5 text-xl font-bold lg:text-[20px]"
+                                    >
+                                        Why is Uber selling its
+                                        autonomous-vehicle division?
+                                    </h3></a
+                                >
+                                <p class="text-base text-[#292219]">
+                                    Self-driving cars were meant to be its
+                                    future
+                                </p>
+                                <p class="mt-5 text-base text-[#94908C]">
+                                    25 Feb 2021
+                                </p>
+                            </div>
+                        </div>
+                        <!-- news item ends -->
+                        <!-- news item -->
+                        <div class="col-span-12 md:col-span-8">
+                            <!-- info -->
+                            <div class="col-span-12 md:col-span-4">
+                                <a href="#"
+                                    ><h3
+                                        class="mb-2.5 text-xl font-bold lg:text-[20px]"
+                                    >
+                                        Why is Uber selling its
+                                        autonomous-vehicle division?
+                                    </h3></a
+                                >
+                                <p class="text-base text-[#292219]">
+                                    Self-driving cars were meant to be its
+                                    future
+                                </p>
+                                <p class="mt-5 text-base text-[#94908C]">
+                                    25 Feb 2021
+                                </p>
+                            </div>
+                        </div>
+                        <!-- news item ends -->
+                        <!-- news item -->
+                        <div class="col-span-12 md:col-span-8">
+                            <!-- info -->
+                            <div class="col-span-12 md:col-span-4">
+                                <a href="#"
+                                    ><h3
+                                        class="mb-2.5 text-xl font-bold lg:text-[20px]"
+                                    >
+                                        Az Uber vesztesége meghaladta az
+                                        egymilliárd dollárt
+                                    </h3></a
+                                >
+                                <p class="text-base text-[#292219]">
+                                    Progress in artificial intelligence belies a
+                                    lack of transparency that is vital for its
+                                    adoption, says Gary Marcus, coauthor of
+                                    “Rebooting AI”
+                                </p>
+                                <p class="mt-5 text-base text-[#94908C]">
+                                    21 Feb 2021
+                                </p>
+                            </div>
+                        </div>
+                        <!-- news item ends -->
+                        <!-- news item -->
+                        <div class="col-span-12 md:col-span-8">
+                            <!-- info -->
+                            <div class="col-span-12 md:col-span-4">
+                                <a href="#"
+                                    ><h3
+                                        class="mb-2.5 text-xl font-bold lg:text-[20px]"
+                                    >
+                                        The power of liberalism can combat
+                                        oppression in all its forms
+                                    </h3></a
+                                >
+                                <p class="text-base text-[#292219]">
+                                    True liberals stand for individual freedom,
+                                    explains Deirdre Nansen McCloskey, an
+                                    iconoclastic economist
+                                </p>
+                                <p class="mt-5 text-base text-[#94908C]">
+                                    18 Feb 2021
+                                </p>
+                            </div>
+                        </div>
+                        <!-- news item ends -->
+                        <!-- news item -->
+                        <div class="col-span-12 md:col-span-8">
+                            <!-- info -->
+                            <div class="col-span-12 md:col-span-4">
+                                <a href="#"
+                                    ><h3
+                                        class="mb-2.5 text-xl font-bold lg:text-[20px]"
+                                    >
+                                        The power of liberalism can combat
+                                        oppression in all its forms
+                                    </h3></a
+                                >
+                                <p class="text-base text-[#292219]">
+                                    True liberals stand for individual freedom,
+                                    explains Deirdre Nansen McCloskey, an
+                                    iconoclastic economist
+                                </p>
+                                <p class="mt-5 text-base text-[#94908C]">
+                                    18 Feb 2021
+                                </p>
+                            </div>
+                        </div>
+                        <!-- news item ends -->
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- main ends -->
+        <!-- Footer -->
+        <footer class="bg-neutral-800 pb-8 pt-20 text-white sm:pt-24">
+            <div class="container mx-auto">
+                <div class="xl:grid xl:grid-cols-12 xl:gap-8">
+                    <div
+                        class="grid grid-cols-2 gap-8 md:grid md:grid-cols-2 md:gap-8 lg:grid-cols-3 xl:col-span-7 xl:grid-cols-5"
+                    >
+                        <img
+                            class="max-md:col-span-2"
+                            src="./assets/logo_light.png"
+                            alt="lws"
+                        />
+                        <ul role="list" class="space-y-4">
+                            <li>
+                                <a href="#" class="text-sm font-semibold"
+                                    >Home</a
+                                >
+                            </li>
+                            <li>
+                                <a href="#" class="text-sm font-semibold"
+                                    >EU Finance</a
+                                >
+                            </li>
+                            <li>
+                                <a href="#" class="text-sm font-semibold"
+                                    >Capital Market</a
+                                >
+                            </li>
+                            <li>
+                                <a href="#" class="text-sm font-semibold"
+                                    >World Economy</a
+                                >
+                            </li>
+                            <li>
+                                <a href="#" class="text-sm font-semibold"
+                                    >Opinion</a
+                                >
+                            </li>
+                            <li>
+                                <a href="#" class="text-sm font-semibold"
+                                    >Finance</a
+                                >
+                            </li>
+                        </ul>
+                        <ul role="list" class="space-y-4">
+                            <li>
+                                <a href="#" class="text-sm font-semibold"
+                                    >Business</a
+                                >
+                            </li>
+                            <li>
+                                <a href="#" class="text-sm font-semibold"
+                                    >Agriculture</a
+                                >
+                            </li>
+                            <li>
+                                <a href="#" class="text-sm font-semibold"
+                                    >Sport Economy</a
+                                >
+                            </li>
+                            <li>
+                                <a href="#" class="text-sm font-semibold"
+                                    >Blog</a
+                                >
+                            </li>
+                            <li>
+                                <a href="#" class="text-sm font-semibold"
+                                    >Podcats</a
+                                >
+                            </li>
+                            <li>
+                                <a href="#" class="text-sm font-semibold"
+                                    >Video</a
+                                >
+                            </li>
+                        </ul>
+                        <ul role="list" class="space-y-4">
+                            <li>
+                                <a href="#" class="text-sm">Terms of Use</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-sm">Privacy</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-sm">Cookies Policy</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-sm">Manage Cookies</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-sm">Accessibility</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-sm">Contact Us</a>
+                            </li>
+                        </ul>
+                        <div class="flex space-x-6">
+                            <a>
+                                <svg
+                                    class="h-6 w-6"
+                                    fill="currentColor"
+                                    viewBox="0 0 24 24"
+                                    aria-hidden="true"
+                                >
+                                    <path
+                                        fill-rule="evenodd"
+                                        d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                                        clip-rule="evenodd"
+                                    />
+                                </svg>
+                            </a>
+                            <a href="#">
+                                <svg
+                                    class="h-6 w-6"
+                                    fill="currentColor"
+                                    viewBox="0 0 24 24"
+                                    aria-hidden="true"
+                                >
+                                    <path
+                                        fill-rule="evenodd"
+                                        d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                                        clip-rule="evenodd"
+                                    />
+                                </svg>
+                            </a>
+
+                            <a href="#">
+                                <svg
+                                    class="h-6 w-6"
+                                    fill="currentColor"
+                                    viewBox="0 0 24 24"
+                                    aria-hidden="true"
+                                >
+                                    <path
+                                        fill-rule="evenodd"
+                                        d="M19.812 5.418c.861.23 1.538.907 1.768 1.768C21.998 8.746 22 12 22 12s0 3.255-.418 4.814a2.504 2.504 0 0 1-1.768 1.768c-1.56.419-7.814.419-7.814.419s-6.255 0-7.814-.419a2.505 2.505 0 0 1-1.768-1.768C2 15.255 2 12 2 12s0-3.255.417-4.814a2.507 2.507 0 0 1 1.768-1.768C5.744 5 11.998 5 11.998 5s6.255 0 7.814.418ZM15.194 12 10 15V9l5.194 3Z"
+                                        clip-rule="evenodd"
+                                    />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div
+                        class="col-span-12 mt-10 flex items-start gap-4 xl:col-span-5 xl:mt-0"
+                    >
+                        <div class="flex-1">
+                            <h3 class="text-2xl font-semibold">
+                                Subscribe and be informed first hand about the
+                                actual economic news.
+                            </h3>
+                            <p class="mt-2 text-sm leading-6">
+                                All the day's headlines and highlights, direct
+                                to you every morning..
+                            </p>
+                        </div>
+
+                        <!-- subscribe -->
+                        <button
+                            class="rounded-full bg-[#00D991] px-7 py-2.5 text-xs font-medium text-[#F1EFEA] hover:opacity-80 lg:text-base"
+                        >
+                            Subscribe
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="container mt-6 lg:mt-12">
+                <p class="text-center">
+                    Copyright &copy;2023 | All rights reserved by Learn with
+                    Sumit
+                </p>
+            </div>
+        </footer>
+    </body>
+</html>

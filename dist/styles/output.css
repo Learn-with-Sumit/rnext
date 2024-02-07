@@ -708,12 +708,6 @@ video {
   margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
-.space-y-1 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));
-}
-
 .space-y-4 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
@@ -806,11 +800,6 @@ video {
   line-height: 1.5rem;
 }
 
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-}
-
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -846,11 +835,6 @@ video {
   line-height: 1.5rem;
 }
 
-.text-\[\#00D991\] {
-  --tw-text-opacity: 1;
-  color: rgb(0 217 145 / var(--tw-text-opacity));
-}
-
 .text-\[\#292219\] {
   --tw-text-opacity: 1;
   color: rgb(41 34 25 / var(--tw-text-opacity));
@@ -882,11 +866,6 @@ video {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
-}
-
-.hover\:text-\[\#00D991\]:hover {
-  --tw-text-opacity: 1;
-  color: rgb(0 217 145 / var(--tw-text-opacity));
 }
 
 .hover\:opacity-80:hover {
@@ -1023,9 +1002,4 @@ video {
   .xl\:gap-8 {
     gap: 2rem;
   }
-}
-
-.\[\&\>\*\]\:py-6>* {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
 }

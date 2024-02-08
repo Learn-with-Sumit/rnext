@@ -16,11 +16,11 @@ export default function ProductPage({ product, addToCart }) {
     }
 
     function handleBuyClick() {
-        buyProduct(product);
+        buyProduct();
     }
 
     function handleCheckoutClick() {
-        buyProduct(product);
+        buyProduct();
         navigateTo("/checkout");
     }
 

@@ -39,7 +39,7 @@ The response will be in JSON format with the following structure:
 ### Method: GET
 
 > ```
-> http://localhost:3000/v2/top-headlines?category=general
+> http://localhost:8000/v2/top-headlines?category=general
 > ```
 
 ### Query Params
@@ -68,7 +68,7 @@ This endpoint makes an HTTP GET request to search for the query "Develop". The r
 ### Method: GET
 
 > ```
-> http://localhost:3000/v2/search?q=Develop
+> http://localhost:8000/v2/search?q=Develop
 > ```
 
 ### Query Params

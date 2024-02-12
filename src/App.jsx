@@ -26,7 +26,7 @@ export default function App() {
             const newPosts = posts.filter((post) => post.id !== postId);
             setPosts(newPosts);
         } else {
-            console("You chose not to delete the post!");
+            console.log("You chose not to delete the post!");
         }
     };
 

@@ -1,15 +1,9 @@
 import { useEffect, useState } from "react";
-import Comments from "./Comments";
 
-export default function PostSelector() {
+export default function PostSelector({ onSelectPost }) {
     const [posts, setPosts] = useState([]);
-    const [selectedPostId, setSelectedPostId] = useState(null);
     const [isPostsLoading, setIsPostsLoading] = useState(false);
     const [postsError, setPostsError] = useState(null);
-
-    const handleSelectPost = (e) => {
-        setSelectedPostId(e.target.value);
-    };
 
     useEffect(() => {
         setIsPostsLoading(true);
@@ -47,7 +41,7 @@ export default function PostSelector() {
         postsContent = <div className="error">{postsError}</div>;
     } else {
         postsContent = (
-            <select onChange={handleSelectPost}>
+            <select onChange={onSelectPost}>
                 <option value="">Select Post</option>
                 {posts.map((post) => (
                     <option key={post.id} value={post.id}>
@@ -58,10 +52,5 @@ export default function PostSelector() {
         );
     }
 
-    return (
-        <div>
-            {postsContent}
-            {selectedPostId && <Comments postId={selectedPostId} />}
-        </div>
-    );
+    return <div>{postsContent}</div>;
 }

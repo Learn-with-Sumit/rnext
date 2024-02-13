@@ -23,3 +23,8 @@ li > div > span {
     font-size: 13px;
     cursor: pointer;
 }
+
+.error {
+    background-color: pink;
+    padding: 5px;
+}

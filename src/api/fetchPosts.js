@@ -1,9 +1,7 @@
-export default async function fetchPosts() {
-    const response = await fetch(
-        "https://jsonplaceholder.typicode.com/posts?_limit=5"
-    );
+import wrapPromise from "../utils/wrapPromise";
 
-    const data = await response.json();
+export default function fetchPosts(url) {
+    const response = fetch(url).then((res) => res.json());
 
-    return data;
+    return wrapPromise(response);
 }

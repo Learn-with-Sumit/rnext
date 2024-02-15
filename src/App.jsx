@@ -1,14 +1,13 @@
-
-
+import TextMotion from "./components/TextMotion";
 function App() {
-
-  return (
-    <>
-      <h1
-        className="text-3xl text-center text-red-700"
-      >Welcome to Vite with TailwindCSS and React</h1>
-    </>
-  )
+    return (
+        <>
+            {/*<Simple />*/}
+            {/*<Keyframe />*/}
+            {/*<ButtonTap />*/}
+            <TextMotion />
+        </>
+    );
 }
 
-export default App
+export default App;

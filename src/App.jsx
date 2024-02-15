@@ -1,5 +1,5 @@
-import TextMotion from "./components/TextMotion";
-import TransitionType from "./components/TransitionType";
+import Variants from "./components/Variants";
+
 function App() {
     return (
         <>
@@ -7,7 +7,8 @@ function App() {
             {/*<Keyframe />*/}
             {/*<ButtonTap />*/}
             {/*<TextMotion />*/}
-            <TransitionType />
+            {/*<TransitionType />*/}
+            <Variants />
         </>
     );
 }

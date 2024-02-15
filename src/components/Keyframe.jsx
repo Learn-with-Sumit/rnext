@@ -10,7 +10,14 @@ const Keyframe = () => {
           rotate: [0, 90, 180, 270, 0],
           scale: [1, 1, 2, 2, 1]
         }}
-        transition={{duration: 1.7}} />
+        transition={{duration: 1.7}}
+        exit = {{
+          x: '-100vw',
+          transition: {
+              ease: 'easeInOut',
+              duration: 1,
+          },
+        }} />
   )
 }
 

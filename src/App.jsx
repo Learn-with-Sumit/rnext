@@ -1,5 +1,4 @@
-import Counter from "./components/Counter";
-
+import ScrollReveal from "./components/ScrollReveal";
 function App() {
     return (
         <>
@@ -9,7 +8,8 @@ function App() {
             {/*<TextMotion />*/}
             {/*<TransitionType />*/}
             {/*<Variants />*/}
-            <Counter />
+            {/*<Counter />*/}
+            <ScrollReveal />
         </>
     );
 }

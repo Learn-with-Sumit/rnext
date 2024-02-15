@@ -1,4 +1,4 @@
-import Variants from "./components/Variants";
+import Counter from "./components/Counter";
 
 function App() {
     return (
@@ -8,7 +8,8 @@ function App() {
             {/*<ButtonTap />*/}
             {/*<TextMotion />*/}
             {/*<TransitionType />*/}
-            <Variants />
+            {/*<Variants />*/}
+            <Counter />
         </>
     );
 }

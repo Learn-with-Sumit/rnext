@@ -3,9 +3,11 @@ import ModalContent from '../ModalContent';
 import Portal from '../../Portal';
 const PortalModal = () => {
     const [showModal, setShowModal] = useState(false);
-
+    const handleClick = () => {
+        console.log('I am clicked');
+    }
   return (
-    <div className="relative border border-black mb-5 p-2 w-64 h-20 overflow-hidden">
+    <div className="relative border border-black mb-5 p-2 w-64 h-20 overflow-hidden" onClick={handleClick}>
         <button
             className="bg-black text-white p-1 border rounded-md"
             onClick={() => setShowModal(true)}

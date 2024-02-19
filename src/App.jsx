@@ -1,12 +1,13 @@
+import TraditionalModal from "./traditional-modal/TraditionalModal"
 
+import PortalModal from "./modal/portal-modal/PortalModal"
 
 function App() {
 
   return (
     <>
-      <h1
-        className="text-3xl text-center text-red-700"
-      >Welcome to Vite with TailwindCSS and React</h1>
+      <TraditionalModal />
+      <PortalModal />
     </>
   )
 }

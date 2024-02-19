@@ -14,7 +14,7 @@ const PortalModal = () => {
 
         {
             showModal && createPortal(
-                <ModalContent onClose={() => setShowModal(false)} />, document.body
+                <ModalContent onClose={() => setShowModal(false)} />, document.getElementById('portal-root')
             )
         }
     </div>

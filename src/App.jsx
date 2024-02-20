@@ -1,10 +1,7 @@
-import FindUser from "./transition/FindUser";
-import { users } from "./transition/fakeuser";
+import ListAnimal from "./deferred/ListAnimal";
 
 function App() {
-    return(
-        <FindUser users={users} />
-    )
+    return <ListAnimal />;
 }
 
 export default App;

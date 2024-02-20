@@ -1,7 +1,8 @@
-import ListAnimal from "./deferred/ListAnimal";
-
+import Boomer from "./insertion/Boomer";
 function App() {
-    return <ListAnimal />;
+    return(
+        <Boomer />
+    )
 }
 
 export default App;

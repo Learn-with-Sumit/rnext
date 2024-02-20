@@ -1,8 +1,7 @@
-import Boomer from "./insertion/Boomer";
+import ParentChild from "./imperative/ParentChild";
+
 function App() {
-    return(
-        <Boomer />
-    )
+    return <ParentChild />;
 }
 
 export default App;

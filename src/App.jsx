@@ -1,7 +1,7 @@
-import ParentChild from "./imperative/ParentChild";
+import LayoutTest from "./layout/LayoutTest";
 
 function App() {
-    return <ParentChild />;
+    return <LayoutTest />;
 }
 
 export default App;

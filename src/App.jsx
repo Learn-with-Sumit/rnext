@@ -1,12 +1,10 @@
-import IdForm from "./id/IdForm";
-
+import FindUser from "./transition/FindUser";
+import { users } from "./transition/fakeuser";
 
 function App() {
-    return (
-      <>
-        <IdForm />
-      </>
-    );
+    return(
+        <FindUser users={users} />
+    )
 }
 
 export default App;

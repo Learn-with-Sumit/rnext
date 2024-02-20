@@ -1,13 +1,12 @@
+import IdForm from "./id/IdForm";
 
-import GitHubProfile from "./debug/GitHubProfile"
 
 function App() {
-
-  return (
-    <>
-      <GitHubProfile />
-    </>
-  )
+    return (
+      <>
+        <IdForm />
+      </>
+    );
 }
 
-export default App
+export default App;

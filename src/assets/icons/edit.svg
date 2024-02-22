@@ -1,0 +1,14 @@
+<svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg" class="hover:fill-lwsGreen">
+    <g clip-path="url(#clip0_155_270)">
+        <path
+            d="M3.38965 15.7424H6.47788L14.5845 7.63576C14.7873 7.43298 14.9481 7.19225 15.0579 6.92731C15.1676 6.66237 15.2241 6.37841 15.2241 6.09164C15.2241 5.80487 15.1676 5.52091 15.0579 5.25597C14.9481 4.99103 14.7873 4.7503 14.5845 4.54752C14.3817 4.34475 14.141 4.1839 13.8761 4.07415C13.6111 3.96441 13.3272 3.90793 13.0404 3.90793C12.7536 3.90793 12.4697 3.96441 12.2047 4.07415C11.9398 4.1839 11.699 4.34475 11.4963 4.54752L3.38965 12.6541V15.7424Z"
+            stroke="white" class="stroke-lwsGreen" stroke-width="1.54412" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M10.7256 5.32004L13.8138 8.40827" stroke="white" class="stroke-lwsGreen" stroke-width="1.54412" stroke-linecap="round"
+            stroke-linejoin="round" />
+    </g>
+    <defs>
+        <clipPath id="clip0_155_270">
+            <rect width="18.5294" height="18.5294" fill="white" class="stroke-lwsGreen" transform="translate(0.301758 0.301483)" />
+        </clipPath>
+    </defs>
+</svg>

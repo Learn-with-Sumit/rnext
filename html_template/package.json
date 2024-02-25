@@ -1,0 +1,17 @@
+{
+  "scripts": {
+    "start": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.10",
+    "prettier": "^3.1.0",
+    "prettier-plugin-tailwindcss": "^0.5.9",
+    "tailwindcss": "^3.3.6"
+  },
+  "name": "facehook-lws",
+  "description": "",
+  "version": "1.0.0",
+  "main": "tailwind.config.js",
+  "author": "",
+  "license": "ISC"
+}

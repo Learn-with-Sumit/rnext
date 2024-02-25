@@ -1,0 +1,419 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <title>Profile | Facehook</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="sticky top-0 z-50 border-b border-[#3F3F3F] bg-[#1E1F24] py-4">
+      <div
+        class="container flex flex-col items-center justify-between gap-6 sm:flex-row"
+      >
+        <!-- Logo -->
+        <a href="./index.html">
+          <img
+            class="max-w-[100px] rounded-full lg:max-w-[130px]"
+            src="./assets/images/logo.svg"
+          />
+        </a>
+        <!-- nav links  -->
+
+        <div class="flex items-center space-x-4">
+          <a href="./index.html" class="btn-primary">
+            <img src="./assets/icons/home.svg" alt="Home" />
+            Home
+          </a>
+          <button class="icon-btn">
+            <img src="./assets/icons/notification.svg" alt="Notification" />
+          </button>
+          <button class="icon-btn">
+            <img src="./assets/icons/logout.svg" alt="Logout" />
+          </button>
+
+          <button class="flex-center !ml-8 gap-3">
+            <span class="text-lg font-medium lg:text-xl">Sumit</span>
+            <img
+              class="max-h-[32px] max-w-[32px] lg:max-h-[44px] lg:max-w-[44px]"
+              src="./assets/images/avatars/avatar_1.png"
+              alt=""
+            />
+          </button>
+        </div>
+        <!-- nav links ends -->
+      </div>
+    </nav>
+
+    <main class="mx-auto max-w-[1020px] py-8">
+      <div class="container">
+        <!-- profile info -->
+        <div class="flex flex-col items-center py-8 text-center">
+          <!-- profile image -->
+          <div
+            class="relative mb-8 max-h-[180px] max-w-[180px] rounded-full lg:mb-11 lg:max-h-[218px] lg:max-w-[218px]"
+          >
+            <img
+              class="max-w-full"
+              src="./assets/images/avatars/avatar_1.png"
+              alt="sumit saha"
+            />
+
+            <button
+              class="flex-center absolute bottom-4 right-4 h-7 w-7 rounded-full bg-black/50 hover:bg-black/80"
+            >
+            <img src="./assets/icons/edit.svg" alt="Edit" />
+            </button>
+          </div>
+          <!-- name , email -->
+          <div>
+            <h3 class="text-2xl font-semibold text-white lg:text-[28px]">
+              Sumit Saha
+            </h3>
+            <p class="leading-[231%] lg:text-lg">sumitsaha@gmail.com</p>
+          </div>
+
+          <!-- bio -->
+          <div class="mt-4 flex items-start gap-2 lg:mt-6">
+            <div class="flex-1">
+              <p class="leading-[188%] text-gray-400 lg:text-lg">
+                Sumit is an entrepreneurial visionary known for his exceptional
+                performance and passion for technology and business. He
+                established Analyzen in 2008 while he was a student at
+                Bangladesh University of Engineering & Technology (BUET).
+                Analyzen has since become a top-tier Web and Mobile Application
+                Development firm and the first Digital and Social Media
+                Marketing Agency in Bangladesh.
+              </p>
+            </div>
+            <!-- Edit Bio button. The Above bio will be editable when clicking on the button -->
+            <button class="flex-center h-7 w-7 rounded-full">
+              <img src="./assets/icons/edit.svg" alt="Edit" />
+            </button>
+          </div>
+          <div class="w-3/4 border-b border-[#3F3F3F] py-6 lg:py-8"></div>
+        </div>
+        <!-- end profile info -->
+
+        <h4 class="mt-6 text-xl lg:mt-8 lg:text-2xl">Your Posts</h4>
+
+        <!-- post  -->
+        <article class="card mt-6 lg:mt-8">
+          <!-- post header -->
+          <header class="flex items-center justify-between gap-4">
+            <!-- author info -->
+            <div class="flex items-center gap-3">
+              <img
+                class="max-w-10 max-h-10 rounded-full lg:max-h-[58px] lg:max-w-[58px]"
+                src="./assets/images/avatars/avatar_1.png"
+                alt="avatar"
+              />
+              <div>
+                <h6 class="text-lg lg:text-xl">Sumit Saha</h6>
+                <div class="flex items-center gap-1.5">
+                  <img src="./assets/icons/time.svg" alt="time" />
+                  <span class="text-sm text-gray-400 lg:text-base"
+                    >12 min ago</span
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- author info ends -->
+
+            <!-- action dot -->
+            <div class="relative">
+              <button>
+                <img src="./assets/icons/3dots.svg" alt="3dots of Action" />
+              </button>
+
+              <!-- Action Menus Popup -->
+              <div class="action-modal-container">
+                <button class="action-menu-item hover:text-lwsGreen">
+                  <img src="./assets/icons/edit.svg" alt="Edit" />
+                  Edit
+                </button>
+                <button class="action-menu-item hover:text-red-500">
+                  <img src="./assets/icons/delete.svg" alt="Delete" />
+                  Delete
+                </button>
+              </div>
+            </div>
+            <!-- action dot ends -->
+          </header>
+          <!-- post header ends -->
+
+          <!-- post body -->
+          <div class="border-b border-[#3F3F3F] py-4 lg:py-5 lg:text-xl">
+            <!-- If Post has Image, Render this block -->
+            <div class="flex items-center justify-center overflow-hidden">
+              <img
+                class="max-w-full"
+                src="./assets/images/poster.png"
+                alt="poster"
+              />
+            </div>
+            <p>
+              Grateful for the incredible experience of serving as the President
+              of the Grand Jury board for this year's Digital Marketing Award
+              organized by Bangladesh Brand Forum. Judging the best digital
+              marketing campaigns was not just a responsibility but a journey of
+              appreciation for innovation and creativity. The judging process,
+              ensuring transparency, brought to light so many beautiful
+              campaigns. Cheers to the dynamic world of digital marketing!
+              sdfasd asdca sdfa sdca sdfa
+            </p>
+          </div>
+          <!-- post body ends -->
+
+          <!-- post actions -->
+          <div class="flex items-center justify-between py-6 lg:px-10 lg:py-8">
+            <!-- Like Button -->
+            <button
+              class="flex-center gap-2 text-xs font-bold text-[#B8BBBF] hover:text-white lg:text-sm"
+            >
+              <img src="./assets/icons/like.svg" alt="Like" />
+              <span>Like</span>
+            </button>
+
+            <!-- Comment Button -->
+            <button
+              class="icon-btn space-x-2 px-6 py-3 text-xs lg:px-12 lg:text-sm"
+            >
+              <img src="./assets/icons/comment.svg" alt="Comment" />
+              <span>Comment(2)</span>
+            </button>
+            <!-- Share Button -->
+
+            <!-- Like Button -->
+            <button
+              class="flex-center gap-2 text-xs font-bold text-[#B8BBBF] hover:text-white lg:text-sm"
+            >
+              <img src="./assets/icons/share.svg" alt="Share" />
+              <span>Share</span>
+            </button>
+          </div>
+          <!-- post actions  -->
+
+          <!-- comment section -->
+          <div>
+            <!-- comment input box -->
+            <div class="flex-center mb-3 gap-2 lg:gap-4">
+              <img
+                class="max-w-7 max-h-7 rounded-full lg:max-h-[34px] lg:max-w-[34px]"
+                src="./assets/images/avatars/avatar_1.png"
+                alt="avatar"
+              />
+
+              <div class="flex-1">
+                <input
+                  type="text"
+                  class="h-8 w-full rounded-full bg-lighterDark px-4 text-xs focus:outline-none sm:h-[38px]"
+                  name="post"
+                  id="post"
+                  placeholder="What's on your mind?"
+                />
+              </div>
+            </div>
+            <!-- comment filter button -->
+            <div class="mt-4">
+              <button class="text-gray-300 max-md:text-sm">
+                All Comment ▾
+              </button>
+            </div>
+            <!-- comments -->
+            <div class="space-y-4 divide-y divide-lighterDark pl-2 lg:pl-3">
+              <!-- single comment -->
+              <div class="flex items-center gap-3 pt-4">
+                <img
+                  class="max-w-6 max-h-6 rounded-full"
+                  src="./assets/images/avatars/avatar_2.png"
+                  alt="avatar"
+                />
+                <div>
+                  <div class="flex gap-1 text-xs lg:text-sm">
+                    <span>Tapas Adhikari: </span>
+                    <span>Great Sumit Saha dada ❤</span>
+                  </div>
+                </div>
+              </div>
+              <!-- single comment ends -->
+
+              <!-- single comment -->
+              <div class="flex items-center gap-3 pt-4">
+                <img
+                  class="max-w-6 max-h-6 rounded-full"
+                  src="./assets/images/avatars/avatar_1.png"
+                  alt="avatar"
+                />
+                <div>
+                  <div class="flex gap-1 text-xs lg:text-sm">
+                    <span>Sumit Saha: </span>
+                    <span>Great Sumit Saha dada ❤</span>
+                  </div>
+                </div>
+              </div>
+              <!-- single comment ends -->
+            </div>
+            <!-- comments ends -->
+          </div>
+          <!-- comment section ends -->
+        </article>
+        <!-- post ends -->
+
+        <!-- post  -->
+        <article class="card mt-6 lg:mt-8">
+          <!-- post header -->
+          <header class="flex items-center justify-between gap-4">
+            <!-- author info -->
+            <div class="flex items-center gap-3">
+              <img
+                class="max-w-10 max-h-10 rounded-full lg:max-h-[58px] lg:max-w-[58px]"
+                src="./assets/images/avatars/avatar_1.png"
+                alt="avatar"
+              />
+              <div>
+                <h6 class="text-lg lg:text-xl">Sumit Saha</h6>
+                <div class="flex items-center gap-1.5">
+                  <img src="./assets/icons/time.svg" alt="time" />
+                  <span class="text-sm text-gray-400 lg:text-base"
+                    >12 min ago</span
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- author info ends -->
+
+            <!-- action dot -->
+            <div class="relative">
+              <button>
+                <img src="./assets/icons/3dots.svg" alt="3dots of Action" />
+              </button>
+
+              <!-- Action Menus Popup -->
+              <div class="action-modal-container hidden">
+                <button class="action-menu-item hover:text-lwsGreen">
+                  <img src="./assets/icons/edit.svg" alt="Edit" />
+                  Edit
+                </button>
+                <button class="action-menu-item hover:text-red-500">
+                  <img src="./assets/icons/delete.svg" alt="Delete" />
+                  Delete
+                </button>
+              </div>
+            </div>
+            <!-- action dot ends -->
+          </header>
+          <!-- post header ends -->
+
+          <!-- post body -->
+          <div class="border-b border-[#3F3F3F] py-4 lg:py-5 lg:text-xl">
+            <!-- If Post has Image, Render this block -->
+            <div class="flex items-center justify-center overflow-hidden">
+              <img
+                class="max-w-full"
+                src="./assets/images/poster.png"
+                alt="poster"
+              />
+            </div>
+          </div>
+          <!-- post body ends -->
+
+          <!-- post actions -->
+          <div class="flex items-center justify-between py-6 lg:px-10 lg:py-8">
+            <!-- Like Button -->
+            <button
+              class="flex-center gap-2 text-xs font-bold text-[#B8BBBF] hover:text-white lg:text-sm"
+            >
+              <img src="./assets/icons/like.svg" alt="Like" />
+              <span>Like</span>
+            </button>
+
+            <!-- Comment Button -->
+            <button
+              class="icon-btn space-x-2 px-6 py-3 text-xs lg:px-12 lg:text-sm"
+            >
+              <img src="./assets/icons/comment.svg" alt="Comment" />
+              <span>Comment(2)</span>
+            </button>
+            <!-- Share Button -->
+
+            <!-- Like Button -->
+            <button
+              class="flex-center gap-2 text-xs font-bold text-[#B8BBBF] hover:text-white lg:text-sm"
+            >
+              <img src="./assets/icons/share.svg" alt="Share" />
+              <span>Share</span>
+            </button>
+          </div>
+          <!-- post actions  -->
+
+          <!-- comment section -->
+          <div>
+            <!-- comment input box -->
+            <div class="flex-center mb-3 gap-2 lg:gap-4">
+              <img
+                class="max-w-7 max-h-7 rounded-full lg:max-h-[34px] lg:max-w-[34px]"
+                src="./assets/images/avatars/avatar_1.png"
+                alt="avatar"
+              />
+
+              <div class="flex-1">
+                <input
+                  type="text"
+                  class="h-8 w-full rounded-full bg-lighterDark px-4 text-xs focus:outline-none sm:h-[38px]"
+                  name="post"
+                  id="post"
+                  placeholder="What's on your mind?"
+                />
+              </div>
+            </div>
+            <!-- comment filter button -->
+            <div class="mt-4">
+              <button class="text-gray-300 max-md:text-sm">
+                All Comment ▾
+              </button>
+            </div>
+            <!-- comments -->
+            <div class="space-y-4 divide-y divide-lighterDark pl-2 lg:pl-3">
+              <!-- single comment -->
+              <div class="flex items-center gap-3 pt-4">
+                <img
+                  class="max-w-6 max-h-6 rounded-full"
+                  src="./assets/images/avatars/avatar_2.png"
+                  alt="avatar"
+                />
+                <div>
+                  <div class="flex gap-1 text-xs lg:text-sm">
+                    <span>Tapas Adhikari: </span>
+                    <span>Great Sumit Saha dada ❤</span>
+                  </div>
+                </div>
+              </div>
+              <!-- single comment ends -->
+
+              <!-- single comment -->
+              <div class="flex items-center gap-3 pt-4">
+                <img
+                  class="max-w-6 max-h-6 rounded-full"
+                  src="./assets/images/avatars/avatar_1.png"
+                  alt="avatar"
+                />
+                <div>
+                  <div class="flex gap-1 text-xs lg:text-sm">
+                    <span>Sumit Saha: </span>
+                    <span>Great Sumit Saha dada ❤</span>
+                  </div>
+                </div>
+              </div>
+              <!-- single comment ends -->
+            </div>
+            <!-- comments ends -->
+          </div>
+          <!-- comment section ends -->
+        </article>
+        <!-- post ends -->
+      </div>
+    </main>
+  </body>
+</html>

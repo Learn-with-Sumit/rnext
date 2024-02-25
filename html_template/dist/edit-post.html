@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <title>Home | Facehook</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="sticky top-0 z-50 border-b border-[#3F3F3F] bg-[#1E1F24] py-4">
+      <div
+        class="container flex flex-col items-center justify-between gap-6 sm:flex-row"
+      >
+        <!-- Logo -->
+        <a href="./index.html">
+          <img
+            class="max-w-[100px] rounded-full lg:max-w-[130px]"
+            src="./assets/images/logo.svg"
+          />
+        </a>
+        <!-- nav links  -->
+
+        <div class="flex items-center space-x-4">
+          <a href="./index.html" class="btn-primary">
+            <img src="./assets/icons/home.svg" alt="Home" />
+            Home
+          </a>
+          <button class="icon-btn">
+            <img src="./assets/icons/notification.svg" alt="Notification" />
+          </button>
+          <button class="icon-btn">
+            <img src="./assets/icons/logout.svg" alt="Logout" />
+          </button>
+
+          <button class="flex-center !ml-8 gap-3">
+            <span class="text-lg font-medium lg:text-xl">Sumit</span>
+            <img
+              class="max-h-[32px] max-w-[32px] lg:max-h-[44px] lg:max-w-[44px]"
+              src="./assets/images/avatars/avatar_1.png"
+              alt=""
+            />
+          </button>
+        </div>
+        <!-- nav links ends -->
+      </div>
+    </nav>
+
+    <main class="mx-auto max-w-[1020px] py-8">
+      <div class="container">
+        <!-- Create Post  -->
+        <div class="card relative">
+          <h6 class="mb-3 text-center text-lg font-bold lg:text-xl">
+            Create Post
+          </h6>
+          <button class="absolute right-3 top-3 transition-all hover:opacity-80 active:scale-95 active:opacity-70">
+            <img src="./assets/icons/close.svg" alt="close" />
+          </button>
+
+          <form>
+            <div
+              class="mb-3 flex items-center justify-between gap-2 lg:mb-6 lg:gap-4"
+            >
+              <div class="flex items-center gap-3">
+                <img
+                  class="max-w-10 max-h-10 rounded-full lg:max-h-[58px] lg:max-w-[58px]"
+                  src="./assets/images/avatars/avatar_1.png"
+                  alt="avatar"
+                />
+                <div>
+                  <h6 class="text-lg lg:text-xl">Sumit Saha</h6>
+                  <span class="text-sm text-gray-400 lg:text-base">Public</span>
+                </div>
+              </div>
+
+              <label
+                class="btn-primary cursor-pointer !text-gray-100"
+                for="photo"
+              >
+                <img src="./assets/icons/addPhoto.svg" alt="Add Photo" />
+                Add Photo
+              </label>
+              <input type="file" name="photo" id="photo" class="hidden" />
+            </div>
+            <!-- Post Text Input -->
+
+            <textarea
+              name="post"
+              id="post"
+              placeholder="Share your thoughts..."
+              class="mb-4 h-[120px] w-full bg-transparent focus:outline-none lg:mb-6 lg:h-[160px]"
+            >
+Grateful for the incredible experience of serving as the President of the Grand Jury board for this year's Digital Marketing Award organized by Bangladesh Brand Forum. Judging the best digital marketing campaigns was not just a responsibility but a journey of appreciation for innovation and creativity. The judging process, ensuring transparency, brought to light so many beautiful campaigns. Cheers to the dynamic world of digital marketing!Grateful for the incredible experience of serving as the President of the Grand Jury board for this year's Digital Marketing Award organized by Bangladesh Brand Forum. Judging the best digital marketing</textarea
+            >
+
+            <!-- Image -->
+            <div
+              class="mx-auto mb-4 flex max-w-[90%] items-center justify-center lg:mb-6"
+            >
+              <div class="relative">
+                <img
+                  class="max-w-full"
+                  src="./assets/images/poster.png"
+                  alt="image"
+                />
+                <button class="absolute right-2 top-2 transition-all hover:opacity-80 active:scale-95 active:opacity-70">
+                  <img src="./assets/icons/close.svg" alt="close" />
+                </button>
+              </div>
+            </div>
+            <div class="border-t border-[#3F3F3F] pt-4 lg:pt-6">
+              <button
+                class="auth-input bg-lwsGreen font-bold text-deepDark transition-all hover:opacity-90"
+                type="submit"
+              >
+                Post
+              </button>
+            </div>
+          </form>
+        </div>
+        <!-- Create Post -->
+      </div>
+    </main>
+  </body>
+</html>

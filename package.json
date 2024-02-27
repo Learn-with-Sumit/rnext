@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "start": "tailwindcss -i ./src/input.css -o ./dist/styles/output.css --watch",
+    "format": "prettier --write 'src/*.{js,jsx,ts,tsx,css,scss,html,json,md}'",
+    "lint": "prettier --check 'src/*.{js,jsx,ts,tsx,css,scss,html,json,md}'"
+  },
+  "devDependencies": {
+    "prettier": "^3.1.0",
+    "prettier-plugin-tailwindcss": "^0.5.9",
+    "tailwindcss": "^3.3.6"
+  }
+}

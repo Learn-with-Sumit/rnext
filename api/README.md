@@ -18,17 +18,6 @@ Start Server :
 npm run dev
 ```
 
-## Credentials
-
-```
-Email: saadhasan@learnwithsumit.com
-Password : learnwithsumit123
-```
-
-```
-Email: akash@learnwithsumit.com
-Password : learnwithsumit123
-```
 
 **Endpoints:**
 

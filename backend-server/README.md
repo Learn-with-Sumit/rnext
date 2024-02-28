@@ -20,6 +20,8 @@ Download as Json - [Download](https://github.com/Learn-with-Sumit/rnext/blob/5.1
 
 Preview as Documentation - [Preview](https://documenter.getpostman.com/view/9649334/2s9YyvBL56)
 
+
+
 # 📁 Collection: Auth
 
 ## End-point: Registration

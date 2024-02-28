@@ -1,0 +1,661 @@
+{
+	"info": {
+		"_postman_id": "ca40a076-cbaf-4b04-9a20-589d6b2014bb",
+		"name": "FaceHook API | LearnWithSumit",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9649334"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Registration",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"email\": \"atapas@email.com\",\n  \"password\": \"bestPassw0rd\",\n  \"firstName\": \"Tapas\",\n  \"lastName\": \"Adhikary\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/auth/register",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"auth",
+								"register"
+							]
+						},
+						"description": "### Register User\n\nThis endpoint is used to register a new user.\n\n#### Request Body\n\n- email (text, required): The email address of the user.\n- password (text, required): The password for the user account.\n- firstName (text, required): The first name of the user.\n- lastName (text, required): The last name of the user.\n    \n\n#### Response\n\n- Status: 500\n- Content-Type: application/json\n- error (string): An error message indicating the reason for the failure."
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"pm.sendRequest({",
+									"    url : pm.collectionVariables.get('BASE_URL') + \"/auth/login\",",
+									"    method : \"POST\",",
+									"    header : {",
+									"        'Content-Type' : \"application/json\"",
+									"    }, ",
+									"    body: {",
+									"        mode: 'raw',",
+									"        raw: JSON.stringify({",
+									"            email: 'saadh392@mail.com',",
+									"            password: 'bestPassw0rd'",
+									"        })",
+									"    }",
+									"}, function(err, response) {",
+									"    if(err) {",
+									"        console.error(err);",
+									"    }else{",
+									"        let res = response.json();",
+									"        const {accessToken, refreshToken} = res.token",
+									"        pm.collectionVariables.set('AUTH_TOKEN', accessToken)",
+									"        pm.collectionVariables.set('REFRESH_TOKEN', refreshToken)",
+									"",
+									"    }",
+									"",
+									"",
+									"})"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"email\": \"saadh392@mail.com\",\n  \"password\": \"bestPassw0rd\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/auth/login",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Refresh Token",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"refreshToken\" : \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ijk1MTYwYTc0LWRhZmYtNDgwZS04OTUxLWQ0YmQyOTNjY2FhMSIsImVtYWlsIjoic2FhZGgzOTJAbWFpbC5jb20iLCJ0eXBlIjoicmVmcmVzaCIsImlhdCI6MTcwNzM3Nzc4OSwiZXhwIjoxNzA3NDY0MTg5fQ.FFHtq6rXMJ0otmwxdvRCU_8ZgcPCSCReKGa7DDvjzPY\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/auth/refresh-token",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"auth",
+								"refresh-token"
+							]
+						},
+						"description": "### Refresh Token\n\nThis endpoint is used to refresh the access token by providing the refresh token.\n\n#### Request\n\n- Method: POST\n- URL: {{BASE_URL}}/auth/refresh-token\n- Body:\n    - refreshToken (string, required): The refresh token used to obtain a new access token.\n\n#### Response\n\n- Status: 200\n- Content-Type: application/json\n- { \"token\": \"\", \"refreshToken\": \"\" }"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Posts",
+			"item": [
+				{
+					"name": "Get Posts",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{AUTH_TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/posts",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"posts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Single Post",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{AUTH_TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/posts/e19554d0-bd02-4672-a01c-805c4eb6dbd8",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"posts",
+								"e19554d0-bd02-4672-a01c-805c4eb6dbd8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Post",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{AUTH_TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "content",
+									"value": "Edited",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/posts/cba6b034-be5f-4a0f-b01a-dafbed682cfc",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"posts",
+								"cba6b034-be5f-4a0f-b01a-dafbed682cfc"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Post",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{AUTH_TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/posts/cba6b034-be5f-4a0f-b01a-dafbed682cfc",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"posts",
+								"cba6b034-be5f-4a0f-b01a-dafbed682cfc"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Post",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{AUTH_TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "postType",
+									"value": "text",
+									"description": "Indicates the type of the post (text, image, or both)",
+									"type": "text"
+								},
+								{
+									"key": "content",
+									"value": "বই আছে, কিন্তু পরার সময় নেই। আমি অবসরে ব্যাস্ততম।\nকিছু বই তো আবার নিজে নিজেই অবসর নিয়েছে…",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/home/saad/Pictures/428656848_10163435511088574_4287416034489221545_n.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/posts",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"posts"
+							]
+						},
+						"description": "This endpoint allows you to create a new post. The request should be sent as an HTTPS POST to {{BASE_URL}}/posts with a JSON payload in the raw request body. The payload should include the \"postType\" (text, image, or both) and \"body\" of the post.\n\n### Request Body\n\n- `postType` (string): Indicates the type of the post (text, image, or both).\n- `body` (string): The content of the post.\n    \n\n### Response\n\nUpon successful creation, the server will respond with a status code of 201 and a JSON object containing the details of the newly created post. The response includes the \"postType\" and \"body\" of the post, along with information about the author, comments, likes, creation timestamp, and post ID.\n\nExample Response:\n\n``` json\n{\n  \"postType\": \"text\",\n  \"body\": \"Grateful for the incredible experience...\",\n  \"image\": null,\n  \"author\": {\n    \"email\": \"\",\n    \"firstname\": \"\",\n    \"lastname\": \"\",\n    \"id\": 0\n  },\n  \"comments\": [],\n  \"likes\": [],\n  \"createAt\": \"\",\n  \"id\": 0\n}\n\n ```"
+					},
+					"response": []
+				},
+				{
+					"name": "Like",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{AUTH_TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/posts/1/like",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"posts",
+								"1",
+								"like"
+							]
+						},
+						"description": "This endpoint allows you to create a new post. The request should be sent as an HTTPS POST to {{BASE_URL}}/posts with a JSON payload in the raw request body. The payload should include the \"postType\" (text, image, or both) and \"body\" of the post.S\n\n### Response\n\nUpon successful creation, the server will respond with a status code of 201 and a JSON object containing the details of the newly created post. The response includes the \"postType\" and \"body\" of the post, along with information about the author, comments, likes, creation timestamp, and post ID.\n\nExample Response:\n\n``` json\n{\n  \"postType\": \"text\",\n  \"body\": \"Grateful for the incredible experience...\",\n  \"image\": null,\n  \"author\": {\n    \"email\": \"\",\n    \"firstname\": \"\",\n    \"lastname\": \"\",\n    \"id\": 0\n  },\n  \"comments\": [],\n  \"likes\": [],\n  \"createAt\": \"\",\n  \"id\": 0\n}\n\n ```"
+					},
+					"response": []
+				},
+				{
+					"name": "Comment",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{AUTH_TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"comment\" : \"সবাইকে অনেক ভালো লাগছে 😍\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/posts/114d6b94-fc94-4d3c-ad86-720a18eaf437/comment",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"posts",
+								"114d6b94-fc94-4d3c-ad86-720a18eaf437",
+								"comment"
+							]
+						},
+						"description": "This endpoint allows you to create a new post. The request should be sent as an HTTPS POST to {{BASE_URL}}/posts with a JSON payload in the raw request body. The payload should include the \"postType\" (text, image, or both) and \"body\" of the post.\n\n### Response\n\nUpon successful creation, the server will respond with a status code of 201 and a JSON object containing the details of the newly created post. The response includes the \"postType\" and \"body\" of the post, along with information about the author, comments, likes, creation timestamp, and post ID.\n\nExample Response:\n\n``` json\n{\n  \"postType\": \"text\",\n  \"body\": \"Grateful for the incredible experience...\",\n  \"image\": null,\n  \"author\": {\n    \"email\": \"\",\n    \"firstname\": \"\",\n    \"lastname\": \"\",\n    \"id\": 0\n  },\n  \"comments\": [],\n  \"likes\": [],\n  \"createAt\": \"\",\n  \"id\": 0\n}\n\n ```"
+					},
+					"response": []
+				},
+				{
+					"name": "Comment",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{AUTH_TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/posts/1/comment/de3b3151-5d92-462e-b626-a1f5ca56a5f8",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"posts",
+								"1",
+								"comment",
+								"de3b3151-5d92-462e-b626-a1f5ca56a5f8"
+							]
+						},
+						"description": "This endpoint allows you to create a new post. The request should be sent as an HTTPS POST to {{BASE_URL}}/posts with a JSON payload in the raw request body. The payload should include the \"postType\" (text, image, or both) and \"body\" of the post.\n\n### Response\n\nUpon successful creation, the server will respond with a status code of 201 and a JSON object containing the details of the newly created post. The response includes the \"postType\" and \"body\" of the post, along with information about the author, comments, likes, creation timestamp, and post ID.\n\nExample Response:\n\n``` json\n{\n  \"postType\": \"text\",\n  \"body\": \"Grateful for the incredible experience...\",\n  \"image\": null,\n  \"author\": {\n    \"email\": \"\",\n    \"firstname\": \"\",\n    \"lastname\": \"\",\n    \"id\": 0\n  },\n  \"comments\": [],\n  \"likes\": [],\n  \"createAt\": \"\",\n  \"id\": 0\n}\n\n ```"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Profile",
+			"item": [
+				{
+					"name": "Profile",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{AUTH_TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/profile/95160a74-daff-480e-8951-d4bd293ccaa1",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"profile",
+								"95160a74-daff-480e-8951-d4bd293ccaa1"
+							]
+						},
+						"description": "This endpoint retrieves the profile information for a specific user with the provided ID. The response will include details about the user's profile, such as their first name, last name, avatar, email, as well as their posts including post content, type, author details, comments, likes, and creation timestamp."
+					},
+					"response": []
+				},
+				{
+					"name": "Profile",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{AUTH_TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"firstname\" : \"Saad\",\n  \"lastName\" : \"Hasan\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/profile/1",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"profile",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Upload Avatar",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{AUTH_TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "avatar",
+									"type": "file",
+									"src": "/home/saad/Pictures/sumit-saha.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/profile/1aeef0f0-77ba-456b-8b5b-d4145a9b5410/avatar",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"profile",
+								"1aeef0f0-77ba-456b-8b5b-d4145a9b5410",
+								"avatar"
+							]
+						},
+						"description": "\nThis endpoint allows you to upload a new avatar for the profile with ID 1. The request should be sent as an HTTP POST to {{BASE_URL}}/profile/1/avatar with the avatar file included in the form-data request body.\n\n### Request Body\n- avatar (file): The avatar file to be uploaded.\n\n### Response\nThe response will have a status code of 200 and a Content-Type of text/xml. The actual content of the response is not available.\n"
+					},
+					"response": []
+				},
+				{
+					"name": "Preview Avatar",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{AUTH_TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "avatar",
+									"type": "file",
+									"src": "/home/saad/Pictures/Screenshot 2023-11-19 at 9.48.02 PM.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/uploads/images.png",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"uploads",
+								"images.png"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "BASE_URL",
+			"value": "http://localhost:3000",
+			"type": "string"
+		},
+		{
+			"key": "AUTH_TOKEN",
+			"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImVhMTY4NjI2LTA1OGUtNDlkZC1iMjNjLTMwMDBlN2JkMDE3MiIsImVtYWlsIjoiYWthc2hAZW1haWwuY29tIiwidHlwZSI6ImFjY2VzcyIsImlhdCI6MTcwODc3ODE3MSwiZXhwIjoxNzA4NzgxNzcxfQ.YHiqTBE34gNX5-M1VaydjPgOEyh4Et2FARMTwsr9VhY",
+			"type": "string"
+		},
+		{
+			"key": "REFRESH_TOKEN",
+			"value": "",
+			"disabled": true
+		}
+	]
+}

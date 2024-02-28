@@ -14,6 +14,10 @@ Start JSON server (with _JSON server Auth_ as middleware) :
 npm run dev
 ```
 
+## Documentation
+Download as Json - [Download](https://github.com/Learn-with-Sumit/rnext/blob/5.15/backend-server/facehook-postman.json)
+Preview as Documentation - [Preview](https://documenter.getpostman.com/view/9649334/2s9YyvBL56)
+
 # 📁 Collection: Auth
 
 ## End-point: Registration

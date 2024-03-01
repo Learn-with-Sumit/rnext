@@ -73,10 +73,11 @@ const register = (body) => {
   User.create(newUser);
 
   const token = getNewTokens(newUser);
-  delete newUser.password;
+ const newObj = Object.assign({}, newUser);
+  delete newObj.password;
 
   return {
-    user: newUser,
+    user: newObj,
     token,
   };
 };

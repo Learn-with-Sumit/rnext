@@ -17,9 +17,11 @@ const getUserById = (userId) => {
   // get users blogs
   const blogs = Blog.filter({ author: { id: userId } });
 
-  delete data.password;
+  const userObj = Object.assign({}, data);
+  delete userObj.password;
+  
   return {
-    ...data,
+    ...userObj,
     blogs,
   };
 };
@@ -38,9 +40,10 @@ const updateUserProfile = (user, body) => {
     throw new Error("User not found");
   }
 
-  delete data.password;
+  const userObj = Object.assign({}, data);
+  delete userObj.password;
 
-  return data;
+  return userObj;
 };
 
 module.exports.ProfileService = { getUserById, updateUserProfile };

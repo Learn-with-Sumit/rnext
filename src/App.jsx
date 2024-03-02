@@ -1,14 +1,11 @@
-
+import Family from "./props/Family";
 
 function App() {
-
-  return (
-    <>
-      <h1
-        className="text-3xl text-center text-red-700"
-      >Welcome to Vite with TailwindCSS and React</h1>
-    </>
-  )
+    return (
+        <div className="m-4">
+            <Family />
+        </div>
+    );
 }
 
-export default App
+export default App;

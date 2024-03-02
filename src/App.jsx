@@ -1,13 +1,8 @@
-import Family from "./props/Family";
-
-import ParentComponent from "./components/ParentComponent";
-
+import Game from "./tags/Game";
 function App() {
     return (
         <div className="m-4">
-            <Family />
-
-            <ParentComponent />
+            <Game />
         </div>
     );
 }

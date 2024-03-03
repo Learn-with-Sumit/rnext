@@ -31,7 +31,7 @@ const createNewPost = (req, res) => {
   console.log(req?.body);
   const post = {
     postType: req?.file?.filename ? "image" : "text",
-    content: req?.body?.formData?.content || "",
+    content: req?.body?.content || req?.body?.formData?.content || "",
     image: req?.file?.filename ? `uploads/posts/${req?.file?.filename}` : null,
     author: { id, name, avatar },
   };

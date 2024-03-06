@@ -21,8 +21,6 @@ const search = async (req, res) => {
     length: searchResults.length,
     query: searchQuery,
     data: searchResults.map((blog) => {
-      delete blog.tags;
-      delete blog.comments;
       return blog;
     }),
   });

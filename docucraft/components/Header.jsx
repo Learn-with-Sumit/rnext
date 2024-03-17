@@ -9,7 +9,7 @@ const Header = ({docs}) => {
             <div className="fixed inset-x-0 top-0 z-50 bg-white px-4 backdrop-blur-sm transition dark:bg-[#17181C] dark:backdrop-blur sm:px-6 lg:left-72 lg:z-30 lg:px-8 xl:left-80">
                 <div className="container flex h-14 items-center justify-between gap-12">
                     <div className="absolute inset-x-0 top-full h-px bg-zinc-900/7.5 transition dark:bg-white/7.5"></div>
-                    <Search />
+                    <Search docs={docs} />
                 </div>
             </div>
             <Sidebar docs={docs}/>

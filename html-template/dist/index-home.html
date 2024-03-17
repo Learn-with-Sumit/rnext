@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./output.css" />
+  <title>DocuCraft</title>
+</head>
+
+<body>
+  <div class="h-full lg:ml-72 xl:ml-80">
+    <!-- Header Withs Sidebar -->
+    <header
+      class="fixed inset-y-0 left-0 z-40 contents w-72 overflow-y-auto border-r border-zinc-900/10 px-6 pb-8 pt-4 dark:border-white/10 lg:block xl:w-80">
+      <!-- Logo  -->
+      <div class="hidden lg:flex">
+        <a aria-label="Home" href="/">
+          <img src="./assets/icons/logo.svg" alt="Protocol" class="h-6 w-auto" />
+        </a>
+      </div>
+      <!-- Logo Ends -->
+      <!-- Header -->
+      <div
+        class="fixed inset-x-0 top-0 z-50 bg-white bg-white/[var(--bg-opacity-light)] px-4 backdrop-blur-sm transition dark:bg-[#17181C] dark:backdrop-blur sm:px-6 lg:left-72 lg:z-30 lg:px-8 xl:left-80"
+        style="--bg-opacity-light: 0.5; --bg-opacity-dark: 0.2">
+        <div class="container flex h-14 items-center justify-between gap-12">
+          <div class="absolute inset-x-0 top-full h-px bg-zinc-900/7.5 transition dark:bg-white/7.5"></div>
+
+          <div class="hidden lg:block lg:max-w-md lg:flex-auto">
+            <button type="button"
+              class="focus:[&amp;:not(:focus-visible)]:outline-none hidden h-8 w-full items-center gap-2 rounded-full bg-white pl-2 pr-3 text-sm text-zinc-500 ring-1 ring-zinc-900/10 transition hover:ring-zinc-900/20 dark:bg-white/5 dark:text-zinc-400 dark:ring-inset dark:ring-white/10 dark:hover:ring-white/20 lg:flex">
+              <img src="./assets/icons/search.svg" class="h-5 w-5" />
+              <input type="text" placeholder="Search..." class="flex-1 focus:border-none focus:outline-none" />
+              <kbd class="ml-auto w-auto text-2xs text-zinc-400 dark:text-zinc-500">
+                <kbd class="font-sans">Ctrl </kbd>
+                <kbd class="font-sans">K</kbd></kbd>
+            </button>
+          </div>
+
+          <!-- Mobile Responsive Header Starts -->
+          <div class="flex items-center gap-5 lg:hidden">
+            <button type="button"
+              class="flex h-6 w-6 items-center justify-center rounded-md transition hover:bg-zinc-900/5 dark:hover:bg-white/5"
+              aria-label="Toggle navigation">
+              <img src="./assets/icons/hamburger.svg" alt="Menu" class="w-2.5 stroke-zinc-900 dark:stroke-white" />
+            </button>
+            <a aria-label="Home" href="/">
+              <img src="./assets/icons/logo.svg" alt="Protocol" class="h-6" />
+            </a>
+          </div>
+          <!-- Mobile Responsive Header Ends -->
+
+          <div class="flex items-center gap-5">
+            <div class="hidden md:block md:h-5 md:w-px md:bg-zinc-900/10 md:dark:bg-white/15"></div>
+            <div class="flex gap-4">
+              <div class="contents lg:hidden">
+                <button type="button"
+                  class="focus:[&amp;:not(:focus-visible)]:outline-none flex h-6 w-6 items-center justify-center rounded-md transition hover:bg-zinc-900/5 dark:hover:bg-white/5 lg:hidden"
+                  aria-label="Find something...">
+                  <img src="./assets/icons/search.svg" alt="Search" class="h-5 w-5" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Header Ends -->
+
+      <!-- sidebar nav -->
+      <nav class="hidden lg:mt-10 lg:block">
+        <ul role="list" class="border-l border-transparent">
+          <li class="relative">
+            <a aria-current="page"
+              class="flex justify-between gap-2 py-1 pl-4 pr-3 text-sm text-zinc-900 transition dark:text-white"
+              href="/docs"><span class="truncate">Introduction</span></a>
+            <ul role="list" style="opacity: 1">
+              <li>
+                <a class="flex justify-between gap-2 py-1 pl-7 pr-3 text-sm text-zinc-600 transition hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-white"
+                  href="/docs#guides"><span class="truncate">Guides</span></a>
+              </li>
+              <li>
+                <a class="flex justify-between gap-2 py-1 pl-7 pr-3 text-sm text-zinc-600 transition hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-white"
+                  href="/docs#resources"><span class="truncate">Resources</span></a>
+              </li>
+              <li>
+                <a class="flex justify-between gap-2 py-1 pl-7 pr-3 text-sm text-zinc-600 transition hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-white"
+                  href="/docs#test"><span class="truncate">Test</span></a>
+              </li>
+            </ul>
+          </li>
+          <li class="relative">
+            <a class="flex justify-between gap-2 py-1 pl-4 pr-3 text-sm text-zinc-600 transition hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-white"
+              href="/docs/quickstart"><span class="truncate">Quickstart</span></a>
+          </li>
+          <li class="relative">
+            <a class="flex justify-between gap-2 py-1 pl-4 pr-3 text-sm text-zinc-600 transition hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-white"
+              href="/docs/sdks"><span class="truncate">SDKs</span></a>
+          </li>
+          <li class="relative">
+            <a class="flex justify-between gap-2 py-1 pl-4 pr-3 text-sm text-zinc-600 transition hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-white"
+              href="/docs/authentication"><span class="truncate">Authentication</span></a>
+          </li>
+          <li class="relative">
+            <a class="flex justify-between gap-2 py-1 pl-4 pr-3 text-sm text-zinc-600 transition hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-white"
+              href="/docs/pagination">
+              <span class="truncate">Pagination</span></a>
+          </li>
+          <li class="relative">
+            <a class="flex justify-between gap-2 py-1 pl-4 pr-3 text-sm text-zinc-600 transition hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-white"
+              href="/docs/errors"><span class="truncate">Errors</span></a>
+          </li>
+          <li class="relative">
+            <a class="flex justify-between gap-2 py-1 pl-4 pr-3 text-sm text-zinc-600 transition hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-white"
+              href="/docs/webhooks"><span class="truncate">Webhooks</span></a>
+          </li>
+        </ul>
+      </nav>
+      <!-- Sidebar nav ends -->
+    </header>
+    <!-- Header With Sidebar Ends -->
+
+    <div class="relative px-4 pt-14 sm:px-6 lg:px-8">
+      <main class="flex-auto py-12">
+        <!-- Green Top Overlay -->
+        <div class="absolute inset-0 -z-10 mx-0 max-w-none overflow-hidden">
+          <div
+            class="absolute left-1/2 top-0 ml-[-38rem] h-[25rem] w-[81.25rem] dark:[mask-image:linear-gradient(white,transparent)]">
+            <div
+              class="absolute inset-0 bg-gradient-to-r from-[#36b49f] to-[#DBFF75] opacity-40 [mask-image:radial-gradient(farthest-side_at_top,white,transparent)] dark:from-[#36b49f]/30 dark:to-[#DBFF75]/30 dark:opacity-100">
+            </div>
+          </div>
+        </div>
+        <!-- Green Top Overlay End-->
+
+        <article class="">
+          <div class="relative">
+            <div class=" relative mx-auto px-4 ">
+              <div class="mx-auto grid max-w-[40rem] grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-5">
+                <div class="flex flex-col lg:pb-6 lg:col-span-2 justify-center">
+                  <h1
+                    class="mt-4 text-6xl font-extrabold leading-none tracking-tight text-slate-900 sm:text-5xl sm:leading-[3.5rem]">
+                    Protocol
+                  </h1>
+
+                  <p class="mt-6 text-base leading-7 text-slate-700">
+                    It doesn't matter if you have an API if nobody knows how
+                    to use it. Teach people the ins and outs of OAuth 2.0 and
+                    JWTs in style with Protocol, a beautiful API documentation
+                    template.
+                  </p>
+
+                  <div class="mt-10 flex flex-wrap gap-4">
+                    <a href="#"
+                      class="inline-flex justify-center rounded-lg bg-slate-900 px-4 py-3 text-sm font-semibold text-white hover:bg-slate-700"
+                      target="_blank">
+                      <span>Get Started</span></a>
+                  </div>
+                </div>
+                <div class="relative lg:col-span-3">
+                  <img src="./assets/banner.png" width="1600" height="1280"
+                    class="relative z-20 -mb-36 aspect-[853/682] max-w-[630px] rounded-xl bg-slate-200 shadow-xl shadow-black/5 ring-1 ring-slate-900/5 sm:-mb-16 lg:-mb-8 xl:-mb-16" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </main>
+
+      <footer class="mx-auto max-w-2xl space-y-10 pb-16 lg:max-w-5xl">
+        <div class="relative h-8"></div>
+        <div
+          class="flex flex-col items-center justify-between gap-5 border-t border-zinc-900/5 pt-8 dark:border-white/5 sm:flex-row">
+          <p class="text-xs text-zinc-600 dark:text-zinc-400">
+            © Copyright 2023. All rights reserved.
+          </p>
+        </div>
+      </footer>
+    </div>
+  </div>
+</body>
+
+</html>

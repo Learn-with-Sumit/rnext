@@ -1,0 +1,471 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <title>DocuCraft</title>
+  </head>
+
+  <body>
+    <div class="h-full lg:ml-72 xl:ml-80">
+      <!-- Header Withs Sidebar -->
+      <header
+        class="fixed inset-y-0 left-0 z-40 contents w-72 overflow-y-auto border-r border-zinc-900/10 px-6 pb-8 pt-4 dark:border-white/10 lg:block xl:w-80"
+      >
+        <!-- Logo  -->
+        <div class="hidden lg:flex">
+          <a aria-label="Home" href="/">
+            <img
+              src="./assets/icons/logo.svg"
+              alt="Protocol"
+              class="h-6 w-auto"
+            />
+          </a>
+        </div>
+        <!-- Logo Ends -->
+        <!-- Header -->
+        <div
+          class="fixed inset-x-0 top-0 z-50 bg-white bg-white/[var(--bg-opacity-light)] px-4 backdrop-blur-sm transition dark:bg-[#17181C] dark:backdrop-blur sm:px-6 lg:left-72 lg:z-30 lg:px-8 xl:left-80"
+          style="--bg-opacity-light: 0.5; --bg-opacity-dark: 0.2"
+        >
+          <div class="container flex h-14 items-center justify-between gap-12">
+            <div
+              class="absolute inset-x-0 top-full h-px bg-zinc-900/7.5 transition dark:bg-white/7.5"
+            ></div>
+
+            <div class="relative hidden lg:block lg:max-w-md lg:flex-auto">
+              <button
+                type="button"
+                class="focus:[&amp;:not(:focus-visible)]:outline-none hidden h-8 w-full items-center gap-2 rounded-full bg-white pl-2 pr-3 text-sm text-zinc-500 ring-1 ring-zinc-900/10 transition hover:ring-zinc-900/20 dark:bg-white/5 dark:text-zinc-400 dark:ring-inset dark:ring-white/10 dark:hover:ring-white/20 lg:flex"
+              >
+                <img src="./assets/icons/search.svg" class="h-5 w-5" />
+                <input
+                  type="text"
+                  placeholder="Search..."
+                  class="flex-1 focus:border-none focus:outline-none"
+                />
+                <kbd
+                  class="ml-auto w-auto text-2xs text-zinc-400 dark:text-zinc-500"
+                >
+                  <kbd class="font-sans">Ctrl </kbd>
+                  <kbd class="font-sans">K</kbd></kbd
+                >
+              </button>
+              <!-- result card -->
+              <div
+                class="absolute left-0 top-12 z-[999] w-full rounded-md bg-white p-4 shadow"
+              >
+                <p class="!text-lg">
+                  Showing results for
+                  <span class="font-semibold">"keyword":</span>
+                </p>
+                <ul role="list" class="divide-y divide-gray-100 [&>*]:py-2">
+                  <li class="">
+                    <a class="transition-all hover:text-emerald-600" href="#"
+                      >How to create a new component in Vue.js</a
+                    >
+                  </li>
+                  <li class="">
+                    <a class="transition-all hover:text-emerald-600" href="#"
+                      >How to create a new component in React.js</a
+                    >
+                  </li>
+                  <li class="">
+                    <a class="transition-all hover:text-emerald-600" href="#"
+                      >Next.js Routing</a
+                    >
+                  </li>
+                  <li class="">
+                    <a class="transition-all hover:text-emerald-600" href="#"
+                      >SSR - What is it?</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Mobile Responsive Header Starts -->
+            <div class="flex items-center gap-5 lg:hidden">
+              <button
+                type="button"
+                class="flex h-6 w-6 items-center justify-center rounded-md transition hover:bg-zinc-900/5 dark:hover:bg-white/5"
+                aria-label="Toggle navigation"
+              >
+                <img
+                  src="./assets/icons/hamburger.svg"
+                  alt="Menu"
+                  class="w-2.5 stroke-zinc-900 dark:stroke-white"
+                />
+              </button>
+              <a aria-label="Home" href="/">
+                <img src="./assets/icons/logo.svg" alt="Protocol" class="h-6" />
+              </a>
+            </div>
+            <!-- Mobile Responsive Header Ends -->
+
+            <div class="flex items-center gap-5">
+              <div
+                class="hidden md:block md:h-5 md:w-px md:bg-zinc-900/10 md:dark:bg-white/15"
+              ></div>
+              <div class="flex gap-4">
+                <div class="contents lg:hidden">
+                  <button
+                    type="button"
+                    class="focus:[&amp;:not(:focus-visible)]:outline-none flex h-6 w-6 items-center justify-center rounded-md transition hover:bg-zinc-900/5 dark:hover:bg-white/5 lg:hidden"
+                    aria-label="Find something..."
+                  >
+                    <img
+                      src="./assets/icons/search.svg"
+                      alt="Search"
+                      class="h-5 w-5"
+                    />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Header Ends -->
+
+        <!-- sidebar nav -->
+        <nav class="hidden lg:mt-10 lg:block">
+          <ul role="list" class="border-l border-transparent">
+            <li class="relative">
+              <a
+                aria-current="page"
+                class="flex justify-between gap-2 py-1 pl-4 pr-3 text-sm text-zinc-900 transition dark:text-white"
+                href="/docs"
+                ><span class="truncate">Introduction</span></a
+              >
+              <ul role="list" style="opacity: 1">
+                <li>
+                  <a
+                    class="flex justify-between gap-2 py-1 pl-7 pr-3 text-sm text-zinc-600 transition hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-white"
+                    href="/docs#guides"
+                    ><span class="truncate">Guides</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="flex justify-between gap-2 py-1 pl-7 pr-3 text-sm text-zinc-600 transition hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-white"
+                    href="/docs#resources"
+                    ><span class="truncate">Resources</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="flex justify-between gap-2 py-1 pl-7 pr-3 text-sm text-zinc-600 transition hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-white"
+                    href="/docs#test"
+                    ><span class="truncate">Test</span></a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="relative">
+              <a
+                class="flex justify-between gap-2 py-1 pl-4 pr-3 text-sm text-zinc-600 transition hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-white"
+                href="/docs/quickstart"
+                ><span class="truncate">Quickstart</span></a
+              >
+            </li>
+            <li class="relative">
+              <a
+                class="flex justify-between gap-2 py-1 pl-4 pr-3 text-sm text-zinc-600 transition hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-white"
+                href="/docs/sdks"
+                ><span class="truncate">SDKs</span></a
+              >
+            </li>
+            <li class="relative">
+              <a
+                class="flex justify-between gap-2 py-1 pl-4 pr-3 text-sm text-zinc-600 transition hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-white"
+                href="/docs/authentication"
+                ><span class="truncate">Authentication</span></a
+              >
+            </li>
+            <li class="relative">
+              <a
+                class="flex justify-between gap-2 py-1 pl-4 pr-3 text-sm text-zinc-600 transition hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-white"
+                href="/docs/pagination"
+              >
+                <span class="truncate">Pagination</span></a
+              >
+            </li>
+            <li class="relative">
+              <a
+                class="flex justify-between gap-2 py-1 pl-4 pr-3 text-sm text-zinc-600 transition hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-white"
+                href="/docs/errors"
+                ><span class="truncate">Errors</span></a
+              >
+            </li>
+            <li class="relative">
+              <a
+                class="flex justify-between gap-2 py-1 pl-4 pr-3 text-sm text-zinc-600 transition hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-white"
+                href="/docs/webhooks"
+                ><span class="truncate">Webhooks</span></a
+              >
+            </li>
+          </ul>
+        </nav>
+        <!-- Sidebar nav ends -->
+      </header>
+      <!-- Header With Sidebar Ends -->
+
+      <div class="relative px-4 pt-14 sm:px-6 lg:px-8">
+        <main class="flex-auto py-16">
+          <article class="prose dark:prose-invert">
+            <!-- Green Top Overlay -->
+            <div class="absolute inset-0 -z-10 mx-0 max-w-none overflow-hidden">
+              <div
+                class="absolute left-1/2 top-0 ml-[-38rem] h-[25rem] w-[81.25rem] dark:[mask-image:linear-gradient(white,transparent)]"
+              >
+                <div
+                  class="absolute inset-0 bg-gradient-to-r from-[#36b49f] to-[#DBFF75] opacity-40 [mask-image:radial-gradient(farthest-side_at_top,white,transparent)] dark:from-[#36b49f]/30 dark:to-[#DBFF75]/30 dark:opacity-100"
+                ></div>
+              </div>
+            </div>
+            <!-- Green Top Overlay End-->
+
+            <h1>API Documentation</h1>
+            <p class="lead">
+              Use the Protocol API to access contacts, conversations, group
+              messages, and more and seamlessly integrate your product into the
+              workflows of dozens of devoted Protocol users.
+            </p>
+            <div class="my-16 xl:max-w-none">
+              <div class="not-prose mb-16 mt-6 flex gap-3">
+                <a class="buttonDark" href="/quickstart"> Quickstart </a>
+                <a class="buttonLight" href="/sdks">Explore SDKs</a>
+              </div>
+            </div>
+
+            <h2>Getting started</h2>
+            <p class="lead">
+              To get started, create a new application in your
+              <a href="#">developer settings</a> , then read about how to make
+              requests for the resources you need to access using our HTTP APIs
+              or dedicated client SDKs. When your integration is ready to go
+              live, publish it to our <a href="#">integrations directory</a> to
+              reach the Protocol community.
+            </p>
+            <div class="my-16 xl:max-w-none">
+              <div class="not-prose">
+                <a class="linkGreen" href="/sdks">Get your API key</a>
+              </div>
+            </div>
+
+            <div class="my-16 xl:max-w-none">
+              <h2 id="guides" class="scroll-mt-24">
+                <a
+                  class="group text-inherit no-underline hover:text-inherit"
+                  href="#guides"
+                >
+                  <div
+                    class="absolute ml-[calc(-1*var(--width))] mt-1 hidden w-[var(--width)] opacity-0 transition [--width:calc(2.625rem+0.5px+50%-min(50%,calc(theme(maxWidth.lg)+theme(spacing.8))))] group-hover:opacity-100 group-focus:opacity-100 md:block lg:z-50 2xl:[--width:theme(spacing.10)]"
+                  >
+                    <div
+                      class="group/anchor block h-5 w-5 rounded-lg bg-zinc-50 ring-1 ring-inset ring-zinc-300 transition hover:ring-zinc-500 dark:bg-zinc-800 dark:ring-zinc-700 dark:hover:bg-zinc-700 dark:hover:ring-zinc-600"
+                    >
+                      <img src="./assets/icons/rightArrow.svg" alt="" />
+                    </div>
+                  </div>
+                  Guides
+                </a>
+              </h2>
+              <div
+                class="not-prose mt-4 grid grid-cols-1 gap-8 border-t border-zinc-900/5 pt-10 dark:border-white/5 sm:grid-cols-2 xl:grid-cols-4"
+              >
+                <div>
+                  <h3
+                    class="text-sm font-semibold text-zinc-900 dark:text-white"
+                  >
+                    Authentication
+                  </h3>
+                  <p class="mt-1 text-sm text-zinc-600 dark:text-zinc-400">
+                    Learn how to authenticate your API requests.
+                  </p>
+                  <p class="mt-4">
+                    <a class="readMore" href="/authentication">
+                      <span>Read more</span>
+                      <img
+                        src="./assets/icons/rightArrow.svg"
+                        class="relative top-px -mr-1 mt-0.5 h-5 w-5"
+                      />
+                    </a>
+                  </p>
+                </div>
+                <div>
+                  <h3
+                    class="text-sm font-semibold text-zinc-900 dark:text-white"
+                  >
+                    Pagination
+                  </h3>
+                  <p class="mt-1 text-sm text-zinc-600 dark:text-zinc-400">
+                    Understand how to work with paginated responses.
+                  </p>
+                  <p class="mt-4">
+                    <a class="readMore" href="/authentication">
+                      <span>Read more</span>
+                      <img
+                        src="./assets/icons/rightArrow.svg"
+                        class="relative top-px -mr-1 mt-0.5 h-5 w-5"
+                      />
+                    </a>
+                  </p>
+                </div>
+                <div>
+                  <h3
+                    class="text-sm font-semibold text-zinc-900 dark:text-white"
+                  >
+                    Errors
+                  </h3>
+                  <p class="mt-1 text-sm text-zinc-600 dark:text-zinc-400">
+                    Read about the different types of errors returned by the
+                    API.
+                  </p>
+                  <p class="mt-4">
+                    <a class="readMore" href="/authentication">
+                      <span>Read more</span>
+                      <img
+                        src="./assets/icons/rightArrow.svg"
+                        class="relative top-px -mr-1 mt-0.5 h-5 w-5"
+                      />
+                    </a>
+                  </p>
+                </div>
+                <div>
+                  <h3
+                    class="text-sm font-semibold text-zinc-900 dark:text-white"
+                  >
+                    Webhooks
+                  </h3>
+                  <p class="mt-1 text-sm text-zinc-600 dark:text-zinc-400">
+                    Learn how to programmatically configure webhooks for your
+                    app.
+                  </p>
+                  <p class="mt-4">
+                    <a class="readMore" href="/authentication">
+                      <span>Read more</span>
+                      <img
+                        src="./assets/icons/rightArrow.svg"
+                        class="relative top-px -mr-1 mt-0.5 h-5 w-5"
+                      />
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Resources Section Starts -->
+            <div class="my-16 xl:max-w-none">
+              <h2 id="resources" class="scroll-mt-24">
+                <a
+                  class="group text-inherit no-underline hover:text-inherit"
+                  href="#resources"
+                  >Resources</a
+                >
+              </h2>
+              <div
+                class="not-prose mt-4 grid grid-cols-1 gap-8 border-t border-zinc-900/5 pt-10 dark:border-white/5 sm:grid-cols-2 xl:grid-cols-4"
+              >
+                <div
+                  class="group relative flex rounded-2xl bg-zinc-50 transition-shadow hover:shadow-md hover:shadow-zinc-900/5 dark:bg-white/2.5 dark:hover:shadow-black/5"
+                >
+                  <div class="relative rounded-2xl px-4 pb-4 pt-16">
+                    <div
+                      class="flex h-7 w-7 items-center justify-center rounded-full bg-zinc-900/5 ring-1 ring-zinc-900/25 backdrop-blur-[2px] transition duration-300 group-hover:bg-white/50 group-hover:ring-zinc-900/25 dark:bg-white/7.5 dark:ring-white/15 dark:group-hover:bg-emerald-300/10 dark:group-hover:ring-emerald-400"
+                    >
+                      <img
+                        src="./assets/icons/contact.svg"
+                        alt="Contacts"
+                        class="h-5 w-5 fill-zinc-700/10 stroke-zinc-700 transition-colors duration-300 group-hover:stroke-zinc-900 dark:fill-white/10 dark:stroke-zinc-400 dark:group-hover:fill-emerald-300/10 dark:group-hover:stroke-emerald-400"
+                      />
+                    </div>
+                    <h3
+                      class="mt-4 text-sm font-semibold leading-7 text-zinc-900 dark:text-white"
+                    >
+                      <a href="/contacts"
+                        ><span class="absolute inset-0 rounded-2xl"></span
+                        >Contacts</a
+                      >
+                    </h3>
+                    <p class="mt-1 text-sm text-zinc-600 dark:text-zinc-400">
+                      Learn about the contact model and how to create, retrieve,
+                      update, delete, and list contacts.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Resources Section Ends -->
+
+            <!-- Test Section Starts -->
+            <div>
+              <h2 id="test" class="scroll-mt-24">
+                <a
+                  class="group text-inherit no-underline hover:text-inherit"
+                  href="#test"
+                  >Test</a
+                >
+              </h2>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Tempore pariatur repellendus vero doloremque sint, quod aliquid
+                possimus esse labore maxime quaerat error enim! Velit incidunt
+                soluta pariatur doloribus hic! Distinctio earum ea enim
+                repudiandae repellat vero dignissimos sequi optio nulla
+                explicabo provident ipsum eaque incidunt, ducimus dolore dolor
+                accusamus. Exercitationem?
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
+                neque quibusdam vel temporibus tempore eum, odio odit adipisci
+                similique dolor a illo iusto deserunt voluptate perspiciatis
+                aliquid ad id sed?
+              </p>
+            </div>
+            <!-- Test Section Ends -->
+          </article>
+        </main>
+
+        <footer class="mx-auto max-w-2xl space-y-10 pb-16 lg:max-w-5xl">
+          <div class="relative h-8">
+            <form
+              class="absolute inset-0 flex items-center justify-center gap-6 md:justify-start"
+            >
+              <p class="text-sm text-zinc-600 dark:text-zinc-400">
+                Was this page helpful?
+              </p>
+              <div
+                class="group grid h-8 grid-cols-[1fr,1px,1fr] overflow-hidden rounded-full border border-zinc-900/10 dark:border-white/10"
+              >
+                <button
+                  type="submit"
+                  class="px-3 text-sm font-medium text-zinc-600 transition hover:bg-zinc-900/2.5 hover:text-zinc-900 dark:text-zinc-400 dark:hover:bg-white/5 dark:hover:text-white"
+                  data-response="yes"
+                >
+                  Yes
+                </button>
+                <div class="bg-zinc-900/10 dark:bg-white/10"></div>
+                <button
+                  type="submit"
+                  class="px-3 text-sm font-medium text-zinc-600 transition hover:bg-zinc-900/2.5 hover:text-zinc-900 dark:text-zinc-400 dark:hover:bg-white/5 dark:hover:text-white"
+                  data-response="no"
+                >
+                  No
+                </button>
+              </div>
+            </form>
+          </div>
+          <div
+            class="flex flex-col items-center justify-between gap-5 border-t border-zinc-900/5 pt-8 dark:border-white/5 sm:flex-row"
+          >
+            <p class="text-xs text-zinc-600 dark:text-zinc-400">
+              © Copyright 2023. All rights reserved.
+            </p>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

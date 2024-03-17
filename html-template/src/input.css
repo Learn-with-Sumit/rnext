@@ -1,0 +1,33 @@
+:root {
+  --shiki-color-text: theme("colors.white");
+  --shiki-token-constant: theme("colors.emerald.300");
+  --shiki-token-string: theme("colors.emerald.300");
+  --shiki-token-comment: theme("colors.zinc.500");
+  --shiki-token-keyword: theme("colors.sky.300");
+  --shiki-token-parameter: theme("colors.pink.300");
+  --shiki-token-function: theme("colors.violet.300");
+  --shiki-token-string-expression: theme("colors.emerald.300");
+  --shiki-token-punctuation: theme("colors.zinc.200");
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .readMore {
+    @apply inline-flex justify-center gap-0.5 overflow-hidden text-sm font-medium text-emerald-500 transition hover:text-emerald-600 dark:text-emerald-400 dark:hover:text-emerald-500;
+  }
+
+  .buttonDark {
+    @apply inline-flex justify-center gap-0.5 overflow-hidden rounded-full bg-zinc-900 px-3 py-1 text-sm font-medium text-white transition hover:bg-zinc-700 dark:bg-emerald-400/10 dark:text-emerald-400 dark:ring-1 dark:ring-inset dark:ring-emerald-400/20 dark:hover:bg-emerald-400/10 dark:hover:text-emerald-300 dark:hover:ring-emerald-300;
+  }
+
+  .buttonLight {
+    @apply inline-flex justify-center gap-0.5 overflow-hidden rounded-full px-3 py-1 text-sm font-medium text-zinc-700 ring-1 ring-inset ring-zinc-900/10 transition hover:bg-zinc-900/2.5 hover:text-zinc-900 dark:text-zinc-400 dark:ring-white/10 dark:hover:bg-white/5 dark:hover:text-white;
+  }
+
+  .linkGreen {
+    @apply inline-flex justify-center gap-0.5 overflow-hidden text-sm font-medium text-emerald-500 transition hover:text-emerald-600 dark:text-emerald-400 dark:hover:text-emerald-500;
+  }
+}

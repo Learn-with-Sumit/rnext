@@ -1,5 +1,8 @@
+import Button from "@/app/components/Button";
+import SortProducts from "@/app/components/SortProducts";
+import { Suspense } from "react";
+
 export default function Settings() {
-    console.log("Rendering settings page");
     return (
         <div className="p-4">
             <h1 className="text-2xl">Settings page</h1>
@@ -10,6 +13,14 @@ export default function Settings() {
                 repellendus iste. Quis explicabo voluptatem in ea nisi! Pariatur
                 molestiae tenetur reiciendis, atque tempore quis!
             </p>
+
+            <Button>Go to Analytics Page</Button>
+
+            <br />
+            <br />
+            <Suspense>
+                <SortProducts />
+            </Suspense>
         </div>
     );
 }

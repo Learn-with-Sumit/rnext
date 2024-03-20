@@ -1,8 +1,7 @@
 export default function DashboardLayout({ children }) {
-    throw new Error("Error in Dashboard Layout");
     return (
         <>
-            <div>
+            <div className="settings">
                 <ul className="flex gap-5 p-4">
                     <li>Analytics</li>
                     <li>Settings</li>

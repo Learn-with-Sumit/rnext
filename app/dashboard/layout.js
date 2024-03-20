@@ -1,4 +1,5 @@
 export default function DashboardLayout({ children }) {
+    throw new Error("Error in Dashboard Layout");
     return (
         <>
             <div>

@@ -1,5 +1,4 @@
 import Logo from "./Logo";
-
 const Navbar = () => {
     return (
         <nav className="py-4 md:py-6 border-b">

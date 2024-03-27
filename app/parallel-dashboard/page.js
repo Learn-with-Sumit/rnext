@@ -1,3 +1,3 @@
-export default function ParallelDashboardPage() {
-    return;
+export default function Dashboard() {
+    return null;
 }

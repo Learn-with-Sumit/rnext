@@ -1,0 +1,119 @@
+<!doctype html>
+<html class="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cine Rental | Learn with Sumit</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles/output.css" />
+</head>
+
+<body class="dark:bg-body bg-white font-[Sora] dark:text-white text-dark">
+  <!-- Begin header -->
+  <header>
+    <nav class="container flex items-center justify-between space-x-10 py-6">
+      <a href="index.html">
+        <img src="./assets/logo.svg" width="139" height="26" alt="">
+      </a>
+
+      <ul class="flex items-center space-x-5">
+        <li>
+          <a class="bg-primary/20 dark:bg-primary/[7%] rounded-lg backdrop-blur-[2px] p-1 inline-block" href="#">
+            <img src="./assets/ring.svg" width="24" height="24" alt="">
+          </a>
+        </li>
+        <li>
+          <a class="bg-primary/20 dark:bg-primary/[7%] rounded-lg backdrop-blur-[2px] p-1 inline-block" href="#">
+            <img src="./assets/icons/sun.svg" width="24" height="24" alt="">
+          </a>
+        </li>
+        <li>
+          <a class="bg-primary/20 dark:bg-primary/[7%] rounded-lg backdrop-blur-[2px] p-1 inline-block" href="#">
+            <img src="./assets/shopping-cart.svg" width="24" height="24" alt="">
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <!-- End Header -->
+
+  <main>
+    <div class="container grid lg:grid-cols-[218px_1fr] gap-[3.5rem]">
+      <!-- Sidebar -->
+      <aside>
+        <ul class="space-y-2">
+          <li>
+            <a class="flex items-center space-x-2 px-5 py-3.5 rounded-lg bg-primary text-black" href="#">
+              <img src="./assets/icons/trending.svg" width="24" height="24" alt="">
+              <span>Trending</span>
+            </a>
+          </li>
+          <li>
+            <a class="flex items-center space-x-2 px-5 py-3.5 rounded-lg" href="#">
+              <img src="./assets/icons/newRelease.svg" width="24" height="24" alt="">
+              <span>New Releases</span>
+            </a>
+          </li>
+          <li>
+            <a class="flex items-center space-x-2 px-5 py-3.5 rounded-lg" href="#">
+              <img src="./assets/icons/commingSoon.svg" width="24" height="24" alt="">
+              <span>Coming Soon</span>
+            </a>
+          </li>
+          <li>
+            <a class="flex items-center space-x-2 px-5 py-3.5 rounded-lg" href="#">
+              <img src="./assets/icons/favourite.svg" width="24" height="24" alt="">
+              <span>Favourites</span>
+            </a>
+          </li>
+          <li>
+            <a class="flex items-center space-x-2 px-5 py-3.5 rounded-lg" href="#">
+              <img src="./assets/icons/watchLater.svg" width="24" height="24" alt="">
+              <span>Watch Later</span>
+            </a>
+          </li>
+        </ul>
+      </aside>
+      <section>
+        <div>
+          <img class="w-full object-cover max-h-[300px] lg:max-h-[500px]"
+            src="https://image.tmdb.org/t/p/original/qrGtVFxaD8c7et0jUtaYhyTzzPg.jpg" alt="" />
+        </div>
+
+        <div class="grid grid-cols-12 py-12 gap-8">
+          <div class="col-span-2">
+            <img src="https://image.tmdb.org/t/p/original/phmjv93zEwitWLJEOvlXPhtK58o.jpg" alt="">
+          </div>
+          <div class="col-span-8">
+            <h2 class="font-bold text-slate-300 text-2xl">Godzilla x Kong: The New Empire</h2>
+            <p class="my-2 text-slate-400 italic">Following their explosive showdown, Godzilla and Kong must reunite
+              against a
+              colossal
+              undiscovered threat
+              hidden within our world, challenging their very existence – and our own.</p>
+            <ul class="text-slate-300 space-y-2 my-8">
+              <li>Release Date : 2024-03-27</li>
+              <li>Average Vote : 7.5</li>
+              <li>Vote Count : 81</li>
+              <li>Popularity : 2461.857</li>
+            </ul>
+
+          </div>
+          <div class="col-span-2 space-y-4">
+            <button class="py-2 w-full bg-primary font-medium text-slate-800 rounded-md">
+              Stream In HD
+            </button>
+            <button class="py-2 w-full bg-primary font-medium text-slate-800 rounded-md">
+              Download In HD
+            </button>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+</body>
+
+</html>

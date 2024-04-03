@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        @apply font-inter;
+    }
+}
+
+@layer components {
+    .wrapper {
+        @apply relative grid min-h-screen max-w-full place-items-center overflow-y-auto bg-[#19243B];
+    }
+    .bg-img {
+        @apply h-screen absolute left-0 right-0 top-0 z-10 w-full object-cover max-lg:fixed max-lg:h-screen;
+    }
+    .overlay {
+        @apply h-screen absolute left-0 right-0 top-0 z-20 w-full bg-[url('/gradient.png')] bg-cover bg-center bg-no-repeat max-lg:fixed max-lg:h-screen;
+    }
+    .card {
+        @apply relative h-full min-h-[290px] max-w-full rounded-2xl bg-[#293A4E] p-5 text-white;
+    }
+    .feature-name {
+        @apply text-sm font-medium text-[#7887A2] lg:text-base;
+    }
+    .feature-main {
+        @apply absolute left-1/2 top-1/2 flex -translate-x-1/2 -translate-y-1/2 flex-col items-center space-y-2;
+        .feature-name {
+            @apply text-[#92B6F5];
+        }
+    }
+    .feature-title {
+        @apply text-2xl font-bold text-white lg:text-[28px];
+    }
+}

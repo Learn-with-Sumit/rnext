@@ -1,6 +1,8 @@
 import getJoke from "@/utils/getJoke";
 import RandJoke from "./components/RandomJoke";
 
+export const revalidate = 10;
+
 export default async function Home() {
     const joke = await getJoke();
 

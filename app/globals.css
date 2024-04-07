@@ -49,7 +49,7 @@
         @apply bg-gray-500 opacity-70;
     }
 
-    a {
+    a.anchor {
         @apply px-6 py-3 rounded-md my-2 m-4 font-medium border border-cyan-700 active:ring-cyan-900 active:ring transition-all hover:shadow-md hover:shadow-cyan-700/50;
     }
 
@@ -62,7 +62,7 @@
     }
 
     .box {
-        @apply border border-white/30 rounded-lg p-8 max-w-[800px] m-4;
+        @apply border border-white/30 rounded-lg p-8 max-w-[800px] m-4 text-slate-800;
     }
 
     .box-1 {

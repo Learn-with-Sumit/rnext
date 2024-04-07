@@ -44,6 +44,11 @@
         @apply bg-cyan-700 px-6 py-3 my-8 font-medium active:ring-cyan-900 active:ring transition-all w-full rounded;
     }
 
+    button:disabled,
+    button[disabled] {
+        @apply bg-gray-500 opacity-70;
+    }
+
     a {
         @apply px-6 py-3 rounded-md my-2 m-4 font-medium border border-cyan-700 active:ring-cyan-900 active:ring transition-all hover:shadow-md hover:shadow-cyan-700/50;
     }

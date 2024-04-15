@@ -1,0 +1,143 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --foreground-rgb: 0, 0, 0;
+    --background-start-rgb: 214, 219, 220;
+    --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --foreground-rgb: 255, 255, 255;
+        --background-start-rgb: 0, 0, 0;
+        --background-end-rgb: 0, 0, 0;
+    }
+}
+
+@layer utilities {
+    body {
+        @apply text-white bg-black p-10 max-w-[1400px] mx-auto;
+    }
+    h1 {
+        @apply font-bold text-2xl py-2;
+    }
+
+    h2 {
+        @apply font-bold text-xl py-2;
+    }
+
+    h3 {
+        @apply font-medium text-lg py-2;
+    }
+
+    p {
+        @apply text-gray-500 mt-2 mb-4 text-justify leading-7;
+    }
+
+    input {
+        @apply border-none outline-none bg-gray-900 focus:ring ring-cyan-500/50 p-2 py-2 rounded-md mr-2 my-2 placeholder:text-slate-500 transition-all;
+    }
+
+    button {
+        @apply bg-cyan-700 px-6 py-3 rounded-md my-2 m-4 font-medium active:ring-cyan-900 active:ring transition-all;
+    }
+
+    a {
+        @apply px-6 py-3 rounded-md my-2 m-4 font-medium border border-cyan-700 active:ring-cyan-900 active:ring transition-all hover:shadow-md hover:shadow-cyan-700/50;
+    }
+
+    .box-primary {
+        @apply border border-gray-300/40 bg-gray-900/50 rounded-lg p-8 max-w-[800px] m-4;
+    }
+
+    .box-secondary {
+        @apply border border-gray-300/40 bg-gray-700/50 rounded-lg p-8 max-w-[800px] m-4;
+    }
+
+    .box {
+        @apply border border-white/30 rounded-lg p-8 max-w-[800px] m-4;
+    }
+
+    .box-1 {
+        @apply box border-red-300/40 bg-red-700/20;
+    }
+
+    .box-2 {
+        @apply box border-green-300/40 bg-green-700/20;
+    }
+
+    .box-3 {
+        @apply box border-orange-500/40 bg-orange-500/10;
+    }
+
+    .box-4 {
+        @apply box border-blue-300/40 bg-blue-900/20;
+    }
+
+    .box-5 {
+        @apply box border-yellow-400/40 bg-yellow-700/20;
+    }
+
+    .box-6 {
+        @apply box border-indigo-500/40 bg-indigo-700/20;
+    }
+
+    .box-7 {
+        @apply box border-pink-500/40 bg-pink-700/20;
+    }
+
+    .loading {
+        @apply box p-4;
+        position: relative;
+    }
+
+    .loading::before {
+        content: "⌛️";
+    }
+    .loading::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgb(87, 87, 87);
+        opacity: 0.5;
+        animation: skeletonAnim 1s infinite alternate;
+        transition: all 0.5s ease-in-out;
+    }
+    @keyframes skeletonAnim {
+        from {
+            background-color: rgba(68, 68, 68, 0);
+        }
+        to {
+            background-color: rgb(86, 86, 86);
+        }
+    }
+
+    .error {
+        @apply box bg-red-900/30 border-red-700 text-red-500 relative;
+    }
+
+    .error::before {
+        content: "🚧 ";
+    }
+
+    .warning {
+        @apply box bg-yellow-900/30 border-yellow-700 text-yellow-500 relative;
+    }
+
+    .warning::before {
+        content: "⚠️ ";
+    }
+
+    .success {
+        @apply box bg-green-900/30 border-green-700 text-green-500 relative;
+    }
+
+    .success::before {
+        content: "✅ ";
+    }
+}

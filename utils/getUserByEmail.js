@@ -1,9 +1,9 @@
-import User from "@/app/components/users/User";
 import connectMongo from "@/dbConnect/connectMongo";
+import User from "@/models/User";
 import { cache } from "react";
 
 export const getUserByEmail = cache(async (email) => {
-    console.log("I am in");
+    console.log("I am pulling from database");
     try {
         await connectMongo();
 

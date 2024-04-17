@@ -10,6 +10,7 @@ export default async function Home() {
             <User />
             <UserList />
             <User />
+            <User />
         </div>
     );
 }

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eventry | Learn with Sumit</title>
+
+  <link rel="stylesheet" href="./output.css">
+</head>
+
+<body>
+  <nav>
+    <div class="container flex justify-between items-center py-4">
+      <div class="nav-brand">
+        <a href="index.html">
+          <img src="./assets/logo.svg" alt="Eventry" class="h-[45px]">
+        </a>
+      </div>
+
+      <ul class="flex gap-4 text-[#9C9C9C]">
+        <li>About</li>
+        <li>Contact Us</li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <section class="container">
+      <div class="bg-[#242526] p-6 rounded-lg max-w-xl mx-auto my-12">
+        <h2 class="font-bold text-xl mb-8">Payment Details</h2>
+
+        <form>
+          <div class="my-4 space-y-2">
+            <label for="name" class="block">Name</label>
+            <input type="text" id="name" class="w-full bg-[#27292F] border border-[#CCCCCC]/20 py-1 px-2 rounded-md" />
+          </div>
+
+          <div class="my-4 space-y-2">
+            <label for="email" class="block">Email</label>
+            <input type="email" id="email"
+              class="w-full bg-[#27292F] border border-[#CCCCCC]/20 py-1 px-2 rounded-md" />
+          </div>
+
+          <div class="my-4 space-y-2">
+            <label for="card" class="block">Card Number</label>
+            <input type="text" id="card" class="w-full bg-[#27292F] border border-[#CCCCCC]/20 py-1 px-2 rounded-md" />
+          </div>
+
+          <div class="my-4 space-y-2">
+            <label for="expiry" class="block">Expiry Date</label>
+            <input type="text" id="expiry"
+              class="w-full bg-[#27292F] border border-[#CCCCCC]/20 py-1 px-2 rounded-md" />
+          </div>
+
+          <div class="my-4 space-y-2">
+            <label for="cvv" class="block">CVV</label>
+            <input type="text" id="cvv" class="w-full bg-[#27292F] border border-[#CCCCCC]/20 py-1 px-2 rounded-md" />
+          </div>
+
+          <button type="submit" class="w-full my-8 bg-indigo-600 hover:bg-indigo-800 py-2 rounded-md">Pay Now</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+</body>
+
+</html>

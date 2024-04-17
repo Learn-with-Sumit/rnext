@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eventry | Learn with Sumit</title>
+
+    <link rel="stylesheet" href="./output.css" />
+  </head>
+
+  <body>
+    <nav>
+      <div class="container flex justify-between items-center py-4">
+        <div class="nav-brand">
+          <a href="index.html">
+            <img src="./assets/logo.svg" alt="Eventry" class="h-[45px]" />
+          </a>
+        </div>
+
+        <ul class="flex gap-4 text-[#9C9C9C]">
+          <li>About</li>
+          <li>Contact Us</li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="">
+      <section class="h-screen grid place-items-center">
+        <div
+          class="max-w-[450px] w-full mx-auto p-6 border border-gray-700/20 rounded-md"
+        >
+          <h4 class="font-bold text-2xl">Sign in</h4>
+          <form class="login-form">
+            <!-- email -->
+            <div>
+              <label for="email">Email Address</label>
+              <input type="email" name="email" id="email" />
+            </div>
+            <!-- password -->
+            <div>
+              <label for="password">Password</label>
+              <input type="password" name="password" id="password" />
+            </div>
+
+            <button
+              type="submit"
+              class="btn-primary w-full mt-4 bg-indigo-600 hover:bg-indigo-800"
+            >
+              Login
+            </button>
+          </form>
+
+          <span class="text-center text-xs text-gray-500">
+            Don't have an account?
+            <a class="underline hover:text-indigo-600" href="./register.html"
+              >Register</a
+            >
+          </span>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

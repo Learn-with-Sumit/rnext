@@ -25,7 +25,7 @@ const schema = new Schema({
     required: false,
     type: Array
   },
-  swgs: {
+  swags: {
     required: false,
     type: Array
   }

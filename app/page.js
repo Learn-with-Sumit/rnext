@@ -1,3 +1,5 @@
+import { EventButton } from "./components/Button";
+
 export default async function Home() {
     return (
         <div className="p-8">
@@ -7,6 +9,10 @@ export default async function Home() {
                 amet consequatur odio, obcaecati laudantium possimus dolorem
                 deserunt, molestiae quae voluptatem officia. Sit similique
                 sapiente sunt beatae modi perferendis vero nam.
+            </div>
+
+            <div className="mt-6">
+                <EventButton />
             </div>
         </div>
     );

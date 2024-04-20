@@ -1,0 +1,9 @@
+[
+    {
+        "firstName": "John",
+        "lastName": "Doe",
+        "email": "johndoe@hotmail.com",
+        "password": "password",
+        "favourites": ["66233de62d53857e7cedc656"]
+    }
+]

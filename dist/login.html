@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Khana Khazana</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="./output.css">
+</head>
+
+<body>
+  <nav>
+    <div class="container flex justify-between py-6">
+      <a href="index.html">
+        <img src="./assets/images/logo.png" alt="" class="object-cover h-[40px]" />
+      </a>
+
+      <ul class="flex gap-4 text-sm text-gray-500">
+        <li class="py-2 active">
+          <a href="./index.html">Home</a>
+        </li>
+
+        <li class="py-2">
+          <a href="./index.html">Recipe</a>
+        </li>
+
+        <li class="py-2">
+          <a href="./index.html">About us</a>
+        </li>
+
+        <li class="py-2 bg-[#eb4a36] px-6 rounded-md text-white content-center">
+          <a href="./login.html">Login</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="">
+    <section class="h-screen grid place-items-center">
+      <div class="max-w-[450px] w-full mx-auto p-6 border border-gray-700/20 rounded-md">
+        <h4 class="font-bold text-2xl">Sign in</h4>
+        <form class="login-form">
+          <div>
+            <label for="email">Email Address</label>
+            <input type="email" name="email" id="email" />
+          </div>
+
+          <div>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" />
+          </div>
+
+          <button type="submit" class="bg-[#eb4a36] py-3 rounded-md text-white w-full mt-4">Login</button>
+        </form>
+
+        <p class="text-center text-xs text-gray-600">Or</p>
+
+        <a href="./register.html" class="underline text-sm mx-auto block text-gray-600 mt-4 text-center">
+          Create New Account
+        </a>
+      </div>
+    </section>
+  </main>
+
+</body>
+
+</html>

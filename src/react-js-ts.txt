@@ -1,0 +1,54 @@
+// First Example
+
+import * as React from "react";
+import { render } from "react-dom";
+
+interface CustomProps {
+  title: string;
+  message: string;
+}
+
+function App(props: CustomProps) {
+  return (
+    <>
+      <h1>{props.title}</h1>
+      <p>{props.message ? props.message : "No message available."}</p>
+    </>
+  );
+}
+render(<App title="Welcome" />, document.getElementById("root"));
+
+
+// Second Example
+
+import React from 'react';
+
+interface ItemListProps {
+  items: string[];
+}
+
+const ItemList: React.FC<ItemListProps> = ({ items }) => {
+  return (
+    <div>
+      <h2>Items</h2>
+      <ul>
+        {items.map((item, index) => (
+          <li key={index}>{item}</li>
+        ))}
+      </ul>
+    </div>
+  );
+};
+
+export default ItemList;
+
+
+
+
+
+
+
+
+
+
+

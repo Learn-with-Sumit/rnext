@@ -1,0 +1,14 @@
+{
+  "name": "typescript-learning",
+  "version": "1.0.0",
+  "description": "A Typescript Crach course",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.4.5"
+  }
+}

@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  nav {
+    @apply max-w-7xl flex mx-auto justify-between px-4 py-4 absolute top-0 w-full left-0 right-0 z-50;
+  }
+
+  nav img {
+    @apply h-[35px] md:h-[40px] lg:h-[50px];
+  }
+  nav ul {
+    @apply hidden md:flex items-center gap-6;
+  }
+
+  nav ul .login {
+    @apply bg-primary px-6 py-3 text-white font-bold rounded-md;
+  }
+
+  .container {
+    @apply max-w-7xl mx-auto w-full px-4;
+  }
+
+  /* Input */
+  select {
+    @apply w-full px-4 py-2 rounded-md border border-black/20 bg-transparent;
+  }
+
+  input[type="date"] {
+    @apply w-full px-4 py-2 rounded-md border border-black/20 bg-transparent;
+  }
+
+  .search-btn {
+    @apply bg-primary px-8 py-3 rounded-md block mx-auto text-white font-bold -translate-y-1/2 shadow-lg hover:shadow-primary/50 active:scale-95 transition-all;
+  }
+
+  .btn-primary {
+    @apply bg-primary px-8 py-2 rounded-md block text-white font-bold shadow-lg hover:shadow-primary/50 active:scale-95 transition-all;
+  }
+
+  #searchParams {
+    @apply bg-white w-full h-full py-10 lg:py-12 px-6 lg:px-8 rounded-xl border border-black/10 shadow-lg lg:flex items-center [&>*]:flex-1 [&>*]:px-4 [&>div>span]:mb-3 space-y-5 lg:space-y-0;
+  }
+
+  #searchParams span {
+    @apply font-bold;
+  }
+
+  .imageshowCase {
+    @apply h-[400px];
+  }
+
+  .imageshowCase img {
+    @apply h-full min-h-full w-full min-w-full object-cover;
+  }
+
+  .login-form {
+    @apply flex flex-col my-6;
+  }
+
+  .login-form div {
+    @apply flex flex-col gap-2 my-2;
+  }
+
+  .login-form input {
+    @apply border border-black/20 rounded-md px-4 py-2;
+  }
+}

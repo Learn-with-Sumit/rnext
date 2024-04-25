@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stay Swift</title>
+  <link rel="stylesheet" href="./output.css">
+</head>
+
+<body>
+  <nav>
+    <a href="./index.html">
+      <img src="./assets/stayswift.svg" alt="Stay Swift Logo" srcset="">
+    </a>
+
+    <ul>
+      <li>
+        <a href="#">Recommended Places</a>
+      </li>
+
+      <li>
+        <a href="#">About Us</a>
+      </li>
+
+      <li>
+        <a href="#">Contact us</a>
+      </li>
+
+      <li>
+        <a href="./bookings.html">Bookings</a>
+      </li>
+
+      <li>
+        <a href="#" class="login">Login</a>
+      </li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="container">
+      <div class="p-6 rounded-lg max-w-xl mx-auto my-12 mt-[100px]">
+        <h2 class="font-bold text-2xl">Payment Details</h2>
+        <p class="text-gray-600 text-sm">You have picked <b>Effotel By Sayaji Jaipur</b> and base price is <b>$10</b>
+        </p>
+        <form class="my-8">
+          <div class="my-4 space-y-2">
+            <label for="name" class="block">Name</label>
+            <input type="text" id="name" class="w-full border border-[#CCCCCC]/60 py-1 px-2 rounded-md" />
+          </div>
+
+          <div class="my-4 space-y-2">
+            <label for="email" class="block">Email</label>
+            <input type="email" id="email" class="w-full border border-[#CCCCCC]/60 py-1 px-2 rounded-md" />
+          </div>
+
+          <div class="my-4 space-y-2">
+            <span>Check in</span>
+            <h4 class="mt-2">
+              <input type="date" name="checkin" id="checkin">
+            </h4>
+          </div>
+
+          <!-- Check in -->
+          <div class="my-4 space-y-2">
+            <span>Checkout</span>
+            <h4 class="mt-2">
+              <input type="date" name="checkout" id="checkout">
+            </h4>
+          </div>
+
+          <div class="my-4 space-y-2">
+            <label for="card" class="block">Card Number</label>
+            <input type="text" id="card" class="w-full border border-[#CCCCCC]/60 py-1 px-2 rounded-md" />
+          </div>
+
+          <div class="my-4 space-y-2">
+            <label for="expiry" class="block">Expiry Date</label>
+            <input type="text" id="expiry" class="w-full border border-[#CCCCCC]/60 py-1 px-2 rounded-md" />
+          </div>
+
+          <div class="my-4 space-y-2">
+            <label for="cvv" class="block">CVV</label>
+            <input type="text" id="cvv" class="w-full border border-[#CCCCCC]/60 py-1 px-2 rounded-md" />
+          </div>
+
+          <button type="submit" class="btn-primary w-full">Pay Now ($10)</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+</body>
+
+</html>

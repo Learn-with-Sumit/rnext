@@ -1,7 +1,17 @@
 
 import PaymentForm from "@/components/payment/PaymentForm";
 
-const PaymentPage = () => {
+import { auth } from "@/auth";
+import { redirect } from "next/navigation";
+
+const PaymentPage = async () => {
+
+  const session = await auth();
+
+  if(!session) {
+    redirect('/login');
+  }
+  
   return (
     <section className="container">
       <div className="p-6 rounded-lg max-w-xl mx-auto my-12 mt-[100px]">

@@ -39,6 +39,10 @@
     @apply bg-primary px-8 py-2 rounded-md block text-white font-bold shadow-lg hover:shadow-primary/50 active:scale-95 transition-all;
   }
 
+  .btn-disabled {
+    @apply bg-gray-500 px-8 py-2 rounded-md block text-white font-bold shadow-lg cursor-default;
+  }
+
   #searchParams {
     @apply bg-white w-full h-full py-10 lg:py-12 px-6 lg:px-8 rounded-xl border border-black/10 shadow-lg lg:flex items-center [&>*]:flex-1 [&>*]:px-4 [&>div>span]:mb-3 space-y-5 lg:space-y-0;
   }
@@ -69,5 +73,9 @@
 
   input[type="checkbox"] {
     @apply mx-1
+  }
+
+  button:disabled {
+    @apply bg-gray-500 cursor-default
   }
 }

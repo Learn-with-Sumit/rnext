@@ -4,8 +4,8 @@ import Overview from "@/components/hotel/details/Overview"
 
 import { getHotelById } from "@/database/queries"
 
-const HotelDetailsPage = async ({params: {id}}) => {
-  const hotelInfo = await getHotelById(id);
+const HotelDetailsPage = async ({params: {id}, searchParams:{checkin, checkout}}) => {
+  const hotelInfo = await getHotelById(id, checkin, checkout);
 
   return (
     <>

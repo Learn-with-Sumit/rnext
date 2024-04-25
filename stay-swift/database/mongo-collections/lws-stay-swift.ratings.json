@@ -1,0 +1,36 @@
+[{
+  "_id": {
+    "$oid": "662719fbc2cac047ced8fe3d"
+  },
+  "hotelId": {
+    "$oid": "66263526f50c2e548501f285"
+  },
+  "userId": {
+    "$oid": "6626a904a3f7c5b84f61b0fc"
+  },
+  "rating": 3
+},
+{
+  "_id": {
+    "$oid": "66271a5fc2cac047ced8fe3e"
+  },
+  "hotelId": {
+    "$oid": "66263526f50c2e548501f285"
+  },
+  "userId": {
+    "$oid": "6626a904a3f7c5b84f61b0fc"
+  },
+  "rating": 4
+},
+{
+  "_id": {
+    "$oid": "66271a7dc2cac047ced8fe3f"
+  },
+  "hotelId": {
+    "$oid": "66263526f50c2e548501f287"
+  },
+  "userId": {
+    "$oid": "6626a904a3f7c5b84f61b0fc"
+  },
+  "rating": 5
+}]

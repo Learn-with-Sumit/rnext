@@ -1,0 +1,12 @@
+[{
+  "_id": {
+    "$oid": "66271aabc2cac047ced8fe41"
+  },
+  "hotelId": {
+    "$oid": "66263526f50c2e548501f285"
+  },
+  "userId": {
+    "$oid": "6626a904a3f7c5b84f61b0fc"
+  },
+  "review": "Great place to stay. Rooms were clean, the lawn was great. We loved all the amenities. The food seems to be on the higher rate side."
+}]

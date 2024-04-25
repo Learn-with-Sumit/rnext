@@ -1,0 +1,36 @@
+[{
+  "_id": {
+    "$oid": "66271646c2cac047ced8fe30"
+  },
+  "name": "Swimming Pool",
+  "price": 0,
+  "instructions": "Always use the clothes that are swimming pool friendly.",
+  "hours": "8 AM to 8 PM"
+},
+{
+  "_id": {
+    "$oid": "662716d8c2cac047ced8fe31"
+  },
+  "name": "Gym",
+  "price": 0,
+  "instructions": "Please carry a water bottle and towel with you.",
+  "hours": "8 AM to 8 PM"
+},
+{
+  "_id": {
+    "$oid": "66271722c2cac047ced8fe32"
+  },
+  "name": "WiFI",
+  "price": 0,
+  "instructions": "The Wifi Password is a combination of first 5 letters of your booking id, followed by your room number",
+  "hours": "24 hours"
+},
+{
+  "_id": {
+    "$oid": "66271762c2cac047ced8fe33"
+  },
+  "name": "Golf Club",
+  "price": 75,
+  "instructions": "The entry is free for only Prime Membership customers.",
+  "hours": "8 AM to 4 PM"
+}]

@@ -1,0 +1,885 @@
+[{
+  "_id": {
+    "$oid": "66263526f50c2e548501f285"
+  },
+  "name": "Charme villa",
+  "address1": "Strada Provinciale 215",
+  "airportCode": "FCO",
+  "city": "Puglia",
+  "countryCode": " IT",
+  "highRate": 1705,
+  "location": {
+    "latitude": 37.61309,
+    "longitude": -132.33788
+  },
+  "locationDescription": "Catania Italy",
+  "lowRate": 1535,
+  "postalCode": 73040,
+  "propertyCategory": 5,
+  "shortDescription": "Holiday villa in the heart of Salento: a stone's throw from the sea! Discover the charm of Salento from this beautiful villa located just 50 meters from the crystal clear waters of the sea of Capilungo. With an outdoor space equipped with garden furniture, outdoor shower and barbecue, you can experience unforgettable moments outdoors.",
+  "stateProvinceCode": "PA",
+  "thumbNailUrl": "https://a0.muscache.com/im/pictures/miso/Hosting-1113560823442253330/original/c951fc4f-5345-4b44-9bc9-80060d151efd.jpeg?im_w=1200",
+  "gallery": [
+    "https://a0.muscache.com/im/pictures/miso/Hosting-1113560823442253330/original/fe905c46-4243-44bf-bd59-bc8b463326ea.jpeg?im_w=480",
+    "https://a0.muscache.com/im/pictures/miso/Hosting-1113560823442253330/original/0c7bca68-276a-490d-87d7-d204f2d19735.jpeg?im_w=240",
+    "https://a0.muscache.com/im/pictures/miso/Hosting-1113560823442253330/original/50468371-c5a4-4827-84b3-5091f84d7034.jpeg?im_w=240",
+    "https://a0.muscache.com/im/pictures/miso/Hosting-1113560823442253330/original/0f0fa575-2ab3-4c1e-a4ba-2b8401f9a505.jpeg?im_w=480",
+    "https://a0.muscache.com/im/pictures/miso/Hosting-1113560823442253330/original/d316a194-076f-4032-a5d5-fd96542a683f.jpeg?im_w=240"
+  ],
+  "overview": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi sit nobis saepe enim iusto quod possimus cupiditate reiciendis necessitatibus, similique consequatur quibusdam nulla cumque quisquam facilis?\nRecusandae assumenda, quam quaerat voluptas aut vel dignissimos et. Itaque voluptate cum, quidem ipsam autem eaque quo possimus dolorem nisi dolore commodi. Rem, vero labore dolorum obcaecati sequi corporis magni quos hic, delectus velit, inventore tenetur. Voluptatibus, ipsum, aspernatur ducimus sint odit in mollitia nulla sunt possimus deleniti dolore error excepturi, distinctio delectus recusandae. Fugit, explicabo tenetur soluta quidem maxime quod autem eius et? Assumenda velit numquam facilis recusandae. Modi asperiores voluptatum iusto voluptates ab optio! Quisquam porro architecto deleniti quod. Quae reiciendis veniam dignissimos accusantium cumque temporibus? Inventore facere dolorem obcaecati! A obcaecati praesentium explicabo ipsa ratione ducimus ea porro optio, iste et, nemo, accusamus consectetur dolorem eius velit molestiae. Dolor totam pariatur iusto a beatae. Unde ullam iste alias illum temporibus possimus totam placeat? Laboriosam ratione reiciendis, ex atque ipsa eligendi ad nam ducimus cum ea, nihil natus non iure reprehenderit eum soluta voluptate corrupti\n\nnecessitatibus totam minus dolore repudiandae libero! Labore eius a sint quos soluta quae libero delectus sequi eum rem, accusamus dolor amet earum! Animi tempora reiciendis nostrum hic assumenda, similique doloribus libero nesciunt minima earum aperiam qui quas maiores magnam temporibus fugiat molestias? Labore tenetur ad odio repudiandae commodi doloremque ea fuga quaerat vel nam deserunt similique facere totam dolorum deleniti itaque placeat, consequuntur culpa laudantium animi perspiciatis obcaecati? Laborum impedit harum dolore cumque officia dolores vitae sequi.",
+  "amenities": [
+    {
+      "$oid": "66271646c2cac047ced8fe30"
+    },
+    {
+      "$oid": "662716d8c2cac047ced8fe31"
+    },
+    {
+      "$oid": "66271722c2cac047ced8fe32"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "66263526f50c2e548501f286"
+  },
+  "name": "Blue Home Catania",
+  "address1": "Catania CA/215",
+  "airportCode": "FCO",
+  "city": "Catania",
+  "countryCode": " IT",
+  "highRate": 2078,
+  "location": {
+    "latitude": 87.61509,
+    "longitude": -932.32788
+  },
+  "locationDescription": "Catania Italy",
+  "lowRate": 1737,
+  "postalCode": 73040,
+  "propertyCategory": 4,
+  "shortDescription": "Blue Home Catania is an entire apartment dedicated to you and your family. Very comfortable and comfortable, with four beds in two separate rooms, it is ideal for your vacation in Catania. It is a short walk from the central Via Etnea and the metro station with which you can visit the whole city very easily.",
+  "stateProvinceCode": "CA",
+  "thumbNailUrl": "https://a0.muscache.com/im/pictures/miso/Hosting-1095593584955712690/original/ad3d89e2-5ab8-4f2a-966e-81be424f4a0c.jpeg?im_w=1200",
+  "gallery": [
+    "https://a0.muscache.com/im/pictures/miso/Hosting-1095593584955712690/original/3e777b1d-29ef-465e-a2cd-010d6382ce59.jpeg?im_w=240",
+    "https://a0.muscache.com/im/pictures/miso/Hosting-1095593584955712690/original/bdc421f6-a745-4334-8485-7b471053819c.jpeg?im_w=240",
+    "https://a0.muscache.com/im/pictures/miso/Hosting-1095593584955712690/original/53edde70-e1dd-47f3-99ca-058806477b8e.jpeg?im_w=480",
+    "https://a0.muscache.com/im/pictures/miso/Hosting-1095593584955712690/original/36ba3fbf-8753-42bc-9906-8f1d968ff1ab.jpeg?im_w=240",
+    "https://a0.muscache.com/im/pictures/miso/Hosting-1095593584955712690/original/0f3e8cb8-700c-4d5b-bdb9-44effae79c10.jpeg?im_w=720"
+  ],
+  "overview": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi sit nobis saepe enim iusto quod possimus cupiditate reiciendis necessitatibus, similique consequatur quibusdam nulla cumque quisquam facilis?\nRecusandae assumenda, quam quaerat voluptas aut vel dignissimos et. Itaque voluptate cum, quidem ipsam autem eaque quo possimus dolorem nisi dolore commodi. Rem, vero labore dolorum obcaecati sequi corporis magni quos hic, delectus velit, inventore tenetur. Voluptatibus, ipsum, aspernatur ducimus sint odit in mollitia nulla sunt possimus deleniti dolore error excepturi, distinctio delectus recusandae. Fugit, explicabo tenetur soluta quidem maxime quod autem eius et? Assumenda velit numquam facilis recusandae. Modi asperiores voluptatum iusto voluptates ab optio! Quisquam porro architecto deleniti quod. Quae reiciendis veniam dignissimos accusantium cumque temporibus? Inventore facere dolorem obcaecati! A obcaecati praesentium explicabo ipsa ratione ducimus ea porro optio, iste et, nemo, accusamus consectetur dolorem eius velit molestiae. Dolor totam pariatur iusto a beatae. Unde ullam iste alias illum temporibus possimus totam placeat? Laboriosam ratione reiciendis, ex atque ipsa eligendi ad nam ducimus cum ea, nihil natus non iure reprehenderit eum soluta voluptate corrupti\n\nnecessitatibus totam minus dolore repudiandae libero! Labore eius a sint quos soluta quae libero delectus sequi eum rem, accusamus dolor amet earum! Animi tempora reiciendis nostrum hic assumenda, similique doloribus libero nesciunt minima earum aperiam qui quas maiores magnam temporibus fugiat molestias? Labore tenetur ad odio repudiandae commodi doloremque ea fuga quaerat vel nam deserunt similique facere totam dolorum deleniti itaque placeat, consequuntur culpa laudantium animi perspiciatis obcaecati? Laborum impedit harum dolore cumque officia dolores vitae sequi.",
+  "amenities": [
+    {
+      "$oid": "66271646c2cac047ced8fe30"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "66263526f50c2e548501f287"
+  },
+  "name": "Attico Magnificent",
+  "address1": "Palermo PA/315",
+  "airportCode": "FCO",
+  "city": "Puglia",
+  "countryCode": " IT",
+  "highRate": 3677,
+  "location": {
+    "latitude": 97.61509,
+    "longitude": -532.32788
+  },
+  "locationDescription": "Palermo Italy",
+  "lowRate": 2942,
+  "postalCode": 901121,
+  "propertyCategory": 3,
+  "shortDescription": "Get ready to be enthralled by the immense beauty of our stay, furnished with taste and attention to detail, where you will find the perfect place to relax and share special moments with your loved ones. A fully equipped open-space kitchen awaits you, ready to satisfy every culinary need and make your stay even more enjoyable.",
+  "stateProvinceCode": "PA",
+  "thumbNailUrl": "https://a0.muscache.com/im/pictures/miso/Hosting-1133364402111191988/original/6cb87272-aabe-45bc-ac8a-bfa7d11d915a.jpeg?im_w=1200",
+  "gallery": [
+    "https://a0.muscache.com/im/pictures/miso/Hosting-1133364402111191988/original/dc8b5127-351b-418b-afef-897f34569e4f.jpeg?im_w=240",
+    "https://a0.muscache.com/im/pictures/miso/Hosting-1133364402111191988/original/297fd939-f38c-4d72-a94a-cc53a85e5bd4.jpeg?im_w=240",
+    "https://a0.muscache.com/im/pictures/miso/Hosting-1133364402111191988/original/21396bf2-6eae-49dc-94c9-ecc93c86ee05.jpeg?im_w=480",
+    "https://a0.muscache.com/im/pictures/miso/Hosting-1133364402111191988/original/666f03f6-3caa-4d7b-876e-0d2f001bcaba.jpeg?im_w=480",
+    "https://a0.muscache.com/im/pictures/miso/Hosting-1133364402111191988/original/385a068b-0a94-4c22-b0d7-10badbea698c.jpeg?im_w=240"
+  ],
+  "overview": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi sit nobis saepe enim iusto quod possimus cupiditate reiciendis necessitatibus, similique consequatur quibusdam nulla cumque quisquam facilis?\n\nRecusandae assumenda, quam quaerat voluptas aut vel dignissimos et. Itaque voluptate cum, quidem ipsam autem eaque quo possimus dolorem nisi dolore commodi. Rem, vero labore dolorum obcaecati sequi corporis magni quos hic, delectus velit, inventore tenetur. Voluptatibus, ipsum, aspernatur ducimus sint odit in mollitia nulla sunt possimus deleniti dolore error excepturi, distinctio delectus recusandae. Fugit, explicabo tenetur soluta quidem maxime quod autem eius et? Assumenda velit numquam facilis recusandae. Modi asperiores voluptatum iusto voluptates ab optio! Quisquam porro architecto deleniti quod. Quae reiciendis veniam dignissimos accusantium cumque temporibus? Inventore facere dolorem obcaecati! A obcaecati praesentium explicabo ipsa ratione ducimus ea porro optio, iste et, nemo, accusamus consectetur dolorem eius velit molestiae. Dolor totam pariatur iusto a beatae. Unde ullam iste alias illum temporibus possimus totam placeat? Laboriosam ratione reiciendis, ex atque ipsa eligendi ad nam ducimus cum ea, nihil natus non iure reprehenderit eum soluta voluptate corrupti\n\nnecessitatibus totam minus dolore repudiandae libero! Labore eius a sint quos soluta quae libero delectus sequi eum rem, accusamus dolor amet earum! Animi tempora reiciendis nostrum hic assumenda, similique doloribus libero nesciunt minima earum aperiam qui quas maiores magnam temporibus fugiat molestias? Labore tenetur ad odio repudiandae commodi doloremque ea fuga quaerat vel nam deserunt similique facere totam dolorum deleniti itaque placeat, consequuntur culpa laudantium animi perspiciatis obcaecati? Laborum impedit harum dolore cumque officia dolores vitae sequi.",
+  "amenities": [
+    {
+      "$oid": "66271646c2cac047ced8fe30"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "66263526f50c2e548501f288"
+  },
+  "name": "Frejus Unit",
+  "address1": "Frejus FA/543",
+  "airportCode": "CDG",
+  "city": "Frejus",
+  "countryCode": "FR",
+  "highRate": 2558,
+  "location": {
+    "latitude": 89.61509,
+    "longitude": -892.32788
+  },
+  "locationDescription": "Fréjus, France FA/21",
+  "lowRate": 2047,
+  "postalCode": 83370,
+  "propertyCategory": 5,
+  "shortDescription": "Nice F2 of 50m2 with balcony and free parking space in a secure and green residence in Fréjus Plage.A real everything on foot that will allow you to enjoy the beach and local shops without taking the car. (Supermarket, pharmacy, bakery, tobacco press, bars.",
+  "stateProvinceCode": "FA",
+  "thumbNailUrl": "https://a0.muscache.com/im/pictures/miso/Hosting-1134181714576332581/original/6369ec30-32f0-45d2-8867-834cc49c1191.jpeg?im_w=1200",
+  "gallery": [
+    "https://a0.muscache.com/im/pictures/miso/Hosting-1134181714576332581/original/11800eeb-9255-499e-bdb2-a95ef3523231.jpeg?im_w=480",
+    "https://a0.muscache.com/im/pictures/miso/Hosting-1134181714576332581/original/7961eb71-8a24-4fb4-b689-7fbb5c7b7ac0.jpeg?im_w=480",
+    "https://a0.muscache.com/im/pictures/miso/Hosting-1134181714576332581/original/ad449751-b46a-4f92-97b2-3c4a0971e423.jpeg?im_w=240",
+    "https://a0.muscache.com/im/pictures/miso/Hosting-1134181714576332581/original/6369ec30-32f0-45d2-8867-834cc49c1191.jpeg?im_w=240",
+    "https://a0.muscache.com/im/pictures/miso/Hosting-1134181714576332581/original/ad449751-b46a-4f92-97b2-3c4a0971e423.jpeg?im_w=240"
+  ],
+  "overview": "https://a0.muscache.com/im/pictures/miso/Hosting-1134181714576332581/original/11800eeb-9255-499e-bdb2-a95ef3523231.jpeg?im_w=1200",
+  "amenities": []
+},
+{
+  "_id": {
+    "$oid": "66263526f50c2e548501f289"
+  },
+  "name": "A beautiful T2",
+  "address1": "Calvi FA/543",
+  "airportCode": "CDG",
+  "city": "Calvi",
+  "countryCode": "FR",
+  "highRate": 1958,
+  "location": {
+    "latitude": 59.61509,
+    "longitude": -192.32788
+  },
+  "locationDescription": "Calvi, France FA/31",
+  "lowRate": 1047,
+  "postalCode": 83370,
+  "propertyCategory": 1,
+  "shortDescription": "We offer you a beautiful T2 equipped from scratch which is 200 meters from Calvi beach.Located in the heart of town in a quiet and farmhouse residence, with parking spaces. 100 meters from the main road of Calvi with many restaurants and terraces, 150 meters from SuperU and Weldom.",
+  "stateProvinceCode": "FA",
+  "thumbNailUrl": "https://a0.muscache.com/im/pictures/hosting/Hosting-1096737554581311057/original/e85a5965-751e-48be-942a-08439234dc11.jpeg?im_w=1200",
+  "gallery": [
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1096737554581311057/original/5561aa3c-8984-40d4-b4d4-1954c75a171f.jpeg?im_w=240",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1096737554581311057/original/c1345744-f4ba-4b14-97a3-924eab7455ec.jpeg?im_w=480",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1096737554581311057/original/32b726f8-0535-42f2-bb93-4a2c1f717cae.jpeg?im_w=240",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1096737554581311057/original/3987019d-5afa-4446-b1ae-18d8c7d694fd.jpeg?im_w=240",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1096737554581311057/original/5d84149e-241e-429c-8d88-498dd0a10e0f.jpeg?im_w=240"
+  ],
+  "overview": "https://a0.muscache.com/im/pictures/hosting/Hosting-1096737554581311057/original/38270d1a-4b0d-4385-902e-d2cde29099ef.jpeg?im_w=720",
+  "amenities": []
+},
+{
+  "_id": {
+    "$oid": "66263526f50c2e548501f28a"
+  },
+  "name": "Apartment in the heart of the 20th",
+  "address1": "Paris FA/543",
+  "airportCode": "CDG",
+  "city": "Paris",
+  "countryCode": "FR",
+  "highRate": 2558,
+  "location": {
+    "latitude": 29.61509,
+    "longitude": -892.32788
+  },
+  "locationDescription": "Paris, France FA/11",
+  "lowRate": 2047,
+  "postalCode": 83370,
+  "propertyCategory": 1,
+  "shortDescription": "At the foot of the Campagne à Paris in a quiet and family neighborhood, you can reach the center of Paris in no time (less than 20 minutes from the Opera and the Marais by metro",
+  "stateProvinceCode": "FA",
+  "thumbNailUrl": "https://a0.muscache.com/im/pictures/miso/Hosting-1092580244892216080/original/a68f09d6-0765-4785-a17f-bc61ca077c3d.jpeg?im_w=1200",
+  "gallery": [
+    "https://a0.muscache.com/im/pictures/miso/Hosting-1092580244892216080/original/41732c13-c4c8-46ea-ad3a-0cf4800861fe.jpeg?im_w=240",
+    "https://a0.muscache.com/im/pictures/miso/Hosting-1092580244892216080/original/f505f355-cc23-4a59-add4-d66c57c8c601.jpeg?im_w=240",
+    "https://a0.muscache.com/im/pictures/miso/Hosting-1092580244892216080/original/5e7a1ceb-d3ec-4706-bfc8-54c298501265.jpeg?im_w=480",
+    "https://a0.muscache.com/im/pictures/miso/Hosting-1092580244892216080/original/44a28ce8-f0a0-4929-9f60-a3684b59466a.jpeg?im_w=240",
+    "https://a0.muscache.com/im/pictures/miso/Hosting-1092580244892216080/original/660e88aa-8654-4c5b-83ff-b6874726e939.jpeg?im_w=240"
+  ],
+  "overview": "https://a0.muscache.com/im/pictures/miso/Hosting-1092580244892216080/original/41732c13-c4c8-46ea-ad3a-0cf4800861fe.jpeg?im_w=1200",
+  "amenities": []
+},
+{
+  "_id": {
+    "$oid": "66263526f50c2e548501f28b"
+  },
+  "name": "Cergy - 1ch panoramic view apartment",
+  "address1": "Cergy FA/943",
+  "airportCode": "CDG",
+  "city": "Cergy",
+  "countryCode": "FR",
+  "highRate": 2398,
+  "location": {
+    "latitude": 26.61509,
+    "longitude": -192.32788
+  },
+  "locationDescription": "Cergy, France FA/723",
+  "lowRate": 1915,
+  "postalCode": 83370,
+  "propertyCategory": 1,
+  "shortDescription": "Nestled on the 8th floor of a building, our apartment offers you an idyllic setting for an unforgettable stay in Cergy. With special attention to comfort and style, this modern space will seduce you from the moment you arrive.",
+  "stateProvinceCode": "FA",
+  "thumbNailUrl": "https://a0.muscache.com/im/pictures/miso/Hosting-1129559496680667395/original/5c502215-a526-46bd-9837-b6bc6e7cc048.jpeg?im_w=1200",
+  "gallery": [
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTEyOTU1OTQ5NjY4MDY2NzM5NQ%3D%3D/original/21f729c9-ea67-4c56-95a3-ed17ba752aba.jpeg?im_w=240",
+    "https://a0.muscache.com/im/pictures/miso/Hosting-1129559496680667395/original/d62eec14-fa40-49b6-928e-b8f1fc892b83.jpeg?im_w=240",
+    "https://a0.muscache.com/im/pictures/miso/Hosting-1129559496680667395/original/e3572906-65b8-4442-9268-a4276aefbcb1.jpeg?im_w=240",
+    "https://a0.muscache.com/im/pictures/miso/Hosting-1129559496680667395/original/152f528b-a968-4f70-9b23-29e101e4d578.jpeg?im_w=240",
+    "https://a0.muscache.com/im/pictures/miso/Hosting-1129559496680667395/original/5c502215-a526-46bd-9837-b6bc6e7cc048.jpeg?im_w=240"
+  ],
+  "overview": "https://a0.muscache.com/im/pictures/miso/Hosting-1129559496680667395/original/d62eec14-fa40-49b6-928e-b8f1fc892b83.jpeg?im_w=1200",
+  "amenities": []
+},
+{
+  "_id": {
+    "$oid": "66263526f50c2e548501f28c"
+  },
+  "name": "Studio Hyper",
+  "address1": " Saint-Denis FA/143",
+  "airportCode": "CDG",
+  "city": " Saint-Denis",
+  "countryCode": "FR",
+  "highRate": 2912,
+  "location": {
+    "latitude": 26.61509,
+    "longitude": -192.32788
+  },
+  "locationDescription": " Saint-Denis, France FA/52",
+  "lowRate": 1615,
+  "postalCode": 83370,
+  "propertyCategory": 1,
+  "shortDescription": "Come and stay in  a comfortable studio of 15m2 located in Saint-Denis  a dynamic city on the outskirts of Paris.  Located in the heart of the pedestrian street, you will have all the amenities nearby.",
+  "stateProvinceCode": "FA",
+  "thumbNailUrl": "https://a0.muscache.com/im/pictures/miso/Hosting-1134960431277405409/original/50265a5d-2aa3-42a9-9958-715beaa69ba9.jpeg?im_w=1200",
+  "gallery": [
+    "https://a0.muscache.com/im/pictures/miso/Hosting-1134960431277405409/original/3a844ab7-7750-4921-aced-d6881006b58e.jpeg?im_w=1200",
+    "https://a0.muscache.com/im/pictures/miso/Hosting-1134960431277405409/original/8102fc95-d12d-4b8c-89b1-3b7cd7270529.jpeg?im_w=1440",
+    "https://a0.muscache.com/im/pictures/miso/Hosting-1134960431277405409/original/4a76a12c-c5bf-41d4-8148-4104bf9fc06e.jpeg?im_w=1200",
+    "https://a0.muscache.com/im/pictures/miso/Hosting-1134960431277405409/original/1fefbdac-5c94-4774-94f0-6f1122041580.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/miso/Hosting-1134960431277405409/original/794b6784-1d18-4e95-8c33-bc3169d7f811.jpeg?im_w=720"
+  ],
+  "overview": "https://a0.muscache.com/im/pictures/miso/Hosting-1134960431277405409/original/9b52115a-7cdd-4cd2-8268-acaeb6e669aa.jpeg?im_w=1200",
+  "amenities": []
+},
+{
+  "_id": {
+    "$oid": "66263526f50c2e548501f28d"
+  },
+  "name": "Le Jungle & Cosy",
+  "address1": "Le Pré-Saint-Gervais FA/432",
+  "airportCode": "CDG",
+  "city": "Le Pré-Saint-Gervais",
+  "countryCode": "FR",
+  "highRate": 2112,
+  "location": {
+    "latitude": 16.61509,
+    "longitude": -292.32788
+  },
+  "locationDescription": "Le Pré-Saint-Gervais, France FA/152",
+  "lowRate": 1290,
+  "postalCode": 83370,
+  "propertyCategory": 1,
+  "shortDescription": "This stunning apartment is fully equipped and perfectly furnished in a Scandinavian rustic style. Quiet and comfortable, it overlooks a quiet street with little traffic.Ideally located a 5-minute walk from the metro hoche, it will be perfect for couples alone or with a child, solo travelers and business travelers passing through Paris!",
+  "stateProvinceCode": "FA",
+  "thumbNailUrl": "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTEyOTg1ODk2OTExNDY2MDE4NQ%3D%3D/original/cdf13776-9544-4a70-969c-4bbf8e449e3f.png?im_w=1200",
+  "gallery": [
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTEyOTg1ODk2OTExNDY2MDE4NQ%3D%3D/original/cdf13776-9544-4a70-969c-4bbf8e449e3f.png?im_w=240",
+    "https://a0.muscache.com/im/pictures/miso/Hosting-1129858969114660185/original/fe4c8668-46ac-44af-afaa-53f6536cf89b.jpeg?im_w=240",
+    "https://a0.muscache.com/im/pictures/miso/Hosting-1129858969114660185/original/4e3e30a0-bc27-4661-9a69-b4912ded093c.jpeg?im_w=240",
+    "https://a0.muscache.com/im/pictures/miso/Hosting-1129858969114660185/original/8a1f01b7-9dbb-4750-88cc-7551246e7f01.jpeg?im_w=240",
+    "https://a0.muscache.com/im/pictures/miso/Hosting-1129858969114660185/original/d6e12b2a-292e-452b-b7a7-cdb62235fd2b.jpeg?im_w=240"
+  ],
+  "overview": "https://a0.muscache.com/im/pictures/miso/Hosting-1129858969114660185/original/2b69f277-088a-4a3d-943b-7483ce78fc47.jpeg?im_w=1200",
+  "amenities": []
+},
+{
+  "_id": {
+    "$oid": "66263526f50c2e548501f28e"
+  },
+  "name": "Samos Holiday Home",
+  "address1": "Karlovasi, Greece GR/132",
+  "airportCode": "SKG",
+  "city": "Karlovasi",
+  "countryCode": "GR",
+  "highRate": 2021,
+  "location": {
+    "latitude": 14.21509,
+    "longitude": -452.25788
+  },
+  "locationDescription": "Karlovasi, Greece GR/132",
+  "lowRate": 1790,
+  "postalCode": 84600,
+  "propertyCategory": 1,
+  "shortDescription": "Charming first floor apartment, with panoramic views of island and walking distance to center of Karlovasi. Short drive to one of the most beautiful beaches of Samos, Potami Beach, and also the waterfalls. Sit and relax on the balcony watching mountains and the Aegean during sunset, and enjoy your holidays at this family oriented home.",
+  "stateProvinceCode": "GR",
+  "thumbNailUrl": "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTEyOTg1ODk2OTExNDY2MDE4NQ%3D%3D/original/cdf13776-9544-4a70-969c-4bbf8e449e3f.png?im_w=1200",
+  "gallery": [
+    "https://a0.muscache.com/im/pictures/miso/Hosting-1106591997868405731/original/fbf3d2c4-ce0f-4786-b367-a06c8e1745e3.jpeg?im_w=1200",
+    "https://a0.muscache.com/im/pictures/miso/Hosting-1106591997868405731/original/b9d3f19f-40ed-461c-ad03-7408afed70c1.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/miso/Hosting-1106591997868405731/original/d4caff3a-18c7-437f-b75f-9f3cbf71c00a.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/miso/Hosting-1106591997868405731/original/c7e5a68a-d752-4b71-bb51-96360c292191.jpeg?im_w=240",
+    "https://a0.muscache.com/im/pictures/miso/Hosting-1106591997868405731/original/b89db5fc-097d-425d-87d0-6dbc7f9d39a9.jpeg?im_w=240"
+  ],
+  "overview": "https://a0.muscache.com/im/pictures/miso/Hosting-1106591997868405731/original/9e3b64d6-0034-46b8-b7ca-15125af3e91d.jpeg?im_w=1200",
+  "amenities": []
+},
+{
+  "_id": {
+    "$oid": "66263526f50c2e548501f28f"
+  },
+  "name": "Plous Apartment",
+  "address1": "Kerkira Greece GR/654",
+  "airportCode": "SKG",
+  "city": "Kerkira",
+  "countryCode": "GR",
+  "highRate": 4259,
+  "location": {
+    "latitude": 14.21509,
+    "longitude": -452.25788
+  },
+  "locationDescription": "Kerkira, Greece GR/654",
+  "lowRate": 3194,
+  "postalCode": 84600,
+  "propertyCategory": 1,
+  "shortDescription": "Nestled in a quiet and traditional area, Plous Apartment enjoys an enviable location that easily combines tranquility with accessibility.",
+  "stateProvinceCode": "GR",
+  "thumbNailUrl": "https://a0.muscache.com/im/pictures/miso/Hosting-1136189767576024794/original/cd09279f-a6c9-4b1c-81ef-7e0004f9a2bd.jpeg?im_w=1200",
+  "gallery": [
+    "https://a0.muscache.com/im/pictures/miso/Hosting-1136189767576024794/original/547d6a01-c374-4eb7-80d0-5b502e902585.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/miso/Hosting-1136189767576024794/original/addc6281-3aa4-4dc4-8afc-b6fb49b5c91b.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/miso/Hosting-1136189767576024794/original/f7c00c57-07ab-4c45-af79-9a757617125c.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/miso/Hosting-1136189767576024794/original/732e51e9-dd85-43c3-83e7-5a2dbd218e8c.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/miso/Hosting-1136189767576024794/original/9d956d1b-2420-4e18-8fc8-1bb258a00b3c.jpeg?im_w=720"
+  ],
+  "overview": "https://a0.muscache.com/im/pictures/miso/Hosting-1136189767576024794/original/547d6a01-c374-4eb7-80d0-5b502e902585.jpeg?im_w=720",
+  "amenities": []
+},
+{
+  "_id": {
+    "$oid": "66263526f50c2e548501f290"
+  },
+  "name": "Bohemian",
+  "address1": "Gökçeovacık, Turkey",
+  "airportCode": "IST",
+  "city": "Gokceovacık",
+  "countryCode": "TR",
+  "highRate": 4859,
+  "location": {
+    "latitude": 84.21509,
+    "longitude": -152.25788
+  },
+  "locationDescription": "Gokceovacık, Turkey TR/644",
+  "lowRate": 2994,
+  "postalCode": 38000,
+  "propertyCategory": 1,
+  "shortDescription": "With its renovated concept in Gocek Gokceovacık, our villa is located in a peaceful location right in the middle of nature and green. Perfect for relaxing with a peaceful and calm environment.",
+  "stateProvinceCode": "TR",
+  "thumbNailUrl": "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6OTE3NDM5MTY0MzE4OTk4MjQx/original/b7ed7793-c185-44d4-85bd-185a45d7fe63.jpeg?im_w=1200",
+  "gallery": [
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6OTE3NDM5MTY0MzE4OTk4MjQx/original/82f49216-34ec-4fe9-b464-12718f5fbebd.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6OTE3NDM5MTY0MzE4OTk4MjQx/original/18952ae9-4a38-4da5-80ae-f963d7c1ec10.jpeg?im_w=240",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6OTE3NDM5MTY0MzE4OTk4MjQx/original/debd0c63-4631-4633-8e8e-3dda9c2cf31c.jpeg?im_w=240",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6OTE3NDM5MTY0MzE4OTk4MjQx/original/e23b5738-e1e3-4d76-b972-f1b28e3db144.jpeg?im_w=240",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6OTE3NDM5MTY0MzE4OTk4MjQx/original/ec482bf5-3813-4395-b634-64bfa60115e7.jpeg?im_w=240"
+  ],
+  "overview": "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6OTE3NDM5MTY0MzE4OTk4MjQx/original/84a1c510-7154-4c92-90bd-e9543321e00c.jpeg?im_w=1200",
+  "amenities": []
+},
+{
+  "_id": {
+    "$oid": "66263526f50c2e548501f291"
+  },
+  "name": "Fethye Oludeniz Villa Aykurt",
+  "address1": "Fethiye, Turkey",
+  "airportCode": "IST",
+  "city": "Fethiye",
+  "countryCode": "TR",
+  "highRate": 3920,
+  "location": {
+    "latitude": 98.21509,
+    "longitude": -592.25778
+  },
+  "locationDescription": "Fethiye, Turkey TR/644",
+  "lowRate": 3129,
+  "postalCode": 38000,
+  "propertyCategory": 1,
+  "shortDescription": "Forget your worries in this spacious and serene space.While you are enjoying sunbathing by our pool with a view of the Fethiye bay and sheltered, you will also enjoy your drink in front of this view.",
+  "stateProvinceCode": "TR",
+  "thumbNailUrl": "https://a0.muscache.com/im/pictures/hosting/Hosting-1133395424637350694/original/1e697b95-c755-4df6-bc3d-fbdb90c8230b.jpeg?im_w=1200",
+  "gallery": [
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1133395424637350694/original/aa4095ac-67b8-4872-90d4-766b22767af2.jpeg?im_w=240",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1133395424637350694/original/4d868d56-e4e7-4fa6-940f-e8201a1546ec.jpeg?im_w=240",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1133395424637350694/original/d85c8345-46a8-4d69-8b8e-c197f282d139.jpeg?im_w=480",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1133395424637350694/original/0d85d2e1-14d2-4e3a-83fe-60117ecd77cf.jpeg?im_w=240",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1133395424637350694/original/50c405f8-353b-4bdc-ab8a-040780cd611b.jpeg?im_w=240"
+  ],
+  "overview": "https://a0.muscache.com/im/pictures/hosting/Hosting-1133395424637350694/original/1e697b95-c755-4df6-bc3d-fbdb90c8230b.jpeg?im_w=1200",
+  "amenities": []
+},
+{
+  "_id": {
+    "$oid": "66263526f50c2e548501f292"
+  },
+  "name": "Luxury Residence",
+  "address1": "Kadıköy, Turkey",
+  "airportCode": "IST",
+  "city": "Kadıköy",
+  "countryCode": "TR",
+  "highRate": 2206,
+  "location": {
+    "latitude": 98.21509,
+    "longitude": -592.25778
+  },
+  "locationDescription": "Kadıköy, Turkey TR/64",
+  "lowRate": 1764,
+  "postalCode": 38000,
+  "propertyCategory": 1,
+  "shortDescription": "Forget your worries in this spacious and serene space.Sit back and relax on this calm, stylish space.",
+  "stateProvinceCode": "TR",
+  "thumbNailUrl": "https://a0.muscache.com/im/pictures/hosting/Hosting-1133959744179537037/original/73656465-6cf0-49cb-8925-55979da9ce42.jpeg?im_w=1200",
+  "gallery": [
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1133959744179537037/original/8f0403de-cf70-4f97-982b-8ffedac074b1.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1133959744179537037/original/ce29e600-6be7-4387-99bd-90aaec18fbd6.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1133959744179537037/original/fd69d732-2fb9-4668-a586-22e69f4f0787.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1133959744179537037/original/7ea15700-bc0a-4009-9bee-57ef2ed9049c.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1133959744179537037/original/5184708d-15cc-478a-9f28-b994c38ca521.jpeg?im_w=720"
+  ],
+  "overview": "https://a0.muscache.com/im/pictures/hosting/Hosting-1133959744179537037/original/73656465-6cf0-49cb-8925-55979da9ce42.jpeg?im_w=1200",
+  "amenities": []
+},
+{
+  "_id": {
+    "$oid": "66263526f50c2e548501f293"
+  },
+  "name": "Comfy",
+  "address1": "Fatih, Turkey",
+  "airportCode": "IST",
+  "city": "Fatih",
+  "countryCode": "TR",
+  "highRate": 650,
+  "location": {
+    "latitude": 75.21509,
+    "longitude": -322.25778
+  },
+  "locationDescription": "Fatih, Turkey TR/54",
+  "lowRate": 390,
+  "postalCode": 38000,
+  "propertyCategory": 1,
+  "shortDescription": "Admire the stunning architectural details of our charming townhouse, from the soaring ceilings to the intricate woodwork. Relax in our comfortable and well-appointed room, complete with modern amenities and a cozy atmosphere.",
+  "stateProvinceCode": "TR",
+  "thumbNailUrl": "https://a0.muscache.com/im/pictures/miso/Hosting-658605730405188389/original/b0b876d5-3551-453a-b3f0-935898038f5b.jpeg?im_w=720",
+  "gallery": [
+    "https://a0.muscache.com/im/pictures/miso/Hosting-658605730405188389/original/2f59b6fe-7fb3-4400-b798-cdc3be6f8826.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/miso/Hosting-658605730405188389/original/6a20b43c-a3ad-47fe-b8a0-28200940fe95.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/miso/Hosting-658605730405188389/original/20136da8-f9dd-4fb1-8eaa-231cb8495c01.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/miso/Hosting-658605730405188389/original/ae8435eb-418c-4d30-97ec-1e2c77ce4167.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/miso/Hosting-658605730405188389/original/b959df3b-b987-447f-9ed3-49c89bd627b8.jpeg?im_w=720"
+  ],
+  "overview": "https://a0.muscache.com/im/pictures/miso/Hosting-658605730405188389/original/b0b876d5-3551-453a-b3f0-935898038f5b.jpeg?im_w=720",
+  "amenities": []
+},
+{
+  "_id": {
+    "$oid": "66263526f50c2e548501f294"
+  },
+  "name": "Stunning Single-level Knightsbridge",
+  "address1": "London, United Kingdom UK/123",
+  "airportCode": "LCY",
+  "city": "London",
+  "countryCode": "UK",
+  "highRate": 32200,
+  "location": {
+    "latitude": 90.43549,
+    "longitude": -2435.25478
+  },
+  "locationDescription": "London, United Kingdom 123",
+  "lowRate": 27378,
+  "postalCode": 56273,
+  "propertyCategory": 1,
+  "shortDescription": "Nestled in the heart of London's prestigious Knightsbridge neighbourhood, this stunning Cadogan Square flat offers a luxurious and elegant retreat. Explore world-class shopping on nearby Sloane Street, indulge in fine dining at Michelin-starred restaurants.",
+  "stateProvinceCode": "UK",
+  "thumbNailUrl": "https://a0.muscache.com/im/pictures/miso/Hosting-1135225486963818715/original/7f31b705-e1ec-4898-811c-a97a278436ef.jpeg?im_w=1200",
+  "gallery": [
+    "https://a0.muscache.com/im/pictures/miso/Hosting-1135225486963818715/original/7f31b705-e1ec-4898-811c-a97a278436ef.jpeg?im_w=240",
+    "https://a0.muscache.com/im/pictures/miso/Hosting-1135225486963818715/original/c6f6ae93-56cb-4164-939b-13a1c9b291a8.jpeg?im_w=240",
+    "https://a0.muscache.com/im/pictures/miso/Hosting-1135225486963818715/original/3df7266a-2d72-4420-99c5-91a2742e9324.jpeg?im_w=240",
+    "https://a0.muscache.com/im/pictures/miso/Hosting-1135225486963818715/original/050add38-4077-4daa-b202-8afdeeffb8e3.jpeg?im_w=480",
+    "https://a0.muscache.com/im/pictures/miso/Hosting-1135225486963818715/original/fe4bb8b7-30aa-4599-a4fd-ca7d373cb384.jpeg?im_w=240"
+  ],
+  "overview": "https://a0.muscache.com/im/pictures/miso/Hosting-1135225486963818715/original/050add38-4077-4daa-b202-8afdeeffb8e3.jpeg?im_w=1200",
+  "amenities": []
+},
+{
+  "_id": {
+    "$oid": "66263526f50c2e548501f295"
+  },
+  "name": "Aspire Luxury Studio Apartment",
+  "address1": "West Midlands, United Kingdom UK/2353",
+  "airportCode": "LCY",
+  "city": "West Midlands",
+  "countryCode": "UK",
+  "highRate": 3160,
+  "location": {
+    "latitude": 34.43549,
+    "longitude": -3235.25478
+  },
+  "locationDescription": "West Midlands, United Kingdom 2353",
+  "lowRate": 2589,
+  "postalCode": 56273,
+  "propertyCategory": 1,
+  "shortDescription": "Perfect for leisure or business trips to Birmingham, this cozy studio is close to major attractions and ideal for car travelers. Near Brindley Place and vibrant dining/shopping spots. Fully furnished with WiFi, Netflix, and a 50” Smart TV. Complimentary tea/coffee provided.",
+  "stateProvinceCode": "UK",
+  "thumbNailUrl": "https://a0.muscache.com/im/pictures/miso/Hosting-1135016905959353751/original/6be79ed8-937a-43f4-9181-8991ea1a9811.jpeg?im_w=1200",
+  "gallery": [
+    "https://a0.muscache.com/im/pictures/miso/Hosting-1135016905959353751/original/66a6b257-e8e5-4021-a94c-0b2145d45d4b.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/miso/Hosting-1135016905959353751/original/4711efb1-222a-4903-8a85-d876413d14a6.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/miso/Hosting-1135016905959353751/original/7580b870-b4a3-45c0-a520-7b9debdd642d.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/miso/Hosting-1135016905959353751/original/f66f1788-e9ec-4daa-80f7-ac6526351f18.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/miso/Hosting-1135016905959353751/original/856d977f-0878-4859-b891-6786f246d0f9.jpeg?im_w=720"
+  ],
+  "overview": "https://a0.muscache.com/im/pictures/miso/Hosting-1135016905959353751/original/6be79ed8-937a-43f4-9181-8991ea1a9811.jpeg?im_w=1200",
+  "amenities": []
+},
+{
+  "_id": {
+    "$oid": "66263526f50c2e548501f296"
+  },
+  "name": "Luxury 2Bed Apartment ",
+  "address1": "Greater London, United Kingdom UK/1253",
+  "airportCode": "LCY",
+  "city": "Greater London",
+  "countryCode": "UK",
+  "highRate": 6328,
+  "location": {
+    "latitude": 14.46549,
+    "longitude": -8335.55478
+  },
+  "locationDescription": "Greater London, United Kingdom 1253",
+  "lowRate": 5379,
+  "postalCode": 56273,
+  "propertyCategory": 1,
+  "shortDescription": "Cozy 2bed apartment offering a peaceful atmosphere making it the perfect home away from home. Langdon Park DLR Station is just a 2min walk away. From there, the journey to Canary Wharf takes around 5min, and the journey to Stratford takes about 7min.",
+  "stateProvinceCode": "UK",
+  "thumbNailUrl": "https://a0.muscache.com/im/pictures/miso/Hosting-1131659180924653296/original/682377a8-d656-4a02-a58a-295e428f0745.jpeg?im_w=1200",
+  "gallery": [
+    "https://a0.muscache.com/im/pictures/miso/Hosting-1131659180924653296/original/43d202ee-f56b-45be-abe3-b4332bed13ba.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/miso/Hosting-1131659180924653296/original/82c5640b-c0c5-4f3d-9ac6-7c76dc00a35d.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/miso/Hosting-1131659180924653296/original/6750207f-80ac-4d13-83ea-cdb971ca3406.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/miso/Hosting-1131659180924653296/original/9a4f7f39-04db-43eb-a13a-e84883b43839.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/miso/Hosting-1131659180924653296/original/3eaa955b-670a-400c-8f88-4a5650be9599.jpeg?im_w=1200"
+  ],
+  "overview": "https://a0.muscache.com/im/pictures/miso/Hosting-1131659180924653296/original/682377a8-d656-4a02-a58a-295e428f0745.jpeg?im_w=1200",
+  "amenities": []
+},
+{
+  "_id": {
+    "$oid": "66263526f50c2e548501f297"
+  },
+  "name": "Loiley Apartment ",
+  "address1": "Greater London, United Kingdom UK/1353",
+  "airportCode": "LCY",
+  "city": "Greater London",
+  "countryCode": "UK",
+  "highRate": 4340,
+  "location": {
+    "latitude": 64.46549,
+    "longitude": -3335.55478
+  },
+  "locationDescription": "Greater London, United Kingdom 1353",
+  "lowRate": 3804,
+  "postalCode": 56273,
+  "propertyCategory": 1,
+  "shortDescription": "Just 10 mins to The 02 Arena and 3 Mins from Greenwich Station! This lovely apartment is spacious, clean, modern and bright. It features one double bedroom with one bathroom & a double sofa bed.",
+  "stateProvinceCode": "UK",
+  "thumbNailUrl": "https://a0.muscache.com/im/pictures/miso/Hosting-1136126181496296621/original/10d06cad-3773-4c6f-b6dd-24d137dff5da.jpeg?im_w=1200",
+  "gallery": [
+    "https://a0.muscache.com/im/pictures/miso/Hosting-1136126181496296621/original/f8753b50-5fba-489e-b18d-09343f636d9d.jpeg?im_w=240",
+    "https://a0.muscache.com/im/pictures/miso/Hosting-1136126181496296621/original/c1e1f254-9f29-4dec-b4da-e141e24b7e21.jpeg?im_w=240",
+    "https://a0.muscache.com/im/pictures/miso/Hosting-1136126181496296621/original/961501c3-3df9-487f-8ed9-275e7a91ccc6.jpeg?im_w=480",
+    "https://a0.muscache.com/im/pictures/miso/Hosting-1136126181496296621/original/be734868-ac2e-4214-b08a-de3fca18a6de.jpeg?im_w=240",
+    "https://a0.muscache.com/im/pictures/miso/Hosting-1136126181496296621/original/821d4c0f-9f8d-4e8f-a3a8-754f21defa7d.jpeg?im_w=240"
+  ],
+  "overview": "https://a0.muscache.com/im/pictures/miso/Hosting-1136126181496296621/original/671a5574-789b-4a99-b6fe-6424e1d58999.jpeg?im_w=1200",
+  "amenities": []
+},
+{
+  "_id": {
+    "$oid": "66263526f50c2e548501f298"
+  },
+  "name": "Hyggely Tisvilde",
+  "address1": " Tisvildeleje, Denmark DK/4322",
+  "airportCode": "CPH",
+  "city": "Tisvildeleje",
+  "countryCode": "DK",
+  "highRate": 4996,
+  "location": {
+    "latitude": 91.46349,
+    "longitude": -4535.25678
+  },
+  "locationDescription": "Tisvildeleje, Denmark 4322",
+  "lowRate": 3997,
+  "postalCode": 9000,
+  "propertyCategory": 1,
+  "shortDescription": "Welcome to our cozy and charming oasis in the heart of Tisvildeleje. Our cottage is the ideal place for your next vacation, whether on a romantic getaway or a family getaway.",
+  "stateProvinceCode": "DK",
+  "thumbNailUrl": "https://a0.muscache.com/im/pictures/miso/Hosting-1135381186154441490/original/0eaf158a-e49f-4c8c-98a3-413064577a0a.jpeg?im_w=1200",
+  "gallery": [
+    "https://a0.muscache.com/im/pictures/miso/Hosting-1135381186154441490/original/04e3f697-9406-429f-bb48-ca5d046c8448.jpeg?im_w=480",
+    "https://a0.muscache.com/im/pictures/miso/Hosting-1135381186154441490/original/0eaf158a-e49f-4c8c-98a3-413064577a0a.jpeg?im_w=240",
+    "https://a0.muscache.com/im/pictures/miso/Hosting-1135381186154441490/original/c19a8110-8b8c-4775-a40d-dcbc9f27b57b.jpeg?im_w=240",
+    "https://a0.muscache.com/im/pictures/miso/Hosting-1135381186154441490/original/b172118b-ea65-41d0-859a-02529027ee7d.jpeg?im_w=480",
+    "https://a0.muscache.com/im/pictures/miso/Hosting-1135381186154441490/original/79b96bed-cb16-4b36-b2bb-51904f6cecc3.jpeg?im_w=480"
+  ],
+  "overview": "https://a0.muscache.com/im/pictures/miso/Hosting-1135381186154441490/original/efa19dbf-7037-4715-a9c5-acf30a2a48f6.jpeg?im_w=1200",
+  "amenities": []
+},
+{
+  "_id": {
+    "$oid": "66263526f50c2e548501f299"
+  },
+  "name": "Seafront Apartment",
+  "address1": "Portsmouth, United Kingdom UK/9053",
+  "airportCode": "LCY",
+  "city": "Portsmouth",
+  "countryCode": "UK",
+  "highRate": 4455,
+  "location": {
+    "latitude": 45.46549,
+    "longitude": -6435.55478
+  },
+  "locationDescription": "Portsmouth, United Kingdom 9053",
+  "lowRate": 3366,
+  "postalCode": 56273,
+  "propertyCategory": 1,
+  "shortDescription": "This self contained apartment is in the sought after Seafront location of Eastern Parade. Perfect for solo travellers, couples or families, looking to experience the charm of this beautiful place. Enjoy a comfortable stay with open-plan kitchen & stylish living area, bathroom, extra large bedroom, private courtyard garden, free TV & WIFI.",
+  "stateProvinceCode": "UK",
+  "thumbNailUrl": "https://a0.muscache.com/im/pictures/hosting/Hosting-1136110851676308746/original/4cdd9ae8-5c53-4ea0-8f69-8e175a8e8767.jpeg?im_w=1200",
+  "gallery": [
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1136110851676308746/original/4cdd9ae8-5c53-4ea0-8f69-8e175a8e8767.jpeg?im_w=240",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1136110851676308746/original/e87d5b50-160e-4d13-910c-072ce83347bc.jpeg?im_w=240",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1136110851676308746/original/95628af2-e0d0-4261-aae5-16ddf35f0435.jpeg?im_w=240",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1136110851676308746/original/49e4754d-f014-44ff-b8d3-31f277a02c64.jpeg?im_w=240",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1136110851676308746/original/c44ebae6-dfa4-4055-81ec-8be92b93a0b8.jpeg?im_w=240"
+  ],
+  "overview": "https://a0.muscache.com/im/pictures/hosting/Hosting-1136110851676308746/original/e87d5b50-160e-4d13-910c-072ce83347bc.jpeg?im_w=1200",
+  "amenities": []
+},
+{
+  "_id": {
+    "$oid": "66263526f50c2e548501f29a"
+  },
+  "name": "Seafront Apartment",
+  "address1": "London, United Kingdom UK/236",
+  "airportCode": "LCY",
+  "city": "London",
+  "countryCode": "UK",
+  "highRate": 4455,
+  "location": {
+    "latitude": 456.46549,
+    "longitude": -45623.5578
+  },
+  "locationDescription": "London, United Kingdom",
+  "lowRate": 3366,
+  "postalCode": 56273,
+  "propertyCategory": 1,
+  "shortDescription": "Enjoy a stylish experience at this centrally-located place. Close to stratford train station for quick access to the city with westfield on your door step for shopping and the olympic park for a wander amongst the greenery!",
+  "stateProvinceCode": "UK",
+  "thumbNailUrl": "https://a0.muscache.com/im/pictures/miso/Hosting-1136037347384177880/original/650a89b0-daf4-4c25-8fe0-50b2f7fdf3ed.jpeg?im_w=1200",
+  "gallery": [
+    "https://a0.muscache.com/im/pictures/miso/Hosting-1136037347384177880/original/fc8bb00b-3255-46ec-8d6d-a133e12ccd21.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/miso/Hosting-1136037347384177880/original/d8736f72-6b7c-4bb5-8c4d-f4620c63b552.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/miso/Hosting-1136037347384177880/original/5b76c1bd-3517-44c9-ac5f-51677efee14c.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/miso/Hosting-1136037347384177880/original/446596f4-c034-4877-bd5a-56158a5cbfef.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/miso/Hosting-1136037347384177880/original/d8736f72-6b7c-4bb5-8c4d-f4620c63b552.jpeg?im_w=720"
+  ],
+  "overview": "https://a0.muscache.com/im/pictures/miso/Hosting-1136037347384177880/original/650a89b0-daf4-4c25-8fe0-50b2f7fdf3ed.jpeg?im_w=1200",
+  "amenities": []
+},
+{
+  "_id": {
+    "$oid": "66263526f50c2e548501f29b"
+  },
+  "name": "Amber - Raffined Apartment",
+  "address1": "Perpignan FA/231",
+  "airportCode": "CDG",
+  "city": "Perpignan",
+  "countryCode": "FR",
+  "highRate": 2558,
+  "location": {
+    "latitude": 87.66509,
+    "longitude": -392.34345
+  },
+  "locationDescription": "Perpignan, France FA/231",
+  "lowRate": 2047,
+  "postalCode": 83370,
+  "propertyCategory": 1,
+  "shortDescription": "Amber - A stone's throw from the train station, discover the timeless elegance of this bright apartment with high ceilings and large windows, showcasing its beautiful marble fireplace.",
+  "stateProvinceCode": "FA",
+  "thumbNailUrl": "https://a0.muscache.com/im/pictures/miso/Hosting-1134731142336308963/original/bdeaa9e0-eb59-4f02-923d-c06b240e51e8.jpeg?im_w=1200",
+  "gallery": [
+    "https://a0.muscache.com/im/pictures/miso/Hosting-1134731142336308963/original/e47b50e3-d836-446c-8ec1-2d365f16c477.jpeg?im_w=480",
+    "https://a0.muscache.com/im/pictures/miso/Hosting-1134731142336308963/original/66787830-9db9-4803-8d80-a91b831801fe.jpeg?im_w=240",
+    "https://a0.muscache.com/im/pictures/miso/Hosting-1134731142336308963/original/615bd426-03a0-4eee-affd-ca3f809fb091.jpeg?im_w=240",
+    "https://a0.muscache.com/im/pictures/miso/Hosting-1134731142336308963/original/9856f6bb-1a4f-4855-a29c-bbc6b5ecdc1a.jpeg?im_w=480",
+    "https://a0.muscache.com/im/pictures/miso/Hosting-1134731142336308963/original/24eb4b13-6420-4b3f-8211-83b994caaa2e.jpeg?im_w=240"
+  ],
+  "overview": "https://a0.muscache.com/im/pictures/miso/Hosting-1134731142336308963/original/e47b50e3-d836-446c-8ec1-2d365f16c477.jpeg?im_w=1200",
+  "amenities": []
+},
+{
+  "_id": {
+    "$oid": "66263526f50c2e548501f29c"
+  },
+  "name": "Venice apartment",
+  "address1": "Pornichet FA/1231",
+  "airportCode": "CDG",
+  "city": "Pornichet",
+  "countryCode": "FR",
+  "highRate": 4040,
+  "location": {
+    "latitude": 34.66509,
+    "longitude": -876.34345
+  },
+  "locationDescription": "Pornichet, France FA/1231",
+  "lowRate": 3290,
+  "postalCode": 83370,
+  "propertyCategory": 1,
+  "shortDescription": "Enjoy a stylish and central home. On the top floor of a secure residence with east and south facing balcony for lunch on the terrace or lounge. Garage in the basement. Pool in the residence. Apartment completely renovated by an architect.",
+  "stateProvinceCode": "FA",
+  "thumbNailUrl": "https://a0.muscache.com/im/pictures/miso/Hosting-1130400686453138776/original/c65986a6-50db-4e99-8173-19f8f0dd3c17.jpeg?im_w=1200",
+  "gallery": [
+    "https://a0.muscache.com/im/pictures/miso/Hosting-1130400686453138776/original/5e58df11-55f9-4b32-bd12-05ef8af2fcd1.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/miso/Hosting-1130400686453138776/original/d626ecb1-b036-49dc-b228-29a5afcbc912.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/miso/Hosting-1130400686453138776/original/d127fc43-f798-4a71-8248-5aeedc7ae41a.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/miso/Hosting-1130400686453138776/original/31d85cae-9d1c-4816-af72-8069e1bb4514.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/miso/Hosting-1130400686453138776/original/5adbd899-1a09-4c75-9028-c653a1762e51.jpeg?im_w=720"
+  ],
+  "overview": "https://a0.muscache.com/im/pictures/miso/Hosting-1130400686453138776/original/91ea559f-13e0-4d7f-92bd-149e2c723fad.jpeg?im_w=1200",
+  "amenities": []
+},
+{
+  "_id": {
+    "$oid": "66263526f50c2e548501f29d"
+  },
+  "name": "Cozy studio",
+  "address1": "Calvi FA/6545",
+  "airportCode": "CDG",
+  "city": "Calvi",
+  "countryCode": "FR",
+  "highRate": 1920,
+  "location": {
+    "latitude": 34.66509,
+    "longitude": -654.34345
+  },
+  "locationDescription": "Calvi, France FA/6545",
+  "lowRate": 1390,
+  "postalCode": 83370,
+  "propertyCategory": 1,
+  "shortDescription": "This studio is conveniently located on the ground floor of a residence, just 5 minutes walk from the beautiful Calvi beach, as well as the city center and the port. The Super U is right next door.",
+  "stateProvinceCode": "FA",
+  "thumbNailUrl": "https://a0.muscache.com/im/pictures/miso/Hosting-1132361604441334841/original/f8789159-be70-474c-88dd-fc69f242ada7.jpeg?im_w=1200",
+  "gallery": [
+    "https://a0.muscache.com/im/pictures/miso/Hosting-1132361604441334841/original/5ad15c07-d2d1-4ab1-b3e4-af2305498176.jpeg?im_w=240",
+    "https://a0.muscache.com/im/pictures/miso/Hosting-1132361604441334841/original/f8789159-be70-474c-88dd-fc69f242ada7.jpeg?im_w=480",
+    "https://a0.muscache.com/im/pictures/miso/Hosting-1132361604441334841/original/e8381d5f-448d-4d9b-98b9-94d04f27c4cb.jpeg?im_w=240",
+    "https://a0.muscache.com/im/pictures/miso/Hosting-1132361604441334841/original/0409b980-d85e-415e-8757-197c2f52c1eb.jpeg?im_w=240",
+    "https://a0.muscache.com/im/pictures/miso/Hosting-1132361604441334841/original/01829668-0cb8-41d8-bfd4-fe8ce8d404b2.jpeg?im_w=720"
+  ],
+  "overview": "https://a0.muscache.com/im/pictures/miso/Hosting-1132361604441334841/original/f8789159-be70-474c-88dd-fc69f242ada7.jpeg?im_w=1200",
+  "amenities": []
+},
+{
+  "_id": {
+    "$oid": "66263526f50c2e548501f29e"
+  },
+  "name": "Munich Garden Apartment",
+  "address1": " Putzbrunn, Germany",
+  "airportCode": "EDHI",
+  "city": "Putzbrunn",
+  "countryCode": "DE",
+  "highRate": 3997,
+  "location": {
+    "latitude": 88.66509,
+    "longitude": -904.23445
+  },
+  "locationDescription": "Putzbrunn, Germany",
+  "lowRate": 2960,
+  "postalCode": 85640,
+  "propertyCategory": 1,
+  "shortDescription": "Stay at the peaceful apartment near Munich with garden and terrace. Close to the Messe München and with lots of possibilities to relax in the surroundings this stylish loft like stay is perfect for the whole family or for a business trip.",
+  "stateProvinceCode": "DE",
+  "thumbNailUrl": "https://a0.muscache.com/im/pictures/miso/Hosting-1122465660008842792/original/aa56fbda-eb3d-46e4-8d72-032fd721fa29.jpeg?im_w=1200",
+  "gallery": [
+    "https://a0.muscache.com/im/pictures/miso/Hosting-1122465660008842792/original/aa56fbda-eb3d-46e4-8d72-032fd721fa29.jpeg?im_w=240",
+    "https://a0.muscache.com/im/pictures/miso/Hosting-1122465660008842792/original/d6a0c579-ff0d-43ed-af3c-b44a22f7fe74.jpeg?im_w=240",
+    "https://a0.muscache.com/im/pictures/miso/Hosting-1122465660008842792/original/cef5ad90-67f9-4b16-b0af-f076bdb552de.jpeg?im_w=240",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1122465660008842792/original/db28fa8a-5517-4df3-95ce-3a05c967d134.jpeg?im_w=240",
+    "https://a0.muscache.com/im/pictures/miso/Hosting-1122465660008842792/original/f77d2b5c-7f0d-4871-8473-5c464b63aec3.jpeg?im_w=720"
+  ],
+  "overview": "https://a0.muscache.com/im/pictures/miso/Hosting-1122465660008842792/original/d6a0c579-ff0d-43ed-af3c-b44a22f7fe74.jpeg?im_w=720",
+  "amenities": []
+},
+{
+  "_id": {
+    "$oid": "66263526f50c2e548501f29f"
+  },
+  "name": "Sauna Apartment",
+  "address1": " Bromskirchen, Germany",
+  "airportCode": "EDHI",
+  "city": "Bromskirchen",
+  "countryCode": "DE",
+  "highRate": 997,
+  "location": {
+    "latitude": 345.66509,
+    "longitude": -234.23445
+  },
+  "locationDescription": "Bromskirchen, Germany",
+  "lowRate": 960,
+  "postalCode": 85640,
+  "propertyCategory": 1,
+  "shortDescription": "Cozy holiday apartment with large balcony with private outdoor sauna, beautiful views and beautiful large bathroom to relax.",
+  "stateProvinceCode": "DE",
+  "thumbNailUrl": "https://a0.muscache.com/im/pictures/miso/Hosting-48135766/original/e9707376-bd91-49ea-a895-681ff1015634.jpeg?im_w=1200",
+  "gallery": [
+    "https://a0.muscache.com/im/pictures/ad5800a9-ce99-4dee-aad4-7f9dbcbaa552.jpg?im_w=720",
+    "https://a0.muscache.com/im/pictures/4463927c-90c1-466a-a63b-4d20d395fc43.jpg?im_w=720",
+    "https://a0.muscache.com/im/pictures/miso/Hosting-48135766/original/eca0d7c9-1c59-4772-87e9-e1b357007408.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6NDgxMzU3NjY%3D/original/d8e2d62e-e0d7-49ca-88a4-90c39bf79af8.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/miso/Hosting-48135766/original/01cf93f0-0457-4ae2-9df5-b936c2466d66.jpeg?im_w=720"
+  ],
+  "overview": "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6NDgxMzU3NjY%3D/original/eab77127-b421-4cf1-bd6f-88cda0e02020.jpeg?im_w=1200",
+  "amenities": []
+},
+{
+  "_id": {
+    "$oid": "66263526f50c2e548501f2a0"
+  },
+  "name": "GERN Apartment",
+  "address1": " Unterwössen, Germany",
+  "airportCode": "EDHI",
+  "city": "Unterwössen",
+  "countryCode": "DE",
+  "highRate": 897,
+  "location": {
+    "latitude": 3454.66509,
+    "longitude": -6457.23445
+  },
+  "locationDescription": "Unterwössen, Germany",
+  "lowRate": 560,
+  "postalCode": 85640,
+  "propertyCategory": 1,
+  "shortDescription": "The far-facing view apartment is a residential dream with unique interior design, bright spaces, and stunning views. This is the perfect place to feel good.",
+  "stateProvinceCode": "DE",
+  "thumbNailUrl": "https://a0.muscache.com/im/pictures/miso/Hosting-48135766/original/e9707376-bd91-49ea-a895-681ff1015634.jpeg?im_w=1200",
+  "gallery": [
+    "https://a0.muscache.com/im/pictures/miso/Hosting-656308281676515741/original/de2af6d2-d825-4626-b12e-e70917ca8d30.jpeg?im_w=480",
+    "https://a0.muscache.com/im/pictures/miso/Hosting-656308281676515741/original/863ef7c4-790a-4fe4-9a42-b40be9dc3702.jpeg?im_w=240",
+    "https://a0.muscache.com/im/pictures/miso/Hosting-656308281676515741/original/9f75c754-1626-4ed2-b8fd-8fa3bf444915.jpeg?im_w=240",
+    "https://a0.muscache.com/im/pictures/d6f81f7f-97d7-45ed-8e5b-2eefb38719d4.jpg?im_w=240"
+  ],
+  "overview": "https://a0.muscache.com/im/pictures/miso/Hosting-656308281676515741/original/de2af6d2-d825-4626-b12e-e70917ca8d30.jpeg?im_w=1200",
+  "amenities": []
+}]

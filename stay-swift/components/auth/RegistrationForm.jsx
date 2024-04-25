@@ -1,6 +1,47 @@
+'use client'
+
+import { useRouter } from "next/navigation";
+import { useState } from "react";
+
 const RegistrationForm = () => {
+  const [error, setError] = useState("");
+
+  const router = useRouter();
+
+  async function onSubmit (event) {
+
+      event.preventDefault();
+      try {
+        const formData = new FormData(event.currentTarget);
+        const fname = formData.get('fname');
+        const lname = formData.get('lname');
+        const email = formData.get('email');
+        const password = formData.get('password');
+
+        const res = await fetch("/api/auth/register", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            fname,
+            lname,
+            email,
+            password,
+          }),
+        });
+        res.status === 201 &&
+          router.push("/login");
+      } catch (error) {
+        setError(error.message);
+      }
+    }
+
+
   return (
-    <form className="login-form">
+    <>
+      <div className="text-xl text-red-500 text-center">{error && error}</div>
+      <form className="login-form" onSubmit={onSubmit}>
       <div>
         <label htmlFor="fname">First Name</label>
         <input type="text" name="fname" id="fname" />
@@ -25,6 +66,8 @@ const RegistrationForm = () => {
         Create account
       </button>
     </form>
+    </>
+
   );
 };
 

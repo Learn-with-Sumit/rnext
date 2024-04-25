@@ -1,10 +1,12 @@
 import HotelSummaryInfo from "../HotelSummaryInfo";
 
-const Summary = () => {
+const Summary = ({hotelInfo}) => {
   return (
     <section className="py-4 mt-[100px] ">
       <div className="flex container">
-        <HotelSummaryInfo source="details"/>
+        <HotelSummaryInfo
+          source="details"
+          info={hotelInfo}/>
       </div>
     </section>
   );

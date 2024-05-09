@@ -1,66 +1,80 @@
-[![Youtube][youtube-shield]][youtube-url]
-[![Facebook][facebook-shield]][facebook-group-url]
+আপনাকে অনেক অনেক অভিনন্দন, আপনারা কোর্স এর শেষ এসাইনমেন্ট এ আপনি পৌঁছে গিয়েছেন। আশা করি, রিয়্যাক্ট এবং নেক্সটজেএস সম্পর্কে আপনাদের অনেক ভাল একটি ধারণা হয়েছে । তাই, এই কোর্সে যা যা দেখানো হয়েছে, তার উপর ভিত্তি করে আপনাদের জন্যে এই এসাইনমেন্ট তৈরি করা হয়েছে। এই এসাইনমেন্ট এ Frontend এর কোড দিয়ে দেয়া হয়েছে, আপনাদের মডিউলে দেখানো পদ্ধতিতে ডেটাবেজ এবং API তৈরি করে পুরো এসাইনমেন্ট টি করতে হবে ।
 
-<!-- PROJECT LOGO -->
-<br />
- <p align="center">
-    <img src="https://avatars.githubusercontent.com/u/73503432?v=4" alt="Logo" width="80" height="80" />
-    <h3 align="center "><a href="https://learnwithsumit.com/rnext" target="_blank" >Reactive Accelerator</a></h3>
-</p>
+## এসাইনমেন্টে আপনাকে যা যা করতে হবেঃ
 
-<!-- TABLE OF CONTENTS -->
+- ইউজার Authentication Implement করতে হবে । এক্ষেত্রে Access Token এবং Refresh Token যথাযথ ভাবে কাজ করতে পারতে হবে ।
 
-## Table of Contents
+- আমাদের দেয়া টেমপ্লেট অনুযায়ী হোম পেজে টি আপনাদের বানাতে হবে । এখানে 'SHOP BY CATEGORY', 'Trending Products' এবং 'TOP NEW ARRIVAL' সেকশনে থাকা তথ্য গুলো Database থেকে নিয়ে এসে দেখাতে হবে ।
 
-| CODE RUN                   | CONTACT                    |
-| -------------------------- | -------------------------- |
-| [How to run](#-how-to-run) | [Contact us](#-contact-us) |
+- কোনো প্রোডাক্ট এ ক্লিক করলে, সেই প্রোডাক্ট এর ডিটেইলস পেজে নিয়ে যাবে । এবং ডেটাবেজ থেকে সেই প্রোডাক্ট এর তথ্য নিয়ে এসে দেখাবে ।
 
-<!-- HOW TO RUN -->
+- যে কোনো পেজ থেকে "Add to Cart" বা "Wishlist" এ ক্লিক করলে, Navbar এ এদের কাউন্ট বাড়াতে বা কমাতে হবে ।
 
-## How to run
+- "Add to Cart" এবং "Wishlist" বাটন ফাংশনাল করাতে হবে । অর্থাৎ এগুলো তে ক্লিক করলে এগুলোর জন্যে নির্ধারিত পেজে নিয়ে যাবে এবং সঠিক তথ্য দেখাবে । তবে, "Add to Cart" এবং "Wishlist" শুধু মাত্র লগইন অবস্থাতেই ক্লিক কাজ করবে।
 
-Different lessons taught in this [Reactive Accelerator: React-Next.js Bangla Course by Learn with Sumit](https://learnwithsumit.com/rnext), are organized in separate branches with naming convention - [**module number**].[**lesson number**]. For example, **Module-1 Lesson-1** source code is shared in **1.1** branch. Just switch to a branch and follow the corresponding branch's README file instruction.
+- লগইন না থাকা অবস্থায় "Add to Cart" বা "Wishlist" ক্লিক করলে, লগইন পেজে নিয়ে যাবে, লগইন বা রেজিস্ট্রেশন এর পরে, যেই প্রোডাক্ট এ "Add to Cart" বা "Wishlist" করেছিল, সেই প্রোডাক্ট যেন "Add to Cart" বা "Wishlist" হয়ে যায়। পুনরায় যেন সেটি কে না করা লাগে ।
 
-Please follow the below instructions to run different branches of this repository in your machine:
+- প্রোডাক্ট ডিটেইলস পেজ থেকে সোশ্যাল মিডিয়াতে শেয়ার করার ফাংশন ইমপ্লিমেন্ট করতে হবে ।
 
-1. Login to your GitHub account in your Terminal. If you can't setup and install Git in your machine, kindly follow [this tutorial](https://learnwithsumit.com/rnext/courses/rnext/git-github-refresher).
+- প্রোডাক্ট ডিটেইলস পেজ এ "Related Products" গুলো নিয়ে এসে দেখাতে হবে । এক্ষেত্রে আপনাকে কীওয়ার্ড বা ট্যাগ বা ক্যাটেগরি এর ভিত্তিতে রিলেটেড প্রোডাক্ট সিলেক্ট করতে হবে ।
 
-2. Clone this repository -
-    ```sh
-    git clone https://github.com/Learn-with-Sumit/rnext.git
-    ```
-3. Go to the cloned project directory
-    ```sh
-    cd rnext
-    ```
-4. Checkout/switch to your desired branch. For example, to switch to branch 1.1 -
-    ```sh
-    git checkout 1.1
-    ```
-5. Follow the corresponding branch's README file instruction to run code.
+- সার্চ ফিচার ইমপ্লিমেন্ট করতে হবে, এক্ষেত্রে সার্চ রেজাল্ট Shop.html এর টেমপ্লেট অনুযায়ী দেখাবে ।
 
-<!-- CONTACT  -->
+- প্রোডাক্ট লিস্টিং পেজ বা সার্চ রেজাল্ট পেজের সাইড বার এ দেয়া "Categories", "Price", "Size" এগুলো দিয়ে আপনার প্রোডাক্ট লিস্টিং Filter করতে পারতে হবে ।
 
-## Contact us
+- Accounts Page এ গেলে ইউজার তার "Personal Profile", "Shipping address" ও "Billing address" দেখাবে(ইউজার নতুন একাউন্ট ক্রিয়েট করার পর Shipping ও Billing Address এর ফিল্ডগুলো খালি থাকবে ডিফল্টভাবে), এবং সেগুলো আপডেট করার ব্যবস্থা আপনাকে করতে হবে । সেই সাথে এই পেজ গুলো প্রাইভেট রাউট হবে, অর্থাৎ, ইউজার লগইন না থাকলে তাকে লগইন পেজে নিয়ে যাবে ।
 
-[![Facebook][facebook-shield]][facebook-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
-[![Instagram][instagram-shield]][instagram-url]
-[![mail][mail-shield]][mail-url]
+- Checkout পেজে গেলে যেই আইটেম গুলো কার্ট এ থাকবে, সেগুলো দেখাবে এবং চেকআউট ইনফরমেশন এর জন্যে ফর্ম দেখাবে । ফর্মে ভ্যালিডেশন থাকবে, এবং "Place order" বাটনে ক্লিক করলে অর্ডার কমপ্লিট হয়ে একটি Success মেসেজ দেখাবে ।
 
-<!-- MARKDOWN LINKS & IMAGES -->
+- "Place order" অর্ডার প্লেস হবার পরে, একটা ইউজার কে তার Invoice ডাউনলোড করার ব্যবস্থা করে দিতে হবে । অর্থাৎ যেই যেই প্রোডাক্ট purchase করলো, সেগুলোর তালিকা এবং মোট কত টাকা খরচ হল সেগুলোর ভিত্তি তে আপনাকে একটি PDF Generate করতে হবে । এবং সেই PDF Download করার লিংক জেনেরেট করতে হবে । PDF Generate করতে ["PDF-LIB"](https://pdf-lib.js.org/) বা অন্য যেকোনো লাইব্রেরি ব্যবহার করতে পারেন ।
 
-[youtube-shield]: https://img.shields.io/badge/-Youtube-black.svg?style=flat-square&logo=youtube&color=555&logoColor=white
-[youtube-url]: https://youtube.com/LearnwithSumit
-[facebook-shield]: https://img.shields.io/badge/-Facebook-black.svg?style=flat-square&logo=facebook&color=555&logoColor=white
-[facebook-url]: https://facebook.com/letslearnwithsumit
-[facebook-group-url]: https://facebook.com/groups/learnwithsumit
-[instagram-shield]: https://img.shields.io/badge/-Instagram-black.svg?style=flat-square&logo=instagram&color=555&logoColor=white
-[instagram-url]: https://instagram.com/learnwithsumit
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/company/learnwithsumit
-[thumbnail-shield]: https://i.ibb.co/d6hxnvd/Screenshot-50.png
-[mail-shield]: https://img.shields.io/badge/%F0%9F%93%A7%20Email-support%40learnwithsumit.com-lightgray
-[mail-url]: mailto:support@learnwithsumit.com
-[htmlicon-shield]: https://img.icons8.com/external-flaticons-flat-flat-icons/28/undefined/external-html-computer-programming-flaticons-flat-flat-icons.png
+- প্রোডাক্ট Purchase Complete হয়ে গেলে, ইউজার কে ইমেইল করে তাকে Invoice এর একটি কপি পাঠিয়ে দিতে হবে ।
+
+- প্রোডাক্ট এর Stock Manage করতে হবে । কোনো প্রোডাক্ট স্টকে না থাকলে, Stock Out লিখা দেখাতে হবে ।
+
+- Stock Manage এর ক্ষেত্রে, যখন মাত্র একটি প্রোডাক্ট Inventory তে থাকবে তখন প্যারালাল ভাবে যেন দুই বা তার অধিক অর্ডার না হয়ে যায় এটি খেয়াল রাখতে হবে । অর্থাৎ, যখন কেউ Add to Cart করবে, তখন সেটি Inventory থেকে কমায় ফেলতে হবে, একটা নির্দিষ্ট সময় এর মধ্যে যদি ঐ ইউজার পেমেন্ট না করে, তাহলে ওই প্রোডাক্টটি রিলিস করে আবার inventory তে available করে দিতে হবে ।
+
+- প্রোডাক্ট এর ইনফরমেশন বাদ দিয়ে, ওয়েব সাইটের বাকি সকল লিখা গুলো তে Internationalization Implement করতে হবে, সেক্ষেত্রে বাংলা এবং ইংরেজী লিখা থাকবে ।
+
+- হোম পেজ এবং প্রোডাক্ট ডিটেইলস পেজ যথাযথ ভাবে SEO Friendly হতে হবে ।
+
+## সামগ্রিক মতামতঃ
+
+- MongoDB Atlas এ আপনাদের সব ডেটা রাখতে হবে ।
+- পুরো এসাইনমেন্ট এর ব্যাকেন্ড এর ডেটাবেজ ডিজাইন কেমন হবে, সেটিও আপনাকে করতে হবে ।
+- এসাইনমেন্ট এ কিছু ক্ষেত্রে Popup/Dialog এর কোনো ডিজাইন দেয়া হয়নি সেটি আপনি পরিবর্তন করতে পারবেন ।
+- আপনি চাইলে TypeScript ব্যবহার করতে পারবেন ।
+- আপনার প্রয়োজনে আপনি ডিজাইন পরিবর্তন এবং আপডেট করতে পারবেন ।
+- আপনি চাইলে রিকুয়ারমেন্টস এর বাহিরে গিয়ে আলাদা কোনো ফিচার এড করতে পারবেন ।
+- আপনাকে খেয়াল রাখতে হবে, যেন Github Repository তে আপনার .env ফাইল আপলোড হয়। কোনো কারণে যদি Github Repository .env না থাকে তাহলে সেই এসাইনমেন্ট বাতিল বলে গণ্য হবে ।
+
+## কিভাবে সাবমিট করবেন:
+
+সবচেয়ে সহজে বুঝার জন্য [এই ভিডিওটি](https://learnwithsumit.com/rnext/courses/rnext/how-to-submit-assignments-in-reactive-accelerator-course) দেখে ফেলুন।
+
+এসাইনমেন্টে আপনাকে মাত্র দুইটা জিনিস সাবমিট করতে হবে।
+
+1. **GitHub private repository link:** অবশ্যই সঠিক গিটহাব রিপোজিটরি লিংক দিতে হবে। ভুলে অন্য কোনো লিংক দিলে আপনি এসাইনমেন্টের মার্ক পাবেন না তাই সাবমিট করার আগে নিউ ট্যাবে লিংক ওপেন করে চেক করে নিবেন সঠিক লিংক জমা দিচ্ছেন কিনা।
+2. **Live site link:** নেটলিফাইতে বা ভার্সেলে সাইট হোস্ট করে সাইটের লাইভ লিংক দিতে হবে। ভুলে অন্য কোনো লিংক দিলে আপনি এসাইনমেন্টের মার্ক পাবেন না তাই সাবমিট করার আগে নিউ ট্যাবে লিংক ওপেন করে চেক করে নিবেন সঠিক লিংক জমা দিচ্ছেন কিনা। নেটলিফাইতে বা ভার্সেলে কি ভাবে হোস্ট করতে হয় তা আপনি না জানলে [এইখানে ক্লিক](https://learnwithsumit.com/rnext/courses/rnext/how-to-deploy-your-project-to-vercel-free) করে দেখে নিতে পারেন।
+
+**সাবমিট একবারই করতে পারবেন তাই ভালো করে দেখে সাবমিট করবেন।**
+
+## GitHub private repository কিভাবে তৈরি করবেন:
+
+Github Private repositoty তৈরি করতে [এইখানে ক্লিক করুন](https://classroom.github.com/a/I8GhHixr) অথবা ব্রাউজারে এই লিংকে **https://classroom.github.com/a/I8GhHixr** ভিজিট করুন। লিংকে যাওয়ার পরে **Accept this assignment** এ ক্লিক করুন। সর্বোচ্চ ১ মিনিট পরে পেইজটি রিলোড দিলে আপনি আপনার রিপোজেটরি লিংক পেয়ে যাবেন। মনে রাখবেন, আপনাকে এই লিংকটি আমাদের প্লাটফর্মে সাবমিট করতে হবে। না বুঝলে উপরে বলা ভিডিও টিউটোরিয়ালটি দেখে নিন।
+
+## এসাইনমেন্ট মার্কস পলিসি:
+
+আপনি নির্ধারিত সময়ে এসাইনমেন্ট জমা দিলে এবং সব কিছু সঠিকভাবে করলে সম্পূর্ণ মার্ক পাবেন। এর পরে জমা দিলে আপনার মার্ক নিচের নিয়মে কাটা যাবে -
+
+1. ডেডলাইনের পরে রিয়্যাক্টিভ এক্সিলারেটর কোর্স এর আর কোনো এসাইনমেন্ট গ্রহণ করা হবে না । অর্থাৎ পূর্বে বাকি থাকা কোনো এসাইনমেন্ট এই তারিখের পরে সাবমিট করতে পারবেন না ।
+
+অবশ্যই কোর্স চলাকালিন সময়ে এসাইনমেন্ট জমা দিতে হবে। কোর্সের ডিউরেশন শেষ হয়ে গেলে তার পরে আপনি এসাইনমেন্টে জমা দিলে এসাইনমেন্টের মার্ক পাবেন না।
+
+## সাবমিট করার পর কোড পরিবর্তন:
+
+আপনি ভেবে নিতে পারেন আপনি ওয়েবসাইটে সঠিক সময়ে এসাইনমেন্ট সাবমিট করে নীরবে পরে গিটহাবে কোড পুশ করতে থাকবেন! আপনার গিটহাবের সর্বশেষ কমিট দেখলেই আমরা বুঝতে পারবো আপনি কখন কোড আপডেট করেছেন। সে অনুযায়ী আমরা আপনার মার্ক কেটে নিবো। তাই এসাইনমেন্ট এর সময় পার হবার পরে আমরা আশা করবো আপনি চালাকি করে আর কোড পুশ করবেন না আপনার রিপোজিটরিতে। এটা করলে আপনার সম্পূর্ণ মার্ক কাটা যেতে পারে।
+
+## এসাইনমেন্ট মার্কস কবে পাবেন:
+
+আমরা সর্বোচ্চ ১৫ কার্যদিবসের ভিতরে এসাইনমেন্টের মার্ক দিয়ে দেওয়ার চেষ্টা করবো। ক্ষেত্র বিশেষে একটু দেরি হতে পারে কারো কারো মার্ক পেতে।

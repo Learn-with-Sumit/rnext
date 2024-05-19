@@ -1,0 +1,60 @@
+[{
+  "_id": {
+    "$oid": "663a0806bfe65e5778eedf35"
+  },
+  "title": "Introduction to Variables",
+  "description": "Learn the basics of variables in programming.",
+  "duration": "10:30",
+  "video_url": "https://example.com/variables_video",
+  "published": true,
+  "slug": "introduction-to-variables",
+  "access": "public"
+},
+{
+  "_id": {
+    "$oid": "663a0806bfe65e5778eedf36"
+  },
+  "title": "HTML Basics",
+  "description": "Understand the fundamentals of HTML.",
+  "duration": "15:45",
+  "video_url": "https://example.com/html_basics_video",
+  "published": true,
+  "slug": "html-basics",
+  "access": "private"
+},
+{
+  "_id": {
+    "$oid": "663a0806bfe65e5778eedf37"
+  },
+  "title": "Introduction to Machine Learning",
+  "description": "Get introduced to the exciting field of machine learning.",
+  "duration": "20:00",
+  "video_url": "https://example.com/ml_intro_video",
+  "published": true,
+  "slug": "introduction-to-machine-learning",
+  "access": "public"
+},
+{
+  "_id": {
+    "$oid": "663a0806bfe65e5778eedf38"
+  },
+  "title": "Composition Techniques in Photography",
+  "description": "Master various composition techniques for stunning photographs.",
+  "duration": "12:30",
+  "video_url": "https://example.com/photography_composition_video",
+  "published": true,
+  "slug": "composition-techniques-in-photography",
+  "access": "public"
+},
+{
+  "_id": {
+    "$oid": "663a0806bfe65e5778eedf39"
+  },
+  "title": "Budgeting Strategies",
+  "description": "Learn effective budgeting strategies for personal finance.",
+  "duration": "18:15",
+  "video_url": "https://example.com/budgeting_strategies_video",
+  "published": true,
+  "slug": "budgeting-strategies",
+  "access": "private"
+}]

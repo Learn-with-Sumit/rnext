@@ -1,0 +1,13 @@
+[{
+  "_id": {
+    "$oid": "663a0a05bfe65e5778eedf58"
+  },
+  "content": "Great course! I learned a lot.",
+  "rating": 5,
+  "courseId": {
+    "$oid": "6648137e9705487c69b2befc"
+  },
+  "userId": {
+    "$oid": "663a0b36bfe65e5778eedf7e"
+  }
+}]

@@ -1,0 +1,117 @@
+[{
+  "_id": {
+    "$oid": "663a06e7bfe65e5778eedf2a"
+  },
+  "firstName": "John",
+  "lastName": "Doe",
+  "password": "password123",
+  "email": "john.doe@example.com",
+  "phone": "+1234567890",
+  "role": "Teacher",
+  "bio": "Experienced educator passionate about fostering student learning and development.",
+  "socialMedia": {
+    "twitter": "@johndoe",
+    "linkedin": "linkedin.com/in/johndoe",
+    "facebook": "facebook.com/johndoe"
+  },
+  "profilePicture": "https://example.com/profiles/johndoe.jpg"
+},
+{
+  "_id": {
+    "$oid": "663a06e7bfe65e5778eedf2b"
+  },
+  "firstName": "Alice",
+  "lastName": "Smith",
+  "password": "password456",
+  "email": "alice.smith@example.com",
+  "phone": "+1987654321",
+  "role": "Student",
+  "bio": "Enthusiastic learner eager to explore new horizons.",
+  "socialMedia": {
+    "twitter": "@alicesmith",
+    "linkedin": "linkedin.com/in/alicesmith",
+    "instagram": "@alicesmith"
+  },
+  "profilePicture": "https://example.com/profiles/alicesmith.jpg"
+},
+{
+  "_id": {
+    "$oid": "663a0b36bfe65e5778eedf7b"
+  },
+  "first_name": "John",
+  "last_name": "Doe",
+  "password": "password123",
+  "email": "john.doe@example.com",
+  "phone": "+1234567890",
+  "role": "Teacher",
+  "bio": "Experienced web developer with a passion for teaching.",
+  "social_media": {
+    "twitter": "https://twitter.com/johndoe",
+    "linkedin": "https://linkedin.com/in/johndoe"
+  },
+  "profile_picture": "https://example.com/profile_pictures/john_doe.jpg"
+},
+{
+  "_id": {
+    "$oid": "663a0b36bfe65e5778eedf7c"
+  },
+  "first_name": "Alice",
+  "last_name": "Smith",
+  "password": "pass@123",
+  "email": "alice.smith@example.com",
+  "phone": "+1987654321",
+  "role": "Teacher",
+  "bio": "Photography enthusiast and educator.",
+  "social_media": {
+    "instagram": "https://instagram.com/alicesmith",
+    "facebook": "https://facebook.com/alicesmithphotography"
+  },
+  "profile_picture": "https://example.com/profile_pictures/alice_smith.jpg"
+},
+{
+  "_id": {
+    "$oid": "663a0b36bfe65e5778eedf7d"
+  },
+  "first_name": "Emma",
+  "last_name": "Johnson",
+  "password": "1234pass",
+  "email": "emma.johnson@example.com",
+  "phone": "+1122334455",
+  "role": "Student",
+  "bio": "Aspiring data scientist eager to learn.",
+  "social_media": null,
+  "profile_picture": "https://example.com/profile_pictures/emma_johnson.jpg"
+},
+{
+  "_id": {
+    "$oid": "663a0b36bfe65e5778eedf7e"
+  },
+  "first_name": "Michael",
+  "last_name": "Brown",
+  "password": "securepassword",
+  "email": "michael.brown@example.com",
+  "phone": "+4455667788",
+  "role": "Student",
+  "bio": "Passionate about finance and investing.",
+  "social_media": {
+    "linkedin": "https://linkedin.com/in/michaelbrown"
+  },
+  "profile_picture": "https://example.com/profile_pictures/michael_brown.jpg"
+},
+{
+  "_id": {
+    "$oid": "663a0b36bfe65e5778eedf7f"
+  },
+  "first_name": "Sophia",
+  "last_name": "Miller",
+  "password": "password1234",
+  "email": "sophia.miller@example.com",
+  "phone": "+3344556677",
+  "role": "Student",
+  "bio": "Enthusiastic about web development.",
+  "social_media": {
+    "github": "https://github.com/sophiamiller",
+    "linkedin": "https://linkedin.com/in/sophiamiller"
+  },
+  "profile_picture": "https://example.com/profile_pictures/sophia_miller.jpg"
+}]

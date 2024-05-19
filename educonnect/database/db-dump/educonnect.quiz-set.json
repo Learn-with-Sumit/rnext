@@ -1,0 +1,84 @@
+[{
+  "_id": {
+    "$oid": "663a096ebfe65e5778eedf4a"
+  },
+  "title": "Python Basics Quiz Set",
+  "description": "Test your knowledge about Python fundamentals.",
+  "mark": 15,
+  "slug": "python-basics-quiz",
+  "status": "active",
+  "quizIds": [
+    {
+      "$oid": "664840476fe803e9128d7fe2"
+    },
+    {
+      "$oid": "663a0900bfe65e5778eedf44"
+    },
+    {
+      "$oid": "663a0900bfe65e5778eedf45"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "663a096ebfe65e5778eedf4b"
+  },
+  "title": "Web Development Essentials Quiz Set",
+  "description": "Evaluate your understanding of web development essentials.",
+  "mark": 15,
+  "slug": "web-development-essentials-quiz",
+  "status": "active",
+  "quizIds": [
+    {
+      "$oid": "663a0900bfe65e5778eedf47"
+    },
+    {
+      "$oid": "663a0900bfe65e5778eedf46"
+    },
+    {
+      "$oid": "663a0900bfe65e5778eedf45"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "663a096ebfe65e5778eedf4c"
+  },
+  "title": "Machine Learning Mastery Quiz Set",
+  "description": "Test your proficiency in machine learning concepts.",
+  "mark": 15,
+  "slug": "machine-learning-mastery-quiz",
+  "status": "active",
+  "quizIds": [
+    {
+      "$oid": "663a0900bfe65e5778eedf43"
+    },
+    {
+      "$oid": "663a0900bfe65e5778eedf44"
+    },
+    {
+      "$oid": "663a0900bfe65e5778eedf45"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "663a096ebfe65e5778eedf4d"
+  },
+  "title": "Photography Fundamentals Quiz Set",
+  "description": "Assess your understanding of photography basics.",
+  "mark": 15,
+  "slug": "photography-fundamentals-quiz",
+  "status": "active",
+  "quizIds": [
+    {
+      "$oid": "663a0900bfe65e5778eedf43"
+    },
+    {
+      "$oid": "663a0900bfe65e5778eedf44"
+    },
+    {
+      "$oid": "663a0900bfe65e5778eedf45"
+    }
+  ]
+}]

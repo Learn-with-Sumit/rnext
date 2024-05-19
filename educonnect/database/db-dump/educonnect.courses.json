@@ -1,0 +1,33 @@
+[{
+  "_id": {
+    "$oid": "6648184a6fe803e9128d7fba"
+  },
+  "title": "Walking Course",
+  "description": "Learn Python programming language from scratch with hands-on exercises.",
+  "thumbnail": "python_thumbnail.jpg",
+  "modules": [
+    {
+      "$oid": "663a0893bfe65e5778eedf3c"
+    },
+    {
+      "$oid": "663a0893bfe65e5778eedf3d"
+    }
+  ],
+  "price": 29.99,
+  "active": true,
+  "category": {
+    "$oid": "664813cc6fe803e9128d7fae"
+  },
+  "instructor": {
+    "$oid": "663a06e7bfe65e5778eedf2a"
+  },
+  "__v": 0,
+  "testimonials": [
+    {
+      "$oid": "663a0a05bfe65e5778eedf58"
+    }
+  ],
+  "quizSet": {
+    "$oid": "663a096ebfe65e5778eedf4a"
+  }
+}]

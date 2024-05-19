@@ -1,0 +1,140 @@
+[{
+  "_id": {
+    "$oid": "663a0900bfe65e5778eedf43"
+  },
+  "question": "What is the capital of France?",
+  "description": "Test your knowledge about world capitals.",
+  "options": [
+    {
+      "text": "Paris",
+      "is_correct": true
+    },
+    {
+      "text": "London",
+      "is_correct": false
+    },
+    {
+      "text": "Berlin",
+      "is_correct": false
+    },
+    {
+      "text": "Rome",
+      "is_correct": false
+    }
+  ],
+  "explanations": "Paris is the capital of France.",
+  "mark": 5,
+  "slug": "capital-of-france"
+},
+{
+  "_id": {
+    "$oid": "663a0900bfe65e5778eedf44"
+  },
+  "question": "Which of the following is a programming language?",
+  "description": "Identify the programming language among the options.",
+  "options": [
+    {
+      "text": "HTML",
+      "is_correct": false
+    },
+    {
+      "text": "CSS",
+      "is_correct": false
+    },
+    {
+      "text": "Python",
+      "is_correct": true
+    },
+    {
+      "text": "Photoshop",
+      "is_correct": false
+    }
+  ],
+  "explanations": "Python is a programming language.",
+  "mark": 5,
+  "slug": "programming-language"
+},
+{
+  "_id": {
+    "$oid": "663a0900bfe65e5778eedf45"
+  },
+  "question": "What does HTML stand for?",
+  "description": "Choose the correct expansion of HTML.",
+  "options": [
+    {
+      "text": "Hyper Text Markup Language",
+      "is_correct": true
+    },
+    {
+      "text": "Highly Technological Markup Language",
+      "is_correct": false
+    },
+    {
+      "text": "Hyperlink Text Markup Language",
+      "is_correct": false
+    },
+    {
+      "text": "Hyper Tech Markup Language",
+      "is_correct": false
+    }
+  ],
+  "explanations": "HTML stands for Hyper Text Markup Language.",
+  "mark": 5,
+  "slug": "html-expansion"
+},
+{
+  "_id": {
+    "$oid": "663a0900bfe65e5778eedf46"
+  },
+  "question": "What is 2 + 2?",
+  "description": "Solve the basic arithmetic question.",
+  "options": [
+    {
+      "text": "3",
+      "is_correct": false
+    },
+    {
+      "text": "4",
+      "is_correct": true
+    },
+    {
+      "text": "5",
+      "is_correct": false
+    },
+    {
+      "text": "6",
+      "is_correct": false
+    }
+  ],
+  "explanations": "2 + 2 equals 4.",
+  "mark": 5,
+  "slug": "basic-arithmetic"
+},
+{
+  "_id": {
+    "$oid": "663a0900bfe65e5778eedf47"
+  },
+  "question": "What is the symbol for the element Iron?",
+  "description": "Identify the chemical symbol for Iron.",
+  "options": [
+    {
+      "text": "Fe",
+      "is_correct": true
+    },
+    {
+      "text": "Ir",
+      "is_correct": false
+    },
+    {
+      "text": "I",
+      "is_correct": false
+    },
+    {
+      "text": "In",
+      "is_correct": false
+    }
+  ],
+  "explanations": "The chemical symbol for Iron is Fe.",
+  "mark": 5,
+  "slug": "iron-element"
+}]

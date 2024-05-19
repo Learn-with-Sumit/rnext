@@ -1,0 +1,30 @@
+[{
+  "_id": {
+    "$oid": "663a0ae8bfe65e5778eedf6d"
+  },
+  "user_id": "663a06e7bfe65e5778eedf2b",
+  "course_id": "663a07dfbfe65e5778eedf2e",
+  "total_completed_lesson": 10,
+  "total_completed_modules": 2,
+  "quiz_assessment_id": "quiz_set_1"
+},
+{
+  "_id": {
+    "$oid": "663a0ae8bfe65e5778eedf6e"
+  },
+  "user_id": "663a0b36bfe65e5778eedf7d",
+  "course_id": "663a07dfbfe65e5778eedf2f",
+  "total_completed_lesson": 15,
+  "total_completed_modules": 3,
+  "quiz_assessment_id": "quiz_set_2"
+},
+{
+  "_id": {
+    "$oid": "663a0ae8bfe65e5778eedf6f"
+  },
+  "user_id": "663a0b36bfe65e5778eedf7d",
+  "course_id": "663a07dfbfe65e5778eedf2f",
+  "total_completed_lesson": 5,
+  "total_completed_modules": 1,
+  "quiz_assessment_id": "quiz_set_3"
+}]

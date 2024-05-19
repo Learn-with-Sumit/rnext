@@ -1,0 +1,46 @@
+[{
+  "_id": {
+    "$oid": "663a0893bfe65e5778eedf3c"
+  },
+  "title": "Python Basics",
+  "description": "Learn the fundamentals of Python programming language.",
+  "status": "active",
+  "slug": "python-basics",
+  "course": {
+    "$oid": "6648184a6fe803e9128d7fba"
+  },
+  "lessonIds": [
+    {
+      "$oid": "663a0806bfe65e5778eedf35"
+    },
+    {
+      "$oid": "663a0806bfe65e5778eedf36"
+    },
+    {
+      "$oid": "663a0806bfe65e5778eedf37"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "663a0893bfe65e5778eedf3d"
+  },
+  "title": "HTML5 and CSS3 Essentials",
+  "description": "Master HTML5 and CSS3 for modern web development.",
+  "status": "active",
+  "slug": "html5-css3-essentials",
+  "course": {
+    "$oid": "6648184a6fe803e9128d7fba"
+  },
+  "lessonIds": [
+    {
+      "$oid": "663a0806bfe65e5778eedf38"
+    },
+    {
+      "$oid": "663a0806bfe65e5778eedf39"
+    },
+    {
+      "$oid": "663a0806bfe65e5778eedf38"
+    }
+  ]
+}]

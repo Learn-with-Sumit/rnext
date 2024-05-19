@@ -1,0 +1,111 @@
+[{
+  "_id": {
+    "$oid": "663b144d94bdaddfbf619390"
+  },
+  "mark": 15,
+  "noc": 3,
+  "assessments": [
+    {
+      "quizId": "663a0900bfe65e5778eedf43",
+      "options": [
+        {
+          "option": "option A",
+          "isCorrect": true,
+          "isSelected": true
+        },
+        {
+          "option": "option A",
+          "isCorrect": true,
+          "isSelected": true
+        },
+        {
+          "option": "option A",
+          "isCorrect": true,
+          "isSelected": true
+        },
+        {
+          "option": "option A",
+          "isCorrect": true,
+          "isSelected": true
+        }
+      ]
+    },
+    {
+      "quizId": "663a0900bfe65e5778eedf43",
+      "options": [
+        {
+          "option": "option A",
+          "isCorrect": true,
+          "isSelected": true
+        },
+        {
+          "option": "option A",
+          "isCorrect": true,
+          "isSelected": true
+        },
+        {
+          "option": "option A",
+          "isCorrect": true,
+          "isSelected": true
+        },
+        {
+          "option": "option A",
+          "isCorrect": true,
+          "isSelected": true
+        }
+      ]
+    },
+    {
+      "quizId": "663a0900bfe65e5778eedf43",
+      "options": [
+        {
+          "option": "option A",
+          "isCorrect": true,
+          "isSelected": true
+        },
+        {
+          "option": "option A",
+          "isCorrect": true,
+          "isSelected": true
+        },
+        {
+          "option": "option A",
+          "isCorrect": true,
+          "isSelected": true
+        },
+        {
+          "option": "option A",
+          "isCorrect": true,
+          "isSelected": true
+        }
+      ]
+    },
+    {
+      "quizId": "663a0900bfe65e5778eedf43",
+      "options": [
+        {
+          "option": "option A",
+          "isCorrect": true,
+          "isSelected": true
+        },
+        {
+          "option": "option A",
+          "isCorrect": true,
+          "isSelected": true
+        },
+        {
+          "option": "option A",
+          "isCorrect": true,
+          "isSelected": true
+        },
+        {
+          "option": "option A",
+          "isCorrect": true,
+          "isSelected": true
+        }
+      ]
+    }
+  ],
+  "user_id": "",
+  "course_id": ""
+}]

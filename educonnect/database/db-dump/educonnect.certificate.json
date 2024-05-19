@@ -1,0 +1,27 @@
+[{
+  "_id": {
+    "$oid": "663a0b08bfe65e5778eedf74"
+  },
+  "user_id": "663a06e7bfe65e5778eedf2b",
+  "course_id": "663a07dfbfe65e5778eedf2e",
+  "enrollment_id": "663a0a2ebfe65e5778eedf5f",
+  "certificate_link": "https://example.com/certificates/user_1_course_1_certificate.pdf"
+},
+{
+  "_id": {
+    "$oid": "663a0b08bfe65e5778eedf75"
+  },
+  "user_id": "663a0b36bfe65e5778eedf7d",
+  "course_id": "663a07dfbfe65e5778eedf2f",
+  "enrollment_id": "663a0a2ebfe65e5778eedf60",
+  "certificate_link": "https://example.com/certificates/user_2_course_2_certificate.pdf"
+},
+{
+  "_id": {
+    "$oid": "663a0b08bfe65e5778eedf76"
+  },
+  "user_id": "663a0b36bfe65e5778eedf7d",
+  "course_id": "663a07dfbfe65e5778eedf2f",
+  "enrollment_id": "663a0a2ebfe65e5778eedf61",
+  "certificate_link": "https://example.com/certificates/user_3_course_3_certificate.pdf"
+}]

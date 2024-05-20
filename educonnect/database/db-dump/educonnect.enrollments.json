@@ -1,55 +1,45 @@
 [{
   "_id": {
-    "$oid": "663a0a2ebfe65e5778eedf5f"
-  },
-  "user_id": "663a06e7bfe65e5778eedf2b",
-  "course_id": "663a07dfbfe65e5778eedf2e",
-  "enrollment_date": "2024-05-01",
-  "status": "complete",
-  "completion_date": "2024-05-25",
-  "method": "credit_card"
-},
-{
-  "_id": {
     "$oid": "663a0a2ebfe65e5778eedf60"
   },
-  "user_id": "663a0b36bfe65e5778eedf7d",
-  "course_id": "663a07dfbfe65e5778eedf2f",
   "enrollment_date": "2024-04-20",
   "status": "complete",
   "completion_date": "2024-05-15",
-  "method": "paypal"
+  "method": "paypal",
+  "course": {
+    "$oid": "6648184a6fe803e9128d7fba"
+  },
+  "student": {
+    "$oid": "663a0b36bfe65e5778eedf7e"
+  }
 },
 {
   "_id": {
-    "$oid": "663a0a2ebfe65e5778eedf61"
+    "$oid": "664acbd81387e2ad2e8be486"
   },
-  "user_id": "663a0b36bfe65e5778eedf7d",
-  "course_id": "663a07dfbfe65e5778eedf2f",
-  "enrollment_date": "2024-05-10",
+  "enrollment_date": "2024-04-20",
   "status": "complete",
-  "completion_date": null,
-  "method": "debit_card"
+  "completion_date": "2024-05-15",
+  "method": "stripe",
+  "course": {
+    "$oid": "664aca881387e2ad2e8be484"
+  },
+  "student": {
+    "$oid": "664accf41387e2ad2e8be488"
+  }
 },
 {
   "_id": {
-    "$oid": "663a0a2ebfe65e5778eedf62"
+    "$oid": "664adedb1387e2ad2e8be4a4"
   },
-  "user_id": "user_4",
-  "course_id": "course_4",
-  "enrollment_date": "2024-05-05",
-  "status": "initiated",
-  "completion_date": "2024-05-30",
-  "method": "bank_transfer"
-},
-{
-  "_id": {
-    "$oid": "663a0a2ebfe65e5778eedf63"
+  "enrollment_date": "2024-04-20",
+  "status": "complete",
+  "completion_date": "2024-05-15",
+  "method": "stripe",
+  "course": {
+    "$oid": "664aca881387e2ad2e8be484"
   },
-  "user_id": "user_5",
-  "course_id": "course_5",
-  "enrollment_date": "2024-05-15",
-  "status": "in progress",
-  "completion_date": null,
-  "method": "gift_card"
+  "student": {
+    "$oid": "664adddc1387e2ad2e8be4a0"
+  }
 }]

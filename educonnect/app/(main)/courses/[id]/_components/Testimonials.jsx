@@ -7,7 +7,7 @@ import {
 } from "@/components/ui/carousel";
 import { SectionTitle } from "@/components/section-title";
 import { StarRating } from "@/components/star-rating";
-
+import Image from "next/image";
 
 const Testimonials = ({testimonials}) => {
     return (
@@ -31,8 +31,8 @@ const Testimonials = ({testimonials}) => {
                                 <div className="sm:break-inside-avoid">
                                     <blockquote className="rounded-lg bg-gray-50 p-6  sm:p-8 shadow-sm">
                                         <div className="flex items-center gap-4">
-                                            <img
-                                                alt=""
+                                            <Image
+                                                alt={testimonial?.user?.first_name}
                                                 src={testimonial?.user?.profile_picture}
                                                 width="56"
                                                 height="56"

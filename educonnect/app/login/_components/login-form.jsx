@@ -1,3 +1,5 @@
+"use client"
+
 import Link from "next/link";
 
 import { Button } from "@/components/ui/button";
@@ -11,7 +13,34 @@ import {
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 
+import { ceredntialLogin } from "@/app/actions";
+
+import { useState } from "react";
+import { useRouter } from "next/navigation";
+
 export function LoginForm() {
+
+  const [error, setError] = useState('');
+  const router = useRouter();
+
+  async function onSubmit(event) {
+    event.preventDefault();
+
+    try {
+      const formData = new FormData(event.currentTarget);
+      const response = await ceredntialLogin(formData);
+
+      if (!!response.error) {
+        console.error(response.error)
+        setError(response.error);
+      } else {
+        router.push("/courses");
+      }
+    } catch (e) {
+      setError(e.message);
+    }
+  }
+
   return (
     <Card className="mx-auto max-w-sm w-full">
       <CardHeader>
@@ -21,34 +50,41 @@ export function LoginForm() {
         </CardDescription>
       </CardHeader>
       <CardContent>
-        <div className="grid gap-4">
-          <div className="grid gap-2">
-            <Label htmlFor="email">Email</Label>
-            <Input
-              id="email"
-              type="email"
-              placeholder="m@example.com"
-              required
-            />
-          </div>
-          <div className="grid gap-2">
-            <div className="flex items-center">
-              <Label htmlFor="password">Password</Label>
-              {/* <Link href="#" className="ml-auto inline-block text-sm underline">
-                Forgot your password?
-              </Link> */}
+        <form onSubmit={onSubmit}>
+          <div className="grid gap-4">
+            <div className="grid gap-2">
+              <Label htmlFor="email">Email</Label>
+              <Input
+                id="email"
+                name="email"
+                type="email"
+                placeholder="m@example.com"
+                required
+              />
             </div>
-            <Input id="password" type="password" required />
+            <div className="grid gap-2">
+              <div className="flex items-center">
+                <Label htmlFor="password">Password</Label>
+              </div>
+              <Input id="password" name="password" type="password" required />
+            </div>
+            <Button type="submit" className="w-full">
+              Login
+            </Button>
           </div>
-          <Button type="submit" className="w-full">
-            Login
-          </Button>
-        </div>
+        </form>
         <div className="mt-4 text-center text-sm">
           Don&apos;t have an account?{" "}
-          <Link href="register" className="underline">
-            Register
-          </Link>
+          <p>
+            Register as {" "}
+            <Link href="/register/instructor" className="underline">
+              Instructor
+            </Link>
+            {" "} or {" "}
+            <Link href="/register/student" className="underline">
+              Student
+            </Link>
+          </p>
         </div>
       </CardContent>
     </Card>

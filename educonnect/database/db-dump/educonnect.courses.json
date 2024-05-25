@@ -13,7 +13,7 @@
       "$oid": "663a0893bfe65e5778eedf3d"
     }
   ],
-  "price": 29.99,
+  "price": 4567,
   "active": true,
   "category": {
     "$oid": "664813cc6fe803e9128d7fae"
@@ -59,13 +59,13 @@
       "$oid": "663a0893bfe65e5778eedf3d"
     }
   ],
-  "price": 24.99,
+  "price": 5678,
   "active": true,
   "category": {
     "$oid": "664813cc6fe803e9128d7fae"
   },
   "instructor": {
-    "$oid": "663a06e7bfe65e5778eedf2a"
+    "$oid": "66504f85171d3fa703e7e043"
   },
   "__v": 0,
   "testimonials": [

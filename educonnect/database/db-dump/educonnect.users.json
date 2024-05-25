@@ -7,7 +7,7 @@
   "password": "password123",
   "email": "john.doe@example.com",
   "phone": "+1234567890",
-  "role": "Teacher",
+  "role": "instructor",
   "bio": "Experienced educator passionate about fostering student learning and development.",
   "socialMedia": {
     "twitter": "@johndoe",
@@ -26,13 +26,13 @@
   "password": "securepassword",
   "email": "michael.brown@example.com",
   "phone": "+4455667788",
-  "role": "Student",
+  "role": "student",
   "bio": "Passionate about finance and investing.",
   "social_media": {
     "linkedin": "https://linkedin.com/in/michaelbrown"
   },
-  "profile_picture": "https://i.pravatar.cc",
-  "designation": "Junior Develeoper, Acme"
+  "designation": "Junior Develeoper, Acme",
+  "profilePicture": "https://i.pravatar.cc"
 },
 {
   "_id": {
@@ -43,13 +43,13 @@
   "password": "securepassword",
   "email": "alex.brown@example.com",
   "phone": "+42255667788",
-  "role": "Student",
+  "role": "student",
   "bio": "I love programming, I eat JavaScript",
   "social_media": {
     "linkedin": "https://linkedin.com/in/alexbrown"
   },
-  "profile_picture": "https://i.pravatar.cc",
-  "designation": "Junior Develeoper, OpenText"
+  "designation": "Junior Develeoper, OpenText",
+  "profilePicture": "https://i.pravatar.cc"
 },
 {
   "_id": {
@@ -57,14 +57,62 @@
   },
   "first_name": "Fatima",
   "last_name": "Shekh",
-  "password": "securepassword",
+  "password": "$2a$05$g1XX1jFI0nwRjCX2ORiCxuHYlyVep/G4Jcqw1u4Eyt4GrV86V938.",
   "email": "fatima.shekh@example.com",
   "phone": "+88255667788",
-  "role": "Student",
+  "role": "student",
   "bio": "I love coding",
   "social_media": {
     "linkedin": "https://linkedin.com/in/fatima"
   },
-  "profile_picture": "https://i.pravatar.cc",
-  "designation": "Junior Develeoper, Microsoft"
+  "designation": "Junior Develeoper, OpenText",
+  "profilePicture": "https://i.pravatar.cc",
+  "lastName": "Shekh"
+},
+{
+  "_id": {
+    "$oid": "664d8582439c45ebdc6f0e26"
+  },
+  "firstName": "test",
+  "lastName": "test",
+  "password": "$2a$05$g1XX1jFI0nwRjCX2ORiCxuHYlyVep/G4Jcqw1u4Eyt4GrV86V938.",
+  "email": "test@test.com",
+  "role": "student",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66504f85171d3fa703e7e043"
+  },
+  "firstName": "Tapas",
+  "lastName": "Adhikary",
+  "password": "$2a$05$Kih1jnVYNDlNoABVmmxVceVnyY8Yr0kmOS6rIX/uzrWLBCQEi5i0S",
+  "email": "tapas.adhikary@gmail.com",
+  "role": "instructor",
+  "__v": 0,
+  "bio": "An educator for a decade and a life-long learner",
+  "designation": "Founder, tapaScript | Co-Founder, CreoWis | 20 Years in Software Development",
+  "profilePicture": "https://res.cloudinary.com/atapas/image/upload/v1646745540/profile/face_x0vrxt.jpg"
+},
+{
+  "_id": {
+    "$oid": "66504fc6171d3fa703e7e05b"
+  },
+  "firstName": "ReactPlay",
+  "lastName": "IO",
+  "password": "$2a$05$RjwtCJJHDyHGpB3zcTR4zOfYvuO1WJWd/0u1zQcp9oTZWfA7pH.B2",
+  "email": "ioreactplay@gmail.com",
+  "role": "student",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66509f695f7ef01511c20c7b"
+  },
+  "firstName": "T",
+  "lastName": "H",
+  "password": "$2a$05$J3lCpL8ZLIhFW9.rwrDy6.UNqzhtEumUbyJ5SycwK/en5XBitf0Ia",
+  "email": "t@t.com",
+  "role": "instructor",
+  "__v": 0
 }]

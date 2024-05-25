@@ -42,4 +42,21 @@
   "student": {
     "$oid": "664adddc1387e2ad2e8be4a0"
   }
+},
+{
+  "_id": {
+    "$oid": "66509d9b5f7ef01511c20c73"
+  },
+  "enrollment_date": {
+    "$date": "2024-05-24T14:00:59.481Z"
+  },
+  "status": "not-started",
+  "method": "stripe",
+  "course": {
+    "$oid": "6648184a6fe803e9128d7fba"
+  },
+  "student": {
+    "$oid": "66504fc6171d3fa703e7e05b"
+  },
+  "__v": 0
 }]

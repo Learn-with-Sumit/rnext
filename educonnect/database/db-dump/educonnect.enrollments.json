@@ -45,15 +45,15 @@
 },
 {
   "_id": {
-    "$oid": "66509d9b5f7ef01511c20c73"
+    "$oid": "6652afcf797cc3d6720dfeb2"
   },
   "enrollment_date": {
-    "$date": "2024-05-24T14:00:59.481Z"
+    "$date": "2024-05-26T03:43:11.415Z"
   },
   "status": "not-started",
   "method": "stripe",
   "course": {
-    "$oid": "6648184a6fe803e9128d7fba"
+    "$oid": "664aca881387e2ad2e8be484"
   },
   "student": {
     "$oid": "66504fc6171d3fa703e7e05b"

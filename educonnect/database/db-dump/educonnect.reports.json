@@ -2,29 +2,26 @@
   "_id": {
     "$oid": "663a0ae8bfe65e5778eedf6d"
   },
-  "user_id": "663a06e7bfe65e5778eedf2b",
-  "course_id": "663a07dfbfe65e5778eedf2e",
-  "total_completed_lesson": 10,
-  "total_completed_modules": 2,
-  "quiz_assessment_id": "quiz_set_1"
-},
-{
-  "_id": {
-    "$oid": "663a0ae8bfe65e5778eedf6e"
+  "totalCompletedLessons": [
+    {
+      "$oid": "663a0806bfe65e5778eedf35"
+    },
+    {
+      "$oid": "663a0806bfe65e5778eedf36"
+    }
+  ],
+  "totalCompletedModeules": [
+    {
+      "$oid": "663a0893bfe65e5778eedf3c"
+    }
+  ],
+  "course": {
+    "$oid": "664aca881387e2ad2e8be484"
   },
-  "user_id": "663a0b36bfe65e5778eedf7d",
-  "course_id": "663a07dfbfe65e5778eedf2f",
-  "total_completed_lesson": 15,
-  "total_completed_modules": 3,
-  "quiz_assessment_id": "quiz_set_2"
-},
-{
-  "_id": {
-    "$oid": "663a0ae8bfe65e5778eedf6f"
+  "student": {
+    "$oid": "66504fc6171d3fa703e7e05b"
   },
-  "user_id": "663a0b36bfe65e5778eedf7d",
-  "course_id": "663a07dfbfe65e5778eedf2f",
-  "total_completed_lesson": 5,
-  "total_completed_modules": 1,
-  "quiz_assessment_id": "quiz_set_3"
+  "quizAssessment": {
+    "$oid": "663b144d94bdaddfbf619390"
+  }
 }]

@@ -21,8 +21,6 @@
   "_id": {
     "$oid": "663a0b36bfe65e5778eedf7e"
   },
-  "first_name": "Michael",
-  "last_name": "Brown",
   "password": "securepassword",
   "email": "michael.brown@example.com",
   "phone": "+4455667788",
@@ -32,14 +30,14 @@
     "linkedin": "https://linkedin.com/in/michaelbrown"
   },
   "designation": "Junior Develeoper, Acme",
-  "profilePicture": "https://i.pravatar.cc"
+  "profilePicture": "https://i.pravatar.cc",
+  "firstName": "Michael",
+  "lastName": "Brown"
 },
 {
   "_id": {
     "$oid": "664accf41387e2ad2e8be488"
   },
-  "first_name": "Alex",
-  "last_name": "Brown",
   "password": "securepassword",
   "email": "alex.brown@example.com",
   "phone": "+42255667788",
@@ -49,25 +47,26 @@
     "linkedin": "https://linkedin.com/in/alexbrown"
   },
   "designation": "Junior Develeoper, OpenText",
-  "profilePicture": "https://i.pravatar.cc"
+  "profilePicture": "https://i.pravatar.cc",
+  "firstName": "Alex",
+  "lastName": "Brown"
 },
 {
   "_id": {
     "$oid": "664adddc1387e2ad2e8be4a0"
   },
-  "first_name": "Fatima",
-  "last_name": "Shekh",
-  "password": "$2a$05$g1XX1jFI0nwRjCX2ORiCxuHYlyVep/G4Jcqw1u4Eyt4GrV86V938.",
+  "password": "$2a$05$8B0y89Z7Gt/RlepneilmY.GRnX/G6O7RfvA61QpOG2M.H0r3PLdIG",
   "email": "fatima.shekh@example.com",
   "phone": "+88255667788",
   "role": "student",
-  "bio": "I love coding",
+  "bio": "love coding and game",
   "social_media": {
     "linkedin": "https://linkedin.com/in/fatima"
   },
-  "designation": "Junior Develeoper, OpenText",
+  "designation": "Ghoral",
   "profilePicture": "https://i.pravatar.cc",
-  "lastName": "Shekh"
+  "lastName": "Sheikh",
+  "firstName": "Fatima"
 },
 {
   "_id": {
@@ -100,10 +99,13 @@
   },
   "firstName": "ReactPlay",
   "lastName": "IO",
-  "password": "$2a$05$RjwtCJJHDyHGpB3zcTR4zOfYvuO1WJWd/0u1zQcp9oTZWfA7pH.B2",
+  "password": "$2a$05$eGyHsDPi.Ib0DGPJPlSQd.XFxvp4bmp3SLu.T.A7eOR/2gXVMc6My",
   "email": "ioreactplay@gmail.com",
   "role": "student",
-  "__v": 0
+  "__v": 0,
+  "profilePicture": "https://res.cloudinary.com/reactplay/image/upload/v1686126339/logos/twitter-thumb_fiuv8m.png",
+  "designation": "Open Source Project by Tapas",
+  "bio": "Having 1K+ Star"
 },
 {
   "_id": {

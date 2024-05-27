@@ -1,0 +1,120 @@
+[{
+  "_id": {
+    "$oid": "663b144d94bdaddfbf619390"
+  },
+  "assessments": [
+    {
+      "quizId": {
+        "$oid": "663a0900bfe65e5778eedf43"
+      },
+      "options": [
+        {
+          "option": "option A",
+          "isCorrect": true,
+          "isSelected": true
+        },
+        {
+          "option": "option B",
+          "isCorrect": false,
+          "isSelected": false
+        },
+        {
+          "option": "option C",
+          "isCorrect": false,
+          "isSelected": false
+        },
+        {
+          "option": "option D",
+          "isCorrect": false,
+          "isSelected": false
+        }
+      ],
+      "attempted": true
+    },
+    {
+      "quizId": {
+        "$oid": "663a0900bfe65e5778eedf44"
+      },
+      "options": [
+        {
+          "option": "option A",
+          "isCorrect": true,
+          "isSelected": true
+        },
+        {
+          "option": "option A",
+          "isCorrect": true,
+          "isSelected": true
+        },
+        {
+          "option": "option A",
+          "isCorrect": true,
+          "isSelected": true
+        },
+        {
+          "option": "option A",
+          "isCorrect": true,
+          "isSelected": true
+        }
+      ],
+      "attempted": false
+    },
+    {
+      "quizId": {
+        "$oid": "663a0900bfe65e5778eedf45"
+      },
+      "options": [
+        {
+          "option": "option A",
+          "isCorrect": false,
+          "isSelected": false
+        },
+        {
+          "option": "option B",
+          "isCorrect": false,
+          "isSelected": false
+        },
+        {
+          "option": "option C",
+          "isCorrect": false,
+          "isSelected": true
+        },
+        {
+          "option": "option D",
+          "isCorrect": true,
+          "isSelected": false
+        }
+      ],
+      "attempted": true
+    },
+    {
+      "quizId": {
+        "$oid": "663a0900bfe65e5778eedf46"
+      },
+      "options": [
+        {
+          "option": "option A",
+          "isCorrect": true,
+          "isSelected": true
+        },
+        {
+          "option": "option A",
+          "isCorrect": true,
+          "isSelected": true
+        },
+        {
+          "option": "option A",
+          "isCorrect": true,
+          "isSelected": true
+        },
+        {
+          "option": "option A",
+          "isCorrect": true,
+          "isSelected": true
+        }
+      ],
+      "attempted": false
+    }
+  ],
+  "otherMarks": 13
+}]

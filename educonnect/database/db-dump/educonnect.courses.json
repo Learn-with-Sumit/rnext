@@ -92,4 +92,46 @@
   "modifiedOn": {
     "$date": "2024-04-11T00:00:00.000Z"
   }
+},
+{
+  "_id": {
+    "$oid": "66549c99b2aaa1cc3461fc9a"
+  },
+  "title": "React Thunder",
+  "description": "Master ReactJS with a lot of practical problem solving.",
+  "thumbnail": "learn_react_thumbnail.avif",
+  "modules": [
+    {
+      "$oid": "663a0893bfe65e5778eedf3c"
+    },
+    {
+      "$oid": "663a0893bfe65e5778eedf3d"
+    }
+  ],
+  "price": 6678,
+  "active": true,
+  "category": {
+    "$oid": "664813cc6fe803e9128d7fae"
+  },
+  "instructor": {
+    "$oid": "66504f85171d3fa703e7e043"
+  },
+  "__v": 0,
+  "testimonials": [],
+  "quizSet": {
+    "$oid": "663a096ebfe65e5778eedf4a"
+  },
+  "subtitle": "Learn React Like a Pro",
+  "learning": [
+    "Learn RaectJS from the basic fundamentals",
+    "Learn how to apply the fundamentals to build things",
+    "Learn to make projects that are production ready",
+    "Get a bonus chapter on using Raect 19 for Full Stack Develeopment"
+  ],
+  "createdOn": {
+    "$date": "2024-02-22T00:00:00.000Z"
+  },
+  "modifiedOn": {
+    "$date": "2024-05-11T00:00:00.000Z"
+  }
 }]

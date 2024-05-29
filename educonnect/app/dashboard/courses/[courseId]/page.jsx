@@ -31,7 +31,7 @@ const EditCourse = async ({params: {courseId}}) => {
     }
   });
 
-  const modules = replaceMongoIdInArray(course?.modules);
+  const modules = replaceMongoIdInArray(course?.modules).sort((a,b) => a.order - b.order);
 
   return (
     <>

@@ -11,7 +11,16 @@ export const replaceMongoIdInArray = (array) => {
 
   export const replaceMongoIdInObject = (obj) => {
     if (!obj) return null;
-    
+
     const {_id, ...updatedObj} = {...obj, id: obj._id.toString()};
    return updatedObj;
+  }
+
+  export const getSlug = (title) => {
+    if (!title) return null;
+
+    const slug = title.toLowerCase().replace(/ /g, -'')
+    .replace(/[^\w-]+/g, '');
+
+    return slug;
   }

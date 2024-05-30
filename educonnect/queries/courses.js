@@ -62,7 +62,8 @@ export async function getCourseDetailsByInstructor(instructorId, expand) {
     const groupedByCourses = Object.groupBy(enrollments.flat(), ({ course }) => course);
 
     const totalRevenue = publishedCourses.reduce((acc, course) => {
-        return (acc + groupedByCourses[course._id].length * course.price)
+        const quantity = groupedByCourses[course._id] ? groupedByCourses[course._id].length : 0;
+        return (acc + quantity * course.price)
     }, 0);
 
     const totalEnrollments = enrollments.reduce(function (acc, obj) {

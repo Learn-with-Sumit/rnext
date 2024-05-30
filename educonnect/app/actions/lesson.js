@@ -38,6 +38,7 @@ export async function reOrderLesson(data) {
 }
 
 export async function updateLesson(lessonId, data) {
+  console.log("**** updateLesson", lessonId, data);
   try{
     await Lesson.findByIdAndUpdate(lessonId, data);
   } catch (err) {

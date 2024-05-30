@@ -66,9 +66,9 @@ export const LessonModal = ({ open, setOpen, courseId, lesson }) => {
                   <h2 className="text-xl">Access Settings</h2>
                 </div>
                 <LessonAccessForm
-                  initialData={{}}
-                  courseId={"1"}
-                  chapterId={"1"}
+                  initialData={{isFree: lesson?.access !== 'private'}}
+                  courseId={courseId}
+                  lessonId={lesson?.id}
                 />
               </div>
             </div>
@@ -79,10 +79,11 @@ export const LessonModal = ({ open, setOpen, courseId, lesson }) => {
               </div>
               <VideoUrlForm
                 initialData={{
-                  url: "https://www.youtube.com/embed/Cn4G2lZ_g2I?si=8FxqU8_NU6rYOrG1",
+                  url: lesson?.video_url,
+                  duration: lesson?.duration
                 }}
-                courseId={1}
-                lessonId={1}
+                courseId={courseId}
+                lessonId={lesson?.id}
               />
             </div>
           </div>

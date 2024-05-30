@@ -34,12 +34,15 @@ const formSchema = z.object({
 export const VideoUrlForm = ({ initialData, courseId, lessonId }) => {
   const router = useRouter();
   const [isEditing, setIsEditing] = useState(false);
-
+  const [state, setState] = useState({
+    url: initialData?.url,
+    duration: formatDuration(initialData?.duration)
+  });
   const toggleEdit = () => setIsEditing((current) => !current);
-  const formData = {...initialData, duration: formatDuration(initialData?.duration)}
+
   const form = useForm({
     resolver: zodResolver(formSchema),
-    defaultValues: formData,
+    defaultValues: state,
   });
 
   const { isSubmitting, isValid } = form.formState;
@@ -86,10 +89,10 @@ export const VideoUrlForm = ({ initialData, courseId, lessonId }) => {
       {!isEditing && (
         <>
           <p className="text-sm mt-2">
-            {initialData?.url}
+            {state?.url}
           </p>
           <div className="mt-6">
-            <VideoPlayer url={initialData?.url} />
+            <VideoPlayer url={state?.url} />
           </div>
         </>
       )}

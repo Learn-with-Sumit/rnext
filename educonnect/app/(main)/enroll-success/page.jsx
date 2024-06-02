@@ -99,7 +99,7 @@ const Success = async ({ searchParams: { session_id, courseId } }) => {
                         <Link href="/courses">Browse Courses</Link>
                     </Button>
                     <Button asChild variant="outline" size="sm">
-                        <Link href="/think-in-a-redux-way/introduction">
+                        <Link href={`/courses/${courseId}/lesson`}>
                             Play Course
                         </Link>
                     </Button>

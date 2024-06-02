@@ -3,6 +3,7 @@ import { Category } from "@/model/category-model";
 import { User } from "@/model/user-model";
 import { Testimonial } from "@/model/testimonial-model";
 import { Module } from "@/model/module.model";
+import { Lesson } from "@/model/lesson.model";
 
 import { replaceMongoIdInArray, replaceMongoIdInObject } from "@/lib/convertData";
 
@@ -43,7 +44,11 @@ export async function getCourseDetails(id) {
         }
     }).populate({
         path: "modules",
-        model: Module
+        model: Module,
+        populate: {
+            path: "lessonIds",
+            model: Lesson
+        }
     }).lean();
 
     return replaceMongoIdInObject(course)

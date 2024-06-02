@@ -3,9 +3,14 @@ import { Quiz } from "@/model/quizzes-model";
 
 import { replaceMongoIdInArray, replaceMongoIdInObject } from "@/lib/convertData";
 
-export async function getAllQuizSets() {
+export async function getAllQuizSets(excludeUnPublished) {
     try {
-        const quizSets = await Quizset.find().lean();
+        let quizSets = [];
+        if (excludeUnPublished) {
+            quizSets = await Quizset.find({active: true}).lean();
+        } else {
+            quizSets = await Quizset.find().lean();
+        }
           return replaceMongoIdInArray(quizSets);
     } catch (e) {
         throw new Error(e);
@@ -20,6 +25,15 @@ export async function getQuizSetById(id) {
                 model: Quiz,
           }).lean();
           return replaceMongoIdInObject(quizSet);
+    } catch (e) {
+        throw new Error(e);
+    }
+}
+
+export async function createQuiz(quizData) {
+    try{
+        const quiz = await Quiz.create(quizData);
+        return quiz._id.toString();
     } catch (e) {
         throw new Error(e);
     }

@@ -30,7 +30,7 @@ const routes = [
   },
   {
     icon: BookA,
-    label: "Quizes",
+    label: "Quizzes",
     href: "/dashboard/quiz-sets",
   },
 ];

@@ -1,4 +1,4 @@
-"use client";
+
 import AlertBanner from "@/components/alert-banner";
 import { IconBadge } from "@/components/icon-badge";
 import { LayoutDashboard } from "lucide-react";
@@ -6,13 +6,15 @@ import { QuizSetAction } from "./_components/quiz-set-action";
 import { TitleForm } from "./_components/title-form";
 import { AddQuizForm } from "./_components/add-quiz-form";
 import { cn } from "@/lib/utils";
-import { useState } from "react";
 import { Pencil } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Delete } from "lucide-react";
 import { Trash } from "lucide-react";
 import { CircleCheck } from "lucide-react";
 import { Circle } from "lucide-react";
+
+import { getQuizSetById } from "@/queries/quizzes";
+
 const initialQuizes = [
   {
     id: 1,
@@ -59,8 +61,22 @@ const initialQuizes = [
     ],
   },
 ];
-const EditQuizSet = () => {
-  const [quizes, setQuizes] = useState(initialQuizes);
+const EditQuizSet = async ({params: {quizSetId}}) => {
+  const quizSet = await getQuizSetById(quizSetId);
+  const quizzes = quizSet.quizIds.map(quiz => {
+    return {
+      id: quiz._id.toString(),
+      title: quiz.title,
+      options: quiz.options.map(option => {
+        return {
+          label: option.text,
+          isTrue: option.is_correct
+        }
+      })
+    }
+  })
+  console.log(quizSet);
+
   return (
     <>
       <AlertBanner
@@ -75,13 +91,13 @@ const EditQuizSet = () => {
           {/* Quiz List */}
           <div className="max-lg:order-2">
             <h2 className="text-xl mb-6">Quiz List</h2>
-            <AlertBanner
+            {quizzes.length === 0 && (<AlertBanner
               label="No Quiz are in the set, add some using the form above."
               variant="warning"
               className="rounded mb-6"
-            />
+            />)}
             <div className="space-y-6">
-              {quizes.map((quiz) => {
+              {quizzes.map((quiz) => {
                 return (
                   <div
                     key={quiz.id}
@@ -134,13 +150,14 @@ const EditQuizSet = () => {
             <div className="max-w-[800px]">
               <TitleForm
                 initialData={{
-                  title: "Reactive Accelerator",
+                  title: quizSet.title,
                 }}
+                quizSetId={quizSet.id}
               />
             </div>
 
             <div className="max-w-[800px]">
-              <AddQuizForm setQuizes={setQuizes} />
+              <AddQuizForm />
             </div>
           </div>
         </div>

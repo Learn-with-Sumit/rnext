@@ -17,6 +17,7 @@ import { Button } from "@/components/ui/button";
 import { Pencil } from "lucide-react";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+import { updateQuizSet } from "@/app/actions/quiz";
 
 const formSchema = z.object({
   title: z.string().min(1, {
@@ -24,7 +25,7 @@ const formSchema = z.object({
   }),
 });
 
-export const TitleForm = ({ initialData = {} }) => {
+export const TitleForm = ({ initialData = {}, quizSetId }) => {
   const router = useRouter();
   const [isEditing, setIsEditing] = useState(false);
 
@@ -39,6 +40,7 @@ export const TitleForm = ({ initialData = {} }) => {
 
   const onSubmit = async (values) => {
     try {
+      await updateQuizSet(quizSetId, values)
       toggleEdit();
       router.refresh();
     } catch (error) {

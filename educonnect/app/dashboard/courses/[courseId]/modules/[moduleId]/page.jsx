@@ -10,7 +10,7 @@ import {
 import Link from "next/link";
 import { ModuleTitleForm } from "./_components/module-title-form";
 import { LessonForm } from "./_components/lesson-form";
-import { CourseActions } from "../../_components/course-action";
+import { ModuleActions } from "./_components/module-action";
 
 import { getModule } from "@/queries/modules";
 import { replaceMongoIdInArray } from "@/lib/convertData";
@@ -25,10 +25,10 @@ const Module = async ({ params: {courseId, moduleId} }) => {
 
   return (
     <>
-      <AlertBanner
+      {!module?.active && (<AlertBanner
         label="This module is unpublished. It will not be visible in the course."
         variant="warning"
-      />
+      />)}
 
       <div className="p-6">
         <div className="flex items-center justify-between">
@@ -41,7 +41,7 @@ const Module = async ({ params: {courseId, moduleId} }) => {
               Back to course setup
             </Link>
             <div className="flex items-center justify-end">
-              <CourseActions />
+              <ModuleActions module={module} courseId={courseId} />
             </div>
           </div>
         </div>

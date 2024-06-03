@@ -24,3 +24,12 @@ export async function getModule(moduleId) {
         throw new Error(e)
     }
 }
+
+export async function getModuleBySlug(moduleSlug) {
+    try {
+        const module = await Module.findOne({slug: moduleSlug}).lean();
+        return replaceMongoIdInObject(module);
+    } catch(err) {
+        throw new Error(err);
+    }
+}

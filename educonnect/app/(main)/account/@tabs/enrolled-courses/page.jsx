@@ -30,7 +30,7 @@ async function EnrolledCourses() {
                     {enrollments.map((enrollment) => (
                         <Link
                             key={enrollment?.id}
-                            href={`/courses/${enrollment.course._id.toString()}/lesson}`}>
+                            href={`/courses/${enrollment.course._id.toString()}/lesson`}>
                             <EnrolledCourseCard
                                 enrollment={enrollment}
                             />

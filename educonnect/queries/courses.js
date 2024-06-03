@@ -4,6 +4,8 @@ import { User } from "@/model/user-model";
 import { Testimonial } from "@/model/testimonial-model";
 import { Module } from "@/model/module.model";
 import { Lesson } from "@/model/lesson.model";
+import { Quizset } from "@/model/quizset-model";
+import { Quiz } from "@/model/quizzes-model";
 
 import { replaceMongoIdInArray, replaceMongoIdInObject } from "@/lib/convertData";
 
@@ -48,6 +50,13 @@ export async function getCourseDetails(id) {
         populate: {
             path: "lessonIds",
             model: Lesson
+        }
+    }).populate({
+        path: "quizSet",
+        model: Quizset,
+        populate: {
+            path: "quizIds",
+            model: Quiz
         }
     }).lean();
 

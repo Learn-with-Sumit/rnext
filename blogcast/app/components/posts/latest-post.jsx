@@ -3,7 +3,7 @@ import { getFormattedDate } from "@/utils";
 
 export default function LatestPost({ post }) {
   return (
-    <Link href={`/posts/${post.slug}`}>
+    <Link href={`/blog/${post.slug}`}>
       <article className="mt-4">
         <h3 className="text-xl font-semibold">{post.title}</h3>
         <p className="text-gray-500">

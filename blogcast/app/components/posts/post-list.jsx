@@ -1,12 +1,10 @@
-import { getAllPosts } from "@/queries/blog-data";
 
 import { getFormattedDate } from "@/utils";
 
 import LatestPost from "./latest-post";
 import PostCard from "./post-card";
 
-export default async function PostList() {
-  const posts = await getAllPosts();
+export default function PostList({posts}) {
 
   console.log(posts);
   // posts are sorted by time. Get the latest one.

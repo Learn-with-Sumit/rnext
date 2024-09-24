@@ -45,3 +45,40 @@ export const getAllPosts = async (tags) => {
 
   return data.publication.posts.edges;
 };
+
+export const getPost = async (slug) => {
+  const client = getClient();
+
+  const data = await client.request(
+    gql`
+      query postDetails($slug: String!) {
+        publication(host: "blog.greenroots.info") {
+          post(slug: $slug) {
+            author{
+              name
+              profilePicture
+            }
+            publishedAt
+            title
+            subtitle
+            readTimeInMinutes
+            content{
+              html
+            }
+            tags {
+              name
+              slug
+              id
+            }
+            coverImage {
+              url
+            }
+          }
+        }
+      }
+    `,
+    { slug: slug }
+  );
+
+  return data.publication.post;
+};

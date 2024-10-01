@@ -1,66 +1,51 @@
-[![Youtube][youtube-shield]][youtube-url]
-[![Facebook][facebook-shield]][facebook-group-url]
+লার্ন উইথ সুমিত এর প্রথম এসাইনমেন্ট এর আপনাকে স্বাগতম। এই মডিউলে যা যা দেখানো হয়েছে, তার উপর ভিত্তি করে আপনাদের জন্যে একটি এসাইনমেন্ট তৈরি করা হয়েছে। এই এসাইনমেন্ট এর জন্য আমরা HTML এবং Tailwind CSS ব্যবহার করে একটি template তৈরি করে দিয়েছি। আপনাদের কাজ হবে এই template ব্যবহার করে এসাইনমেন্ট করা। ***এই এসাইনমেন্ট এ আপনি নিজের ইচ্ছা মত ডিজাইন বা টেমপ্লেট পরিবর্তন করতে পারবেন না এবং আপনাকে এই মডিউলে যা যা শেখানো হয়েছে, শুধু মাত্র সেগুলো ব্যবহার করেই Vite & React দিয়ে প্রোজেক্টটি করতে হবে । অন্যথায় আপনার মার্ক এর উপর প্রভাব পড়তে পারে ।***
 
-<!-- PROJECT LOGO -->
-<br />
- <p align="center">
-    <img src="https://avatars.githubusercontent.com/u/73503432?v=4" alt="Logo" width="80" height="80" />
-    <h3 align="center "><a href="https://learnwithsumit.com/rnext" target="_blank" >Reactive Accelerator</a></h3>
-</p>
+## এসাইনমেন্ট এ আপনাকে যা যা করতে হবেঃ
 
-<!-- TABLE OF CONTENTS -->
+✓ পুরো এসাইনমেন্ট টেমপ্লেটটিকে রিয়্যাক্ট এ কনভার্ট করতে হবে ।
 
-## Table of Contents
+✓ পুরো কোডে বিভিন্ন SVG রয়েছে, সেগুলোকে আলাদা ভাবে কম্পোনেন্ট এ রূপান্তর করে ব্যবহার করতে হবে। অর্থাৎ সারাসরি SVG ব্যবহার করতে পারবেন না। আপনাকে প্রথমে সেই SVG এর একটি কম্পোনেন্ট বানিয়ে নিতে হবে, এর পরে সেটি ব্যবহার করতে হবে ।
 
-| CODE RUN                   | CONTACT                    |
-| -------------------------- | -------------------------- |
-| [How to run](#-how-to-run) | [Contact us](#-contact-us) |
+✓ আমাদের দেয়া টেমপ্লেটে "Grab your Dream Property" নামক একটি সেকশন রয়েছে। আপনাকে সেই সেকশন এর গ্রিড ভিউ তে বিভিন্ন Property এর তথ্য কার্ড আকারে রেন্ডার করতে হবে । বর্তমানে সেখানে ৫টি কার্ড আছে, প্রত্যেকটিতে একই ছবি এবং ডেটা দেয়া আছে। আপনাকে প্রত্যকটিতে আলাদা আলাদা ডেটা দিয়ে কার্ড গুলো রেন্ডার করতে হবে। আপনি চাইলে ৫ টির বেশি কার্ড ও রেন্ডার করতে পারেন। তবে প্রত্যেকটিতে অবশ্যই আলাদা আলাদা ডেটা এবং ছবি ব্যবহার করতে হবে ।
 
-<!-- HOW TO RUN -->
+✓ কার্ড রেন্ডার করার জন্যে আপনাকে নিজেকে একটি Array of Object বানিয়ে নিতে হবে। আপনাকে সেই Array কে Map করে কার্ড গুলো রেন্ডার করতে হবে । কার্ডের তথ্য গুলো সঠিক হতে হবে এমন কোনো কথা নেই, তবে সেগুলো একেবারেই যেন অপ্রাসঙ্গিক না হয়।
 
-## How to run
+✓ মোবাইল ভিউ তে যেন পুরো ওয়েবসাইট রেস্পন্সিভ হয়।
 
-Different lessons taught in this [Reactive Accelerator: React-Next.js Bangla Course by Learn with Sumit](https://learnwithsumit.com/rnext), are organized in separate branches with naming convention - [**module number**].[**lesson number**]. For example, **Module-1 Lesson-1** source code is shared in **1.1** branch. Just switch to a branch and follow the corresponding branch's README file instruction.
+## কিভাবে সাবমিট করবেন:
 
-Please follow the below instructions to run different branches of this repository in your machine:
+সবচেয়ে সহজে বুঝার জন্য [এই ভিডিওটি](https://learnwithsumit.com/rnext/courses/rnext/how-to-submit-assignments-in-reactive-accelerator-course) দেখে ফেলুন।
 
-1. Login to your GitHub account in your Terminal. If you can't setup and install Git in your machine, kindly follow [this tutorial](https://learnwithsumit.com/rnext/courses/rnext/git-github-refresher).
+**এসাইনমেন্টে আপনাকে মাত্র দুইটা জিনিস সাবমিট করতে হবে:**
 
-2. Clone this repository -
-    ```sh
-    git clone https://github.com/Learn-with-Sumit/rnext.git
-    ```
-3. Go to the cloned project directory
-    ```sh
-    cd rnext
-    ```
-4. Checkout/switch to your desired branch. For example, to switch to branch 1.1 -
-    ```sh
-    git checkout 1.1
-    ```
-5. Follow the corresponding branch's README file instruction to run code.
+1. **GitHub private repository link:** অবশ্যই সঠিক গিটহাব রিপোজিটরি লিংক দিতে হবে। ভুলে অন্য কোনো লিংক দিলে আপনি এসাইনমেন্টের মার্ক পাবেন না। তাই সাবমিট করার আগে নিউ ট্যাবে লিংক ওপেন করে চেক করে নিবেন সঠিক লিংক জমা দিচ্ছেন কিনা। আরেকটি বিষয় খুবই গুরুত্বপূর্ণ। আপনার প্রজেক্টে কোন এনভায়রনমেন্ট ফাইল যেমন .env অথবা .env.local থাকলে সেগুলোতে থাকা ইনফর্মেশন যদি আপনার প্রজেক্টটি কাজ করার জন্য প্রয়োজনীয় হয়, তাহলে সেগুলো অবশ্যই আপনার .gitignore ফাইল থেকে সরিয়ে নিবেন যেন আমরা সেটি দেখতে পাই। কারণ এসাইনমেন্ট রিভিউ করার সময় আমরা আপনার প্রজেক্টটি রান করে দেখবো। তাই রান করার জন্য প্রয়োজনীয় সকল ফাইল আমরা যেন দেখতে পাই, সেটা আপনাকে নিশ্চিত হতে হবে।
+2. **Live site link:** নেটলিফাইতে বা ভার্সেলে সাইট হোস্ট করে সাইটের লাইভ লিংক দিতে হবে। তবে এর বাইরে অন্য কোন হোস্টিং প্রভাইডারেও আপনি চাইলে হোস্ট করতে পারে। তবে সেক্ষেত্রে আপনার হোস্টিং রিলেটেড সমস্যা নিজেকে সল্ভ করতে হবে এবং সব কিছু ঠিক মতো কাজ করতে হবে। ভুলে অন্য কোনো লিংক দিলে আপনি এসাইনমেন্টের মার্ক পাবেন না। তাই সাবমিট করার আগে নিউ ট্যাবে লিংক ওপেন করে চেক করে নিবেন সঠিক লিংক জমা দিচ্ছেন কিনা। ভার্সেলে কি ভাবে হোস্ট করতে হয় তা আপনি না জানলে [এইখানে ক্লিক](https://learnwithsumit.com/rnext/courses/rnext/how-to-deploy-your-project-to-vercel-free) করে দেখে নিতে পারেন।
 
-<!-- CONTACT  -->
+**সাবমিট একবারই করতে পারবেন তাই ভালো করে দেখে সাবমিট করবেন।**
 
-## Contact us
+## GitHub private repository কিভাবে তৈরি করবেন:
 
-[![Facebook][facebook-shield]][facebook-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
-[![Instagram][instagram-shield]][instagram-url]
-[![mail][mail-shield]][mail-url]
+Github Private repositoty তৈরি করতে [এইখানে ক্লিক করুন](https://classroom.github.com/a/1_bcpBMy) অথবা ব্রাউজারে এই লিংকে **https://classroom.github.com/a/1_bcpBMy** ভিজিট করুন। লিংকে যাওয়ার পরে **Accept this assignment** এ ক্লিক করুন। সর্বোচ্চ ১মিনিট পরে পেইজটি রিলোড দিলে আপনি আপনার রিপোজেটরি লিংক পেয়ে যাবেন। মনে রাখবেন, আপনাকে এই লিংকটি আমাদের প্লাটফর্মে সাবমিট করতে হবে। না বুঝলে উপরে বলা ভিডিও টিউটোরিয়ালটি দেখে নিন।
 
-<!-- MARKDOWN LINKS & IMAGES -->
+## Assignment এর জন্য প্রয়োজনীয় template HTML:
 
-[youtube-shield]: https://img.shields.io/badge/-Youtube-black.svg?style=flat-square&logo=youtube&color=555&logoColor=white
-[youtube-url]: https://youtube.com/LearnwithSumit
-[facebook-shield]: https://img.shields.io/badge/-Facebook-black.svg?style=flat-square&logo=facebook&color=555&logoColor=white
-[facebook-url]: https://facebook.com/letslearnwithsumit
-[facebook-group-url]: https://facebook.com/groups/learnwithsumit
-[instagram-shield]: https://img.shields.io/badge/-Instagram-black.svg?style=flat-square&logo=instagram&color=555&logoColor=white
-[instagram-url]: https://instagram.com/learnwithsumit
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/company/learnwithsumit
-[thumbnail-shield]: https://i.ibb.co/d6hxnvd/Screenshot-50.png
-[mail-shield]: https://img.shields.io/badge/%F0%9F%93%A7%20Email-support%40learnwithsumit.com-lightgray
-[mail-url]: mailto:support@learnwithsumit.com
-[htmlicon-shield]: https://img.icons8.com/external-flaticons-flat-flat-icons/28/undefined/external-html-computer-programming-flaticons-flat-flat-icons.png
+প্রতিটি assignment এর সাথে প্রয়োজনীয় HTML template আমরা দিয়ে দিয়েছি যেন আপনাকে HTML template নিয়ে সময় নষ্ট না করতে হয়। কোর্সের GitHub repository এর সংশ্লিষ্ট ব্রাঞ্চে গেলেই আপনারা **'dist'** folder এর ভিতর HTML template পাবেন। না বুঝলে [এইখানে ক্লিক](https://learnwithsumit.com/rnext/courses/rnext/how-to-submit-assignments-in-reactive-accelerator-course) করে টিউটোরিয়াল দেখে নিতে পারেন।
+
+## এসাইনমেন্ট মার্কস পলিসি:
+
+আপনি নির্ধারিত সময়ে এসাইনমেন্ট জমা দিলে এবং সব কিছু সঠিকভাবে করলে সম্পূর্ণ মার্ক পাবেন। এর পরে জমা দিলে আপনার মার্ক নিচের নিয়মে কাটা যাবে -
+
+1. ডেডলাইনের পরে এক ঘণ্টার মধ্যে জমা দিলে 10% মার্ক কাটা যাবে।
+2. ডেডলাইনের পরে এক ঘণ্টার বেশি কিন্তু 24 ঘণ্টার মধ্যে জমা দিলে 30% মার্ক কাটা যাবে।
+3. ডেডলাইনের পরে 24 ঘণ্টার বেশি পরে জমা দিলে 50% মার্ক কাটা যাবে।
+4. কোর্স ডিউরেশনের পরে আমরা এসাইনমেন্ট গ্রহণ করবো না।
+
+অবশ্যই কোর্স চলাকালিন সময়ে এসাইনমেন্ট জমা দিতে হবে। কোর্সের ডিউরেশন শেষ হয়ে গেলে তার পরে আপনি এসাইনমেন্টে জমা দিলে এসাইনমেন্টের মার্ক পাবেন না।
+
+## সাবমিট করার পর কোড পরিবর্তন:
+
+আপনি ভেবে নিতে পারেন আপনি ওয়েবসাইটে সঠিক সময়ে এসাইনমেন্ট সাবমিট করে নীরবে পরে গিটহাবে কোড পুশ করতে থাকবেন! আপনার গিটহাবের সর্বশেষ কমিট দেখলেই আমরা বুঝতে পারবো আপনি কখন কোড আপডেট করেছেন। সে অনুযায়ী আমরা আপনার মার্ক কেটে নিবো। তাই এসাইনমেন্ট এর সময় পার হবার পরে আমরা আশা করবো আপনি চালাকি করে আর কোড পুশ করবেন না আপনার রিপোজিটরিতে। এটা করলে আপনার সম্পূর্ণ মার্ক কাটা যেতে পারে।
+
+## এসাইনমেন্ট মার্কস কবে পাবেন:
+
+আমরা সর্বোচ্চ ১৫ কার্যদিবসের ভিতরে এসাইনমেন্টের মার্ক দিয়ে দেওয়ার চেষ্টা করবো। ক্ষেত্র বিশেষে একটু দেরি হতে পারে কারো কারো মার্ক পেতে।

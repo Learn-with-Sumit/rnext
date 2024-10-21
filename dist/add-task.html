@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Task Dialog</title>
+    <link rel="stylesheet" href="./styles/output.css" />
+  </head>
+  <body
+    class="flex min-h-screen items-center justify-center bg-gray-900 p-4 text-white"
+  >
+    <div class="w-full max-w-md rounded-lg bg-gray-800 shadow-xl">
+      <div class="p-6">
+        <h2 class="mb-6 text-2xl font-bold text-green-400">Create Task</h2>
+        <form>
+          <div class="mb-4">
+            <label
+              for="taskName"
+              class="mb-1 block text-sm font-medium text-gray-300"
+              >Task Name</label
+            >
+            <input
+              type="text"
+              id="taskName"
+              name="taskName"
+              required
+              class="w-full rounded-md border border-gray-600 bg-gray-700 px-3 py-2 text-white placeholder-gray-400 shadow-sm focus:border-green-500 focus:outline-none focus:ring-2 focus:ring-green-500"
+            />
+          </div>
+          <div class="mb-4">
+            <label
+              for="description"
+              class="mb-1 block text-sm font-medium text-gray-300"
+              >Description</label
+            >
+            <textarea
+              id="description"
+              name="description"
+              rows="3"
+              class="w-full rounded-md border border-gray-600 bg-gray-700 px-3 py-2 text-white placeholder-gray-400 shadow-sm focus:border-green-500 focus:outline-none focus:ring-2 focus:ring-green-500"
+            ></textarea>
+          </div>
+          <div class="mb-4">
+            <label
+              for="dueDate"
+              class="mb-1 block text-sm font-medium text-gray-300"
+              >Due Date</label
+            >
+            <input
+              type="date"
+              id="dueDate"
+              name="dueDate"
+              class="w-full rounded-md border border-gray-600 bg-gray-700 px-3 py-2 text-white shadow-sm focus:border-green-500 focus:outline-none focus:ring-2 focus:ring-green-500"
+            />
+          </div>
+
+          <div class="mb-4">
+            <label
+              for="category"
+              class="mb-1 block text-sm font-medium text-gray-300"
+              >Category</label
+            >
+            <select
+              id="category"
+              name="category"
+              class="w-full rounded-md border border-gray-600 bg-gray-700 px-3 py-2 text-white shadow-sm focus:border-green-500 focus:outline-none focus:ring-2 focus:ring-green-500"
+            >
+              <option value="todo">To-Do</option>
+              <option value="inprogress">On Progress</option>
+              <option value="done">Done</option>
+              <option value="revised">Revised</option>
+            </select>
+          </div>
+
+          <div class="flex justify-end space-x-3">
+            <button
+              type="button"
+              class="rounded-md border border-gray-600 px-4 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 focus:ring-offset-gray-800"
+            >
+              Cancel
+            </button>
+            <button
+              type="submit"
+              class="rounded-md border border-transparent bg-green-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 focus:ring-offset-gray-800"
+            >
+              Create Task
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

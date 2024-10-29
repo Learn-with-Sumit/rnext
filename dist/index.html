@@ -1,0 +1,645 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product List | Learn with Sumit</title>
+    <link rel="stylesheet" href="./styles/output.css" />
+  </head>
+
+  <body>
+    <header class="relative bg-white">
+      <p class="flex h-10 items-center justify-center bg-teal-600 px-4 text-sm font-medium text-white sm:px-6 lg:px-8">
+        Get free delivery on orders over $100
+      </p>
+
+      <nav aria-label="Top" class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="border-b border-gray-200">
+          <div class="flex h-16 items-center">
+            <!-- Mobile menu toggle, controls the 'mobileMenuOpen' state. -->
+            <button type="button" class="relative rounded-md bg-white p-2 text-gray-400 lg:hidden">
+              <span class="absolute -inset-0.5"></span>
+              <span class="sr-only">Open menu</span>
+              <svg
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                aria-hidden="true"
+              >
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              </svg>
+            </button>
+
+            <!-- Logo -->
+            <div class="ml-4 flex lg:ml-0">
+              <a href="#">
+                <span class="sr-only">Your Company</span>
+                <img class="h-8 w-auto" src="./assets/logo.svg" alt="" />
+              </a>
+            </div>
+
+            <!-- Flyout menus -->
+            <div class="hidden lg:ml-8 lg:block lg:self-stretch">
+              <div class="flex h-full space-x-8">
+                <div class="flex">
+                  <div class="relative flex">
+                    <!-- Item active: "border-teal-600 text-teal-600", Item inactive: "border-transparent text-gray-700 hover:text-gray-800" -->
+                    <button
+                      type="button"
+                      class="relative z-10 -mb-px flex items-center border-b-2 border-transparent pt-px text-sm font-medium text-gray-700 transition-colors duration-200 ease-out hover:text-gray-800"
+                      aria-expanded="false"
+                    >
+                      Women
+                    </button>
+                  </div>
+                </div>
+                <div class="flex">
+                  <div class="relative flex">
+                    <!-- Item active: "border-teal-600 text-teal-600", Item inactive: "border-transparent text-gray-700 hover:text-gray-800" -->
+                    <button
+                      type="button"
+                      class="relative z-10 -mb-px flex items-center border-b-2 border-transparent pt-px text-sm font-medium text-gray-700 transition-colors duration-200 ease-out hover:text-gray-800"
+                      aria-expanded="false"
+                    >
+                      Men
+                    </button>
+                  </div>
+                </div>
+
+                <a href="#" class="flex items-center text-sm font-medium text-gray-700 hover:text-gray-800">Company</a>
+                <a href="#" class="flex items-center text-sm font-medium text-gray-700 hover:text-gray-800">Stores</a>
+              </div>
+            </div>
+
+            <div class="ml-auto flex items-center">
+              <div class="hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6">
+                <a href="#" class="text-sm font-medium text-gray-700 hover:text-gray-800">Sign in</a>
+                <span class="h-6 w-px bg-gray-200" aria-hidden="true"></span>
+                <a href="#" class="text-sm font-medium text-gray-700 hover:text-gray-800">Create account</a>
+              </div>
+
+              <div class="hidden lg:ml-8 lg:flex">
+                <a href="#" class="flex items-center text-gray-700 hover:text-gray-800">
+                  <img
+                    src="https://tailwindui.com/img/flags/flag-canada.svg"
+                    alt=""
+                    class="block h-auto w-5 flex-shrink-0"
+                  />
+                  <span class="ml-3 block text-sm font-medium">CAD</span>
+                  <span class="sr-only">, change currency</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="relative overflow-hidden bg-white">
+      <div class="pb-80 pt-16 sm:pb-40 sm:pt-24 lg:pb-48 lg:pt-40">
+        <div class="relative mx-auto max-w-7xl px-4 sm:static sm:px-6 lg:px-8">
+          <div class="sm:max-w-lg">
+            <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Summer styles are finally here</h1>
+            <p class="mt-4 text-xl text-gray-500">
+              This year, our new summer collection will shelter you from the harsh elements of a world that doesn't care
+              if you live or die.
+            </p>
+          </div>
+          <div>
+            <div class="mt-10">
+              <!-- Decorative image grid -->
+
+              <a
+                href="#"
+                class="inline-block rounded-md border border-transparent bg-teal-600 px-8 py-3 text-center font-medium text-white hover:bg-teal-700"
+                >Shop Collection</a
+              >
+            </div>
+
+            <div
+              aria-hidden="true"
+              class="pointer-events-none lg:absolute lg:inset-y-0 lg:mx-auto lg:w-full lg:max-w-7xl"
+            >
+              <div
+                class="absolute transform sm:left-1/2 sm:top-0 sm:translate-x-8 lg:left-1/2 lg:top-1/2 lg:-translate-y-1/2 lg:translate-x-8"
+              >
+                <div class="flex items-center space-x-6 lg:space-x-8">
+                  <div class="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
+                    <div class="h-64 w-44 overflow-hidden rounded-lg sm:opacity-0 lg:opacity-100">
+                      <img
+                        src="https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt=""
+                        class="h-full w-full object-cover object-center"
+                      />
+                    </div>
+                    <div class="h-64 w-44 overflow-hidden rounded-lg">
+                      <img
+                        src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt=""
+                        class="h-full w-full object-cover object-center"
+                      />
+                    </div>
+                  </div>
+                  <div class="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
+                    <div class="h-64 w-44 overflow-hidden rounded-lg">
+                      <img
+                        src="https://images.unsplash.com/photo-1507680434567-5739c80be1ac?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt=""
+                        class="h-full w-full object-cover object-center"
+                      />
+                    </div>
+                    <div class="h-64 w-44 overflow-hidden rounded-lg">
+                      <img
+                        src="https://images.unsplash.com/photo-1540827109409-17f40944f276?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt=""
+                        class="h-full w-full object-cover object-center"
+                      />
+                    </div>
+                    <div class="h-64 w-44 overflow-hidden rounded-lg">
+                      <img
+                        src="https://images.unsplash.com/photo-1610419993549-7429619cdbd1?q=80&w=1915&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt=""
+                        class="h-full w-full object-cover object-center"
+                      />
+                    </div>
+                  </div>
+                  <div class="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
+                    <div class="h-64 w-44 overflow-hidden rounded-lg">
+                      <img
+                        src="https://images.unsplash.com/photo-1505022610485-0249ba5b3675?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt=""
+                        class="h-full w-full object-cover object-center"
+                      />
+                    </div>
+                    <div class="h-64 w-44 overflow-hidden rounded-lg">
+                      <img
+                        src="https://images.unsplash.com/photo-1597196526281-fe4861daa915?q=80&w=1936&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt=""
+                        class="h-full w-full object-cover object-center"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="pt-16 sm:pt-24 lg:pt-40">
+        <div class="relative mx-auto max-w-7xl px-4 sm:static sm:px-6 lg:px-8">
+          <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl text-center">New Arrivals</h1>
+          <p class="mt-4 text-xl text-gray-500 text-center">
+            Thoughtfully designed objects for the workspace, home, and travel.
+          </p>
+        </div>
+        <div class="mt-10">
+          <div class="flex justify-between relative mx-auto max-w-7xl px-4 sm:static sm:px-6 lg:px-8">
+            <!-- Sort & Filter-->
+            <div class="w-full">
+              <!-- Sort Start -->
+              <div class="relative inline-block text-left">
+                <div>
+                  <button
+                    type="button"
+                    class="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm text-gray-400 hover:text-gray-500 focus:text-gray-700 transition-all"
+                    id="menu-button"
+                    aria-expanded="true"
+                    aria-haspopup="true"
+                  >
+                    Sort
+                    <svg class="-mr-1 h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                      <path
+                        fill-rule="evenodd"
+                        d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </button>
+                </div>
+
+                <!-- Sort Options -->
+                <div
+                  class="absolute z-10 mt-2 left-5 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+                  role="menu"
+                  aria-orientation="vertical"
+                  aria-labelledby="menu-button"
+                  tabindex="-1"
+                >
+                  <div class="py-1" role="none">
+                    <span
+                      class="cursor-pointer block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 transition-all"
+                      role="menuitem"
+                      tabindex="-1"
+                      onclick="toggleDropdown()"
+                      id="menu-item-0"
+                      >Low to High</span
+                    >
+                    <span
+                      href=""
+                      class="cursor-pointer block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 transition-all"
+                      role="menuitem"
+                      tabindex="-1"
+                      onclick="toggleDropdown()"
+                      id="menu-item-0"
+                      >High to Low</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- Sort End -->
+
+              <!-- Filter Start -->
+              <div class="relative inline-block text-left">
+                <div>
+                  <button
+                    type="button"
+                    class="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm text-gray-400 hover:text-gray-500 focus:text-gray-700 transition-all"
+                    id="filter-button"
+                    aria-expanded="false"
+                    aria-haspopup="true"
+                  >
+                    Filter
+                    <svg class="-mr-1 h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                      <path
+                        fill-rule="evenodd"
+                        d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <!-- Filter options -->
+                <div
+                  class="absolute z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none hidden"
+                  role="menu"
+                  aria-orientation="vertical"
+                  aria-labelledby="filter-button"
+                  tabindex="-1"
+                  id="filter-dropdown"
+                >
+                  <div class="py-1" role="none">
+                    <label
+                      class="inline-flex w-full cursor-pointer hover:bg-gray-50 items-center px-4 py-2 text-sm text-gray-700"
+                    >
+                      <input type="checkbox" class="form-checkbox h-4 w-4" id="filter-option-1" />
+                      <span class="ml-2">Category 1</span>
+                    </label>
+                    <label
+                      class="inline-flex w-full cursor-pointer hover:bg-gray-50 items-center px-4 py-2 text-sm text-gray-700"
+                    >
+                      <input type="checkbox" class="form-checkbox h-4 w-4" id="filter-option-2" />
+                      <span class="ml-2">Category 2</span>
+                    </label>
+                    <label
+                      class="inline-flex w-full cursor-pointer hover:bg-gray-50 items-center px-4 py-2 text-sm text-gray-700"
+                    >
+                      <input type="checkbox" class="form-checkbox h-4 w-4" id="filter-option-3" />
+                      <span class="ml-2">Category 3</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <!-- Filter End -->
+            </div>
+
+            <!-- Search and Cart -->
+            <div class="flex gap-2 items-center">
+              <!-- Search -->
+              <div
+                class="flex flex-1 items-center px-3.5 py-2 text-gray-400 group hover:ring-1 hover:ring-gray-300 focus-within:!ring-2 ring-inset focus-within:!ring-teal-500 rounded-md"
+              >
+                <svg class="mr-2 h-5 w-5 stroke-slate-400" fill="none" viewBox="0 0 24 24" stroke-width="2">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                  ></path>
+                </svg>
+                <input
+                  class="block w-full appearance-none bg-transparent text-base text-gray-700 placeholder:text-gray-400 focus:outline-none placeholder:text-sm sm:text-sm sm:leading-6"
+                  placeholder="Find anything..."
+                  aria-label="Search components"
+                  id="headlessui-combobox-input-:r5n:"
+                  role="combobox"
+                  type="text"
+                  aria-expanded="false"
+                  aria-autocomplete="list"
+                  value=""
+                  style="caret-color: rgb(107, 114, 128)"
+                />
+              </div>
+
+              <!-- Cart -->
+              <div class="flow-root">
+                <a href="#" class="group -m-2 flex items-center p-2">
+                  <svg
+                    class="h-6 w-6 flex-shrink-0 text-gray-400 group-hover:text-gray-500"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
+                    />
+                  </svg>
+                  <span class="ml-2 text-sm font-medium text-gray-700 group-hover:text-gray-800">0</span>
+                  <span class="sr-only">items in cart, view bag</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="bg-white">
+            <div class="mx-auto max-w-2xl px-4 py-4 sm:px-6 lg:max-w-7xl lg:px-8">
+              <div class="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
+                <!-- Card -->
+                <div class="relative">
+                  <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md lg:aspect-none lg:h-80">
+                    <img
+                      src="./assets/products/shirt-2.png"
+                      alt="Front of men&#039;s Basic Tee in black."
+                      class="h-full w-full object-cover object-top lg:h-full lg:w-full p-4 bg-gray-100"
+                    />
+                  </div>
+                  <div class="mt-4 px-3 pb-4">
+                    <div>
+                      <h3 class="text-sm text-gray-700">Green grandad Shirt</h3>
+                      <p class="mt-1 text-sm text-gray-500">Men's clothing</p>
+                    </div>
+                    <p class="text-sm font-medium text-gray-900">$35</p>
+                  </div>
+                  <!-- Button -->
+                  <div
+                    class="cursor-pointer rounded-md bg-white text-[0.8125rem] font-medium leading-5 text-slate-700 ring-1 ring-slate-700/10  hover:ring-1 ring-slate-700/10 hover:bg-slate-50 hover:text-slate-900 items-center text-center mb-3 mx-3 flex-1"
+                  >
+                    <div class="flex px-3 py-2 justify-center">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="mr-2.5 h-5 w-5 flex-none stroke-slate-400"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"
+                        />
+                      </svg>
+
+                      Add To Cart
+                    </div>
+                  </div>
+                </div>
+                <div class="relative">
+                  <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md lg:aspect-none lg:h-80">
+                    <img
+                      src="./assets/products/shirt-3.png"
+                      alt="Front of men&#039;s Basic Tee in black."
+                      class="h-full w-full object-cover object-top lg:h-full lg:w-full bg-gray-100"
+                    />
+                  </div>
+                  <div class="mt-4 px-3 pb-4">
+                    <div>
+                      <h3 class="text-sm text-gray-700"> Gray short sleeve Polo Shirt </h3>
+                      <p class="mt-1 text-sm text-gray-500">Men's clothing</p>
+                    </div>
+                    <p class="text-sm font-medium text-gray-900">$35</p>
+                  </div>
+                  <!-- Button -->
+                  <div
+                    class="cursor-pointer rounded-md bg-white text-[0.8125rem] font-medium leading-5 text-slate-700 ring-1 ring-slate-700/10  hover:ring-1 ring-slate-700/10 hover:bg-slate-50 hover:text-slate-900 items-center text-center mb-3 mx-3 flex-1"
+                  >
+                    <div class="flex px-3 py-2 justify-center">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="mr-2.5 h-5 w-5 flex-none stroke-slate-400"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"
+                        />
+                      </svg>
+
+                      Add To Cart
+                    </div>
+                  </div>
+                </div>
+
+                <div class="relative">
+                  <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md lg:aspect-none lg:h-80">
+                    <img
+                      src="./assets/products/shirt-4.png"
+                      alt="Front of men&#039;s Basic Tee in black."
+                      class="h-full w-full object-cover object-top lg:h-full lg:w-full  bg-gray-100"
+                    />
+                  </div>
+                  <div class="mt-4 px-3 pb-4">
+                    <div>
+                      <h3 class="text-sm text-gray-700"> Orange pique dress collar polo </h3>
+                      <p class="mt-1 text-sm text-gray-500">Men's clothing</p>
+                    </div>
+                    <p class="text-sm font-medium text-gray-900">$35</p>
+                  </div>
+                  <!-- Button -->
+                  <div
+                    class="cursor-pointer rounded-md bg-white text-[0.8125rem] font-medium leading-5 text-slate-700 ring-1 ring-slate-700/10  hover:ring-1 ring-slate-700/10 hover:bg-slate-50 hover:text-slate-900 items-center text-center mb-3 mx-3 flex-1"
+                  >
+                    <div class="flex px-3 py-2 justify-center">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="mr-2.5 h-5 w-5 flex-none stroke-slate-400"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"
+                        />
+                      </svg>
+
+                      Add To Cart
+                    </div>
+                  </div>
+                </div>
+
+                <div class="relative">
+                  <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md lg:aspect-none lg:h-80">
+                    <img
+                      src="./assets/products/shirt-1.png"
+                      alt="Front of men&#039;s Basic Tee in black."
+                      class="h-full w-full object-cover object-top lg:h-full lg:w-full  bg-gray-100"
+                    />
+                  </div>
+                  <div class="mt-4 px-3 pb-4">
+                    <div>
+                      <h3 class="text-sm text-gray-700">  Black tencel long sleeved polo  </h3>
+                      <p class="mt-1 text-sm text-gray-500">Men's clothing</p>
+                    </div>
+                    <p class="text-sm font-medium text-gray-900">$35</p>
+                  </div>
+                  <!-- Button -->
+                  <div
+                    class="cursor-pointer rounded-md bg-white text-[0.8125rem] font-medium leading-5 text-slate-700 ring-1 ring-slate-700/10  hover:ring-1 hover:ring-slate-700/20 hover:bg-slate-50 hover:text-slate-900 items-center text-center mb-3 mx-3 flex-1"
+                  >
+                    <div class="flex px-3 py-2 justify-center">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="mr-2.5 h-5 w-5 flex-none stroke-slate-400"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"
+                        />
+                      </svg>
+
+                      Add To Cart
+                    </div>
+                  </div>
+                </div>
+
+                <div class="bg-white p-4 rounded-lg shadow animate-pulse">
+                  <!-- Image skeleton -->
+                  <div class="bg-gray-300 h-48 rounded-md mb-4"></div>
+                  <!-- Title skeleton -->
+                  <div class="h-4 bg-gray-300 rounded w-3/4 mb-2"></div>
+                  <!-- Category skeleton -->
+                  <div class="h-3 bg-gray-300 rounded w-1/2 mb-2"></div>
+                  <!-- Price skeleton -->
+                  <div class="h-4 bg-gray-300 rounded w-1/4 mb-4"></div>
+                  <!-- Button skeleton -->
+                  <div class="h-10 bg-gray-300 rounded"></div>
+                </div>
+
+                <div class="bg-white p-4 rounded-lg shadow animate-pulse">
+                  <!-- Image skeleton -->
+                  <div class="bg-gray-300 h-48 rounded-md mb-4"></div>
+                  <!-- Title skeleton -->
+                  <div class="h-4 bg-gray-300 rounded w-3/4 mb-2"></div>
+                  <!-- Category skeleton -->
+                  <div class="h-3 bg-gray-300 rounded w-1/2 mb-2"></div>
+                  <!-- Price skeleton -->
+                  <div class="h-4 bg-gray-300 rounded w-1/4 mb-4"></div>
+                  <!-- Button skeleton -->
+                  <div class="h-10 bg-gray-300 rounded"></div>
+                </div>
+                <!-- More products... -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="mx-auto mt-20 w-full max-w-container px-4 sm:px-6 lg:px-8" aria-labelledby="footer-heading">
+      <div class="items-centers grid grid-cols-1 justify-between gap-4 border-t border-gray-100 py-6 md:grid-cols-2">
+        <p class="text-sm/6 text-gray-600 max-md:text-center">
+          ©
+          <!-- -->2024<!-- -->
+          <a href="https://learnwithsumit.com/">Learn with Sumit</a>. All rights reserved.
+        </p>
+        <div class="flex items-center justify-center space-x-4 text-sm/6 text-gray-500 md:justify-end">
+          <a href="https://learnwithsumit.com/privacy-policy">Privacy policy</a>
+          <div class="h-4 w-px bg-gray-200"></div>
+          <a href="https://learnwithsumit.com/terms">Terms</a>
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- This script is for demo purpose only. You are not allowed to copy and paste this script -->
+    <script>
+      const menuButton = document.getElementById("menu-button");
+      const dropdown = document.querySelector('[role="menu"]');
+
+      // Function to toggle the dropdown
+      function toggleDropdown() {
+        const expanded = menuButton.getAttribute("aria-expanded") === "true";
+
+        // Toggle the aria-expanded attribute
+        menuButton.setAttribute("aria-expanded", !expanded);
+
+        // Toggle the visibility of the dropdown
+        if (expanded) {
+          dropdown.classList.add("hidden");
+         
+        } else {
+          dropdown.classList.remove("hidden");
+        }
+      }
+
+      // Add click event listener to the button
+      toggleDropdown();
+      menuButton.addEventListener("click", toggleDropdown);
+
+      // Close the dropdown when clicking outside
+      document.addEventListener("click", (event) => {
+        if (!menuButton.contains(event.target) && !dropdown.contains(event.target)) {
+          menuButton.setAttribute("aria-expanded", "false");
+          dropdown.classList.add("hidden");
+        }
+      });
+
+      // Get the button and dropdown elements
+      const filterButton = document.getElementById("filter-button");
+      const filterDropdown = document.getElementById("filter-dropdown");
+      const filterOptions = filterDropdown.querySelectorAll('input[type="checkbox"]');
+
+      // Function to toggle the dropdown
+      function toggleFilterDropdown() {
+        const expanded = filterButton.getAttribute("aria-expanded") === "true";
+
+        // Toggle the aria-expanded attribute
+        filterButton.setAttribute("aria-expanded", !expanded);
+
+        // Toggle the visibility of the dropdown
+        filterDropdown.classList.toggle("hidden");
+      }
+
+      // Add click event listener to the button
+      filterButton.addEventListener("click", toggleFilterDropdown);
+
+      // Close the dropdown when clicking outside
+      document.addEventListener("click", (event) => {
+        if (!filterButton.contains(event.target) && !filterDropdown.contains(event.target)) {
+          filterButton.setAttribute("aria-expanded", "false");
+          filterDropdown.classList.add("hidden");
+        }
+      });
+
+      // Handle checkbox changes
+      filterOptions.forEach((option) => {
+        option.addEventListener("change", (event) => {
+          console.log(`${event.target.id} is ${event.target.checked ? "checked" : "unchecked"}`);
+          // Here you can add your logic to handle the filter change
+        });
+      });
+    </script>
+    <!-- This script is for demo purpose only. You are not allowed to copy and paste this script -->
+  </body>
+</html>

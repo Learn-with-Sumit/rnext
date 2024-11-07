@@ -49,17 +49,17 @@ const listQuizzes = async ({ status, search }, userId = null) => {
         ],
         ...(userId
           ? [
-              [
-                sequelize.literal(`(
+            [
+              sequelize.literal(`(
             SELECT COUNT(*)
             FROM "Attempts"
             WHERE "Attempts"."quiz_id" = "Quiz"."id"
             AND "Attempts"."user_id" = '${userId}'
             AND "Attempts"."completed" = 1
           )`),
-                'is_attempted',
-              ],
-            ]
+              'is_attempted',
+            ],
+          ]
           : []),
       ],
       order: [['created_at', 'DESC']],
@@ -148,6 +148,7 @@ const addQuestion = async (quizId, questionData) => {
     quizId,
   })
 }
+
 const addBulkQuestions = async (quizId, questionsData) => {
   const quiz = await Quiz.findByPk(quizId)
 
@@ -228,6 +229,7 @@ const addBulkQuestions = async (quizId, questionsData) => {
     throw error
   }
 }
+
 const getPublishedQuiz = async (quizId) => {
   const quiz = await Quiz.findOne({
     where: {
@@ -396,6 +398,7 @@ const getUserAttempts = async (userId) => {
     submittedAt: attempt.createdAt,
   }))
 }
+
 const getQuizLeaderboard = async (quizId, { page = 1, limit = 10 }) => {
   const offset = (page - 1) * limit
 
@@ -568,12 +571,12 @@ const getQuiz = async (quizId, userId) => {
   const [userAttempt, stats] = await Promise.all([
     userId
       ? Attempt.findOne({
-          where: {
-            quiz_id: quizId,
-            user_id: userId,
-            completed: true,
-          },
-        })
+        where: {
+          quiz_id: quizId,
+          user_id: userId,
+          completed: true,
+        },
+      })
       : null,
     Attempt.findOne({
       where: {
@@ -615,15 +618,15 @@ const getQuiz = async (quizId, userId) => {
     questions,
     user_attempt: userAttempt
       ? {
-          attempted: true,
-          attempt_id: userAttempt.id,
-          score: userAttempt.score,
-          percentage: ((userAttempt.score / totalMarks) * 100).toFixed(2),
-          submitted_at: userAttempt.created_at,
-        }
+        attempted: true,
+        attempt_id: userAttempt.id,
+        score: userAttempt.score,
+        percentage: ((userAttempt.score / totalMarks) * 100).toFixed(2),
+        submitted_at: userAttempt.created_at,
+      }
       : {
-          attempted: false,
-        },
+        attempted: false,
+      },
   }
 }
 
@@ -757,7 +760,7 @@ const deleteQuestion = async (questionId) => {
   })
 }
 
-const editQuestion = async(questionId, body) => {
+const editQuestion = async (questionId, body) => {
   const question = await Question.findByPk(questionId)
 
   if (!question) {
@@ -767,8 +770,16 @@ const editQuestion = async(questionId, body) => {
 
   Object.assign(question, body);
   await question.save();
-  
+
   return question;
+}
+
+const deleteQuizSet = async (quizId) => {
+  return await Quiz.destroy({
+    where: {
+      id: quizId,
+    },
+  })
 }
 
 module.exports = {
@@ -786,5 +797,6 @@ module.exports = {
   getQuizAttempts,
   listQuizSetForAdmin,
   deleteQuestion,
-  editQuestion
+  editQuestion,
+  deleteQuizSet
 }

@@ -140,6 +140,15 @@ const editQuestion = asyncHandler(async (req, res) => {
   })
 });
 
+const deleteQuizSet = asyncHandler(async (req, res) => {
+  const result = await quizService.deleteQuizSet(req.params.id)
+
+  res.json({
+    status: 'success',
+    data: result,
+  })
+});
+
 module.exports = {
   listQuizzes,
   createQuiz,
@@ -154,5 +163,6 @@ module.exports = {
   getQuizAttempts,
   listQuizzesForAdmin,
   deleteQuestion,
-  editQuestion
+  editQuestion,
+  deleteQuizSet
 }

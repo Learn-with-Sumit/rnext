@@ -13,7 +13,7 @@ const {
 
 
 // Admin routes
-router.get('/quizzes', optionalAuth, quizController.listQuizzesForAdmin)
+router.get('/quizzes', [verifyAuth, verifyAdmin], quizController.listQuizzesForAdmin)
 
 router.post(
   '/quizzes',
@@ -25,6 +25,12 @@ router.patch(
   [verifyAuth, verifyAdmin, verifyQuizOwnership, validate(updateQuizSchema)],
   quizController.updateQuiz
 )
+router.delete(
+  '/quizzes/:id',
+  [verifyAuth, verifyAdmin],
+  quizController.deleteQuizSet
+)
+
 router.post(
   '/quizzes/:quizId/questions',
   [verifyAuth, verifyAdmin, validate(createQuestionSchema)],

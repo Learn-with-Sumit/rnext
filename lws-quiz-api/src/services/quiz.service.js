@@ -112,11 +112,9 @@ const listQuizSetForAdmin = async (userId = null) => {
 }
 
 const createQuiz = async (quizData, userId) => {
-  const thumbnail = await generateThumbnail({
-    text: 'Javacript Fundamentals',
-  })
+  const thumbnail = generateThumbnail()
 
-  return await Quiz.create({ ...quizData, thumbnail: thumbnail?.url, userId: userId })
+  return await Quiz.create({ ...quizData, thumbnail: thumbnail, userId: userId })
 }
 
 const updateQuiz = async (quizId, updateData) => {

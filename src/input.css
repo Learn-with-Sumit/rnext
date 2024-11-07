@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #88888825;
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  
+  body {
+    font-family: "Jaldi", sans-serif;
+  }
+  td {
+    @apply p-0;
+  }
+
+  .container {
+    @apply px-4;
+  }
+
+  ::backdrop {
+    @apply bg-gray-900/60;
+  }
+  dialog[open] {
+    opacity: 1;
+  }
+  dialog {
+    opacity: 0;
+    transition: all 0.3s allow-discrete;
+  }
+
+  @starting-style {
+    dialog[open] {
+      opacity: 0;
+    }
+  }
+}

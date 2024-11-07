@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quizzes - Login</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Jaldi&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles/output.css" />
+</head>
+
+<body class="bg-white text-gray-800 overflow-hidden">
+  <div class="flex min-h-screen">
+    <!-- Left side -->
+    <div class="hidden lg:flex lg:w-1/2 bg-primary flex-col justify-between p-12 relative">
+      <div class="text-white">
+
+        <img src="./assets/Saly-1.png" alt="Illustration" class="mx-auto" />
+
+        <h2 class="text-3xl font-bold mb-4">Sign in Now</h2>
+        <p class="text-xl mb-4">Boost Your Learning Capabilities</p>
+        <p class="mb-8">
+          Logging in unlocks your personal progress tracker, letting you evaluate your performance and see how you
+          stack up against others. Whether you're preparing for exams, improving your knowledge, or simply having fun,
+          there's no better way to sharpen your mind.
+        </p>
+      </div>
+
+
+    </div>
+
+    <!-- Right side -->
+    <div class="w-full lg:w-1/2 flex items-center justify-center p-12">
+      <div class="w-full max-w-md">
+        <h2 class="text-3xl font-bold mb-8 flex gap-2 items-center">
+          <span>Welcome to</span>
+          <img src="./assets/logo.svg" class="h-7" />
+        </h2>
+        <h1 class="text-5xl font-bold mb-8">Sign in</h1>
+
+
+        <form>
+          <div class="mb-4">
+            <label for="username" class="block mb-2">Enter your username or email address</label>
+            <input type="text" id="username" class="w-full px-4 py-3 rounded-lg border border-gray-300"
+              placeholder="Username or email address" />
+          </div>
+          <div class="mb-6">
+            <label for="password" class="block mb-2">Enter your Password</label>
+            <input type="password" id="password" class="w-full px-4 py-3 rounded-lg border border-gray-300"
+              placeholder="Password" />
+          </div>
+          <div class="mb-6 flex gap-2 items-center">
+            <input type="checkbox" id="admin" class="px-4 py-3 rounded-lg border border-gray-300" />
+            <label for="admin" class="block ">Login as Admin</label>
+          </div>
+          <button type="submit" class="w-full bg-primary text-white py-3 rounded-lg mb-4">Sign in</button>
+        </form>
+
+        <div class="text-center">
+          <a href="#" class="text-primary">Forgot Password</a>
+        </div>
+
+        <div class="mt-8">
+          <p class="text-center">No Account ? <a href="#" class="text-primary">Sign up</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

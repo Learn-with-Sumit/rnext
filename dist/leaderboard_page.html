@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Leaderboard</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Jaldi&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="./styles/output.css" />
+</head>
+
+<body class="bg-[#F5F3FF]  p-4">
+  <header class="flex justify-between items-center">
+    <img src="./assets/logo.svg" class="h-7" />
+    <div>
+      <button class="px-4 py-2 rounded hover:bg-primary hover:text-white transition-colors" style="font-family: Jaro">
+        Login
+      </button>
+
+      <button class="px-4 py-2 rounded hover:bg-primary hover:text-white transition-colors" style="font-family: Jaro">
+        Logout
+      </button>
+
+    </div>
+  </header>
+
+  <main class="min-h-[calc(100vh-50px)] flex items-center justify-center">
+    <div class="bg-white rounded-lg shadow-lg w-full max-w-4xl overflow-hidden">
+      <div class="p-6 md:p-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Left Column -->
+        <div class="bg-primary rounded-lg p-6 text-white">
+          <div class="flex flex-col items-center mb-6">
+            <img src="./assets/avater.webp" alt="Profile Pic"
+              class="w-20 h-20 rounded-full border-4 border-white mb-4 object-cover" />
+            <h2 class="text-2xl font-bold">Saad Hasan</h2>
+            <p class="text-xl">20 Position</p>
+          </div>
+          <div class="grid grid-cols-3 gap-4 mb-6">
+            <div class="text-center">
+              <p class="text-sm opacity-75">Mark</p>
+              <p class="text-2xl font-bold">1200</p>
+            </div>
+            <div class="text-center">
+              <p class="text-sm opacity-75">Correct</p>
+              <p class="text-2xl font-bold">08</p>
+            </div>
+            <div class="text-center">
+              <p class="text-sm opacity-75">Wrong</p>
+              <p class="text-2xl font-bold">16</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column -->
+        <div>
+          <h1 class="text-2xl font-bold">Leaderboard</h1>
+          <p class="mb-6">React Hooks Quiz</p>
+          <ul class="space-y-4">
+            <li class="flex items-center justify-between">
+              <div class="flex items-center">
+                <img src="./assets/avater.webp" alt="SPD Smith" class="object-cover w-10 h-10 rounded-full mr-4" />
+                <div>
+                  <h3 class="font-semibold">SPD Smith</h3>
+                  <p class="text-sm text-gray-500">1st</p>
+                </div>
+              </div>
+              <div class="flex items-center">
+                <span class="mr-2">2,340</span>
+              </div>
+            </li>
+            <li class="flex items-center justify-between">
+              <div class="flex items-center">
+                <img src="./assets/avater.webp" alt="JE Root" class="object-cover w-10 h-10 rounded-full mr-4" />
+                <div>
+                  <h3 class="font-semibold">JE Root</h3>
+                  <p class="text-sm text-gray-500">2nd</p>
+                </div>
+              </div>
+              <div class="flex items-center">
+                <span class="mr-2">2,540</span>
+              </div>
+            </li>
+            <li class="flex items-center justify-between">
+              <div class="flex items-center">
+                <img src="./assets/avater.webp" alt="AN Cook" class="object-cover w-10 h-10 rounded-full mr-4" />
+                <div>
+                  <h3 class="font-semibold">AN Cook</h3>
+                  <p class="text-sm text-gray-500">3rd</p>
+                </div>
+              </div>
+              <div class="flex items-center">
+                <span class="mr-2">1,911</span>
+              </div>
+            </li>
+            <li class="flex items-center justify-between">
+              <div class="flex items-center">
+                <img src="./assets/avater.webp" alt="KS Williamson" class="object-cover w-10 h-10 rounded-full mr-4" />
+                <div>
+                  <h3 class="font-semibold">KS Williamson</h3>
+                  <p class="text-sm text-gray-500">4th</p>
+                </div>
+              </div>
+              <div class="flex items-center">
+                <span class="mr-2">1,851</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>

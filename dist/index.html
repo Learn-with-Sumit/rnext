@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quizzes</title>
+  <link href="https://fonts.googleapis.com/css2?family=Jaldi&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="./styles/output.css" />
+</head>
+
+<body class="bg-[#F5F3FF] min-h-screen">
+  <div class="container mx-auto py-3">
+    <header class="flex justify-between items-center mb-12">
+      <img src="./assets/logo.svg" class="h-7" />
+      <div>
+        <button class="px-4 py-2 rounded hover:bg-primary hover:text-white transition-colors" style="font-family: Jaro">
+          Login
+        </button>
+
+        <button class="px-4 py-2 rounded hover:bg-primary hover:text-white transition-colors" style="font-family: Jaro">
+          Logout
+        </button>
+
+      </div>
+    </header>
+
+    <div class="text-center mb-12">
+      <img src="./assets/avater.webp" alt="Profile Picture"
+        class="w-32 h-32 rounded-full border-4 border-primary mx-auto mb-4 object-cover" />
+      <p class="text-xl text-gray-600">Welcome</p>
+      <h2 class="text-4xl font-bold text-gray-700" style="font-family: Jaro">Saad Hasan</h2>
+    </div>
+    <main class="bg-white p-6 rounded-md h-full">
+
+
+      <section>
+        <h3 class="text-2xl font-bold mb-6">Participate In Quizees</h3>
+
+        <!-- Cards -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <a href="./result.html"
+            class="rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow max-h-[450px] relative group cursor-pointer">
+            <div
+              class="hidden absolute transition-all bg-black/80 w-full h-full left-0 top-0 text-white group-hover:grid place-items-center">
+              <div>
+                <h1 class="text-3xl font-bold">Already Participated</h1>
+                <p class="text-center">Click to view your leaderboard</p>
+
+              </div>
+            </div>
+            <img src="./assets/cards/js.png" alt="JavaScript Hoisting"
+              class="w-full h-full object-cover rounded mb-4" />
+          </a>
+
+          <a href="./quiz_page.html"
+            class="rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow max-h-[450px] cursor-pointer group">
+            <img src="./assets/cards/react.png" alt="JavaScript Hoisting"
+              class="w-full h-full object-cover rounded mb-4 transition-all group-hover:scale-105" />
+          </a>
+
+          <div
+            class="rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow max-h-[450px] cursor-pointer group">
+            <img src="./assets/cards/bvf.png" alt="JavaScript Hoisting"
+              class="w-full h-full object-cover rounded mb-4 transition-all group-hover:scale-105" />
+          </div>
+
+          <div
+            class="rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow max-h-[450px] relative group cursor-pointer">
+            <div
+              class="hidden absolute transition-all bg-black/80 w-full h-full left-0 top-0 text-white group-hover:grid place-items-center">
+              <div>
+                <h1 class="text-3xl font-bold">Already Participated</h1>
+                <p class="text-center">You got 20 out of 50</p>
+              </div>
+            </div>
+            <img src="./assets/cards/js.png" alt="JavaScript Hoisting"
+              class="w-full h-full object-cover rounded mb-4" />
+          </div>
+
+          <div
+            class="rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow max-h-[450px] cursor-pointer group">
+            <img src="./assets/cards/react.png" alt="JavaScript Hoisting"
+              class="w-full h-full object-cover rounded mb-4 transition-all group-hover:scale-105" />
+          </div>
+
+          <div
+            class="rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow max-h-[450px] cursor-pointer group">
+            <img src="./assets/cards/bvf.png" alt="JavaScript Hoisting"
+              class="w-full h-full object-cover rounded mb-4 transition-all group-hover:scale-105" />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="mt-6 mb-3 opacity-40 text-center">
+      Copyright &copy; 2024 Learn With Sumit | All Rights Reserved
+    </footer>
+  </div>
+</body>
+
+</html>

@@ -2,6 +2,7 @@ const express = require('express')
 const { StatusCodes } = require('http-status-codes')
 const AppError = require('./utils/AppError')
 const errorHandler = require('./middlewares/errorHandler')
+const cors = require("cors");
 
 const { uploadDir, backgroundDir, publicUrl } = require('./config/config')
 
@@ -9,6 +10,7 @@ const UPLOADS_DIR = uploadDir
 const BACKGROUNDS_DIR = backgroundDir
 
 const app = express()
+app.use(cors());
 
 // Body parser middleware
 app.use(express.json())

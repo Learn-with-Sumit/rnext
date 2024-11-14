@@ -557,7 +557,7 @@ const getQuiz = async (quizId, userId) => {
     include: [
       {
         model: Question,
-        attributes: ['id', 'question', 'options', 'marks'],
+        attributes: ['id', 'question', 'options', 'marks', 'correctAnswer'],
       },
     ],
   })
@@ -595,6 +595,7 @@ const getQuiz = async (quizId, userId) => {
     question: question.question,
     options: question.options,
     marks: question.marks,
+    correctAnswer: question.correctAnswer,
   }))
 
   const totalMarks = questions.reduce((sum, q) => sum + q.marks, 0)

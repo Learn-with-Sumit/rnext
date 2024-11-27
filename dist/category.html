@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LWS Kitchen - Food Blog and Recipes</title>
+
+  <link rel="stylesheet" href="./styles/output.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body class="bg-white text-gray-900">
+  <header class="container mx-auto px-4 py-4 shadow-lg fixed top-0 bg-white z-50">
+    <nav class="flex justify-between items-center">
+      <a href="/index.html" class="text-3xl font-bold">
+        <img src="./assets/lws-kitchen.png" class="h-10" />
+      </a>
+      <ul class="hidden md:flex space-x-6">
+        <li><a href="./index.html" class="hover:text-orange-500">Home</a></li>
+        <li><a href="./category.html" class="hover:text-orange-500">Categories</a></li>
+        <li><a href="./recipes.html" class="hover:text-orange-500">Latest Recipes</a></li>
+      </ul>
+      <div class="flex items-center space-x-4">
+        <a href="#" class="hover:text-orange-500">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+          </svg>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container mx-auto px-4 py-8 mt-[100px]">
+    <h1 class="text-5xl font-bold mb-12">Categories</h1>
+
+    <div class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8">
+      <div class="text-center">
+        <div class="overflow-hidden rounded-full mb-4 relative cursor-pointer">
+          <img src="assets/category/Seafood.jpg" alt="Seafood"
+            class="w-full h-auto transform transition-transform duration-300 ease-in-out hover:scale-110" />
+        </div>
+        <h2 class="text-xl font-semibold">Seafood</h2>
+      </div>
+      <div class="text-center">
+        <div class="overflow-hidden rounded-full mb-4 relative cursor-pointer">
+          <img src="assets/category/Soup.jpg" alt="Soup"
+            class="w-full h-auto transform transition-transform duration-300 ease-in-out hover:scale-110" />
+        </div>
+        <h2 class="text-xl font-semibold">Soup</h2>
+      </div>
+      <div class="text-center">
+        <div class="overflow-hidden rounded-full mb-4 relative cursor-pointer">
+          <img src="assets/category/Pancakes.jpg" alt="Pancakes"
+            class="w-full h-auto transform transition-transform duration-300 ease-in-out hover:scale-110" />
+        </div>
+        <h2 class="text-xl font-semibold">Pancakes</h2>
+      </div>
+      <div class="text-center">
+        <div class="overflow-hidden rounded-full mb-4 relative cursor-pointer">
+          <img src="assets/category/Meat.jpg" alt="Meat"
+            class="w-full h-auto transform transition-transform duration-300 ease-in-out hover:scale-110" />
+        </div>
+        <h2 class="text-xl font-semibold">Meat</h2>
+      </div>
+      <div class="text-center">
+        <div class="overflow-hidden rounded-full mb-4 relative cursor-pointer">
+          <img src="assets/category/Chicken.jpg" alt="Chicken"
+            class="w-full h-auto transform transition-transform duration-300 ease-in-out hover:scale-110" />
+        </div>
+        <h2 class="text-xl font-semibold">Chicken</h2>
+      </div>
+      <div class="text-center">
+        <div class="overflow-hidden rounded-full mb-4 relative cursor-pointer">
+          <img src="assets/category/Pasta.jpg" alt="Pasta"
+            class="w-full h-auto transform transition-transform duration-300 ease-in-out hover:scale-110" />
+        </div>
+        <h2 class="text-xl font-semibold">Pasta</h2>
+      </div>
+      <div class="text-center">
+        <div class="overflow-hidden rounded-full mb-4 relative cursor-pointer">
+          <img src="assets/category/Pizza.jpg" alt="Pizza"
+            class="w-full h-auto transform transition-transform duration-300 ease-in-out hover:scale-110" />
+        </div>
+        <h2 class="text-xl font-semibold">Pizza</h2>
+      </div>
+      <div class="text-center">
+        <div class="overflow-hidden rounded-full mb-4 relative cursor-pointer">
+          <img src="assets/category/Cake.jpg" alt="Cake"
+            class="w-full h-auto transform transition-transform duration-300 ease-in-out hover:scale-110" />
+        </div>
+        <h2 class="text-xl font-semibold">Cake</h2>
+      </div>
+      <div class="text-center">
+        <div class="overflow-hidden rounded-full mb-4 relative cursor-pointer">
+          <img src="assets/category/Pastries.jpg" alt="Pastries"
+            class="w-full h-auto transform transition-transform duration-300 ease-in-out hover:scale-110" />
+        </div>
+        <h2 class="text-xl font-semibold">Pastries</h2>
+      </div>
+      <div class="text-center">
+        <div class="overflow-hidden rounded-full mb-4 relative cursor-pointer">
+          <img src="assets/category/Burger.jpg" alt="Burger"
+            class="w-full h-auto transform transition-transform duration-300 ease-in-out hover:scale-110" />
+        </div>
+        <h2 class="text-xl font-semibold">Burger</h2>
+      </div>
+      <div class="text-center">
+        <div class="overflow-hidden rounded-full mb-4 relative cursor-pointer">
+          <img src="assets/category/Vegan.jpg" alt="Vegan"
+            class="w-full h-auto transform transition-transform duration-300 ease-in-out hover:scale-110" />
+        </div>
+        <h2 class="text-xl font-semibold">Vegan</h2>
+      </div>
+      <div class="text-center">
+        <div class="overflow-hidden rounded-full mb-4 relative cursor-pointer">
+          <img src="assets/category/Desserts.jpg" alt="Desserts"
+            class="w-full h-auto transform transition-transform duration-300 ease-in-out hover:scale-110" />
+        </div>
+        <h2 class="text-xl font-semibold">Desserts</h2>
+      </div>
+      <div class="text-center">
+        <div class="overflow-hidden rounded-full mb-4 relative cursor-pointer">
+          <img src="assets/category/Smoothies.jpg" alt="Smoothies"
+            class="w-full h-auto transform transition-transform duration-300 ease-in-out hover:scale-110" />
+        </div>
+        <h2 class="text-xl font-semibold">Smoothies</h2>
+      </div>
+      <div class="text-center">
+        <div class="overflow-hidden rounded-full mb-4 relative cursor-pointer">
+          <img src="assets/category/Breakfast.jpg" alt="Breakfast"
+            class="w-full h-auto transform transition-transform duration-300 ease-in-out hover:scale-110" />
+        </div>
+        <h2 class="text-xl font-semibold">Breakfast</h2>
+      </div>
+      <div class="text-center">
+        <div class="overflow-hidden rounded-full mb-4 relative cursor-pointer">
+          <img src="assets/category/Salad.jpg" alt="Salad"
+            class="w-full h-auto transform transition-transform duration-300 ease-in-out hover:scale-110" />
+        </div>
+        <h2 class="text-xl font-semibold">Salad</h2>
+      </div>
+      <div class="text-center">
+        <div class="overflow-hidden rounded-full mb-4 relative cursor-pointer">
+          <img src="assets/category/Sandwiches.jpg" alt="Sandwiches"
+            class="w-full h-auto transform transition-transform duration-300 ease-in-out hover:scale-110" />
+        </div>
+        <h2 class="text-xl font-semibold">Sandwiches</h2>
+      </div>
+      <div class="text-center">
+        <div class="overflow-hidden rounded-full mb-4 relative cursor-pointer">
+          <img src="assets/category/Waffles.jpg" alt="Waffles"
+            class="w-full h-auto transform transition-transform duration-300 ease-in-out hover:scale-110" />
+        </div>
+        <h2 class="text-xl font-semibold">Waffles</h2>
+      </div>
+      <div class="text-center">
+        <div class="overflow-hidden rounded-full mb-4 relative cursor-pointer">
+          <img src="assets/category/Ramen.jpg" alt="Ramen"
+            class="w-full h-auto transform transition-transform duration-300 ease-in-out hover:scale-110" />
+        </div>
+        <h2 class="text-xl font-semibold">Ramen</h2>
+      </div>
+      <div class="text-center">
+        <div class="overflow-hidden rounded-full mb-4 relative cursor-pointer">
+          <img src="assets/category/Dips.jpg" alt="Dips"
+            class="w-full h-auto transform transition-transform duration-300 ease-in-out hover:scale-110" />
+        </div>
+        <h2 class="text-xl font-semibold">Dips</h2>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-gray-100 py-8">
+    <div class="container mx-auto px-4">
+      <div class="grid md:grid-cols-4 gap-8">
+        <div>
+          <a href="/index.html" class="text-3xl font-bold">
+            <img src="./assets/lws-kitchen.png" class="h-10" />
+          </a>
+          <p class="text-gray-600 mt-2 text-sm">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.
+          </p>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-4">LWS Kitchen</h4>
+          <ul class="space-y-2">
+            <li><a href="#" class="text-gray-600 hover:text-orange-500">About us</a></li>
+            <li><a href="#" class="text-gray-600 hover:text-orange-500">Careers</a></li>
+            <li><a href="#" class="text-gray-600 hover:text-orange-500">Contact us</a></li>
+            <li><a href="#" class="text-gray-600 hover:text-orange-500">Feedback</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-4">Legal</h4>
+          <ul class="space-y-2">
+            <li><a href="#" class="text-gray-600 hover:text-orange-500">Terms</a></li>
+            <li><a href="#" class="text-gray-600 hover:text-orange-500">Conditions</a></li>
+            <li><a href="#" class="text-gray-600 hover:text-orange-500">Cookies</a></li>
+            <li><a href="#" class="text-gray-600 hover:text-orange-500">Copyright</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-4">Follow</h4>
+          <ul class="space-y-2">
+            <li><a href="#" class="text-gray-600 hover:text-orange-500">Facebook</a></li>
+            <li><a href="#" class="text-gray-600 hover:text-orange-500">Twitter</a></li>
+            <li><a href="#" class="text-gray-600 hover:text-orange-500">Instagram</a></li>
+            <li><a href="#" class="text-gray-600 hover:text-orange-500">Youtube</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

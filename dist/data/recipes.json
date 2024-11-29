@@ -324,7 +324,6 @@
     "thumbnail": "thumb-1.jpg",
     "author": "Olivia Green"
   },
-  [
     {
       "rating": {
         "rating_count": 25,
@@ -456,4 +455,3 @@
       "thumbnail": "thumb-3.jpg"
     }
   ]
-]

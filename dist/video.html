@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LWS Xstream - Video Streaming</title>
+  <link rel="stylesheet" href="./styles/output.css" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    body {
+      font-family: "Exo 2", sans-serif;
+    }
+  </style>
+</head>
+
+<body class="bg-color-bg text-white font-exo">
+  <div class="container mx-auto px-4 py-4">
+    <header class="flex justify-between items-center mb-8">
+      <div class="flex items-center space-x-8">
+        <img src="./assets/logo.svg" alt="LWS Xstream Logo" class="h-6" />
+        <nav class="hidden md:flex space-x-6">
+          <a href="#" class="text-color-purple font-semibold">TOP STREAMING</a>
+          <a href="#" class="text-gray-400 hover:text-white">GAMES</a>
+          <a href="#" class="text-gray-400 hover:text-white">TEAMS</a>
+        </nav>
+      </div>
+      <div class="flex items-center space-x-4">
+        <div class="relative">
+          <input type="text" placeholder="Search"
+            class="bg-color-gray rounded-full py-2 px-4 w-64 focus:outline-none focus:ring-2 focus:ring-color-purple" />
+          <svg class="w-5 h-5 text-gray-400 absolute right-3 top-2.5" fill="none" stroke="currentColor"
+            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+          </svg>
+        </div>
+        <!-- যেহেতু videos.json এ কোনো Avatar দেয়া নাই, সেহেতু আপনি যেকোনো র‍্যান্ডম Avatar ব্যবহার করতে পারবেন -->
+        <img src="./assets/avatar.png" alt="User Avatar" class="w-8 h-8 rounded-full" />
+      </div>
+    </header>
+
+    <main class="flex flex-col lg:flex-row gap-6">
+      <div class="lg:w-3/4">
+        <div class="relative">
+          <iframe src="https://www.youtube.com/embed/hecODa5ZgZM" title="YouTube video player" frameborder="0"
+            class="w-full aspect-video h-[500px]"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+          <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
+            <div class="flex items-center space-x-4">
+              <button class="bg-color-gray hover:bg-opacity-80 rounded-full p-2">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z">
+                  </path>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+              </button>
+              <div class="bg-color-purple text-white px-2 py-1 rounded text-sm">LIVE</div>
+              <span class="text-sm">46:02</span>
+              <button class="bg-color-purple hover:bg-opacity-80 text-white px-4 py-1 rounded-full text-sm">
+                Donate
+              </button>
+            </div>
+          </div>
+        </div>
+        <h1 class="text-2xl font-bold mt-4">
+          GTA V : BATMAN WAS KIDNAPPED || GTA V Bangla GAMEPLAY || Professor Of Pc Gaming
+        </h1>
+        <div class="flex items-center space-x-4 mt-2">
+          <!-- যেহেতু videos.json এ কোনো Avatar দেয়া নাই, সেহেতু আপনি যেকোনো র‍্যান্ডম Avatar ব্যবহার করতে পারবেন -->
+          <img src="./assets/avatar.png" alt="Avatar" class="w-10 h-10 rounded-full" />
+          <div>
+            <p class="font-semibold">Professor Of Pc Gaming</p>
+          </div>
+          <button class="bg-color-purple hover:bg-opacity-80 text-white px-4 py-1 rounded-full text-sm ml-auto">
+            Subscribe
+          </button>
+        </div>
+      </div>
+      <div class="lg:w-1/4">
+        <h2 class="text-xl font-semibold mb-4">You may like</h2>
+        <div class="space-y-4">
+          <div class="flex items-start space-x-4">
+            <img src="https://i.ytimg.com/vi/9kjwMTj8ZD0/hqdefault.jpg" alt="Fallout Shelter PC Thumbnail"
+              class="w-30 h-20 rounded object-cover" />
+            <div>
+              <h3 class="font-semibold">Fallout Shelter PC - Ep. 1</h3>
+              <p class="text-sm text-gray-400">Blitz</p>
+              <p class="text-sm text-gray-400">26,389M</p>
+            </div>
+          </div>
+
+          <div class="flex items-start space-x-4">
+            <img src="https://i.ytimg.com/vi/Ij7FWQJR0e8/hqdefault.jpg" alt="Resident Evil Remastered Thumbnail"
+              class="w-30 h-20 rounded object-cover" />
+            <div>
+              <h3 class="font-semibold">Resident Evil Remastered Walkthrough</h3>
+              <p class="text-sm text-gray-400">theRadBrad</p>
+              <p class="text-sm text-gray-400">16,426M View now</p>
+            </div>
+          </div>
+
+          <div class="flex items-start space-x-4">
+            <img src="https://i.ytimg.com/vi/F8BactAXOH4/hqdefault.jpg" alt="Open World Games Thumbnail"
+              class="w-30 h-20 rounded object-cover" />
+            <div>
+              <h3 class="font-semibold">Top 10 BIGGEST OPEN WORLD Games</h3>
+              <p class="text-sm text-gray-400">Lazy Assassin</p>
+              <p class="text-sm text-gray-400">7,694M View now</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+
+</html>

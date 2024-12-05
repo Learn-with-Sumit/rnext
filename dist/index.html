@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LWS Xstream - Video Streaming</title>
+  <link rel="stylesheet" href="./styles/output.css" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+
+<body class="bg-color-bg text-white font-exo">
+  <div class="container mx-auto px-4 py-4">
+    <header class="flex justify-between items-center mb-8">
+      <div class="flex items-center space-x-8">
+        <img src="./assets/logo.svg" alt="LWS Xstream Logo" class="h-6" />
+        <nav class=" hidden md:flex space-x-6">
+          <a href="#" class="text-color-purple font-semibold">TOP STREAMING</a>
+          <a href="#" class="text-gray-400 hover:text-white">GAMES</a>
+          <a href="#" class="text-gray-400 hover:text-white">TEAMS</a>
+        </nav>
+      </div>
+      <div class="flex items-center space-x-4">
+        <div class="relative">
+          <input type="text" placeholder="Search"
+            class="bg-color-gray rounded-full py-2 px-4 w-64 focus:outline-none focus:ring-2 focus:ring-color-purple" />
+          <svg class="w-5 h-5 text-gray-400 absolute right-3 top-2.5" fill="none" stroke="currentColor"
+            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+          </svg>
+        </div>
+        <!-- যেহেতু videos.json এ কোনো Avatar দেয়া নাই, সেহেতু আপনি যেকোনো র‍্যান্ডম Avatar ব্যবহার করতে পারবেন -->
+        <img src="./assets/avatar.png" alt="User Avatar" class="w-8 h-8 rounded-full" />
+      </div>
+    </header>
+
+    <main class="grid grid-cols-1 lg:grid-cols-4 gap-8 items-center">
+      <div class="lg:col-span-2">
+        <h1 class="text-4xl md:text-6xl font-bold mb-4 leading-tight">
+          PLAY, COMPETE,<br />FOLLOW POPULAR<br />STREAMERS
+        </h1>
+        <p class="text-gray-400 mb-8">The best streamers gather here to have a good time, be among us, join us!</p>
+      </div>
+      <div class="lg:col-span-2">
+        <div class="relative rounded-lg overflow-hidden">
+          <iframe src="https://www.youtube.com/embed/0VtVPk7Zv9c" title="YouTube video player" frameborder="0"
+            class="w-full aspect-video"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+          <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-between p-4">
+            <div class="text-right">
+              <span class="bg-color-purple text-white px-2 py-1 rounded text-sm">COMING SOON</span>
+            </div>
+            <div>
+              <div class="text-4xl font-bold mb-2">04:03</div>
+              <p class="text-sm">Broadcast starts in</p>
+            </div>
+          </div>
+        </div>
+        <p class="mt-2 text-sm text-gray-400">Battle for the castle with Franck Jourdan and Eva703</p>
+      </div>
+    </main>
+
+    <section class="mt-12">
+      <div class="flex justify-between items-center mb-4">
+        <h2 class="text-2xl font-semibold">Streams of the day</h2>
+        <a href="#" class="bg-color-gray hover:bg-opacity-80 text-sm px-4 py-2 rounded-full">View all</a>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div class="rounded-lg overflow-hidden bg-color-gray">
+          <img src="https://i.ytimg.com/vi/9kjwMTj8ZD0/hqdefault.jpg" alt="Stream 1" class="w-full h-40 object-cover" />
+          <div class="p-2">
+            <p class="font-semibold">Fallout Shelter PC - Ep. 1 - Fallout Shelter Vault #314</p>
+            <p class="text-sm text-gray-400">Blitz</p>
+          </div>
+        </div>
+
+        <div class="rounded-lg overflow-hidden bg-color-gray">
+          <img src="https://i.ytimg.com/vi/Ij7FWQJR0e8/hqdefault.jpg" alt="Stream 2" class="w-full h-40 object-cover" />
+          <div class="p-2">
+            <p class="font-semibold">Resident Evil Remastered Walkthrough Gameplay Part 1</p>
+            <p class="text-sm text-gray-400">theRadBrad</p>
+          </div>
+        </div>
+
+        <div class="rounded-lg overflow-hidden bg-color-gray">
+          <img src="https://i.ytimg.com/vi/F8BactAXOH4/hqdefault.jpg" alt="Stream 3" class="w-full h-40 object-cover" />
+          <div class="p-2">
+            <p class="font-semibold">Top 10 *BIGGEST* OPEN WORLD Games Ever Made</p>
+            <p class="text-sm text-gray-400">Lazy Assassin</p>
+          </div>
+        </div>
+
+        <div class="rounded-lg overflow-hidden bg-color-gray">
+          <img src="https://i.ytimg.com/vi/laV-GvMFuaM/hqdefault.jpg" alt="Stream 4" class="w-full h-40 object-cover" />
+          <div class="p-2">
+            <p class="font-semibold">How to setup a Logitech G29 steering wheel on a PC</p>
+            <p class="text-sm text-gray-400">Geek Street</p>
+          </div>
+        </div>
+
+        <div class="rounded-lg overflow-hidden bg-color-gray">
+          <img src="https://i.ytimg.com/vi/XPxGL3m-Dl0/hqdefault.jpg" alt="Stream 5" class="w-full h-40 object-cover" />
+          <div class="p-2">
+            <p class="font-semibold">$350 FULL PC Gaming Setup and How To Upgrade It Over Time!</p>
+            <p class="text-sm text-gray-400">Zach's Tech Turf</p>
+          </div>
+        </div>
+
+        <div class="rounded-lg overflow-hidden bg-color-gray">
+          <img src="https://i.ytimg.com/vi/C9JuJobvxpg/hqdefault.jpg" alt="Stream 6" class="w-full h-40 object-cover" />
+          <div class="p-2">
+            <p class="font-semibold">[B2K] THE KING IS OFFICIALLY BACK | 25 KILLS GAMEPLAY</p>
+            <p class="text-sm text-gray-400">Born2Kill</p>
+          </div>
+        </div>
+
+        <div class="rounded-lg overflow-hidden bg-color-gray">
+          <img src="https://i.ytimg.com/vi/_57g8xCY_v4/hqdefault.jpg" alt="Stream 7" class="w-full h-40 object-cover" />
+          <div class="p-2">
+            <p class="font-semibold">FIFA 22 PC Gameplay (i5 9300H & RTX 2060)</p>
+            <p class="text-sm text-gray-400">Nad Noddy</p>
+          </div>
+        </div>
+
+        <div class="rounded-lg overflow-hidden bg-color-gray">
+          <img src="https://i.ytimg.com/vi/7bMOVNwut7c/hqdefault.jpg" alt="Stream 8" class="w-full h-40 object-cover" />
+          <div class="p-2">
+            <p class="font-semibold">Build gaming PC with ⌨️ 🖱full setup | bugged gaming 8gb graphics</p>
+            <p class="text-sm text-gray-400">BISWAS GAMER</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>

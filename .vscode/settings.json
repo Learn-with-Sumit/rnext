@@ -1,0 +1,98 @@
+{
+    // editor
+    "editor.fontSize": 22,
+    "editor.lineHeight": 1.8,
+    // "editor.letterSpacing": 0.4,
+    "files.trimTrailingWhitespace": true,
+    // "editor.fontWeight": "400",
+    "editor.fontFamily": "Lws, Operator Mono",
+    // "editor.fontLigatures": "'calt', 'ss01'",
+    "editor.wordWrap": "on",
+    "editor.minimap.enabled": false,
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope": "comment",
+                "settings": {
+                    "fontStyle": "italic"
+                }
+            }
+        ]
+    },
+    "editor.bracketPairColorization.enabled": true,
+    "editor.renderLineHighlight": "none",
+    "editor.guides.indentation": false,
+    "editor.occurrencesHighlight": "singleFile",
+    "editor.tabSize": 4,
+    // turn this on when making tutorial
+    // "editor.hover.enabled": false,
+    // "editor.quickSuggestions": {
+    //     "other": false,
+    //     "comments": false,
+    //     "strings": false
+    // },
+    // "editor.suggestOnTriggerCharacters": false,
+    // cursor
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.cursorBlinking": "expand",
+    "editor.cursorStyle": "line",
+    // config related to code formatting
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": "explicit",
+        "source.fixAll.tslint": "explicit",
+        "source.organizeImports": "explicit"
+    },
+    "eslint.run": "onSave",
+    "prettier.tabWidth": 4,
+    // explorer
+    "explorer.confirmDelete": false,
+    "explorer.openEditors.visible": 1,
+    "explorer.compactFolders": false,
+    "explorer.autoReveal": false,
+    "explorer.confirmDragAndDrop": false,
+    "workbench.colorCustomizations": {
+        "editorCursor.foreground": "#68FDFE",
+        "terminalCursor.foreground": "#68FDFE"
+    },
+    // "workbench.fontAliasing": "antialiased",
+    //terminal
+    "terminal.integrated.fontFamily": "Lws, Operator Mono",
+    "terminal.integrated.fontSize": 18,
+    "terminal.integrated.lineHeight": 1.6,
+    "terminal.integrated.fontWeight": "normal",
+    "liveServer.settings.donotShowInfoMsg": true,
+    // icon theme
+    "workbench.iconTheme": "vscode-icons",
+    // emmet
+    "emmet.triggerExpansionOnTab": true,
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact"
+    },
+    // path autocomplete
+    "path-autocomplete.extensionOnImport": true,
+    "path-autocomplete.excludedItems": {
+        "*/.js": {
+            "when": "**"
+        },
+        "*/.jsx": {
+            "when": "**"
+        }
+    },
+    "editor.inlineSuggest.enabled": true,
+    "javascript.validate.enable": false,
+    "typescript.validate.enable": false,
+    "tailwindCSS.colorDecorators": false,
+    "vsicons.dontShowNewVersionMessage": true,
+    // "polacode.transparentBackground": true,
+    // "polacode.shadow": "none",
+    "editor.unicodeHighlight.ambiguousCharacters": false,
+    "editor.unicodeHighlight.invisibleCharacters": false,
+    "workbench.sideBar.location": "right",
+    "editor.unicodeHighlight.nonBasicASCII": false,
+    "workbench.colorTheme": "Learn with Sumit - Peace of the eye",
+    "workbench.startupEditor": "none",
+    "window.zoomLevel": 4
+    
+}

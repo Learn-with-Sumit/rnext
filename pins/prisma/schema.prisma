@@ -9,13 +9,13 @@ generator client {
 }
 
 datasource db {
-  provider = "mongodb"
+  provider = "postgresql"
   url      = env("DATABASE_URL")
   relationMode = "prisma"
 }
 
 model Pin {
-  id String @id @default(auto()) @map("_id") @db.ObjectId
+  id Int @default(autoincrement()) @id
   title String
   description String
   type String

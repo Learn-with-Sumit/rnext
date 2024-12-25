@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Hotel</title>
+    <link rel="stylesheet" href="./styles/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body class="bg-gray-50">
+    <!-- Navbar -->
+    <nav
+      class="grid grid-cols-2 md:flex justify-between items-center py-3 bg-white border-b mb-6 md:gap-8 px-4 md:px-8 lg:px-20"
+    >
+      <div class="flex items-center">
+        <a href="./index.html">
+          <img src="./assets/logo.svg" alt="Hotel Logo" class="h-8 w-auto" />
+        </a>
+      </div>
+
+      <div
+        class="row-start-2 col-span-2 border-0 md:border flex shadow-sm hover:shadow-md transition-all md:rounded-full items-center px-2"
+      >
+        <div
+          class="grid md:grid-cols-3 lg:grid-cols-7 gap-4 divide-x py-2 md:px-2 flex-grow"
+        >
+          <input
+            type="text"
+            placeholder="Where to?"
+            class="px-3 bg-transparent focus:outline-none lg:col-span-3 placeholder:text-sm"
+          />
+        </div>
+
+        <button
+          class="bg-primary w-9 h-9 rounded-full grid place-items-center text-sm text-center transition-all hover:brightness-90 shrink-0"
+        >
+          <i class="fas fa-search text-white"></i>
+        </button>
+      </div>
+
+      <div class="flex items-center space-x-4 relative justify-end">
+        <button>
+          <i class="fas fa-language text-zinc-700 text-xl"></i>
+        </button>
+
+        <button
+          class="bg-white border border-zinc-300 text-zinc-800 px-4 py-2 rounded-full hover:shadow-md flex gap-3 items-center justify-center"
+        >
+          <i class="fas fa-bars"></i>
+          <span
+            class="bg-zinc-600 w-6 h-6 rounded-full flex items-center justify-center text-xs text-white"
+          >
+            <i class="fas fa-user text-white"></i>
+          </span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Property Details Container -->
+    <div class="max-w-7xl mx-auto px-6 py-8 relative">
+      <button
+        class="px-4 py-2 bg-primary text-white rounded-lg hover:brightness-90 absolute top-4 right-4"
+      >
+        <i class="fas fa-save mr-2"></i>
+        Publish
+      </button>
+      <!-- Property Title and Rating -->
+      <div class="mb-6">
+        <h1
+          class="text-3xl font-bold mb-2 text-zinc-400 edit"
+          id="propertyName"
+        >
+          Property Name
+        </h1>
+        <div class="flex items-center text-gray-600">
+          <span class="edit text-gray-600">Property location</span>
+        </div>
+      </div>
+
+      <!-- Image Gallery -->
+      <div class="grid grid-cols-4 grid-rows-2 gap-4 mb-8 h-[500px]">
+        <div class="col-span-2 row-span-2 relative">
+          <img
+            src="https://placehold.co/600x400"
+            alt="Main Room"
+            class="w-full h-full object-cover rounded-lg"
+          />
+          <input
+            type="text"
+            placeholder="https://placehold.co/600x400"
+            class="w-11/12 p-2 border border-primary rounded-lg mt-2 absolute left-1/2 -translate-x-1/2 bottom-2 bg-white"
+          />
+        </div>
+        <div class="relative">
+          <img
+            src="https://placehold.co/600x400"
+            alt="Room 1"
+            class="w-full h-full object-cover rounded-lg"
+          />
+          <input
+            type="text"
+            placeholder="https://placehold.co/600x400"
+            class="text-sm w-11/12 p-2 border border-primary rounded-lg mt-2 absolute left-1/2 -translate-x-1/2 bottom-2 bg-white"
+          />
+        </div>
+        <div class="relative">
+          <img
+            src="https://placehold.co/600x400"
+            alt="Room 2"
+            class="w-full h-full object-cover rounded-lg"
+          />
+          <input
+            type="text"
+            placeholder="https://placehold.co/600x400"
+            class="text-sm w-11/12 p-2 border border-primary rounded-lg mt-2 absolute left-1/2 -translate-x-1/2 bottom-2 bg-white"
+          />
+        </div>
+        <div class="relative">
+          <img
+            src="https://placehold.co/600x400"
+            alt="Room 3"
+            class="w-full h-full object-cover rounded-lg"
+          />
+          <input
+            type="text"
+            placeholder="https://placehold.co/600x400"
+            class="text-sm w-11/12 p-2 border border-primary rounded-lg mt-2 absolute left-1/2 -translate-x-1/2 bottom-2 bg-white"
+          />
+        </div>
+        <div class="relative">
+          <img
+            src="https://placehold.co/600x400"
+            alt="Room 4"
+            class="w-full h-full object-cover rounded-lg"
+          />
+          <input
+            type="text"
+            placeholder="https://placehold.co/600x400"
+            class="text-sm w-11/12 p-2 border border-primary rounded-lg mt-2 absolute left-1/2 -translate-x-1/2 bottom-2 bg-white"
+          />
+        </div>
+      </div>
+
+      <div class="mb-4">
+        <span class="text-xl font-bold edit">Price in USD</span>
+        <span class="text-gray-600 ml-1">per night</span>
+      </div>
+
+      <div class="mb-4">
+        <!-- Stock -->
+        <span class="edit">Available X rooms</span>
+      </div>
+
+      <!-- Property Details -->
+      <div class="grid grid-cols-3 gap-8">
+        <!-- Left Column: Property Description -->
+        <div class="col-span-2">
+          <div class="border-b pb-6 mb-6">
+            <div class="grid grid-cols-1 gap-4 text-gray-600">
+              <div class="flex items-center gap-2">
+                <i class="fas fa-person"></i>
+                <span class="edit">How many Guest can Stay?</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i class="fas fa-door-open"></i>
+                <span class="edit">How many Bedrooms ? </span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i class="fas fa-bed"></i>
+                <span class="edit">How many beds available ?</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Description -->
+          <div class="mb-6">
+            <h3 class="text-xl font-semibold mb-4">About this place</h3>
+            <p class="text-gray-700 leading-relaxed edit">
+              Write a short description about this place
+            </p>
+          </div>
+
+          <!-- Amenities -->
+          <div>
+            <h3 class="text-xl font-semibold mb-4">What this place offers</h3>
+            <div class="grid grid-cols-2 gap-4" id="amenities">
+              <div class="flex items-center gap-2 cursor-pointer">
+                <i class="fa-solid fa-umbrella-beach"></i>
+                <span>Beach access</span>
+              </div>
+              <div class="flex items-center gap-2 cursor-pointer">
+                <i class="fa-solid fa-person-swimming"></i>
+                <span>Private pool</span>
+              </div>
+              <div class="flex items-center gap-2 cursor-pointer">
+                <i class="fa-solid fa-wifi"></i>
+                <span>Free Wi-Fi</span>
+              </div>
+              <div class="flex items-center gap-2 cursor-pointer">
+                <i class="fa-solid fa-sink"></i>
+                <span>Kitchen</span>
+              </div>
+
+              <div class="flex items-center gap-2 cursor-pointer">
+                <i class="fa-solid fa-square-parking"></i>
+                <span>Free Parking</span>
+              </div>
+
+              <div class="flex items-center gap-2 cursor-pointer">
+                <i class="fa-solid fa-dumbbell"></i>
+                <span>Fitness Center</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Booking Card -->
+      </div>
+    </div>
+
+    <script>
+      // propertyName by id
+      document
+        .getElementById("propertyName")
+        .addEventListener("click", editHandler);
+
+      function editHandler(event) {
+        {
+          let targetElement = event.target;
+
+          // if the element is already an input, return
+          if (event.target.tagName === "INPUT") return;
+
+          if (event.target.tagName === "I") {
+            targetElement = event.target.parentElement;
+          }
+
+          // Convert the element to input and create a button
+          const input = document.createElement("input");
+          input.value = targetElement.innerText;
+          input.className = "text-zinc-800 font-bold text-3xl outline-primary";
+          targetElement.replaceWith(input);
+
+          input.focus();
+
+          const saveButton = document.createElement("button");
+          saveButton.className =
+            "px-4 py-2 bg-primary text-white rounded-lg text-sm ml-4 hover:brightness-90";
+          saveButton.innerHTML = "<i class='fas fa-save mr-2'></i> Save";
+          saveButton.addEventListener("click", () => {
+            const h1 = document.createElement("h1");
+            h1.className = "text-3xl font-bold mb-2 text-zinc-400 edit";
+            h1.id = "propertyName";
+            h1.onclick = editHandler;
+            h1.innerText = input.value;
+            input.replaceWith(h1);
+
+            const editIcon = document.createElement("i");
+            editIcon.className =
+              "fas fa-pencil-alt text-gray-400 ml-2 cursor-pointer text-sm hover:scale-110 transition-all";
+            h1.appendChild(editIcon);
+
+            // Remove the Save button
+            saveButton.remove();
+          });
+
+          input.after(saveButton);
+        }
+      }
+
+      document.querySelectorAll(".edit").forEach((element) => {
+        element.style.outline = "none";
+        element.style.position = "relative";
+        element.className += " text-zinc-500";
+
+        const editIcon = document.createElement("i");
+        editIcon.className =
+          "fas fa-pencil-alt text-gray-400 ml-2 cursor-pointer text-sm hover:scale-110 transition-all";
+        element.appendChild(editIcon);
+      });
+
+      document.querySelector("#amenities").childNodes.forEach((element) => {
+        element.addEventListener("click", () => {
+          if (element.children.length == 2) {
+            // Append Green Tick
+            const greenTick = document.createElement("i");
+            greenTick.className = "fas fa-check text-green-500";
+            element.appendChild(greenTick);
+          } else {
+            // Remove Green Tick
+            element.removeChild(element.children[2]);
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manage Hotels</title>
+    <link rel="stylesheet" href="./styles/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body class="bg-gray-50 font-sans">
+    <!-- Navbar -->
+    <nav
+      class="grid grid-cols-2 md:flex justify-between items-center py-3 bg-white border-b mb-6 md:gap-8 px-4 md:px-8 lg:px-20"
+    >
+      <div class="flex items-center">
+        <a href="./index.html">
+          <img src="./assets/logo.svg" alt="Hotel Logo" class="h-8 w-auto" />
+        </a>
+      </div>
+
+      <div
+        class="row-start-2 col-span-2 border-0 md:border flex shadow-sm hover:shadow-md transition-all md:rounded-full items-center px-2"
+      >
+        <div
+          class="grid md:grid-cols-3 lg:grid-cols-7 gap-4 divide-x py-2 md:px-2 flex-grow"
+        >
+          <input
+            type="text"
+            placeholder="Where to?"
+            class="px-3 bg-transparent focus:outline-none lg:col-span-3 placeholder:text-sm"
+          />
+        </div>
+
+        <button
+          class="bg-primary w-9 h-9 rounded-full grid place-items-center text-sm text-center transition-all hover:brightness-90 shrink-0"
+        >
+          <i class="fas fa-search text-white"></i>
+        </button>
+      </div>
+
+      <div class="flex items-center space-x-4 relative justify-end">
+        <button>
+          <i class="fas fa-language text-zinc-700 text-xl"></i>
+        </button>
+
+        <button
+          class="bg-white border border-zinc-300 text-zinc-800 px-4 py-2 rounded-full hover:shadow-md flex gap-3 items-center justify-center"
+        >
+          <i class="fas fa-bars"></i>
+          <span
+            class="bg-zinc-600 w-6 h-6 rounded-full flex items-center justify-center text-xs text-white"
+          >
+            <i class="fas fa-user text-white"></i>
+          </span>
+        </button>
+      </div>
+    </nav>
+
+    <div class="max-w-7xl mx-auto px-4 pb-8">
+      <div class="flex justify-between items-center mb-8">
+        <h1 class="text-3xl font-bold text-zinc-800">Manage Hotels</h1>
+        <button
+          class="bg-primary text-white px-4 py-2 rounded-lg hover:brightness-90 transition-colors"
+        >
+          + Create Hotel
+        </button>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Hotel Card 1 -->
+        <div class="overflow-hidden cursor-pointer">
+          <div class="relative">
+            <img
+              src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?q=80&w=1980&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Hotel Property"
+              class="w-full h-48 object-cover rounded-md transition-all hover:scale-105"
+            />
+            <div
+              class="absolute top-4 right-4 bg-white/80 px-3 py-1 rounded-full text-sm font-semibold"
+            >
+              <i class="fas fa-star text-yellow-500 mr-1"></i>4.8
+            </div>
+          </div>
+          <div class="p-4">
+            <h2 class="text-lg font-semibold text-zinc-800 mb-2">
+              Cozy Mountain Retreat
+            </h2>
+            <div class="flex justify-between items-center">
+              <span class="text-zinc-600">3 Rooms Available</span>
+              <span class="text-rose-600 font-semibold">$250/night</span>
+            </div>
+            <div class="flex justify-between items-center">
+              <span class="text-zinc-500">Location: Mountain View, CA</span>
+              <div class="space-x-2">
+                <a
+                  href="./create.html"
+                  class="text-blue-500 hover:text-blue-600"
+                >
+                  <i class="fas fa-edit"></i>
+                </a>
+                <button class="text-red-500 hover:text-red-600">
+                  <i class="fas fa-trash"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hotel Card 2 -->
+        <div class="overflow-hidden cursor-pointer">
+          <div class="relative">
+            <img
+              src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?q=80&w=1980&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Hotel Property"
+              class="w-full h-48 object-cover rounded-md transition-all hover:scale-105"
+            />
+            <div
+              class="absolute top-4 right-4 bg-white/80 px-3 py-1 rounded-full text-sm font-semibold"
+            >
+              <i class="fas fa-star text-yellow-500 mr-1"></i>4.5
+            </div>
+          </div>
+          <div class="p-4">
+            <h2 class="text-lg font-semibold text-zinc-800 mb-2">
+              Urban Loft Apartment
+            </h2>
+            <div class="flex justify-between items-center">
+              <span class="text-zinc-600">2 Rooms Available</span>
+              <span class="text-rose-600 font-semibold">$180/night</span>
+            </div>
+            <div class="flex justify-between items-center">
+              <span class="text-zinc-500">Location: San Francisco, CA</span>
+              <div class="space-x-2">
+                <button class="text-blue-500 hover:text-blue-600">
+                  <i class="fas fa-edit"></i>
+                </button>
+                <button class="text-red-500 hover:text-red-600">
+                  <i class="fas fa-trash"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hotel Card 3 -->
+        <div class="overflow-hidden cursor-pointer">
+          <div class="relative">
+            <img
+              src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?q=80&w=1980&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Hotel Property"
+              class="w-full h-48 object-cover rounded-md transition-all hover:scale-105"
+            />
+            <div
+              class="absolute top-4 right-4 bg-white/80 px-3 py-1 rounded-full text-sm font-semibold"
+            >
+              <i class="fas fa-star text-yellow-500 mr-1"></i>4.9
+            </div>
+          </div>
+          <div class="p-4">
+            <h2 class="text-lg font-semibold text-zinc-800 mb-2">
+              Beachfront Villa
+            </h2>
+            <div class="flex justify-between items-center">
+              <span class="text-zinc-600">5 Rooms Available</span>
+              <span class="text-rose-600 font-semibold">$420/night</span>
+            </div>
+            <div class="flex justify-between items-center">
+              <span class="text-zinc-500">Location: Santa Barbara, CA</span>
+              <div class="space-x-2">
+                <button class="text-blue-500 hover:text-blue-600">
+                  <i class="fas fa-edit"></i>
+                </button>
+                <button class="text-red-500 hover:text-red-600">
+                  <i class="fas fa-trash"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

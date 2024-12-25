@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel</title>
+    <link rel="stylesheet" href="./styles/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav
+      class="grid grid-cols-2 md:flex justify-between items-center py-3 bg-white border-b mb-6 md:gap-8 px-4 md:px-8 lg:px-20"
+    >
+      <div class="flex items-center">
+        <a href="./index.html">
+          <img src="./assets/logo.svg" alt="Hotel Logo" class="h-8 w-auto" />
+        </a>
+      </div>
+
+      <div
+        class="row-start-2 col-span-2 border-0 md:border flex shadow-sm hover:shadow-md transition-all md:rounded-full items-center px-2"
+      >
+        <div
+          class="grid md:grid-cols-3 lg:grid-cols-7 gap-4 divide-x py-2 md:px-2 flex-grow"
+        >
+          <input
+            type="text"
+            placeholder="Where to?"
+            class="px-3 bg-transparent focus:outline-none lg:col-span-3 placeholder:text-sm"
+          />
+        </div>
+
+        <button
+          class="bg-primary w-9 h-9 rounded-full grid place-items-center text-sm text-center transition-all hover:brightness-90 shrink-0"
+        >
+          <i class="fas fa-search text-white"></i>
+        </button>
+      </div>
+
+      <div class="flex items-center space-x-4 relative justify-end">
+        <button>
+          <i class="fas fa-language text-zinc-700 text-xl"></i>
+        </button>
+        <button
+          class="bg-white border border-zinc-300 text-zinc-800 px-4 py-2 rounded-full hover:shadow-md flex gap-3 items-center justify-center"
+        >
+          <i class="fas fa-bars"></i>
+          <span
+            class="bg-zinc-600 w-6 h-6 rounded-full flex items-center justify-center text-xs text-white"
+          >
+            <i class="fas fa-user text-white"></i>
+          </span>
+        </button>
+
+        <!-- Popup -->
+        <div
+          class="max-w-48 w-48 bg-white shadow-sm border rounded-md absolute right-0 top-full max-h-fit mt-2 z-50 hidden lg:block"
+        >
+          <ul class="">
+            <a href="./login.html" class="w-full">
+              <li
+                class="px-3 py-2 text-sm text-zinc-700 transition-all hover:bg-zinc-50 hover:text-zinc-800 hover:pl-4"
+              >
+                Login
+              </li>
+            </a>
+
+            <a href="./login.html" class="w-full">
+              <li
+                class="px-3 py-2 text-sm text-zinc-700 transition-all hover:bg-zinc-50 hover:text-zinc-800 hover:pl-4"
+              >
+                Signup
+              </li>
+            </a>
+
+            <a href="#" class="w-full">
+              <li
+                class="px-3 py-2 text-sm text-zinc-700 transition-all hover:bg-zinc-50 hover:text-zinc-800 hover:pl-4"
+              >
+                Help
+              </li>
+            </a>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hotel Listing Section -->
+    <section class="px-6">
+      <div
+        class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"
+      >
+        <a href="details.html" class="block group">
+          <div>
+            <div class="relative">
+              <img
+                src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?q=80&w=1980&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Maldives Paradise"
+                class="w-full h-64 object-cover rounded-xl group-hover:scale-105 transition-transform"
+              />
+              <div
+                class="absolute top-3 right-3 bg-white/80 px-3 py-1 rounded-full text-xs font-semibold"
+              >
+                <i class="ph-bed inline-block mr-1"></i>
+                3 Rooms Left
+              </div>
+            </div>
+            <div class="mt-3">
+              <div class="flex justify-between items-center">
+                <h3 class="font-bold text-lg">Maldives Paradise</h3>
+                <div class="flex items-center">
+                  <svg
+                    class="w-4 h-4 text-yellow-500"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.462a1 1 0 00.95-.69l1.07-3.292z"
+                    />
+                  </svg>
+                  <span class="ml-1 text-zinc-600">4.9</span>
+                </div>
+              </div>
+              <p class="text-zinc-500 text-sm mt-1">Himmafushi, Maldives</p>
+              <div class="mt-2 flex justify-between items-center">
+                <div>
+                  <span class="font-bold">$450</span>
+                  <span class="text-zinc-500 text-sm">per night</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a href="details.html" class="block group">
+          <div>
+            <div class="relative">
+              <img
+                src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?q=80&w=1980&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Maldives Paradise"
+                class="w-full h-64 object-cover rounded-xl group-hover:scale-105 transition-transform"
+              />
+              <div
+                class="absolute top-3 right-3 bg-white/80 px-3 py-1 rounded-full text-xs font-semibold"
+              >
+                <i class="ph-bed inline-block mr-1"></i>
+                3 Rooms Left
+              </div>
+            </div>
+            <div class="mt-3">
+              <div class="flex justify-between items-center">
+                <h3 class="font-bold text-lg">Maldives Paradise</h3>
+                <div class="flex items-center">
+                  <svg
+                    class="w-4 h-4 text-yellow-500"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.462a1 1 0 00.95-.69l1.07-3.292z"
+                    />
+                  </svg>
+                  <span class="ml-1 text-zinc-600">4.9</span>
+                </div>
+              </div>
+              <p class="text-zinc-500 text-sm mt-1">Himmafushi, Maldives</p>
+              <div class="mt-2 flex justify-between items-center">
+                <div>
+                  <span class="font-bold">$450</span>
+                  <span class="text-zinc-500 text-sm">per night</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a href="details.html" class="block group">
+          <div>
+            <div class="relative">
+              <img
+                src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?q=80&w=1980&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Maldives Paradise"
+                class="w-full h-64 object-cover rounded-xl group-hover:scale-105 transition-transform"
+              />
+              <div
+                class="absolute top-3 right-3 bg-white/80 px-3 py-1 rounded-full text-xs font-semibold"
+              >
+                <i class="ph-bed inline-block mr-1"></i>
+                3 Rooms Left
+              </div>
+            </div>
+            <div class="mt-3">
+              <div class="flex justify-between items-center">
+                <h3 class="font-bold text-lg">Maldives Paradise</h3>
+                <div class="flex items-center">
+                  <svg
+                    class="w-4 h-4 text-yellow-500"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.462a1 1 0 00.95-.69l1.07-3.292z"
+                    />
+                  </svg>
+                  <span class="ml-1 text-zinc-600">4.9</span>
+                </div>
+              </div>
+              <p class="text-zinc-500 text-sm mt-1">Himmafushi, Maldives</p>
+              <div class="mt-2 flex justify-between items-center">
+                <div>
+                  <span class="font-bold">$450</span>
+                  <span class="text-zinc-500 text-sm">per night</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a href="details.html" class="block group">
+          <div>
+            <div class="relative">
+              <img
+                src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?q=80&w=1980&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Maldives Paradise"
+                class="w-full h-64 object-cover rounded-xl group-hover:scale-105 transition-transform"
+              />
+              <div
+                class="absolute top-3 right-3 bg-white/80 px-3 py-1 rounded-full text-xs font-semibold"
+              >
+                <i class="ph-bed inline-block mr-1"></i>
+                3 Rooms Left
+              </div>
+            </div>
+            <div class="mt-3">
+              <div class="flex justify-between items-center">
+                <h3 class="font-bold text-lg">Maldives Paradise</h3>
+                <div class="flex items-center">
+                  <svg
+                    class="w-4 h-4 text-yellow-500"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.462a1 1 0 00.95-.69l1.07-3.292z"
+                    />
+                  </svg>
+                  <span class="ml-1 text-zinc-600">4.9</span>
+                </div>
+              </div>
+              <p class="text-zinc-500 text-sm mt-1">Himmafushi, Maldives</p>
+              <div class="mt-2 flex justify-between items-center">
+                <div>
+                  <span class="font-bold">$450</span>
+                  <span class="text-zinc-500 text-sm">per night</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a href="details.html" class="block group">
+          <div>
+            <div class="relative">
+              <img
+                src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?q=80&w=1980&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Maldives Paradise"
+                class="w-full h-64 object-cover rounded-xl group-hover:scale-105 transition-transform"
+              />
+              <div
+                class="absolute top-3 right-3 bg-white/80 px-3 py-1 rounded-full text-xs font-semibold"
+              >
+                <i class="ph-bed inline-block mr-1"></i>
+                3 Rooms Left
+              </div>
+            </div>
+            <div class="mt-3">
+              <div class="flex justify-between items-center">
+                <h3 class="font-bold text-lg">Maldives Paradise</h3>
+                <div class="flex items-center">
+                  <svg
+                    class="w-4 h-4 text-yellow-500"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.462a1 1 0 00.95-.69l1.07-3.292z"
+                    />
+                  </svg>
+                  <span class="ml-1 text-zinc-600">4.9</span>
+                </div>
+              </div>
+              <p class="text-zinc-500 text-sm mt-1">Himmafushi, Maldives</p>
+              <div class="mt-2 flex justify-between items-center">
+                <div>
+                  <span class="font-bold">$450</span>
+                  <span class="text-zinc-500 text-sm">per night</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a href="details.html" class="block group">
+          <div>
+            <div class="relative">
+              <img
+                src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?q=80&w=1980&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Maldives Paradise"
+                class="w-full h-64 object-cover rounded-xl group-hover:scale-105 transition-transform"
+              />
+              <div
+                class="absolute top-3 right-3 bg-white/80 px-3 py-1 rounded-full text-xs font-semibold"
+              >
+                <i class="ph-bed inline-block mr-1"></i>
+                3 Rooms Left
+              </div>
+            </div>
+            <div class="mt-3">
+              <div class="flex justify-between items-center">
+                <h3 class="font-bold text-lg">Maldives Paradise</h3>
+                <div class="flex items-center">
+                  <svg
+                    class="w-4 h-4 text-yellow-500"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.462a1 1 0 00.95-.69l1.07-3.292z"
+                    />
+                  </svg>
+                  <span class="ml-1 text-zinc-600">4.9</span>
+                </div>
+              </div>
+              <p class="text-zinc-500 text-sm mt-1">Himmafushi, Maldives</p>
+              <div class="mt-2 flex justify-between items-center">
+                <div>
+                  <span class="font-bold">$450</span>
+                  <span class="text-zinc-500 text-sm">per night</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <div class="mt-8 flex justify-center">
+      <nav aria-label="Page navigation">
+        <ul class="inline-flex items-center -space-x-px">
+          <li>
+            <a
+              href="#"
+              class="block py-2 px-3 ml-0 leading-tight text-zinc-500 bg-white rounded-l-lg border border-zinc-300 hover:bg-zinc-100 hover:text-zinc-700"
+            >
+              <span class="sr-only">Previous</span>
+              <i class="fas fa-chevron-left"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="py-2 px-3 leading-tight text-zinc-500 bg-white border border-zinc-300 hover:bg-zinc-100 hover:text-zinc-700"
+              >1</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="py-2 px-3 leading-tight text-zinc-500 bg-white border border-zinc-300 hover:bg-zinc-100 hover:text-zinc-700"
+              >2</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="py-2 px-3 leading-tight text-zinc-500 bg-white border border-zinc-300 hover:bg-zinc-100 hover:text-zinc-700"
+              >3</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="block py-2 px-3 leading-tight text-zinc-500 bg-white rounded-r-lg border border-zinc-300 hover:bg-zinc-100 hover:text-zinc-700"
+            >
+              <span class="sr-only">Next</span>
+              <i class="fas fa-chevron-right"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <footer class="mt-12 text-sm text-zinc-500 max-w-7xl mx-auto py-4">
+      <p>© 2024 Learn with Sumit • Terms • Privacy • Your Privacy Choices</p>
+    </footer>
+  </body>
+</html>

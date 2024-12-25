@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment Process</title>
+    <link rel="stylesheet" href="./styles/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body class="bg-gray-50">
+    <!-- Navbar -->
+    <nav
+      class="grid grid-cols-2 md:flex justify-between items-center py-3 bg-white border-b mb-6 md:gap-8 px-4 md:px-8 lg:px-20"
+    >
+      <div class="flex items-center">
+        <a href="./index.html">
+          <img src="./assets/logo.svg" alt="Hotel Logo" class="h-8 w-auto" />
+        </a>
+      </div>
+
+      <div
+        class="row-start-2 col-span-2 border-0 md:border flex shadow-sm hover:shadow-md transition-all md:rounded-full items-center px-2"
+      >
+        <div
+          class="grid md:grid-cols-3 lg:grid-cols-7 gap-4 divide-x py-2 md:px-2 flex-grow"
+        >
+          <input
+            type="text"
+            placeholder="Where to?"
+            class="px-3 bg-transparent focus:outline-none lg:col-span-3 placeholder:text-sm"
+          />
+        </div>
+
+        <button
+          class="bg-primary w-9 h-9 rounded-full grid place-items-center text-sm text-center transition-all hover:brightness-90 shrink-0"
+        >
+          <i class="fas fa-search text-white"></i>
+        </button>
+      </div>
+
+      <div class="flex items-center space-x-4 relative justify-end">
+        <button>
+          <i class="fas fa-language text-zinc-700 text-xl"></i>
+        </button>
+        <button
+          class="bg-white border border-zinc-300 text-zinc-800 px-4 py-2 rounded-full hover:shadow-md flex gap-3 items-center justify-center"
+        >
+          <i class="fas fa-bars"></i>
+          <span
+            class="bg-zinc-600 w-6 h-6 rounded-full flex items-center justify-center text-xs text-white"
+          >
+            <i class="fas fa-user text-white"></i>
+          </span>
+        </button>
+      </div>
+    </nav>
+
+    <div class="max-w-7xl mx-auto px-6 py-8">
+      <!-- Back Button -->
+      <div class="mb-8">
+        <a href="./details.html" class="text-zinc-800 hover:underline">
+          <i class="fas fa-chevron-left mr-2"></i>
+          Request to book
+        </a>
+      </div>
+
+      <!-- Main Content Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <!-- Left Column -->
+        <div>
+          <section class="mb-8">
+            <h2 class="text-xl font-semibold mb-4">Your trip</h2>
+
+            <!-- Dates -->
+            <div class="flex justify-between items-center mb-4">
+              <div>
+                <h3 class="font-medium">Dates</h3>
+                <p class="text-zinc-600 text-sm">Jan 3 - 8, 2025</p>
+              </div>
+              <button class="text-zinc-800 underline text-sm">Edit</button>
+            </div>
+
+            <!-- Guests -->
+            <div class="flex justify-between items-center">
+              <div>
+                <h3 class="font-medium">Guests</h3>
+                <p class="text-zinc-600 text-sm">1 guest</p>
+              </div>
+              <button class="text-zinc-800 underline text-sm">Edit</button>
+            </div>
+          </section>
+
+          <!-- Payment Section -->
+          <section class="mb-8">
+            <h2 class="text-xl font-semibold mb-4">
+              Pay with American Express
+            </h2>
+            <div class="space-y-4">
+              <input
+                type="text"
+                placeholder="Card number"
+                class="w-full p-3 border rounded-lg"
+              />
+
+              <div class="grid grid-cols-2 gap-4">
+                <input
+                  type="text"
+                  placeholder="Expiration"
+                  class="p-3 border rounded-lg"
+                />
+                <input
+                  type="text"
+                  placeholder="CVV"
+                  class="p-3 border rounded-lg"
+                />
+              </div>
+            </div>
+          </section>
+
+          <!-- Billing Address -->
+          <section class="mb-8">
+            <h2 class="text-xl font-semibold mb-4">Billing address</h2>
+            <div class="space-y-4">
+              <input
+                type="text"
+                placeholder="Street address"
+                class="w-full p-3 border rounded-lg"
+              />
+              <input
+                type="text"
+                placeholder="Apt or suite number"
+                class="w-full p-3 border rounded-lg"
+              />
+              <input
+                type="text"
+                placeholder="City"
+                class="w-full p-3 border rounded-lg"
+              />
+              <div class="grid grid-cols-2 gap-4">
+                <input
+                  type="text"
+                  placeholder="State"
+                  class="p-3 border rounded-lg"
+                />
+                <input
+                  type="text"
+                  placeholder="ZIP code"
+                  class="p-3 border rounded-lg"
+                />
+              </div>
+            </div>
+          </section>
+
+          <!-- Book Button -->
+          <a
+            href="./success.html"
+            class="w-full block text-center bg-primary text-white py-3 rounded-lg mt-6 hover:brightness-90"
+          >
+            Request to book
+          </a>
+        </div>
+
+        <!-- Right Column -->
+        <div>
+          <!-- Price Details Card -->
+          <div class="bg-white p-6 rounded-lg shadow-sm mb-8 sticky top-0">
+            <div class="flex items-start gap-4 mb-6">
+              <img
+                src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?q=80&w=1980&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Property"
+                class="w-20 h-20 rounded-lg object-cover"
+              />
+              <div>
+                <p class="text-sm">
+                  One room and one living room with a straight sea view, 1.8m
+                  queen...
+                </p>
+                <div class="flex items-center">
+                  <i class="fas fa-star text-sm mr-1"></i>
+                  <span class="text-xs mt-1 text-zinc-500"
+                    >5.00 (3 Reviews)</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="border-t pt-4">
+              <h3 class="font-semibold mb-4">Price details</h3>
+              <div class="space-y-3">
+                <div class="flex justify-between">
+                  <span>$59.08 x 5 nights</span>
+                  <span>$295.39</span>
+                </div>
+                <div class="flex justify-between">
+                  <span>Cleaning fee</span>
+                  <span>$17.50</span>
+                </div>
+                <div class="flex justify-between">
+                  <span>Service fee</span>
+                  <span>$51.31</span>
+                </div>
+                <div class="flex justify-between font-semibold pt-3 border-t">
+                  <span>Total (USD)</span>
+                  <span>$364.20</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="mt-12 text-sm text-zinc-500 max-w-7xl mx-auto py-4">
+      <p>© 2024 Learn with Sumit • Terms • Privacy • Your Privacy Choices</p>
+    </footer>
+  </body>
+</html>

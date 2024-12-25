@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Bookings</title>
+    <link rel="stylesheet" href="./styles/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body class="bg-gray-50 text-gray-900 font-sans">
+    <nav
+      class="grid grid-cols-2 md:flex justify-between items-center py-3 bg-white border-b mb-6 md:gap-8 px-4 md:px-8 lg:px-20"
+    >
+      <div class="flex items-center">
+        <a href="./index.html">
+          <img src="./assets/logo.svg" alt="Hotel Logo" class="h-8 w-auto" />
+        </a>
+      </div>
+
+      <div
+        class="row-start-2 col-span-2 border-0 md:border flex shadow-sm hover:shadow-md transition-all md:rounded-full items-center px-2"
+      >
+        <div
+          class="grid md:grid-cols-3 lg:grid-cols-7 gap-4 divide-x py-2 md:px-2 flex-grow"
+        >
+          <input
+            type="text"
+            placeholder="Where to?"
+            class="px-3 bg-transparent focus:outline-none lg:col-span-3 placeholder:text-sm"
+          />
+        </div>
+
+        <button
+          class="bg-primary w-9 h-9 rounded-full grid place-items-center text-sm text-center transition-all hover:brightness-90 shrink-0"
+        >
+          <i class="fas fa-search text-white"></i>
+        </button>
+      </div>
+
+      <div class="flex items-center space-x-4 relative justify-end">
+        <button>
+          <i class="fas fa-language text-zinc-700 text-xl"></i>
+        </button>
+        <button
+          class="bg-white border border-zinc-300 text-zinc-800 px-4 py-2 rounded-full hover:shadow-md flex gap-3 items-center justify-center"
+        >
+          <i class="fas fa-bars"></i>
+          <span
+            class="bg-zinc-600 w-6 h-6 rounded-full flex items-center justify-center text-xs text-white"
+          >
+            <i class="fas fa-user text-white"></i>
+          </span>
+        </button>
+      </div>
+    </nav>
+
+    <div class="max-w-4xl mx-auto px-4 py-8">
+      <h1 class="text-3xl font-bold mb-6">My Bookings</h1>
+
+      <div class="space-y-4">
+        <!-- Booking Item 1 -->
+        <div
+          class="bg-white shadow-md rounded-lg p-4 flex items-center justify-between hover:shadow-lg transition-shadow"
+        >
+          <div class="flex items-center space-x-4">
+            <img
+              src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?q=80&w=1980&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Property Thumbnail"
+              class="w-24 h-24 object-cover rounded-md"
+            />
+            <div>
+              <h2 class="text-lg text-zinc-800 font-semibold">
+                Cozy Mountain Cabin
+              </h2>
+              <p class="text-zinc-500 text-sm">Booking Date: June 15, 2024</p>
+              <p class="text-zinc-500 text-sm">Booking Code: #AB12345</p>
+            </div>
+          </div>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <button
+              class="px-3 py-2 text-sm bg-primary text-white rounded-lg hover:brightness-90"
+            >
+              View Trip Details
+            </button>
+            <button
+              class="px-3 py-2 text-sm border border-gray-300 rounded-lg hover:bg-gray-50"
+            >
+              <i class="fas fa-download mr-2"></i>
+              Download Receipt
+            </button>
+          </div>
+        </div>
+
+        <!-- Booking Item 2 -->
+        <div
+          class="bg-white shadow-md rounded-lg p-4 flex items-center justify-between hover:shadow-lg transition-shadow"
+        >
+          <div class="flex items-center space-x-4">
+            <img
+              src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?q=80&w=1980&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Property Thumbnail"
+              class="w-24 h-24 object-cover rounded-md"
+            />
+            <div>
+              <h2 class="text-lg text-zinc-800 font-semibold">
+                Beachfront Apartment
+              </h2>
+              <p class="text-zinc-500 text-sm">Booking Date: July 20, 2024</p>
+              <p class="text-zinc-500 text-sm">Booking Code: #CD67890</p>
+            </div>
+          </div>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <button
+              class="px-3 py-2 text-sm bg-primary text-white rounded-lg hover:brightness-90"
+            >
+              View Trip Details
+            </button>
+            <button
+              class="px-3 py-2 text-sm border border-gray-300 rounded-lg hover:bg-gray-50"
+            >
+              <i class="fas fa-download mr-2"></i>
+              Download Receipt
+            </button>
+          </div>
+        </div>
+
+        <!-- Booking Item 3 -->
+        <div
+          class="bg-white shadow-md rounded-lg p-4 flex items-center justify-between hover:shadow-lg transition-shadow"
+        >
+          <div class="flex items-center space-x-4">
+            <img
+              src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?q=80&w=1980&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Property Thumbnail"
+              class="w-24 h-24 object-cover rounded-md"
+            />
+            <div>
+              <h2 class="text-lg text-zinc-800 font-semibold">
+                Urban Loft Downtown
+              </h2>
+              <p class="text-zinc-500 text-sm">Booking Date: August 5, 2024</p>
+              <p class="text-zinc-500 text-sm">Booking Code: #EF54321</p>
+            </div>
+          </div>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <button
+              class="px-3 py-2 text-sm bg-primary text-white rounded-lg hover:brightness-90"
+            >
+              View Trip Details
+            </button>
+            <button
+              class="px-3 py-2 text-sm border border-gray-300 rounded-lg hover:bg-gray-50"
+            >
+              <i class="fas fa-download mr-2"></i>
+              Download Receipt
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Empty State (Optional) -->
+      <div id="empty-state" class="hidden text-center py-12">
+        <img
+          src="./no-bookings-icon.svg"
+          alt="No Bookings"
+          class="mx-auto mb-4 w-32 h-32"
+        />
+        <h2 class="text-2xl font-semibold text-gray-800 mb-2">
+          No Bookings Yet
+        </h2>
+        <p class="text-zinc-500 text-sm">
+          You haven't made any bookings. Start exploring amazing stays!
+        </p>
+      </div>
+    </div>
+
+    <script>
+      // Optional: Add logic to show empty state when no bookings
+      function checkBookings() {
+        const bookingsContainer = document.querySelector(
+          '[class*="space-y-4"]'
+        );
+        const emptyState = document.getElementById("empty-state");
+
+        if (bookingsContainer.children.length === 0) {
+          emptyState.classList.remove("hidden");
+        }
+      }
+      checkBookings();
+    </script>
+  </body>
+</html>

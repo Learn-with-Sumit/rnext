@@ -11,7 +11,7 @@ export default function App() {
             return {
                 id,
                 name: "Sumit Saha",
-                image: "https://via.placeholder.com/40",
+                image: "https://placehold.co/40",
                 text: loremIpsum({
                     count: 1,
                     units: "sentences",

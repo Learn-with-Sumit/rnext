@@ -1,0 +1,734 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Paris Trip Planner - 4 Day Escape</title>
+
+        <!-- Fonts: Inter for that clean Stripe/Vercel look -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossorigin=""
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Tailwind CSS v4 via CDN -->
+        <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+        <!-- Lucide Icons -->
+        <script src="https://unpkg.com/lucide@latest"></script>
+
+        <style>
+            body {
+                font-family: "Inter", sans-serif;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+            }
+            /* Custom scrollbar to maintain slick feel */
+            ::-webkit-scrollbar {
+                width: 8px;
+            }
+            ::-webkit-scrollbar-track {
+                background: #f1f5f9;
+            }
+            ::-webkit-scrollbar-thumb {
+                background: #cbd5e1;
+                border-radius: 4px;
+            }
+            ::-webkit-scrollbar-thumb:hover {
+                background: #94a3b8;
+            }
+        </style>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body
+        class="bg-white text-slate-600 antialiased selection:bg-emerald-100 selection:text-emerald-900"
+    >
+        <!-- Navbar (Overlay) -->
+        <nav
+            class="absolute top-0 left-0 right-0 z-50 w-full py-6 px-6 lg:px-12 flex justify-between items-center text-white"
+        >
+            <a href="./index.html">
+                <div class="flex items-center gap-2">
+                    <i data-lucide="map" class="w-6 h-6"></i>
+                    <span class="text-lg font-medium tracking-tight"
+                        >Wanderlust</span
+                    >
+                </div>
+            </a>
+
+            <div class="flex items-center gap-4">
+                <button
+                    class="bg-white text-emerald-950 text-sm font-medium px-5 py-2 rounded-full hover:bg-emerald-50 transition-colors flex items-center gap-2"
+                >
+                    <i data-lucide="share-2" class="w-4 h-4"></i>
+                    Share
+                </button>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <header
+            class="relative w-full h-[85vh] min-h-[600px] overflow-hidden group"
+        >
+            <!-- Background Image -->
+            <img
+                src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?q=80&amp;w=2679&amp;auto=format&amp;fit=crop"
+                alt="Paris Landscape"
+                class="absolute inset-0 w-full h-full object-cover transform scale-105 group-hover:scale-100 ease-in-out duration-700"
+            />
+
+            <!-- Gradient Overlay -->
+            <div
+                class="absolute inset-0 bg-gradient-to-t from-emerald-950/90 via-emerald-950/20 to-black/30"
+            ></div>
+
+            <!-- Hero Content -->
+            <div
+                class="absolute bottom-0 left-0 w-full p-8 lg:p-16 flex flex-col items-start gap-6 max-w-4xl"
+            >
+                <div
+                    class="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm px-4 py-1.5 rounded-full text-white text-sm font-medium drop-shadow-lg"
+                >
+                    <i data-lucide="clock" class="w-3.5 h-3.5"></i>
+                    <span>4 Days</span>
+                </div>
+
+                <h1
+                    class="text-5xl md:text-6xl lg:text-7xl drop-shadow-lg font-medium text-white tracking-tight leading-[1.1]"
+                >
+                    Paris: The Ultimate <br />
+                    <span class="text-emerald-400">City of Lights</span>
+                </h1>
+
+                <p
+                    class="text-lg text-gray-50 max-w-2xl drop-shadow-lg font-normal leading-relaxed"
+                >
+                    Experience the romance, history, and flavor of the French
+                    capital. From the heights of the Eiffel Tower to the
+                    artistic streets of Montmartre.
+                </p>
+            </div>
+        </header>
+
+        <!-- Introduction / Highlights & Tips -->
+        <section class="py-20 lg:py-32 px-6 lg:px-16 max-w-7xl mx-auto">
+            <div
+                class="flex flex-col lg:flex-row justify-between items-start gap-12 mb-20"
+            >
+                <div class="max-w-2xl">
+                    <span
+                        class="text-emerald-600 font-medium tracking-wide uppercase text-xs mb-3 block"
+                        >Destination Highlights</span
+                    >
+                    <h2
+                        class="text-4xl lg:text-5xl font-medium text-slate-900 tracking-tight mb-6"
+                    >
+                        Essentials for your <br />Parisian Journey
+                    </h2>
+                    <p class="text-xl text-slate-500 leading-relaxed">
+                        We've curated the must-see landmarks, crucial travel
+                        tips, and culinary experiences into one seamless plan.
+                        Don't just visit Paris—live it.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Grid Features (Mapped from Attractions, Tips, Food) -->
+            <div
+                class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16"
+            >
+                <!-- Feature 1: Key Attraction -->
+                <div class="group">
+                    <div
+                        class="w-12 h-12 flex items-center justify-center rounded-2xl bg-emerald-50 mb-6 group-hover:bg-emerald-100 transition-colors"
+                    >
+                        <i
+                            data-lucide="tower-control"
+                            class="text-emerald-600 w-6 h-6"
+                        ></i>
+                    </div>
+                    <div class="flex items-center justify-between mb-3">
+                        <h3
+                            class="text-xl font-medium text-slate-900 tracking-tight"
+                        >
+                            Eiffel Tower
+                        </h3>
+                        <span
+                            class="text-xs font-semibold bg-emerald-100 text-emerald-800 px-2 py-1 rounded"
+                            >4.8 ★</span
+                        >
+                    </div>
+                    <p class="text-lg text-slate-500 leading-relaxed">
+                        The iron lady of Paris. Pre-book tickets to save waiting
+                        time and catch the sparkling lights at the top of every
+                        hour.
+                    </p>
+                </div>
+
+                <!-- Feature 2: Key Attraction -->
+                <div class="group">
+                    <div
+                        class="w-12 h-12 flex items-center justify-center rounded-2xl bg-orange-50 mb-6 group-hover:bg-orange-100 transition-colors"
+                    >
+                        <i
+                            data-lucide="frame"
+                            class="text-orange-500 w-6 h-6"
+                        ></i>
+                    </div>
+                    <div class="flex items-center justify-between mb-3">
+                        <h3
+                            class="text-xl font-medium text-slate-900 tracking-tight"
+                        >
+                            The Louvre
+                        </h3>
+                        <span
+                            class="text-xs font-semibold bg-orange-100 text-orange-800 px-2 py-1 rounded"
+                            >4.9 ★</span
+                        >
+                    </div>
+                    <p class="text-lg text-slate-500 leading-relaxed">
+                        Home to the Mona Lisa. Expert tip: Enter through the
+                        Carrousel du Louvre underground entrance to avoid the
+                        main pyramid lines.
+                    </p>
+                </div>
+
+                <!-- Feature 3: Key Attraction -->
+                <div class="group">
+                    <div
+                        class="w-12 h-12 flex items-center justify-center rounded-2xl bg-blue-50 mb-6 group-hover:bg-blue-100 transition-colors"
+                    >
+                        <i
+                            data-lucide="crown"
+                            class="text-blue-500 w-6 h-6"
+                        ></i>
+                    </div>
+                    <div class="flex items-center justify-between mb-3">
+                        <h3
+                            class="text-xl font-medium text-slate-900 tracking-tight"
+                        >
+                            Versailles
+                        </h3>
+                        <span
+                            class="text-xs font-semibold bg-blue-100 text-blue-800 px-2 py-1 rounded"
+                            >4.7 ★</span
+                        >
+                    </div>
+                    <p class="text-lg text-slate-500 leading-relaxed">
+                        A royal masterpiece. Explore the Hall of Mirrors and
+                        rent a bike to traverse the massive, perfectly manicured
+                        gardens.
+                    </p>
+                </div>
+
+                <!-- Feature 4: Food Experience -->
+                <div class="group">
+                    <div
+                        class="w-12 h-12 flex items-center justify-center rounded-2xl bg-purple-50 mb-6 group-hover:bg-purple-100 transition-colors"
+                    >
+                        <i
+                            data-lucide="croissant"
+                            class="text-purple-500 w-6 h-6"
+                        ></i>
+                    </div>
+                    <h3
+                        class="text-xl font-medium text-slate-900 mb-3 tracking-tight"
+                    >
+                        Gastronomy
+                    </h3>
+                    <p class="text-lg text-slate-500 leading-relaxed">
+                        Must try: Duck Confit, Crème Brûlée, and Pain au
+                        Chocolat. Best areas: Le Marais and Latin Quarter. Look
+                        for 'Formule' lunch menus.
+                    </p>
+                </div>
+
+                <!-- Feature 5: Travel Tips -->
+                <div class="group">
+                    <div
+                        class="w-12 h-12 flex items-center justify-center rounded-2xl bg-yellow-50 mb-6 group-hover:bg-yellow-100 transition-colors"
+                    >
+                        <i
+                            data-lucide="lightbulb"
+                            class="text-yellow-600 w-6 h-6"
+                        ></i>
+                    </div>
+                    <h3
+                        class="text-xl font-medium text-slate-900 mb-3 tracking-tight"
+                    >
+                        Smart Travel
+                    </h3>
+                    <p class="text-lg text-slate-500 leading-relaxed">
+                        Buy a 'Paris Visite' pass for Metro. Always say
+                        "Bonjour" when entering shops. Be cautious of bracelet
+                        scams near Sacré-Cœur.
+                    </p>
+                </div>
+
+                <!-- Feature 6: Budget -->
+                <div class="group">
+                    <div
+                        class="w-12 h-12 flex items-center justify-center rounded-2xl bg-rose-50 mb-6 group-hover:bg-rose-100 transition-colors"
+                    >
+                        <i
+                            data-lucide="wallet"
+                            class="text-rose-500 w-6 h-6"
+                        ></i>
+                    </div>
+                    <h3
+                        class="text-xl font-medium text-slate-900 mb-3 tracking-tight"
+                    >
+                        Budget Estimate
+                    </h3>
+                    <p class="text-lg text-slate-500 leading-relaxed">
+                        <span class="font-semibold text-slate-900"
+                            >€500 - €800</span
+                        >
+                        per person. Covers moderate meals, transport, and entry
+                        tickets (excluding flights/hotels).
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dark Section: Itinerary Highlights -->
+        <section class="bg-emerald-950 py-24 px-6 lg:px-16 overflow-hidden">
+            <div class="max-w-7xl mx-auto">
+                <div
+                    class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6"
+                >
+                    <div>
+                        <span
+                            class="text-emerald-400 font-medium tracking-wide uppercase text-xs mb-3 block"
+                            >Travel Plan</span
+                        >
+                        <h2
+                            class="text-4xl lg:text-5xl font-medium text-white tracking-tight"
+                        >
+                            Your 4-Day <br />Parisian Itinerary
+                        </h2>
+                    </div>
+                </div>
+
+                <!-- Cards Container (2x2 Grid for 4 Days) -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Day 1 Card -->
+                    <div
+                        class="group relative rounded-3xl overflow-hidden bg-emerald-900/50 border border-emerald-800/50 hover:border-emerald-700 transition-all duration-300"
+                    >
+                        <div class="aspect-[16/9] w-full overflow-hidden">
+                            <img
+                                src="https://images.unsplash.com/photo-1592680105872-50fafe39a5e1?q=80&w=2076&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="Eiffel Tower"
+                                class="w-full h-full object-cover group-hover:scale-105 duration-700 opacity-90"
+                            />
+                        </div>
+
+                        <div class="p-8">
+                            <h3
+                                class="text-2xl font-medium text-white mb-4 tracking-tight"
+                            >
+                                Day 01: Landmarks &amp; River
+                            </h3>
+
+                            <!-- Timeline -->
+                            <div class="space-y-4 mb-6">
+                                <div class="flex gap-4">
+                                    <span
+                                        class="text-emerald-400 font-mono text-sm w-16 pt-0.5 whitespace-nowrap whitespace-nowrap"
+                                        >09:00 AM</span
+                                    >
+                                    <div>
+                                        <p
+                                            class="text-white text-sm font-medium"
+                                        >
+                                            Eiffel Tower Summit
+                                        </p>
+                                        <p class="text-emerald-200/60 text-xs">
+                                            Pre-book tickets to save 2h waiting
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="flex gap-4">
+                                    <span
+                                        class="text-emerald-400 font-mono text-sm w-16 pt-0.5 whitespace-nowrap"
+                                        >01:00 PM</span
+                                    >
+                                    <div>
+                                        <p
+                                            class="text-white text-sm font-medium"
+                                        >
+                                            Lunch at Champ de Mars
+                                        </p>
+                                        <p class="text-emerald-200/60 text-xs">
+                                            Grab a baguette &amp; cheese for a
+                                            picnic
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="flex gap-4">
+                                    <span
+                                        class="text-emerald-400 font-mono text-sm w-16 pt-0.5 whitespace-nowrap"
+                                        >04:00 PM</span
+                                    >
+                                    <div>
+                                        <p
+                                            class="text-white text-sm font-medium"
+                                        >
+                                            Seine River Cruise
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Day 2 Card -->
+                    <div
+                        class="group relative rounded-3xl overflow-hidden bg-emerald-900/50 border border-emerald-800/50 hover:border-emerald-700 transition-all duration-300"
+                    >
+                        <div class="aspect-[16/9] w-full overflow-hidden">
+                            <img
+                                src="https://images.unsplash.com/photo-1697397571919-714081e8684a?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="Louvre Museum"
+                                class="w-full h-full object-cover group-hover:scale-105 duration-700 opacity-90"
+                            />
+                        </div>
+
+                        <div class="p-8">
+                            <h3
+                                class="text-2xl font-medium text-white mb-4 tracking-tight"
+                            >
+                                Day 02: Artistic Immersion
+                            </h3>
+
+                            <div class="space-y-4 mb-6">
+                                <div class="flex gap-4">
+                                    <span
+                                        class="text-emerald-400 font-mono text-sm w-16 pt-0.5 whitespace-nowrap"
+                                        >10:00 AM</span
+                                    >
+                                    <div>
+                                        <p
+                                            class="text-white text-sm font-medium"
+                                        >
+                                            Louvre Museum
+                                        </p>
+                                        <p class="text-emerald-200/60 text-xs">
+                                            Enter via Carrousel du Louvre
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="flex gap-4">
+                                    <span
+                                        class="text-emerald-400 font-mono text-sm w-16 pt-0.5 whitespace-nowrap"
+                                        >03:00 PM</span
+                                    >
+                                    <div>
+                                        <p
+                                            class="text-white text-sm font-medium"
+                                        >
+                                            Tuileries Garden Walk
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="flex gap-4">
+                                    <span
+                                        class="text-emerald-400 font-mono text-sm w-16 pt-0.5 whitespace-nowrap"
+                                        >07:00 PM</span
+                                    >
+                                    <div>
+                                        <p
+                                            class="text-white text-sm font-medium"
+                                        >
+                                            Dinner: Saint-Germain
+                                        </p>
+                                        <p class="text-emerald-200/60 text-xs">
+                                            Historic literary cafes
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Day 3 Card -->
+                    <div
+                        class="group relative rounded-3xl overflow-hidden bg-emerald-900/50 border border-emerald-800/50 hover:border-emerald-700 transition-all duration-300"
+                    >
+                        <div class="aspect-[16/9] w-full overflow-hidden">
+                            <img
+                                src="https://images.unsplash.com/photo-1610379957144-8809927428e4?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="Montmartre"
+                                class="w-full h-full object-cover group-hover:scale-105 duration-700 opacity-90"
+                            />
+                        </div>
+
+                        <div class="p-8">
+                            <h3
+                                class="text-2xl font-medium text-white mb-4 tracking-tight"
+                            >
+                                Day 03: Bohemian Vibe
+                            </h3>
+
+                            <div class="space-y-4 mb-6">
+                                <div class="flex gap-4">
+                                    <span
+                                        class="text-emerald-400 font-mono text-sm w-16 pt-0.5 whitespace-nowrap"
+                                        >09:00 AM</span
+                                    >
+                                    <div>
+                                        <p
+                                            class="text-white text-sm font-medium"
+                                        >
+                                            Montmartre &amp; Sacré-Cœur
+                                        </p>
+                                        <p class="text-emerald-200/60 text-xs">
+                                            See local artists at Place du Tertre
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="flex gap-4">
+                                    <span
+                                        class="text-emerald-400 font-mono text-sm w-16 pt-0.5 whitespace-nowrap"
+                                        >01:00 PM</span
+                                    >
+                                    <div>
+                                        <p
+                                            class="text-white text-sm font-medium"
+                                        >
+                                            Le Marais District
+                                        </p>
+                                        <p class="text-emerald-200/60 text-xs">
+                                            Vintage shopping &amp; falafel
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="flex gap-4">
+                                    <span
+                                        class="text-emerald-400 font-mono text-sm w-16 pt-0.5 whitespace-nowrap"
+                                        >08:00 PM</span
+                                    >
+                                    <div>
+                                        <p
+                                            class="text-white text-sm font-medium"
+                                        >
+                                            Moulin Rouge Show
+                                        </p>
+                                        <p class="text-emerald-200/60 text-xs">
+                                            Book months in advance
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Day 4 Card -->
+                    <div
+                        class="group relative rounded-3xl overflow-hidden bg-emerald-900/50 border border-emerald-800/50 hover:border-emerald-700 transition-all duration-300"
+                    >
+                        <div class="aspect-[16/9] w-full overflow-hidden">
+                            <img
+                                src="https://images.unsplash.com/photo-1706192878987-f893eb8cd632?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="Versailles"
+                                class="w-full h-full object-cover group-hover:scale-105 duration-700 opacity-90"
+                            />
+                        </div>
+
+                        <div class="p-8">
+                            <h3
+                                class="text-2xl font-medium text-white mb-4 tracking-tight"
+                            >
+                                Day 04: Palatial Grandeur
+                            </h3>
+
+                            <div class="space-y-4 mb-6">
+                                <div class="flex gap-4">
+                                    <span
+                                        class="text-emerald-400 font-mono text-sm w-16 pt-0.5 whitespace-nowrap"
+                                        >09:00 AM</span
+                                    >
+                                    <div>
+                                        <p
+                                            class="text-white text-sm font-medium"
+                                        >
+                                            Palace of Versailles
+                                        </p>
+                                        <p class="text-emerald-200/60 text-xs">
+                                            RER C train from central
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="flex gap-4">
+                                    <span
+                                        class="text-emerald-400 font-mono text-sm w-16 pt-0.5 whitespace-nowrap"
+                                        >02:00 PM</span
+                                    >
+                                    <div>
+                                        <p
+                                            class="text-white text-sm font-medium"
+                                        >
+                                            Gardens &amp; Grand Trianon
+                                        </p>
+                                        <p class="text-emerald-200/60 text-xs">
+                                            Rent a bike to explore
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="flex gap-4">
+                                    <span
+                                        class="text-emerald-400 font-mono text-sm w-16 pt-0.5 whitespace-nowrap"
+                                        >06:00 PM</span
+                                    >
+                                    <div>
+                                        <p
+                                            class="text-white text-sm font-medium"
+                                        >
+                                            Farewell: Latin Quarter
+                                        </p>
+                                        <p class="text-emerald-200/60 text-xs">
+                                            Try traditional Onion Soup
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer
+            class="bg-white pt-24 pb-12 px-6 lg:px-16 border-t border-slate-100"
+        >
+            <div
+                class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start gap-12"
+            >
+                <div class="max-w-sm">
+                    <div class="flex items-center gap-2 mb-6 text-slate-900">
+                        <i data-lucide="map" class="w-6 h-6"></i>
+                        <span class="text-lg font-medium tracking-tight"
+                            >Wanderlust</span
+                        >
+                    </div>
+                    <p class="text-lg text-slate-500 mb-8">
+                        Curating the world's best quick escapes. Plan less, live
+                        more.
+                    </p>
+                    <div class="flex gap-4">
+                        <i
+                            data-lucide="instagram"
+                            class="w-6 h-6 text-slate-400 hover:text-slate-900 cursor-pointer transition-colors"
+                        ></i>
+                        <i
+                            data-lucide="twitter"
+                            class="w-6 h-6 text-slate-400 hover:text-slate-900 cursor-pointer transition-colors"
+                        ></i>
+                        <i
+                            data-lucide="facebook"
+                            class="w-6 h-6 text-slate-400 hover:text-slate-900 cursor-pointer transition-colors"
+                        ></i>
+                    </div>
+                </div>
+
+                <div class="flex gap-16 flex-wrap">
+                    <div>
+                        <h4 class="text-slate-900 font-medium mb-4">Company</h4>
+                        <ul class="space-y-3 text-lg text-slate-500">
+                            <li>
+                                <a
+                                    href="#"
+                                    class="hover:text-emerald-600 transition-colors"
+                                    >About</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="#"
+                                    class="hover:text-emerald-600 transition-colors"
+                                    >Careers</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="#"
+                                    class="hover:text-emerald-600 transition-colors"
+                                    >Press</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-slate-900 font-medium mb-4">
+                            Resources
+                        </h4>
+                        <ul class="space-y-3 text-lg text-slate-500">
+                            <li>
+                                <a
+                                    href="#"
+                                    class="hover:text-emerald-600 transition-colors"
+                                    >Destinations</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="#"
+                                    class="hover:text-emerald-600 transition-colors"
+                                    >Travel Guides</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="#"
+                                    class="hover:text-emerald-600 transition-colors"
+                                    >Support</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-slate-900 font-medium mb-4">Legal</h4>
+                        <ul class="space-y-3 text-lg text-slate-500">
+                            <li>
+                                <a
+                                    href="#"
+                                    class="hover:text-emerald-600 transition-colors"
+                                    >Privacy</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="#"
+                                    class="hover:text-emerald-600 transition-colors"
+                                    >Terms</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="max-w-7xl mx-auto mt-16 pt-8 border-t border-slate-100 flex justify-between text-slate-400 text-sm"
+            >
+                <p>© 2024 Wanderlust Inc. All rights reserved.</p>
+            </div>
+        </footer>
+
+        <!-- Initialize Lucide Icons -->
+        <script>
+            lucide.createIcons({
+                attrs: {
+                    class: "",
+                    "stroke-width": 1.5,
+                },
+            });
+        </script>
+    </body>
+</html>

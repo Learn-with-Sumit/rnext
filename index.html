@@ -1,0 +1,298 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Wanderlust - AI Trip Planner</title>
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossorigin=""
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Tailwind CSS v4 via CDN -->
+        <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+        <!-- Lucide Icons -->
+        <script src="https://unpkg.com/lucide@latest"></script>
+
+        <style>
+            body {
+                font-family: "Inter", sans-serif;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+            }
+            /* Hide scrollbar for clean look in cards if needed */
+            .no-scrollbar::-webkit-scrollbar {
+                display: none;
+            }
+            .no-scrollbar {
+                -ms-overflow-style: none;
+                scrollbar-width: none;
+            }
+        </style>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body
+        class="bg-white text-slate-600 antialiased selection:bg-emerald-100 selection:text-emerald-900 relative"
+    >
+        <!-- Background Decoration (Subtle Mesh) -->
+        <div
+            class="fixed inset-0 -z-10 h-full w-full bg-white [background:radial-gradient(125%_125%_at_50%_10%,#fff_40%,#ecfdf5_100%)]"
+        ></div>
+
+        <!-- Minimal Navbar -->
+        <nav
+            class="absolute top-0 left-0 right-0 z-50 w-full py-6 px-6 lg:px-12 flex justify-between items-center"
+        >
+            <div class="flex items-center gap-2 text-slate-900">
+                <i data-lucide="map" class="w-6 h-6 text-emerald-600"></i>
+                <span class="text-lg font-medium tracking-tight"
+                    >Wanderlust</span
+                >
+            </div>
+        </nav>
+
+        <!-- Main Container -->
+        <main
+            class="min-h-screen flex flex-col items-center justify-center px-4 pt-20 pb-12 relative w-full max-w-7xl mx-auto"
+        >
+            <!-- Hero Text -->
+            <div
+                class="text-center mb-10 space-y-4 max-w-2xl mx-auto animate-fade-in-up"
+            >
+                <div
+                    class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-50 border border-emerald-100 text-emerald-700 text-xs font-medium mb-2"
+                >
+                    <i data-lucide="sparkles" class="w-3 h-3"></i>
+                    <span>AI-Powered Itineraries</span>
+                </div>
+                <h1
+                    class="text-4xl md:text-5xl lg:text-6xl font-medium text-slate-900 tracking-tight leading-[1.1]"
+                >
+                    Where do you want to <br />
+                    go next?
+                </h1>
+                <p class="text-lg text-slate-500 font-normal">
+                    Describe your dream trip. We'll handle the logistics,
+                    hotels, and hidden gems.
+                </p>
+            </div>
+
+            <!-- AI Prompt Field -->
+            <div class="w-full max-w-3xl mb-24 relative group z-20">
+                <!-- Glow Effect -->
+                <div
+                    class="absolute -inset-1 bg-gradient-to-r from-emerald-100 via-teal-100 to-emerald-100 rounded-2xl blur opacity-40 group-hover:opacity-75 transition duration-500"
+                ></div>
+
+                <div
+                    class="relative bg-white rounded-2xl shadow-xl shadow-slate-200/50 border border-slate-200 flex items-start p-3 transition-all focus-within:ring-2 focus-within:ring-emerald-500/20 focus-within:border-emerald-500"
+                >
+                    <div class="p-4 pt-5">
+                        <i
+                            data-lucide="bot"
+                            class="w-7 h-7 text-emerald-600"
+                        ></i>
+                    </div>
+                    <textarea
+                        class="w-full bg-transparent border-none focus:ring-0 focus:outline-none text-lg text-slate-900 placeholder:text-slate-400 py-4 px-3 resize-none h-[140px] leading-relaxed"
+                        placeholder="e.g. A romantic 4-day trip to Paris in Spring, focusing on art museums and hidden cafes..."
+                    ></textarea>
+                    <div class="p-2 pt-3">
+                        <a href="./plan.html">
+                            <button
+                                class="bg-slate-900 text-white p-3.5 rounded-xl hover:bg-emerald-600 transition-all duration-300 shadow-md group-focus-within:bg-emerald-600 hover:shadow-lg"
+                            >
+                                <i
+                                    data-lucide="arrow-right"
+                                    class="w-6 h-6"
+                                ></i>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Suggestion Tags -->
+                <div
+                    class="flex justify-center gap-3 mt-4 text-xs font-medium text-slate-500"
+                >
+                    <span
+                        class="hover:text-emerald-600 cursor-pointer transition-colors"
+                        >✨ 3 Days in Tokyo</span
+                    >
+                    <span class="w-1 h-1 bg-slate-300 rounded-full mt-2"></span>
+                    <span
+                        class="hover:text-emerald-600 cursor-pointer transition-colors"
+                        >🍷 Wine tasting in Tuscany</span
+                    >
+                    <span class="w-1 h-1 bg-slate-300 rounded-full mt-2"></span>
+                    <span
+                        class="hover:text-emerald-600 cursor-pointer transition-colors"
+                        >🏔️ Hiking in Patagonia</span
+                    >
+                </div>
+            </div>
+
+            <!-- Featured/Recent Cards -->
+            <div
+                class="w-full grid grid-cols-1 md:grid-cols-3 gap-6 opacity-0 animate-[fadeIn_0.8s_ease-out_0.5s_forwards]"
+            >
+                <!-- Card 1: Paris (Matches previous specific request) -->
+                <div
+                    class="group relative aspect-[4/5] md:aspect-[3/4] rounded-3xl overflow-hidden cursor-pointer"
+                >
+                    <img
+                        src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?q=80&amp;w=2679&amp;auto=format&amp;fit=crop"
+                        alt="Paris"
+                        class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    />
+
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"
+                    ></div>
+
+                    <div
+                        class="absolute top-4 right-4 bg-white/10 backdrop-blur-md border border-white/20 text-white px-3 py-1 rounded-full text-xs font-medium"
+                    >
+                        <div class="flex items-center gap-1.5">
+                            <i data-lucide="clock" class="w-3 h-3"></i>
+                            4 Days
+                        </div>
+                    </div>
+
+                    <div class="absolute bottom-0 left-0 p-6 w-full">
+                        <h3
+                            class="text-2xl font-medium text-white tracking-tight leading-tight mb-1 group-hover:text-emerald-200 transition-colors"
+                        >
+                            Paris: The Ultimate <br />
+                            City of Lights
+                        </h3>
+                        <p class="text-white/70 text-sm line-clamp-2">
+                            Eiffel Tower summit, Louvre highlights, and sunset
+                            cruises on the Seine.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 2: Kyoto -->
+                <div
+                    class="group relative aspect-[4/5] md:aspect-[3/4] rounded-3xl overflow-hidden cursor-pointer"
+                >
+                    <img
+                        src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&amp;w=2670&amp;auto=format&amp;fit=crop"
+                        alt="Kyoto"
+                        class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    />
+
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"
+                    ></div>
+
+                    <div
+                        class="absolute top-4 right-4 bg-white/10 backdrop-blur-md border border-white/20 text-white px-3 py-1 rounded-full text-xs font-medium"
+                    >
+                        <div class="flex items-center gap-1.5">
+                            <i data-lucide="clock" class="w-3 h-3"></i>
+                            7 Days
+                        </div>
+                    </div>
+
+                    <div class="absolute bottom-0 left-0 p-6 w-full">
+                        <h3
+                            class="text-2xl font-medium text-white tracking-tight leading-tight mb-1 group-hover:text-orange-200 transition-colors"
+                        >
+                            Kyoto: Ancient <br />
+                            Traditions
+                        </h3>
+                        <p class="text-white/70 text-sm line-clamp-2">
+                            Bamboo groves, Fushimi Inari shrines, and
+                            traditional tea ceremonies.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 3: Amalfi -->
+                <div
+                    class="group relative aspect-[4/5] md:aspect-[3/4] rounded-3xl overflow-hidden cursor-pointer"
+                >
+                    <img
+                        src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?q=80&amp;w=2679&amp;auto=format&amp;fit=crop"
+                        alt="Amalfi Coast"
+                        class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    />
+
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"
+                    ></div>
+
+                    <div
+                        class="absolute top-4 right-4 bg-white/10 backdrop-blur-md border border-white/20 text-white px-3 py-1 rounded-full text-xs font-medium"
+                    >
+                        <div class="flex items-center gap-1.5">
+                            <i data-lucide="clock" class="w-3 h-3"></i>
+                            5 Days
+                        </div>
+                    </div>
+
+                    <div class="absolute bottom-0 left-0 p-6 w-full">
+                        <h3
+                            class="text-2xl font-medium text-white tracking-tight leading-tight mb-1 group-hover:text-blue-200 transition-colors"
+                        >
+                            Amalfi: Coastal <br />
+                            Paradise
+                        </h3>
+                        <p class="text-white/70 text-sm line-clamp-2">
+                            Cliffside drives, Positano beaches, and authentic
+                            Italian pasta making.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Simple Footer -->
+        <footer
+            class="absolute bottom-0 w-full py-6 text-center text-slate-400 text-sm"
+        >
+            <p>
+                Press
+                <span
+                    class="font-mono bg-slate-100 px-1.5 py-0.5 rounded text-slate-500"
+                    >Enter</span
+                >
+                to generate your plan
+            </p>
+        </footer>
+
+        <!-- Style for fade in animation -->
+        <style>
+            @keyframes fadeIn {
+                from {
+                    opacity: 0;
+                    transform: translateY(20px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+        </style>
+
+        <!-- Initialize Lucide Icons -->
+        <script>
+            lucide.createIcons({
+                attrs: {
+                    class: "",
+                    "stroke-width": 1.5,
+                },
+            });
+        </script>
+    </body>
+</html>

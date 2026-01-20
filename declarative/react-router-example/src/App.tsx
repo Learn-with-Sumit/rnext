@@ -1,36 +1,47 @@
-import { BrowserRouter, NavLink, Route, Routes } from "react-router";
-import About from "./About";
+import { BrowserRouter, NavLink } from "react-router";
 import "./App.css";
-import Home from "./Home";
-import NoMatch from "./NoMatch";
+import Routes from "./Routes";
 function App() {
     return (
         <BrowserRouter>
-            <nav>
+            <nav
+                style={{
+                    backgroundColor: "#333",
+                    color: "#fff",
+                    padding: "5px",
+                }}
+            >
                 <NavLink
                     to="/"
                     style={({ isActive }) => ({
                         padding: 5,
-                        ...(isActive ? { color: "red" } : { color: "blue" }),
+                        ...(isActive ? { color: "red" } : { color: "gray" }),
                     })}
                 >
                     Home
                 </NavLink>
+
+                <NavLink
+                    to="/posts"
+                    style={({ isActive }) => ({
+                        padding: 5,
+                        ...(isActive ? { color: "red" } : { color: "gray" }),
+                    })}
+                >
+                    Posts
+                </NavLink>
+
                 <NavLink
                     to="/about"
                     style={({ isActive }) => ({
                         padding: 5,
-                        ...(isActive ? { color: "red" } : { color: "blue" }),
+                        ...(isActive ? { color: "red" } : { color: "gray" }),
                     })}
                 >
                     About
                 </NavLink>
             </nav>
-            <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/about" element={<About />} />
-                <Route path="*" element={<NoMatch />} />
-            </Routes>
+            <Routes />
         </BrowserRouter>
     );
 }

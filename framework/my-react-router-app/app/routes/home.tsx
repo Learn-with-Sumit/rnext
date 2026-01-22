@@ -1,5 +1,5 @@
 import { Link } from "react-router";
-import { posts } from "~/data/posts";
+import { fetchPosts } from "~/lib/data";
 import type { Route } from "./+types/home";
 import Navbar from "~/components/navbar";
 export function meta({}: Route.MetaArgs) {
@@ -9,7 +9,14 @@ export function meta({}: Route.MetaArgs) {
     ];
 }
 
-export default function Home() {
+export async function clientLoader() {
+    const posts = await fetchPosts();
+    return posts;
+}
+
+export default function Home({loaderData}: Route.ComponentProps) {
+
+    const posts = loaderData;
     return (
         <>
             <Navbar />

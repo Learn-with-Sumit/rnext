@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Create Review - Gadgets BD</title>
+        <!-- Lucide Icons -->
+        <script src="https://unpkg.com/lucide@latest"></script>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        colors: {
+                            amazon: {
+                                background: "#F0F2F2",
+                                light: "#232F3E",
+                                DEFAULT: "#131921",
+                                text: "#111111",
+                                blue: "#007185",
+                                orange: "#C7511F",
+                                yellow: "#FFD814",
+                                yellow_hover: "#F7CA00",
+                                secondary: "#FFA41C",
+                            },
+                        },
+                        fontFamily: {
+                            sans: ["Arial", "sans-serif"],
+                        },
+                    },
+                },
+            };
+        </script>
+    </head>
+    <body class="bg-white text-amazon-text flex flex-col min-h-screen">
+        <!-- Simple Header -->
+        <nav class="bg-amazon text-white p-3 shadow-md">
+            <div
+                class="max-w-[1000px] mx-auto flex items-center justify-between"
+            >
+                <a href="index.html" class="flex items-center">
+                    <span class="text-xl font-bold tracking-tighter"
+                        >gadgets<span class="italic text-amazon-secondary"
+                            >BD</span
+                        ></span
+                    >
+                </a>
+                <div class="flex items-center gap-2 cursor-pointer">
+                    <i data-lucide="user" class="w-4 h-4"></i>
+                    <span class="text-sm">John Doe</span>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="max-w-[1000px] mx-auto w-full p-6">
+            <div class="flex flex-col gap-8">
+                <h1 class="text-3xl font-normal">Create Review</h1>
+
+                <div
+                    class="flex items-center gap-4 border-b border-gray-200 pb-6"
+                >
+                    <img
+                        src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e"
+                        class="w-16 h-16 object-cover border border-gray-200 rounded"
+                        alt="Item"
+                    />
+                    <h2 class="font-bold text-sm">
+                        Apple MacBook Pro M2 - Space Gray, 16GB RAM, 512GB SSD
+                    </h2>
+                </div>
+
+                <form class="space-y-10">
+                    <!-- 1. Overall Rating -->
+                    <section class="space-y-4">
+                        <h3 class="text-xl font-bold">Overall rating</h3>
+                        <div class="flex items-center gap-2">
+                            <button
+                                type="button"
+                                class="group transition-transform hover:scale-110"
+                            >
+                                <i
+                                    data-lucide="star"
+                                    class="w-8 h-8 text-gray-300 fill-current group-hover:text-amazon-yellow"
+                                ></i>
+                            </button>
+                            <button
+                                type="button"
+                                class="group transition-transform hover:scale-110"
+                            >
+                                <i
+                                    data-lucide="star"
+                                    class="w-8 h-8 text-gray-300 fill-current group-hover:text-amazon-yellow"
+                                ></i>
+                            </button>
+                            <button
+                                type="button"
+                                class="group transition-transform hover:scale-110"
+                            >
+                                <i
+                                    data-lucide="star"
+                                    class="w-8 h-8 text-gray-300 fill-current group-hover:text-amazon-yellow"
+                                ></i>
+                            </button>
+                            <button
+                                type="button"
+                                class="group transition-transform hover:scale-110"
+                            >
+                                <i
+                                    data-lucide="star"
+                                    class="w-8 h-8 text-gray-300 fill-current group-hover:text-amazon-yellow"
+                                ></i>
+                            </button>
+                            <button
+                                type="button"
+                                class="group transition-transform hover:scale-110"
+                            >
+                                <i
+                                    data-lucide="star"
+                                    class="w-8 h-8 text-gray-300 fill-current group-hover:text-amazon-yellow"
+                                ></i>
+                            </button>
+                        </div>
+                    </section>
+
+                    <hr class="border-gray-200" />
+
+                    <!-- 2. Add a photo -->
+                    <section class="space-y-4">
+                        <h3 class="text-xl font-bold">Add a photo or video</h3>
+                        <p class="text-sm">
+                            Shoppers find images and videos more helpful than
+                            text alone.
+                        </p>
+                        <div
+                            class="w-32 h-32 border-2 border-dashed border-gray-300 rounded-lg flex flex-col items-center justify-center cursor-pointer hover:border-amazon-blue transition-colors gap-2"
+                        >
+                            <i
+                                data-lucide="camera"
+                                class="w-8 h-8 text-gray-400"
+                            ></i>
+                            <span class="text-xs text-gray-500">Add media</span>
+                        </div>
+                    </section>
+
+                    <hr class="border-gray-200" />
+
+                    <!-- 3. Headline -->
+                    <section class="space-y-4">
+                        <h3 class="text-xl font-bold">Add a headline</h3>
+                        <input
+                            type="text"
+                            placeholder="What's most important to know?"
+                            class="w-full border border-gray-300 rounded p-2 outline-none focus:ring-1 focus:ring-amazon-blue"
+                        />
+                    </section>
+
+                    <hr class="border-gray-200" />
+
+                    <!-- 4. Written review -->
+                    <section class="space-y-4">
+                        <h3 class="text-xl font-bold">Add a written review</h3>
+                        <textarea
+                            rows="6"
+                            placeholder="What did you like or dislike? What did you use this product for?"
+                            class="w-full border border-gray-300 rounded p-4 outline-none focus:ring-1 focus:ring-amazon-blue"
+                        ></textarea>
+                    </section>
+
+                    <div class="border-t border-gray-200 pt-8 flex justify-end">
+                        <button
+                            type="submit"
+                            class="bg-amazon-yellow hover:bg-amazon-yellow_hover px-8 py-2 rounded-md shadow-sm border border-amazon-secondary font-bold"
+                        >
+                            Submit
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </main>
+
+        <!-- Minimal Footer -->
+        <footer class="mt-auto py-8 bg-gray-50 border-t border-gray-200">
+            <div
+                class="flex justify-center gap-6 text-xs text-amazon-blue mb-4"
+            >
+                <a href="#" class="hover:underline">Conditions of Use</a>
+                <a href="#" class="hover:underline">Privacy Notice</a>
+                <a href="#" class="hover:underline">Help</a>
+            </div>
+            <p class="text-center text-[10px] text-gray-500">
+                &copy; 1996-2025, GadgetsBD.com, Inc. or its affiliates
+            </p>
+        </footer>
+
+        <script>
+            lucide.createIcons();
+        </script>
+    </body>
+</html>

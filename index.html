@@ -1,0 +1,767 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Gadgets BD - Premium Tech Marketplace</title>
+        <!-- Lucide Icons -->
+        <script src="https://unpkg.com/lucide@latest"></script>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        colors: {
+                            amazon: {
+                                background: "#E3E6E6",
+                                light: "#232F3E",
+                                DEFAULT: "#131921",
+                                text: "#333333",
+                                blue: "#007185",
+                                orange: "#C7511F",
+                                yellow: "#FFD814",
+                                yellow_hover: "#F7CA00",
+                                secondary: "#FFA41C",
+                            },
+                        },
+                        fontFamily: {
+                            sans: ["Arial", "sans-serif"],
+                        },
+                    },
+                },
+            };
+        </script>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+            }
+        </style>
+    </head>
+    <body
+        class="bg-amazon-background text-amazon-text flex flex-col min-h-screen"
+    >
+        <!-- Navbar -->
+        <nav class="bg-amazon text-white">
+            <!-- Top Nav -->
+            <div class="max-w-[1500px] mx-auto flex items-center p-2 gap-4">
+                <!-- Logo -->
+                <a
+                    href="index.html"
+                    class="flex items-center hover:outline hover:outline-1 hover:outline-white rounded-sm p-1"
+                >
+                    <span class="text-2xl font-bold tracking-tighter"
+                        >gadgets<span class="italic text-amazon-secondary"
+                            >BD</span
+                        ></span
+                    >
+                </a>
+
+                <!-- Search -->
+                <div
+                    class="flex-1 flex h-10 rounded-md overflow-hidden focus-within:ring-3 focus-within:ring-amazon-secondary"
+                >
+                    <select
+                        class="bg-gray-100 text-black text-xs px-2 border-r border-gray-300 cursor-pointer hover:bg-gray-200"
+                    >
+                        <option>All</option>
+                        <option>Laptops</option>
+                        <option>Phones</option>
+                        <option>Accessories</option>
+                        <option>Gaming</option>
+                    </select>
+                    <input
+                        type="text"
+                        placeholder="Search Gadgets, Laptops, Phones..."
+                        class="flex-1 px-3 text-black outline-none"
+                    />
+                    <button
+                        class="bg-amazon-secondary hover:bg-[#fa8900] px-4 flex items-center justify-center"
+                    >
+                        <i data-lucide="search" class="text-black w-5 h-5"></i>
+                    </button>
+                </div>
+
+                <!-- Right Actions -->
+                <div class="flex items-center gap-4">
+                    <!-- Language -->
+                    <div
+                        class="hidden md:flex items-center hover:outline hover:outline-1 hover:outline-white rounded-sm p-1 cursor-pointer"
+                    >
+                        <div class="font-bold text-sm">EN</div>
+                    </div>
+
+                    <!-- Account -->
+                    <a
+                        href="login.html"
+                        class="hover:outline hover:outline-1 hover:outline-white rounded-sm p-1 cursor-pointer"
+                    >
+                        <div class="text-xs leading-none text-gray-300">
+                            Hello, Sign in
+                        </div>
+                        <div class="font-bold text-sm">Account & Lists</div>
+                    </a>
+
+                    <!-- Cart -->
+                    <a
+                        href="cart.html"
+                        class="flex items-end hover:outline hover:outline-1 hover:outline-white rounded-sm p-1 cursor-pointer relative"
+                    >
+                        <i data-lucide="shopping-cart" class="w-8 h-8"></i>
+                        <span
+                            class="font-bold text-amazon-secondary absolute top-0 left-1/2 -translate-x-1/2 text-sm"
+                            >3</span
+                        >
+                        <span class="font-bold text-sm hidden md:block"
+                            >Cart</span
+                        >
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="flex-1 max-w-[1500px] mx-auto w-full">
+            <!-- Hero Banner -->
+            <div
+                class="relative w-full h-64 md:h-80 bg-cover bg-center"
+                style="
+                    background-image: url(&quot;https://images.unsplash.com/photo-1491933382434-500287f9b54b?q=80&w=2574&auto=format&fit=crop&quot;);
+                "
+            >
+                <div
+                    class="absolute inset-0 bg-gradient-to-t from-amazon-background to-transparent"
+                ></div>
+            </div>
+
+            <!-- Categories & Content Grid -->
+            <div class="relative z-10 -mt-32 px-4">
+                <div
+                    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
+                >
+                    <!-- Card 1 -->
+                    <div
+                        class="bg-white p-4 flex flex-col gap-4 shadow-sm z-20"
+                    >
+                        <h2 class="text-xl font-bold">Laptops & PCs</h2>
+                        <div class="grid grid-cols-2 gap-2 h-full">
+                            <img
+                                src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=300"
+                                class="w-full h-full object-cover mb-1"
+                            />
+                            <img
+                                src="https://images.unsplash.com/photo-1675868374786-3edd36dddf04?w=300"
+                                class="w-full h-full object-cover mb-1"
+                            />
+                            <img
+                                src="https://images.unsplash.com/photo-1541807084-5c52b6b3adef?w=300"
+                                class="w-full h-full object-cover mb-1"
+                            />
+                            <img
+                                src="https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?w=300"
+                                class="w-full h-full object-cover mb-1"
+                            />
+                        </div>
+                        <a
+                            href="products.html"
+                            class="text-amazon-blue text-sm hover:underline hover:text-red-700 mt-auto"
+                            >See all laptops</a
+                        >
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div
+                        class="bg-white p-4 flex flex-col gap-4 shadow-sm z-20"
+                    >
+                        <h2 class="text-xl font-bold">Smartphones</h2>
+                        <div
+                            class="w-full h-full bg-gray-100 flex items-center justify-center overflow-hidden"
+                        >
+                            <img
+                                src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=500"
+                                class="w-full h-full object-cover"
+                            />
+                        </div>
+                        <a
+                            href="products.html"
+                            class="text-amazon-blue text-sm hover:underline hover:text-red-700 mt-auto"
+                            >Shop smartphones</a
+                        >
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div
+                        class="bg-white p-4 flex flex-col gap-4 shadow-sm z-20"
+                    >
+                        <h2 class="text-xl font-bold">Accessories</h2>
+                        <div
+                            class="w-full h-full bg-gray-100 flex items-center justify-center overflow-hidden"
+                        >
+                            <img
+                                src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500"
+                                class="w-full h-full object-cover"
+                            />
+                        </div>
+                        <a
+                            href="products.html"
+                            class="text-amazon-blue text-sm hover:underline hover:text-red-700 mt-auto"
+                            >Shop accessories</a
+                        >
+                    </div>
+
+                    <!-- Card 4 (Sign in promo) -->
+                    <div
+                        class="bg-white p-4 flex flex-col gap-4 shadow-sm z-20 justify-between"
+                    >
+                        <div class="shrink-0">
+                            <h2 class="text-xl font-bold">
+                                Sign in for the best tech deals
+                            </h2>
+                            <button
+                                class="bg-amazon-yellow w-full py-2 rounded-md shadow-sm mt-4 text-sm hover:bg-amazon-yellow_hover"
+                            >
+                                Sign in securely
+                            </button>
+                        </div>
+                        <div class="mt-4 grow h-full">
+                            <img
+                                src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=500"
+                                class="w-full h-full object-cover"
+                            />
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Featured Product Carousel (Horizontal Scroll) -->
+                <div class="mt-8 bg-white p-6 shadow-sm">
+                    <div class="flex items-center gap-2 mb-4">
+                        <h2 class="text-xl font-bold">Featured Products</h2>
+                        <a
+                            href="products.html"
+                            class="text-amazon-blue text-sm hover:underline hover:text-red-700"
+                            >View All</a
+                        >
+                    </div>
+
+                    <div class="flex overflow-x-auto gap-6 pb-4 scrollbar-hide">
+                        <!-- Product 1 -->
+                        <div class="flex-none w-48">
+                            <a href="details.html">
+                                <div
+                                    class="bg-gray-50 h-48 flex items-center justify-center mb-2 p-2"
+                                >
+                                    <img
+                                        src="https://images.unsplash.com/photo-1675868374786-3edd36dddf04?w=300"
+                                        class="h-full object-cover mix-blend-multiply"
+                                    />
+                                </div>
+                                <div
+                                    class="text-sm hover:text-amazon-orange text-amazon-blue line-clamp-2"
+                                >
+                                    Apple MacBook Pro M2, 16GB RAM, 512GB SSD
+                                </div>
+                            </a>
+                            <div class="text-xs text-gray-500">
+                                Official Apple Store
+                            </div>
+                            <div class="mt-1">
+                                <span class="text-xs align-top">৳</span>
+                                <span class="text-xl font-bold">1,85,000</span>
+                            </div>
+                            <div class="text-xs text-gray-500 mb-2">
+                                Get it by Tomorrow
+                            </div>
+                            <button
+                                class="w-full bg-amazon-yellow hover:bg-amazon-yellow_hover text-sm py-1.5 rounded-md shadow-sm font-medium border border-amazon-secondary transition-colors"
+                            >
+                                Add to Cart
+                            </button>
+                        </div>
+
+                        <!-- Product 2 -->
+                        <div class="flex-none w-48">
+                            <a href="details.html">
+                                <div
+                                    class="bg-gray-50 h-48 flex items-center justify-center mb-2 p-2"
+                                >
+                                    <img
+                                        src="https://images.unsplash.com/photo-1591337676887-a217a6970a8a?w=300"
+                                        class="h-full object-cover mix-blend-multiply"
+                                    />
+                                </div>
+                                <div
+                                    class="text-sm hover:text-amazon-orange text-amazon-blue line-clamp-2"
+                                >
+                                    iPhone 15 Pro Max - Blue Titanium
+                                </div>
+                            </a>
+                            <div class="text-xs text-gray-500">
+                                Apple Bangladesh
+                            </div>
+                            <div class="mt-1">
+                                <span class="text-xs align-top">৳</span>
+                                <span class="text-xl font-bold">1,45,000</span>
+                            </div>
+                            <div class="text-xs text-gray-500 mb-2">
+                                Get it by Tomorrow
+                            </div>
+                            <button
+                                class="w-full bg-amazon-yellow hover:bg-amazon-yellow_hover text-sm py-1.5 rounded-md shadow-sm font-medium border border-amazon-secondary transition-colors"
+                            >
+                                Add to Cart
+                            </button>
+                        </div>
+
+                        <!-- Product 3 -->
+                        <div class="flex-none w-48">
+                            <a href="details.html">
+                                <div
+                                    class="bg-gray-50 h-48 flex items-center justify-center mb-2 p-2"
+                                >
+                                    <img
+                                        src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=300"
+                                        class="h-full object-cover mix-blend-multiply"
+                                    />
+                                </div>
+                                <div
+                                    class="text-sm hover:text-amazon-orange text-amazon-blue line-clamp-2"
+                                >
+                                    Sony WH-1000XM5 Noise Canceling Headphones
+                                </div>
+                            </a>
+                            <div class="text-xs text-gray-500">
+                                Sony Official
+                            </div>
+                            <div class="mt-1">
+                                <span class="text-xs align-top">৳</span>
+                                <span class="text-xl font-bold">32,500</span>
+                            </div>
+                            <div class="text-xs text-gray-500 mb-2">
+                                Get it by Tomorrow
+                            </div>
+                            <button
+                                class="w-full bg-amazon-yellow hover:bg-amazon-yellow_hover text-sm py-1.5 rounded-md shadow-sm font-medium border border-amazon-secondary transition-colors"
+                            >
+                                Add to Cart
+                            </button>
+                        </div>
+
+                        <!-- Product 4 -->
+                        <div class="flex-none w-48">
+                            <a href="details.html">
+                                <div
+                                    class="bg-gray-50 h-48 flex items-center justify-center mb-2 p-2"
+                                >
+                                    <img
+                                        src="https://images.unsplash.com/photo-1675868374786-3edd36dddf04?w=300"
+                                        class="h-full object-cover mix-blend-multiply"
+                                    />
+                                </div>
+                                <div
+                                    class="text-sm hover:text-amazon-orange text-amazon-blue line-clamp-2"
+                                >
+                                    Mechanical Gaming Keyboard RGB
+                                </div>
+                            </a>
+                            <div class="text-xs text-gray-500">Razer Store</div>
+                            <div class="mt-1">
+                                <span class="text-xs align-top">৳</span>
+                                <span class="text-xl font-bold">8,500</span>
+                            </div>
+                            <div class="text-xs text-gray-500 mb-2">
+                                Get it by Tomorrow
+                            </div>
+                            <button
+                                class="w-full bg-amazon-yellow hover:bg-amazon-yellow_hover text-sm py-1.5 rounded-md shadow-sm font-medium border border-amazon-secondary transition-colors"
+                            >
+                                Add to Cart
+                            </button>
+                        </div>
+
+                        <!-- Product 5 -->
+                        <div class="flex-none w-48">
+                            <a href="details.html">
+                                <div
+                                    class="bg-gray-50 h-48 flex items-center justify-center mb-2 p-2"
+                                >
+                                    <img
+                                        src="https://images.unsplash.com/photo-1542751371-adc38448a05e?w=300"
+                                        class="h-full object-cover mix-blend-multiply"
+                                    />
+                                </div>
+                                <div
+                                    class="text-sm hover:text-amazon-orange text-amazon-blue line-clamp-2"
+                                >
+                                    Logitech G502 Hero Gaming Mouse
+                                </div>
+                            </a>
+                            <div class="text-xs text-gray-500">Logitech G</div>
+                            <div class="mt-1">
+                                <span class="text-xs align-top">৳</span>
+                                <span class="text-xl font-bold">4,500</span>
+                            </div>
+                            <div class="text-xs text-gray-500 mb-2">
+                                Get it by Tomorrow
+                            </div>
+                            <button
+                                class="w-full bg-amazon-yellow hover:bg-amazon-yellow_hover text-sm py-1.5 rounded-md shadow-sm font-medium border border-amazon-secondary transition-colors"
+                            >
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Why Shop With Us Section -->
+            <div class="bg-white py-12 mt-8">
+                <div class="max-w-[1500px] mx-auto px-4">
+                    <h2 class="text-2xl font-bold text-center mb-8">
+                        Why Shop with Gadgets BD?
+                    </h2>
+                    <div
+                        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
+                    >
+                        <div class="text-center p-4">
+                            <div
+                                class="w-16 h-16 bg-amazon-yellow rounded-full flex items-center justify-center mx-auto mb-4"
+                            >
+                                <i
+                                    data-lucide="truck"
+                                    class="w-8 h-8 text-amazon"
+                                ></i>
+                            </div>
+                            <h3 class="font-bold text-lg mb-2">
+                                Fast Delivery
+                            </h3>
+                            <p class="text-sm text-gray-600">
+                                Get your gadgets delivered within 24-48 hours
+                                across Bangladesh
+                            </p>
+                        </div>
+                        <div class="text-center p-4">
+                            <div
+                                class="w-16 h-16 bg-amazon-yellow rounded-full flex items-center justify-center mx-auto mb-4"
+                            >
+                                <i
+                                    data-lucide="shield-check"
+                                    class="w-8 h-8 text-amazon"
+                                ></i>
+                            </div>
+                            <h3 class="font-bold text-lg mb-2">
+                                100% Authentic
+                            </h3>
+                            <p class="text-sm text-gray-600">
+                                All products are genuine with official warranty
+                                and certifications
+                            </p>
+                        </div>
+                        <div class="text-center p-4">
+                            <div
+                                class="w-16 h-16 bg-amazon-yellow rounded-full flex items-center justify-center mx-auto mb-4"
+                            >
+                                <i
+                                    data-lucide="headphones"
+                                    class="w-8 h-8 text-amazon"
+                                ></i>
+                            </div>
+                            <h3 class="font-bold text-lg mb-2">24/7 Support</h3>
+                            <p class="text-sm text-gray-600">
+                                Our customer service team is always ready to
+                                help you
+                            </p>
+                        </div>
+                        <div class="text-center p-4">
+                            <div
+                                class="w-16 h-16 bg-amazon-yellow rounded-full flex items-center justify-center mx-auto mb-4"
+                            >
+                                <i
+                                    data-lucide="credit-card"
+                                    class="w-8 h-8 text-amazon"
+                                ></i>
+                            </div>
+                            <h3 class="font-bold text-lg mb-2">
+                                Secure Payment
+                            </h3>
+                            <p class="text-sm text-gray-600">
+                                Multiple payment options with 100% secure
+                                transactions
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Popular Categories Section -->
+            <div class="max-w-[1500px] mx-auto px-4 py-8">
+                <h2 class="text-2xl font-bold mb-6">Popular Categories</h2>
+                <div
+                    class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4"
+                >
+                    <a
+                        href="products.html"
+                        class="bg-white p-4 text-center hover:shadow-md transition-shadow border border-gray-200 rounded"
+                    >
+                        <div class="h-32 flex items-center justify-center mb-2">
+                            <img
+                                src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=200"
+                                class="h-full object-cover"
+                                alt="Laptops"
+                            />
+                        </div>
+                        <h3 class="font-medium text-sm">Laptops</h3>
+                    </a>
+                    <a
+                        href="products.html"
+                        class="bg-white p-4 text-center hover:shadow-md transition-shadow border border-gray-200 rounded"
+                    >
+                        <div class="h-32 flex items-center justify-center mb-2">
+                            <img
+                                src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=200"
+                                class="h-full object-cover"
+                                alt="Smartphones"
+                            />
+                        </div>
+                        <h3 class="font-medium text-sm">Smartphones</h3>
+                    </a>
+                    <a
+                        href="products.html"
+                        class="bg-white p-4 text-center hover:shadow-md transition-shadow border border-gray-200 rounded"
+                    >
+                        <div class="h-32 flex items-center justify-center mb-2">
+                            <img
+                                src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=200"
+                                class="h-full object-cover"
+                                alt="Headphones"
+                            />
+                        </div>
+                        <h3 class="font-medium text-sm">Audio</h3>
+                    </a>
+                    <a
+                        href="products.html"
+                        class="bg-white p-4 text-center hover:shadow-md transition-shadow border border-gray-200 rounded"
+                    >
+                        <div class="h-32 flex items-center justify-center mb-2">
+                            <img
+                                src="https://images.unsplash.com/photo-1593640408182-31c70c8268f5?w=200"
+                                class="h-full object-cover"
+                                alt="Gaming"
+                            />
+                        </div>
+                        <h3 class="font-medium text-sm">Gaming</h3>
+                    </a>
+                    <a
+                        href="products.html"
+                        class="bg-white p-4 text-center hover:shadow-md transition-shadow border border-gray-200 rounded"
+                    >
+                        <div class="h-32 flex items-center justify-center mb-2">
+                            <img
+                                src="https://images.unsplash.com/photo-1606813907291-d86efa9b94db?w=200"
+                                class="h-full object-cover"
+                                alt="Cameras"
+                            />
+                        </div>
+                        <h3 class="font-medium text-sm">Cameras</h3>
+                    </a>
+                    <a
+                        href="products.html"
+                        class="bg-white p-4 text-center hover:shadow-md transition-shadow border border-gray-200 rounded"
+                    >
+                        <div class="h-32 flex items-center justify-center mb-2">
+                            <img
+                                src="https://images.unsplash.com/photo-1434494878577-86c23bcb06b9?w=200"
+                                class="h-full object-cover"
+                                alt="Wearables"
+                            />
+                        </div>
+                        <h3 class="font-medium text-sm">Wearables</h3>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Shop by Brand Section -->
+            <div class="bg-white py-8 mt-8">
+                <div class="max-w-[1500px] mx-auto px-4">
+                    <h2 class="text-2xl font-bold mb-6">Shop by Brand</h2>
+                    <div class="flex gap-6 overflow-x-auto pb-4">
+                        <div
+                            class="flex-none w-32 h-32 bg-gray-50 border border-gray-200 rounded flex items-center justify-center hover:shadow-md transition-shadow cursor-pointer"
+                        >
+                            <span class="text-2xl font-bold text-gray-400"
+                                >Apple</span
+                            >
+                        </div>
+                        <div
+                            class="flex-none w-32 h-32 bg-gray-50 border border-gray-200 rounded flex items-center justify-center hover:shadow-md transition-shadow cursor-pointer"
+                        >
+                            <span class="text-2xl font-bold text-gray-400"
+                                >Samsung</span
+                            >
+                        </div>
+                        <div
+                            class="flex-none w-32 h-32 bg-gray-50 border border-gray-200 rounded flex items-center justify-center hover:shadow-md transition-shadow cursor-pointer"
+                        >
+                            <span class="text-2xl font-bold text-gray-400"
+                                >Dell</span
+                            >
+                        </div>
+                        <div
+                            class="flex-none w-32 h-32 bg-gray-50 border border-gray-200 rounded flex items-center justify-center hover:shadow-md transition-shadow cursor-pointer"
+                        >
+                            <span class="text-2xl font-bold text-gray-400"
+                                >HP</span
+                            >
+                        </div>
+                        <div
+                            class="flex-none w-32 h-32 bg-gray-50 border border-gray-200 rounded flex items-center justify-center hover:shadow-md transition-shadow cursor-pointer"
+                        >
+                            <span class="text-2xl font-bold text-gray-400"
+                                >Lenovo</span
+                            >
+                        </div>
+                        <div
+                            class="flex-none w-32 h-32 bg-gray-50 border border-gray-200 rounded flex items-center justify-center hover:shadow-md transition-shadow cursor-pointer"
+                        >
+                            <span class="text-2xl font-bold text-gray-400"
+                                >Sony</span
+                            >
+                        </div>
+                        <div
+                            class="flex-none w-32 h-32 bg-gray-50 border border-gray-200 rounded flex items-center justify-center hover:shadow-md transition-shadow cursor-pointer"
+                        >
+                            <span class="text-2xl font-bold text-gray-400"
+                                >Razer</span
+                            >
+                        </div>
+                        <div
+                            class="flex-none w-32 h-32 bg-gray-50 border border-gray-200 rounded flex items-center justify-center hover:shadow-md transition-shadow cursor-pointer"
+                        >
+                            <span class="text-2xl font-bold text-gray-400"
+                                >Logitech</span
+                            >
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-amazon-light text-white mt-8">
+            <div
+                class="bg-[#37475A] py-4 text-center hover:bg-[#485769] transition cursor-pointer"
+                onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
+            >
+                <span class="text-sm font-medium">Back to top</span>
+            </div>
+
+            <div
+                class="max-w-[1000px] mx-auto py-12 px-4 grid grid-cols-1 md:grid-cols-4 gap-8 text-sm"
+            >
+                <div>
+                    <h3 class="font-bold mb-4">Get to Know Us</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li>
+                            <a href="about.html" class="hover:underline"
+                                >About Gadgets BD</a
+                            >
+                        </li>
+                        <li><a href="#" class="hover:underline">Careers</a></li>
+                        <li>
+                            <a href="shops.html" class="hover:underline"
+                                >Our Top Brands</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-4">Make Money with Us</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li>
+                            <a href="register.html" class="hover:underline"
+                                >Sell on Gadgets BD</a
+                            >
+                        </li>
+                        <li>
+                            <a href="create.html" class="hover:underline"
+                                >Supply to Gadgets BD</a
+                            >
+                        </li>
+                        <li>
+                            <a href="manageList.html" class="hover:underline"
+                                >Become an Affiliate</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-4">Payment Products</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li>
+                            <a href="#" class="hover:underline"
+                                >Gadgets BD Business Card</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#" class="hover:underline"
+                                >Shop with Points</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#" class="hover:underline"
+                                >Reload Your Balance</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-4">Let Us Help You</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li>
+                            <a href="#" class="hover:underline">Your Account</a>
+                        </li>
+                        <li>
+                            <a href="bookings.html" class="hover:underline"
+                                >Your Orders</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#" class="hover:underline"
+                                >Shipping Rates & Policies</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#" class="hover:underline"
+                                >Returns & Replacements</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="forgot-password.html"
+                                class="hover:underline"
+                                >Manage Your Content and Devices</a
+                            >
+                        </li>
+                        <li><a href="#" class="hover:underline">Help</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-600 text-center py-8">
+                <div class="flex justify-center items-center gap-4 mb-4">
+                    <span class="text-2xl font-bold tracking-tighter"
+                        >gadgets<span class="italic text-gray-400"
+                            >BD</span
+                        ></span
+                    >
+                </div>
+                <p class="text-xs text-gray-400">
+                    &copy; 2025 Gadgets BD - Premium Tech Marketplace. All
+                    rights reserved by LWS.
+                </p>
+            </div>
+        </footer>
+
+        <script>
+            lucide.createIcons();
+        </script>
+    </body>
+</html>

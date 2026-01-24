@@ -1,0 +1,458 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Checkout - Gadgets BD</title>
+        <!-- Lucide Icons -->
+        <script src="https://unpkg.com/lucide@latest"></script>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        colors: {
+                            amazon: {
+                                background: "#F0F2F2",
+                                light: "#232F3E",
+                                DEFAULT: "#131921",
+                                text: "#111111",
+                                blue: "#007185",
+                                orange: "#C7511F",
+                                yellow: "#FFD814",
+                                yellow_hover: "#F7CA00",
+                                secondary: "#FFA41C",
+                            },
+                        },
+                        fontFamily: {
+                            sans: ["Arial", "sans-serif"],
+                        },
+                    },
+                },
+            };
+        </script>
+        <style>
+            .checkout-container {
+                max-width: 1100px;
+                margin: 0 auto;
+            }
+            .box {
+                border: 1px solid #ddd;
+                border-radius: 4px;
+                background: white;
+            }
+            .btn-primary {
+                background: linear-gradient(to bottom, #f7dfa5, #f0c14b);
+                border: 1px solid #a88734;
+                border-color: #a88734 #9c7e31 #846a29;
+                box-shadow: 0 1px 0 rgba(255, 255, 255, 0.4) inset;
+            }
+            .btn-primary:hover {
+                background: linear-gradient(to bottom, #f5d78e, #eeb933);
+            }
+            .section-number {
+                font-size: 20px;
+                font-weight: bold;
+                color: #333;
+            }
+        </style>
+    </head>
+    <body
+        class="bg-amazon-background text-amazon-text flex flex-col min-h-screen"
+    >
+        <!-- Minimal Header -->
+        <header class="bg-amazon p-4 border-b border-gray-300">
+            <div
+                class="checkout-container flex justify-between items-center text-white"
+            >
+                <a href="index.html" class="flex items-center">
+                    <span class="text-2xl font-bold tracking-tighter"
+                        >gadgets<span class="italic text-amazon-secondary"
+                            >BD</span
+                        ></span
+                    >
+                </a>
+                <h1 class="text-2xl font-normal hidden md:block">
+                    Checkout (<span class="text-amazon-secondary">3 items</span
+                    >)
+                </h1>
+                <i data-lucide="lock" class="w-5 h-5 text-gray-400"></i>
+            </div>
+        </header>
+
+        <!-- Content -->
+        <main
+            class="checkout-container flex-1 py-10 px-4 flex flex-col lg:flex-row gap-8"
+        >
+            <!-- Left Side: Steps -->
+            <div class="flex-1 space-y-6">
+                <!-- 1. Shipping Address Summary -->
+                <div
+                    class="hover:bg-gray-50 border-b border-gray-300 pb-6 flex justify-between items-start transition-colors cursor-pointer"
+                >
+                    <div>
+                        <span class="section-number mr-4">1</span>
+                        <span class="font-bold text-lg">Shipping address</span>
+                    </div>
+                    <div class="text-sm flex-1 ml-10">
+                        <p>John Doe</p>
+                        <p>123 Main St, Apartment 4B</p>
+                        <p>Dhaka, 1212</p>
+                        <p>Bangladesh</p>
+                        <p class="mt-1 text-gray-600">
+                            Phone: +880 1712-345678
+                        </p>
+                    </div>
+                    <a
+                        href="#"
+                        class="text-amazon-blue text-xs hover:underline hover:text-amazon-orange"
+                        >Change</a
+                    >
+                </div>
+
+                <!-- 2. Selected Products List -->
+                <div class="pb-6 border-b border-gray-300">
+                    <div class="flex items-center mb-4">
+                        <span class="section-number mr-4">2</span>
+                        <span class="font-bold text-lg">Review items</span>
+                    </div>
+
+                    <div class="box p-4 space-y-4">
+                        <!-- Product 1 -->
+                        <div
+                            class="flex gap-4 pb-4 border-b border-gray-200 last:border-0"
+                        >
+                            <div
+                                class="w-24 h-24 bg-gray-50 flex items-center justify-center flex-shrink-0"
+                            >
+                                <img
+                                    src="https://images.unsplash.com/photo-1675868374786-3edd36dddf04?w=300"
+                                    class="h-full object-cover"
+                                />
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="text-sm font-medium mb-1">
+                                    Apple MacBook Pro 16" M2 Max - 32GB RAM, 1TB
+                                    SSD
+                                </h3>
+                                <p class="text-xs text-gray-600 mb-2">
+                                    Sold by: Official Apple Store
+                                </p>
+                                <div class="flex items-center gap-4">
+                                    <p
+                                        class="text-sm font-bold text-amazon-orange"
+                                    >
+                                        ৳3,45,000
+                                    </p>
+                                    <div
+                                        class="flex items-center gap-2 text-xs"
+                                    >
+                                        <span>Qty:</span>
+                                        <select
+                                            class="border border-gray-300 rounded px-2 py-0.5"
+                                        >
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product 2 -->
+                        <div
+                            class="flex gap-4 pb-4 border-b border-gray-200 last:border-0"
+                        >
+                            <div
+                                class="w-24 h-24 bg-gray-50 flex items-center justify-center flex-shrink-0"
+                            >
+                                <img
+                                    src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=200"
+                                    class="h-full object-cover"
+                                />
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="text-sm font-medium mb-1">
+                                    Sony WH-1000XM5 Wireless Noise Canceling
+                                    Headphones
+                                </h3>
+                                <p class="text-xs text-gray-600 mb-2">
+                                    Sold by: Sony Official
+                                </p>
+                                <div class="flex items-center gap-4">
+                                    <p
+                                        class="text-sm font-bold text-amazon-orange"
+                                    >
+                                        ৳38,500
+                                    </p>
+                                    <div
+                                        class="flex items-center gap-2 text-xs"
+                                    >
+                                        <span>Qty:</span>
+                                        <select
+                                            class="border border-gray-300 rounded px-2 py-0.5"
+                                        >
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product 3 -->
+                        <div
+                            class="flex gap-4 pb-4 border-b border-gray-200 last:border-0"
+                        >
+                            <div
+                                class="w-24 h-24 bg-gray-50 flex items-center justify-center flex-shrink-0"
+                            >
+                                <img
+                                    src="https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?w=300"
+                                    class="h-full w-full object-cover"
+                                />
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="text-sm font-medium mb-1">
+                                    Razer BlackWidow V4 Pro Mechanical Gaming
+                                    Keyboard
+                                </h3>
+                                <p class="text-xs text-gray-600 mb-2">
+                                    Sold by: Razer Store
+                                </p>
+                                <div class="flex items-center gap-4">
+                                    <p
+                                        class="text-sm font-bold text-amazon-orange"
+                                    >
+                                        ৳18,500
+                                    </p>
+                                    <div
+                                        class="flex items-center gap-2 text-xs"
+                                    >
+                                        <span>Qty:</span>
+                                        <select
+                                            class="border border-gray-300 rounded px-2 py-0.5"
+                                        >
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. Payment Method -->
+                <div class="pb-6">
+                    <div class="flex items-center mb-6">
+                        <span class="section-number mr-4">3</span>
+                        <span class="font-bold text-lg text-amazon-orange"
+                            >Choose a payment method</span
+                        >
+                    </div>
+
+                    <form
+                        action="success.html"
+                        method="POST"
+                        id="paymentForm"
+                        class="box p-6 space-y-6 shadow-sm"
+                    >
+                        <div class="space-y-4">
+                            <label
+                                class="flex items-start gap-3 p-3 border border-gray-300 rounded-md cursor-pointer hover:bg-amazon-background transition-colors bg-gray-50 border-amazon-orange ring-1 ring-amazon-orange"
+                            >
+                                <div>
+                                    <span class="font-bold block text-sm"
+                                        >Credit or Debit Card</span
+                                    >
+                                    <div class="flex gap-2 mt-2">
+                                        <img
+                                            src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg"
+                                            class="h-4"
+                                            alt="Visa"
+                                        />
+                                        <img
+                                            src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg"
+                                            class="h-4"
+                                            alt="Mastercard"
+                                        />
+                                    </div>
+                                </div>
+                            </label>
+
+                            <div id="cardInputs" class="pl-8 space-y-4">
+                                <div>
+                                    <label class="text-xs font-bold block mb-1"
+                                        >Name on card</label
+                                    >
+                                    <input
+                                        type="text"
+                                        placeholder="John Doe"
+                                        class="w-full max-w-sm px-2 py-1 border border-gray-400 rounded-sm text-sm outline-none focus:ring-1 focus:ring-amazon-blue"
+                                    />
+                                </div>
+                                <div class="flex flex-wrap gap-4">
+                                    <div class="flex-1 min-w-[200px]">
+                                        <label
+                                            class="text-xs font-bold block mb-1"
+                                            >Card number</label
+                                        >
+                                        <input
+                                            type="text"
+                                            placeholder="#### #### #### ####"
+                                            class="w-full px-2 py-1 border border-gray-400 rounded-sm text-sm outline-none focus:ring-1 focus:ring-amazon-blue"
+                                        />
+                                    </div>
+                                    <div class="w-24">
+                                        <label
+                                            class="text-xs font-bold block mb-1"
+                                            >CVV</label
+                                        >
+                                        <input
+                                            type="password"
+                                            placeholder="***"
+                                            class="w-full px-2 py-1 border border-gray-400 rounded-sm text-sm outline-none focus:ring-1 focus:ring-amazon-blue"
+                                        />
+                                    </div>
+                                </div>
+                                <div>
+                                    <label class="text-xs font-bold block mb-1"
+                                        >Expiration date</label
+                                    >
+                                    <div class="flex gap-2">
+                                        <select
+                                            class="bg-gray-100 border border-gray-300 rounded p-1 text-xs"
+                                        >
+                                            <option>01</option>
+                                            <option>02</option>
+                                            <option>03</option>
+                                            <option>04</option>
+                                            <option>05</option>
+                                            <option>06</option>
+                                            <option>07</option>
+                                            <option>08</option>
+                                            <option>09</option>
+                                            <option>10</option>
+                                            <option>11</option>
+                                            <option>12</option>
+                                        </select>
+                                        <select
+                                            class="bg-gray-100 border border-gray-300 rounded p-1 text-xs"
+                                        >
+                                            <option>2025</option>
+                                            <option>2026</option>
+                                            <option>2027</option>
+                                            <option>2028</option>
+                                            <option>2029</option>
+                                            <option>2030</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="h-px bg-gray-200"></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Right Side: Order Summary -->
+            <div class="w-full lg:w-[300px]">
+                <div class="box p-4 sticky top-10">
+                    <button
+                        onclick="
+                            document.getElementById('paymentForm').submit()
+                        "
+                        class="w-full py-2 mb-4 rounded-md btn-primary text-sm font-normal shadow-sm"
+                    >
+                        Place your order
+                    </button>
+                    <p
+                        class="text-[10px] text-gray-500 text-center mb-4 border-b border-gray-300 pb-4 leading-tight"
+                    >
+                        By placing your order, you agree to Gadgets BD's
+                        <a
+                            href="#"
+                            class="text-amazon-blue text-xs hover:underline hover:text-amazon-orange"
+                            >privacy notice</a
+                        >
+                        and
+                        <a
+                            href="#"
+                            class="text-amazon-blue text-xs hover:underline hover:text-amazon-orange"
+                            >conditions of use</a
+                        >.
+                    </p>
+
+                    <h3 class="font-bold text-lg mb-4">Order Summary</h3>
+                    <div class="space-y-2 text-xs text-gray-600">
+                        <div class="flex justify-between">
+                            <span>Items (3):</span>
+                            <span>৳4,02,000</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>Delivery Fee:</span>
+                            <span class="text-green-600 font-bold">FREE</span>
+                        </div>
+                        <div
+                            class="flex justify-between border-b border-gray-200 pb-2"
+                        >
+                            <span>Service Fee:</span>
+                            <span>৳500</span>
+                        </div>
+                        <div
+                            class="flex justify-between text-amazon-orange text-lg font-bold pt-2"
+                        >
+                            <span>Order Total:</span>
+                            <span>৳4,02,500</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 pt-4 border-t border-gray-200 text-xs">
+                        <p class="text-green-600 font-bold mb-2">
+                            <i
+                                data-lucide="truck"
+                                class="w-4 h-4 inline mr-1"
+                            ></i>
+                            FREE Delivery on orders over ৳50,000
+                        </p>
+                        <p class="text-gray-600">
+                            <i
+                                data-lucide="shield-check"
+                                class="w-4 h-4 inline mr-1"
+                            ></i>
+                            Secure checkout
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-amazon-background py-10 border-t border-gray-300">
+            <div
+                class="checkout-container text-center text-[10px] text-gray-500 space-y-2"
+            >
+                <div
+                    class="flex justify-center gap-6 text-amazon-blue text-xs mb-2"
+                >
+                    <a href="#" class="hover:underline">Conditions of Use</a>
+                    <a href="#" class="hover:underline">Privacy Notice</a>
+                    <a href="#" class="hover:underline">Help</a>
+                </div>
+                <p>
+                    &copy; 2025 Gadgets BD - Premium Tech Marketplace. All
+                    rights reserved by LWS.
+                </p>
+            </div>
+        </footer>
+
+        <script>
+            lucide.createIcons();
+        </script>
+    </body>
+</html>

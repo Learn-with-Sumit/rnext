@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./output.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- Navbar Starts -->
+  <nav class="py-4 md:py-6 border-b ]">
+    <div class="container mx-auto flex items-center justify-between gap-x-6">
+      <!-- Logo -->
+      <a href="/">
+        <img class="max-w-[100px] md:max-w-[165px]" src="./assets/lws_logo.png" alt="Lws" />
+      </a>
+      <!-- Logo Ends -->
+
+      <div class="flex gap-4 items-center">
+
+        <!-- ###### You can implement dropdown in your own way here ###### -->
+        <!-- Language Dropdown -->
+        <div class="relative">
+          <button class="flex items-center gap-2">
+            <img class="max-w-8" src="./assets/images/bd.png" alt="bangla" />
+            Bangla
+          </button>
+
+          <!-- dropdown -->
+          <!-- <div
+              class="absolute right-0 top-full mt-2 w-40 rounded-md bg-white p-2 z-10 shadow-lg"
+            >
+              <li
+                class="flex items-center gap-2 p-2 rounded-md cursor-pointer hover:bg-gray-100"
+              >
+                <img
+                  class="max-w-8"
+                  src="./assets/images/bd.png"
+                  alt="bangla"
+                />
+                Bangla
+              </li>
+              <li
+                class="flex items-center gap-2 p-2 rounded-md cursor-pointer hover:bg-gray-100"
+              >
+                <img
+                  class="max-w-8"
+                  src="./assets/images/usa.png"
+                  alt="bangla"
+                />
+                English
+              </li>
+            </div> -->
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- Navbar Ends -->
+
+  <div class="container my-4 lg:my-8">
+    <!--  -->
+    <div class="grid grid-cols-12 gap-4 2xl:gap-10 ">
+      <!-- main photo -->
+      <div class="col-span-12 lg:col-span-8 border rounded-xl">
+        <img class="max-w-full h-full max-h-[70vh] mx-auto" src="https://source.unsplash.com/ztpUS4N1xhY" alt="" />
+      </div>
+      <!-- main photo ends -->
+
+      <!-- details card -->
+      <div class="p-6 border rounded-xl col-span-12 lg:col-span-4  ">
+        <h2 class="text-lg lg:text-2xl font-bold mb-2">
+          The Beautiful Nature
+        </h2>
+        <div class="text-xs lg:text-sm text-black/60 mb-6">
+          #nature, #river, #ocean
+        </div>
+        <!-- info rows -->
+        <div class="space-y-2.5 text-black/80 text-xs lg:text-sm">
+          <!-- item start -->
+          <div class="flex justify-between">
+            <span>Views</span>
+            <span class="font-bold">10M</span>
+          </div>
+          <!-- item ends -->
+          <!-- item start -->
+          <div class="flex justify-between">
+            <span>Share</span>
+            <span class="font-bold">10M</span>
+          </div>
+          <!-- item ends -->
+          <!-- item start -->
+          <div class="flex justify-between">
+            <span>Up loaded</span>
+            <span class="font-bold">31 January 2024</span>
+          </div>
+          <!-- item ends -->
+        </div>
+        <!-- info rows ends -->
+
+        <!-- author info -->
+        <div class="mt-6">
+          <!-- author header -->
+          <div class="flex justify-between items-center mb-3">
+            <!--  -->
+            <div class="flex items-center gap-3">
+              <img class="size-12 lg:size-14 rounded-full border" src="https://i.pravatar.cc/150?img=53" alt="avatar" />
+              <div class="spacy-y-3">
+                <h6 class="lg:text-lg font-bold">Saad Hasan</h6>
+                <p class="text-black/60 text-xs lg:text-sm">420 Followers</p>
+              </div>
+            </div>
+            <!-- action -->
+            <button class="flex items-center gap-1.5 text-black/60 text-xs xl:text-sm">
+              <img src="./assets/icons/follow.svg" class="w-5 h-5" />
+              Follow
+            </button>
+          </div>
+          <!-- author bio -->
+          <p class="text-xs lg:text-sm text-black/60">
+            I am a portrait photographer in Michigan, and happily share my
+            hard work so others can find and use my photos for FREE!
+          </p>
+        </div>
+        <!-- author info ends -->
+        <!-- actions -->
+        <div class="mt-6">
+          <div class="flex items-stretch gap-3">
+            <button
+              class="flex-1 border py-1.5 rounded text-xs lg:text-sm flex items-center justify-center text-center gap-1.5 font-bold hover:bg-yellow-400">
+              <img src="./assets/icons/heart.svg" class="w-5 h-5" />
+              100
+            </button>
+            <button
+              class="flex-1 border py-1.5 rounded text-xs lg:text-sm flex items-center justify-center text-center gap-1.5 font-bold hover:bg-yellow-400">
+              <img src="./assets/icons/save.svg" class="w-5 h-5" />
+              Save
+            </button>
+            <button
+              class="flex-1 border py-1.5 rounded text-xs lg:text-sm flex items-center justify-center text-center gap-1.5 font-bold hover:bg-yellow-400">
+              <img src="./assets/icons/share.svg" class="w-5 h-5" />
+
+              Share
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- details card ends -->
+    </div>
+    <!--  -->
+  </div>
+</body>
+
+</html>

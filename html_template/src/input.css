@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-roboto;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-poppins;
+  }
+}
+
+@layer components {
+  .img-grid {
+    @apply columns-1 gap-4 sm:columns-2 lg:columns-3 xl:columns-4 [&>a:not(:first-child)]:mt-4 [&>a]:block [&>a]:rounded-lg [&>a]:overflow-hidden [&>a]:relative [&>a]:cursor-pointer;
+  }
+
+  .title-container {
+    @apply absolute bottom-0 w-full text-center bg-black/50 py-2 transition-all duration-500 opacity-0 group-hover:opacity-100;
+  }
+  .title {
+    @apply text-white font-semibold text-base lg:text-lg;
+  }
+}
